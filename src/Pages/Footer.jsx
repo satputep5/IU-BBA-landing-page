@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../assets/images/Icem-footer-logo.png";
+import logo from "../assets/Images/Icem-footer-logo.png";
 import blogImage1 from "../assets/images/blog1.png";
 import blogImage2 from "../assets/images/blog2.png";
 
