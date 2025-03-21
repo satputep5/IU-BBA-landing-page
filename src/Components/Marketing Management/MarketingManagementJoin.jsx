@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../assets/images/mark-join.jpg'; // Adjust the path as necessary
+import backgroundImage from '../../assets/Images/mark-join.jpg'; // Adjust the path as necessary
 
 function MarketingManagementJoin() {
   return (

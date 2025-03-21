@@ -7,10 +7,10 @@ import {
   FaPenAlt,
   FaUsers,
 } from "react-icons/fa";
-import MyImage from "../../assets/images/iu-campus.png"; // Import your image
-import Image1 from "../../assets/images/mm-study.png"; // Import your 3D-style image
-import CircleImage from "../../assets/images/green-circle.png"; // Import your tiny circle PNG image
-import SmallCircleImage from "../../assets/images/red-circle.png"; // Import your smaller circle PNG image
+import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
+import Image1 from "../../assets/Images/mm-study.png"; // Import your 3D-style image
+import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
+import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import your smaller circle PNG image
 
 function MarketingManagementStudying() {
   return (

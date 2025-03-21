@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 // Import the images
-import MarketingImage from "../../assets/images/overview.jpg"; // Add your marketing image
-import Image1 from "../../assets/images/po-a.png"; // Add your first image
-import Image2 from "../../assets/images/po-d.png"; // Add your second image
-import Image3 from "../../assets/images/po-c.png"; // Add your third image
+
+import Image1 from "../../assets/Images/po-a.png"; // Add your first image
+import Image2 from "../../assets/Images/po-d.png"; // Add your second image
+import Image3 from "../../assets/Images/po-c.png"; // Add your third image
 
 // Import AOS and its CSS
 import AOS from "aos";

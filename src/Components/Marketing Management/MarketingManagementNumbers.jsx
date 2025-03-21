@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../assets/images/green-wave.jpg';  // Import your background image
+import backgroundImage from '../../assets/Images/green-wave.jpg';  // Import your background image
 
 function MarketingManagementNumbers() {
   return (

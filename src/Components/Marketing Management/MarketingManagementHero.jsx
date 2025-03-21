@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap"; // Import GSAP for animations
-import girlImage from "../../assets/images/girl-wow.png"; // Ensure the girl image path is correct
+import girlImage from "../../assets/Images/girl-wow.png"; // Ensure the girl image path is correct
 import { FaUserGraduate, FaChalkboardTeacher, FaUsers } from "react-icons/fa"; // Importing icons for each section
 
 function MarketingManagementHero() {
