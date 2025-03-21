@@ -2,7 +2,7 @@ import React from 'react';
 
 // Import images
 import logo from '../assets/Images/logo-new-uni.png';
-import autonomousLogo from '../../src/assets/images/ICEM-Autonomous-logo.png';
+
 
 function Navbar() {
   return (
