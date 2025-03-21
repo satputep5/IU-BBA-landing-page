@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import logo from "../assets/Images/Icem-footer-logo.png";
-import blogImage1 from "../assets/images/blog1.png";
-import blogImage2 from "../assets/images/blog2.png";
+import blogImage1 from "../assets/Images/blog1.png";
+import blogImage2 from "../assets/Images/blog2.png";
 
 function Footer() {
   useEffect(() => {
