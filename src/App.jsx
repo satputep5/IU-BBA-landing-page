@@ -4,13 +4,13 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 // Importing pages
 import MarketingManagement from './Pages/MarketingManagement';
-import FinancialManagement from './pages/FinancialManagement';
-import HumanResourceManagement from './pages/HumanResourceManagement';
-import LogisticsSupplyChainManagement from './pages/LogisticsSupplyChainManagement';
-import InternationalBusiness from './pages/InternationalBusiness';
-import BankingFinancialServices from './pages/BankingFinancialServices';
-import DigitalMarketing from './pages/DigitalMarketing';
-import InnovationEntrepreneurship from './pages/InnovationEntrepreneurship';
+import FinancialManagement from './Pages/FinancialManagement';
+import HumanResourceManagement from './Pages/HumanResourceManagement';
+import LogisticsSupplyChainManagement from './Pages/LogisticsSupplyChainManagement';
+import InternationalBusiness from './Pages/InternationalBusiness';
+import BankingFinancialServices from './Pages/BankingFinancialServices';
+import DigitalMarketing from './Pages/DigitalMarketing';
+import InnovationEntrepreneurship from './Pages/InnovationEntrepreneurship';
 import Navbar from './Pages/Navbar';
 import Footer from './Pages/Footer';
 import Brochure from './Pages/Brochure';
