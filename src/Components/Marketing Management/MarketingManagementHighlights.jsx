@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faAward, faMedal, faCertificate } from '@fortawesome/free-solid-svg-icons';
 
 // Import the image
-import bgImage from '../../assets/images/highbg.jpg';
+import bgImage from '../../assets/Images/highbg.jpg';
 
 // Import AOS
 import AOS from 'aos';
