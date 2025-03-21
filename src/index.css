@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Helvetica Neue Black';
+    src: url('./assets/fonts/HelveticaNeueBlack.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url('./assets/fonts/HelveticaNeueBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('./assets/fonts/HelveticaNeueMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('./assets/fonts/HelveticaNeueLight.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+  }
+  
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
