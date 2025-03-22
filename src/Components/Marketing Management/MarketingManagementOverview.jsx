@@ -20,7 +20,7 @@ function MarketingManagementOverview() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row-reverse justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular gap-x-8">
+    <div className="flex flex-col md:flex-row-reverse justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular gap-x-8 ">
       {/* Left Part: Program Overview */}
       <div className="flex-1" data-aos="fade-left">
         {/* Small "Marketing Management" Text above heading */}
@@ -104,7 +104,7 @@ function MarketingManagementOverview() {
           <img
             src={Image1}
             alt="Image 1"
-            className="w-full h-auto object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 

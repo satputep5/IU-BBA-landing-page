@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import images
-import logo from '../assets/Images/logo-new-uni.png';
+import logo from '../assets/Images/iu-combine.png';
 
 
 function Navbar() {
@@ -10,9 +10,9 @@ function Navbar() {
       <div className="mx-auto flex items-center justify-between px-2 md:px-16">
         
         {/* Left Logo */}
-        <div className="p-1">
+        <div className="py-4">
           <a href="/">
-            <img src={logo} alt="Logo" className="h-auto max-w-xs md:max-w-52" />
+            <img src={logo} alt="Logo" className="h-auto max-w-xs md:max-w-42" />
           </a>
         </div>
 

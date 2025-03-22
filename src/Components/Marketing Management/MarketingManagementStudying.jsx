@@ -62,15 +62,16 @@ function MarketingManagementStudying() {
 
       {/* Right Side (Text Content Section with Dynamic Height) */}
       <div className="w-[50%] pl-8 flex flex-col">
-        <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
-          Studying Marketing Management at Indira College
-        </h1>
-        <h1 className="text-4xl font-extralight text-left text-[#71bfb7] mb-6">
-          Marketing Management Program
-        </h1>
-        <p className="text-left text-lg mb-6 text-[#000000]">
-          Indira College of Engineering & Management offers an innovative Marketing Management program that merges academic theories with real-world marketing practices. Students gain exposure to the latest market trends, digital marketing strategies, and leadership skills essential for a career in the marketing field.
-        </p>
+      <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
+  Studying Marketing Management at Indira University
+</h1>
+<h1 className="text-4xl font-extralight text-left text-[#71bfb7] mb-6">
+  Marketing Management Program
+</h1>
+<p className="text-left text-lg mb-6 text-[#000000]">
+  Indira University offers an innovative Marketing Management program that merges academic theories with real-world marketing practices. Students gain exposure to the latest market trends, digital marketing strategies, and leadership skills essential for a career in the marketing field.
+</p>
+
 
         {/* 2x3 Grid for Cards */}
         <div className="grid grid-cols-2 grid-rows-3 gap-6 flex-grow">
