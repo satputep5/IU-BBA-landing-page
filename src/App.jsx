@@ -18,10 +18,10 @@ import Brochure from './Pages/Brochure';
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}>
         <main>
-        <Navbar />
-        <Brochure />
+          <Navbar />
+          <Brochure />
           <Routes>
             <Route path="/marketing-management" element={<MarketingManagement />} />
             <Route path="/financial-management" element={<FinancialManagement />} />

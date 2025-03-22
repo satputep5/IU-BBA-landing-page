@@ -8,7 +8,7 @@ import MarketingManagementNumbers from '../Components/Marketing Management/Marke
 import MarketingManagementHighlights from '../Components/Marketing Management/MarketingManagementHighlights'
 import MarketingManagementJoin from '../Components/Marketing Management/MarketingManagementJoin'
 import MarketingManagementTestimonials from '../Components/Marketing Management/MarketingManagementTestimonials'
-import Recruiter from '../Pages/Recruiter'
+import MarketingManagementPlacement from '../Components/Marketing Management/MarketingManagementPlacement'
 
 function MarketingManagement() {
   return (
@@ -21,8 +21,10 @@ function MarketingManagement() {
       <MarketingManagementNumbers />
       <MarketingManagementHighlights />
       <MarketingManagementJoin />
+      <MarketingManagementPlacement />
       <MarketingManagementTestimonials />
-      <Recruiter />
+
+
     </div>
   )
 }
