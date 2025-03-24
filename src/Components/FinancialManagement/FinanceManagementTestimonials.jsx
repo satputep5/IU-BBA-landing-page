@@ -152,29 +152,28 @@ const Testimonials = () => {
       onMouseEnter={() => setIsHovered(true)} // Stop auto slide on hover
       onMouseLeave={() => setIsHovered(false)} // Resume auto slide when hover ends
     >
-{/* Testimonials Container */}
-<div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
-  {groupedTestimonials[activeDot]?.map((testimonial, index) => (
-    <div
-      key={index}
-      className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600" // Added default border and hover border effect
-      style={{
-        boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
-      }}
-    >
-      <img
-        src={testimonial.image}
-        alt={testimonial.name}
-        className="w-16 h-16 rounded-full mx-auto mb-4"
-      />
-      <h3 className="text-xl font-semibold text-center mb-1">{testimonial.name}</h3>
-      <p className="text-center text-sm text-sky-900">{testimonial.department}</p>
-      <p className="text-center text-xs text-sky-700">{testimonial.year}</p>
-      <p className="text-center text-black mt-4">{testimonial.text}</p>
-    </div>
-  ))}
-</div>
-
+      {/* Testimonials Container */}
+      <div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
+        {groupedTestimonials[activeDot]?.map((testimonial, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-[#1D3557] hover:shadow-xl hover:border-2 hover:border-[#1D3557]" // Updated border color and hover effects
+            style={{
+              boxShadow: "0 2px 4px rgba(29, 53, 87, 0.4)", // Primary shadow color
+            }}
+          >
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              className="w-16 h-16 rounded-full mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-center mb-1 text-[#1D3557]">{testimonial.name}</h3> {/* Updated text color */}
+            <p className="text-center text-sm text-[#1D3557]">{testimonial.department}</p> {/* Updated text color */}
+            <p className="text-center text-xs text-[#1D3557]">{testimonial.year}</p> {/* Updated text color */}
+            <p className="text-center text-black mt-4">{testimonial.text}</p>
+          </div>
+        ))}
+      </div>
 
       {/* Navigation Dots - Placed Below Testimonials */}
       <div className="flex justify-center mt-4">
@@ -182,7 +181,7 @@ const Testimonials = () => {
           <button
             key={index}
             className={`h-3 w-3 rounded-full mx-1 ${
-              activeDot === index ? "bg-blue-500" : "bg-gray-300"
+              activeDot === index ? "bg-[#1D3557]" : "bg-gray-300"
             } transition-all duration-300 ease-in-out`}
             onClick={() => setActiveDot(index)}
           />
@@ -195,7 +194,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-4xl font-bold text-center pt-4 text-[#1D3557]"> {/* Updated text color */}
         What Our Students Say
       </h1>
       <Testimonials />

@@ -30,84 +30,83 @@ function FinanceManagementOverview() {
         </h2>
 
         <p className="text-2xl text-gray-600 tracking-wide mb-2">
-        Learn Finance. Drive Growth. Shape the Future.
+          Learn Finance. Drive Growth. Shape the Future.
         </p>
 
         <p className="text-2xl text-gray-600 tracking-wide">
-        In a world driven by investments, banking, and global markets, finance is the backbone of every successful business. At Indira University School of Business, we teach more than just finance—we prepare future financial leaders.
+          In a world driven by investments, banking, and global markets, finance is the backbone of every successful business. At Indira University School of Business, we teach more than just finance—we prepare future financial leaders.
         </p>
 
         <p className="text-2xl text-[#1D3557] tracking-wide my-2">
-        Finance is about crunching numbers & making decisions that shape the world.
+          Finance is about crunching numbers & making decisions that shape the world.
         </p>
 
         <div className="mt-8 space-y-4">
-  <div className="flex items-center">
-    {/* Right-pointing Bullet */}
-    <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
-      >
-        <path d="M6 9l6 6 6-6" />
-      </svg>
-    </div>
-    <p className="text-lg text-gray-700">The 2008 Financial Crisis started with one bad mortgage decision but impacted the entire world!</p>
-  </div>
-  <div className="flex items-center">
-    {/* Right-pointing Bullet */}
-    <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
-      >
-        <path d="M6 9l6 6 6-6" />
-      </svg>
-    </div>
-    <p className="text-lg text-gray-700">India’s Stock Market reached a record high in 2024—creating thousands of new millionaires.</p>
-  </div>
-  <div className="flex items-center">
-    {/* Right-pointing Bullet */}
-    <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
-      >
-        <path d="M6 9l6 6 6-6" />
-      </svg>
-    </div>
-    <p className="text-lg text-gray-700">Want to be the brains behind billion-dollar moves? Finance is your gateway!</p>
-  </div>
-</div>
-
+          <div className="flex items-center">
+            {/* Right-pointing Bullet */}
+            <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <p className="text-lg text-gray-700">The 2008 Financial Crisis started with one bad mortgage decision but impacted the entire world!</p>
+          </div>
+          <div className="flex items-center">
+            {/* Right-pointing Bullet */}
+            <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <p className="text-lg text-gray-700">India’s Stock Market reached a record high in 2024—creating thousands of new millionaires.</p>
+          </div>
+          <div className="flex items-center">
+            {/* Right-pointing Bullet */}
+            <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <p className="text-lg text-gray-700">Want to be the brains behind billion-dollar moves? Finance is your gateway!</p>
+          </div>
+        </div>
       </div>
 
       {/* Right Part: First and Second Images */}
       <div className="flex-1 bg-white flex">
         {/* First Image - Takes 65% of the width */}
-        <div className="w-[65%]">
+        <div className="w-[65%] h-full flex justify-center items-stretch"> {/* Ensure this takes full height */}
           <img
             src={Image1}
             alt="Image 1"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover" // Added object-cover to maintain aspect ratio and make image stretch to full height
           />
         </div>
 
@@ -117,11 +116,11 @@ function FinanceManagementOverview() {
         {/* Second Part - Two Vertical Images in 30% */}
         <div className="w-[30%] flex flex-col gap-4">
           {/* First Image with full overlay text */}
-          <div className="relative w-full">
+          <div className="relative w-full h-full"> {/* Ensure this image stretches to full height */}
             <img
               src={Image2}
               alt="Image 2"
-              className="w-full h-auto object-cover rounded-md"
+              className="w-full h-full object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
               <div>

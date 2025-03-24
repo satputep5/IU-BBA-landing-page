@@ -31,7 +31,7 @@ function FinanceManagementPlacement() {
         {/* Left Section: Placement Image */}
         <div className="w-1/2 flex flex-col items-center">
           {/* Heading for Placement Section */}
-          <h2 className="text-4xl font-semibold text-[#388A86] mb-4">Top Placements</h2>
+          <h2 className="text-4xl font-semibold text-[#1D3557] mb-4">Top Placements</h2>
           {/* Placement Image */}
           <img
             src={placementImage} // Use the imported placement image
@@ -43,7 +43,7 @@ function FinanceManagementPlacement() {
         {/* Right Section: Recruiters */}
         <div className="w-1/2 flex flex-col items-center">
           {/* Heading for Recruiters Section */}
-          <h2 className="text-4xl font-semibold text-[#388A86] mb-4">Our Recruiters</h2>
+          <h2 className="text-4xl font-semibold text-[#1D3557] mb-4">Our Recruiters</h2>
           {/* Recruiters Grid */}
           <div className="grid grid-cols-3 grid-rows-4 gap-4">
             {/* 12 images for recruiters */}
