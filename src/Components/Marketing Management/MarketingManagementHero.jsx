@@ -18,20 +18,26 @@ function MarketingManagementHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex items-center max-h-screen"
+      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-screen"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        <h1 className="text-[40px] text-[#0e1133] font-semibold leading-tight mb-6">
-        From crafting unforgettable ads to building billion-dollar  {" "}
+        {/* New Heading */}
+        <h1 className="text-[34px] text-[#0e1133] font-bold leading-tight mb-6">
+          Bachelors of Business Administration in Marketing with Indira School of Business at Indira University
+        </h1>
+
+        {/* Existing Heading */}
+        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">
+          From crafting unforgettable ads to building billion-dollar {"  "}
           <span className="text-[#388A86] font-bold">
-          brands—Marketing
-          </span>{" "}
+             brands—Marketing
+          </span>{"  "}
           is the art of influence.
         </h1>
         <p className="mt-4 text-2xl text-black">
-        Where Creativity Meets Strategy, and Brands Come to Life!  
+          Where Creativity Meets Strategy, and Brands Come to Life!
         </p>
 
         {/* Form container below the text */}
@@ -61,14 +67,26 @@ function MarketingManagementHero() {
               />
             </div>
             <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
+  <input
+    type="email"
+    id="email"
+    className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86]"
+    placeholder="Enter your email"
+    required
+  />
+</div>
+
+{/* Pincode Input */}
+<div>
+  <input
+    type="text"
+    id="pincode"
+    className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86]"
+    placeholder="Enter your pincode"
+    required
+  />
+</div>
+
             <div>
               <select
                 id="course"
@@ -91,7 +109,7 @@ function MarketingManagementHero() {
         </div>
         {/* Small text below the form */}
         <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-        Master it with Indira University School of Business
+          Master it with Indira University School of Business
         </p>
       </div>
 
@@ -109,49 +127,49 @@ function MarketingManagementHero() {
           />
         </div>
 
-{/* Funky Rectangle Stats (Replaced with new stats) */}
+        {/* Funky Rectangle Stats (Replaced with new stats) */}
 
-{/* First Box - 30 Years of Excellence */}
-<div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-  {/* Icon inside a circle */}
-  <div className="bg-blue-500 text-white p-2 rounded-full">
-    <FaUserGraduate className="text-3xl" />
-  </div>
-  <div>
-    <h3 className="font-semibold text-xl text-black">30 Years of Excellence</h3>
-    <p className="text-sm text-black">
-      In Business Education with <br /> top-tier programs.
-    </p>
-  </div>
-</div>
+        {/* First Box - 30 Years of Excellence */}
+        <div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+          {/* Icon inside a circle */}
+          <div className="bg-blue-500 text-white p-2 rounded-full">
+            <FaUserGraduate className="text-3xl" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-xl text-black">30 Years of Excellence</h3>
+            <p className="text-sm text-black">
+              In Business Education with <br /> top-tier programs.
+            </p>
+          </div>
+        </div>
 
-{/* Second Box - 8 Specializations */}
-<div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-  {/* Icon inside a circle */}
-  <div className="bg-red-500 text-white p-2 rounded-full">
-    <FaChalkboardTeacher className="text-3xl" />
-  </div>
-  <div>
-    <h3 className="font-semibold text-xl text-black">8 Specializations</h3>
-    <p className="text-sm text-black">
-      Tailored programs across <br /> diverse business sectors.
-    </p>
-  </div>
-</div>
+        {/* Second Box - 8 Specializations */}
+        <div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+          {/* Icon inside a circle */}
+          <div className="bg-red-500 text-white p-2 rounded-full">
+            <FaChalkboardTeacher className="text-3xl" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-xl text-black">8 Specializations</h3>
+            <p className="text-sm text-black">
+              Tailored programs across <br /> diverse business sectors.
+            </p>
+          </div>
+        </div>
 
-{/* Third Box - 100% Placement Assistance */}
-<div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-  {/* Icon inside a circle */}
-  <div className="bg-green-500 text-white p-2 rounded-full">
-    <FaUsers className="text-3xl" />
-  </div>
-  <div>
-    <h3 className="font-semibold text-xl text-black">100% Placement Assistance</h3>
-    <p className="text-sm text-black">
-      Ensuring career growth and <br /> success for every student.
-    </p>
-  </div>
-</div>
+        {/* Third Box - 100% Placement Assistance */}
+        <div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+          {/* Icon inside a circle */}
+          <div className="bg-green-500 text-white p-2 rounded-full">
+            <FaUsers className="text-3xl" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-xl text-black">100% Placement Assistance</h3>
+            <p className="text-sm text-black">
+              Ensuring career growth and <br /> success for every student.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

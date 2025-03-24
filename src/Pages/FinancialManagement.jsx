@@ -4,7 +4,8 @@ import FinanceManagementPointers from '../Components/FinancialManagement/Finance
 import FinanceManagementOverview from '../Components/FinancialManagement/FinanceManagementOverview'
 import FinanceManagementOfferings from '../Components/FinancialManagement/FinanceManagementOfferings'
 import FinanceManagementStudying from '../Components/FinancialManagement/FinanceManagementStudying'
-import FinanceManagementNumbers from '../Components/FinancialManagement/FinanceManagementNumbers'
+import FinanceManagementCreative from '../Components/FinancialManagement/FinanceManagementCreative'
+// import FinanceManagementNumbers from '../Components/FinancialManagement/FinanceManagementNumbers'
 import FinanceManagementHighlights from '../Components/FinancialManagement/FinanceManagementHighlights'
 import FinanceManagementJoin from '../Components/FinancialManagement/FinanceManagementJoin'
 import FinanceManagementPlacement from '../Components/FinancialManagement/FinanceManagementPlacement'
@@ -17,8 +18,9 @@ const FinancialManagement = () => {
       <FinanceManagementOverview/>
       <FinanceManagementOfferings/>
       <FinanceManagementStudying/>
-      <FinanceManagementNumbers/>
-      <FinanceManagementHighlights/>
+      <FinanceManagementCreative/>
+      {/* <FinanceManagementNumbers/> */}
+      {/* <FinanceManagementHighlights/> */}
       <FinanceManagementJoin/>
       <FinanceManagementPlacement/>
       <FinanceManagementTestimonials/>

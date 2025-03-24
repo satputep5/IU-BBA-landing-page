@@ -29,70 +29,75 @@ function FinanceManagementOverview() {
           Finance Management
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide">
-          The Finance Management program focuses on developing experts who can
-          manage financial systems, analyze financial markets, and strategize
-          to maximize profits. Students will gain the skills necessary to thrive
-          in the global financial industry.
+        <p className="text-2xl text-gray-600 tracking-wide mb-2">
+        Learn Finance. Drive Growth. Shape the Future.
         </p>
 
-        {/* List of Points with Green Circles and Checkmarks */}
+        <p className="text-2xl text-gray-600 tracking-wide">
+        In a world driven by investments, banking, and global markets, finance is the backbone of every successful business. At Indira University School of Business, we teach more than just finance—we prepare future financial leaders.
+        </p>
+
+        <p className="text-2xl text-[#1D3557] tracking-wide my-2">
+        Finance is about crunching numbers & making decisions that shape the world.
+        </p>
+
         <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-600 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Get access to 4,000+ of our top courses</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-600 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Popular topics to learn now</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-600 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Find the right instructor for you</p>
-          </div>
-        </div>
+  <div className="flex items-center">
+    {/* Right-pointing Bullet */}
+    <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
+      >
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+    <p className="text-lg text-gray-700">The 2008 Financial Crisis started with one bad mortgage decision but impacted the entire world!</p>
+  </div>
+  <div className="flex items-center">
+    {/* Right-pointing Bullet */}
+    <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
+      >
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+    <p className="text-lg text-gray-700">India’s Stock Market reached a record high in 2024—creating thousands of new millionaires.</p>
+  </div>
+  <div className="flex items-center">
+    {/* Right-pointing Bullet */}
+    <div className="w-6 h-6 flex justify-center items-center bg-transparent text-green-600 mr-3">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-8 h-8 transform rotate-270" // Rotate for right-pointing arrow
+      >
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+    <p className="text-lg text-gray-700">Want to be the brains behind billion-dollar moves? Finance is your gateway!</p>
+  </div>
+</div>
+
       </div>
 
       {/* Right Part: First and Second Images */}
