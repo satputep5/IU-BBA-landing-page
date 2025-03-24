@@ -109,7 +109,8 @@ function MarketingManagementHero() {
         </div>
         {/* Small text below the form */}
         <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          Master it with Indira University School of Business
+          
+Your journey to a successful business career starts here!
         </p>
       </div>
 

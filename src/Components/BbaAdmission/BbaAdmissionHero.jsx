@@ -128,7 +128,8 @@ function BbaAdmission() {
         {/* Small text below the form */}
         <p className="text-gray-200 text-sm mt-4 text-center ml-6"
          data-aos="fade-up">
-          Your journey to a successful business career starts here!
+         
+Your journey to a successful business career starts here!
         </p>
       </div>
 
