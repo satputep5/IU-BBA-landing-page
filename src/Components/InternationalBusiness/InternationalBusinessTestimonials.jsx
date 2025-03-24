@@ -96,31 +96,29 @@ const testimonials = [
   },
 ];
 
+const primaryColor = "#1D3557"; // International Business Primary Color
 
 const Testimonials = () => {
   const [activeDot, setActiveDot] = useState(0);
-  const [isHovered, setIsHovered] = useState(false); // Track hover state
-  const intervalRef = useRef(null); // To store the interval ID
+  const [isHovered, setIsHovered] = useState(false);
+  const intervalRef = useRef(null);
 
-  // Group testimonials into chunks of 4
   const groupedTestimonials = useMemo(() => {
     const result = [];
     for (let i = 0; i < testimonials.length; i += 4) {
       result.push(testimonials.slice(i, i + 4));
     }
     return result;
-  }, [testimonials]);
+  }, []); // Empty dependency array for useMemo
 
-  // Function to start auto-sliding
   const startAutoSlide = () => {
     if (!isHovered && !intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setActiveDot((prevDot) => (prevDot + 1) % groupedTestimonials.length);
-      }, 6000); // Change every 6 seconds
+      }, 6000);
     }
   };
 
-  // Function to clear the interval
   const stopAutoSlide = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
@@ -128,55 +126,50 @@ const Testimonials = () => {
     }
   };
 
-  // Auto slide effect, but paused on hover
   useEffect(() => {
     startAutoSlide();
 
     return () => {
-      stopAutoSlide(); // Cleanup interval on component unmount
+      stopAutoSlide();
     };
-  }, [groupedTestimonials.length, isHovered]); // Trigger on hover changes
+  }, [groupedTestimonials.length, isHovered, startAutoSlide]); // Add startAutoSlide to dependencies
 
-  // Handle mouse enter and leave events to control auto sliding
   useEffect(() => {
     if (isHovered) {
-      stopAutoSlide(); // Stop auto slide when hovered
+      stopAutoSlide();
     } else {
-      startAutoSlide(); // Start auto slide when hover ends
+      startAutoSlide();
     }
   }, [isHovered]);
 
   return (
     <div
       className="overflow-hidden w-full py-8 flex flex-col justify-center items-center"
-      onMouseEnter={() => setIsHovered(true)} // Stop auto slide on hover
-      onMouseLeave={() => setIsHovered(false)} // Resume auto slide when hover ends
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-{/* Testimonials Container */}
-<div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
-  {groupedTestimonials[activeDot]?.map((testimonial, index) => (
-    <div
-      key={index}
-      className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600" // Added default border and hover border effect
-      style={{
-        boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
-      }}
-    >
-      <img
-        src={testimonial.image}
-        alt={testimonial.name}
-        className="w-16 h-16 rounded-full mx-auto mb-4"
-      />
-      <h3 className="text-xl font-semibold text-center mb-1">{testimonial.name}</h3>
-      <p className="text-center text-sm text-sky-900">{testimonial.department}</p>
-      <p className="text-center text-xs text-sky-700">{testimonial.year}</p>
-      <p className="text-center text-black mt-4">{testimonial.text}</p>
-    </div>
-  ))}
-</div>
+      <div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
+        {groupedTestimonials[activeDot]?.map((testimonial, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
+            style={{
+              boxShadow: `0 2px 4px ${primaryColor}, 0 4px 6px rgba(29, 53, 87, 0.4)`,
+            }}
+          >
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              className="w-16 h-16 rounded-full mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-center mb-1">{testimonial.name}</h3>
+            <p className="text-center text-sm text-sky-900">{testimonial.department}</p>
+            <p className="text-center text-xs text-sky-700">{testimonial.year}</p>
+            <p className="text-center text-black mt-4">{testimonial.text}</p>
+          </div>
+        ))}
+      </div>
 
-
-      {/* Navigation Dots - Placed Below Testimonials */}
       <div className="flex justify-center mt-4">
         {groupedTestimonials.map((_, index) => (
           <button
@@ -195,7 +188,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-4xl font-bold text-center pt-4 text-[#4718ac]">
         What Our Students Say
       </h1>
       <Testimonials />

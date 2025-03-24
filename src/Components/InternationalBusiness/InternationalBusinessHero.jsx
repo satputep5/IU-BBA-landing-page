@@ -23,17 +23,18 @@ function InternationalBusinessHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[36px] text-white font-bold leading-tight mb-6">
-          Bachelors of Business Administration in International Business with School of Business at Indira University
+          Bachelors of Business Administration in International Business with
+          School of Business at Indira University
         </h1>
 
         <h1 className="text-3xl text-white font-medium leading-tight mb-6">
-        From Local Markets to  {" "}
-          <span className="text-[#15068a] font-bold">Global Giants</span>{" "}
-          – Master the Business of the World.
+          From Local Markets to{" "}
+          <span className="text-[#15068a] font-bold">Global Giants</span> –
+          Master the Business of the World.
         </h1>
 
         <p className="mt-4 text-2xl text-white">
-        The best BBA college in Pune!
+          The best BBA college in Pune!
         </p>
 
         {/* Form container below the text */}
@@ -62,6 +63,7 @@ function InternationalBusinessHero() {
                 required
               />
             </div>
+
             <div>
               <input
                 type="email"
@@ -71,6 +73,17 @@ function InternationalBusinessHero() {
                 required
               />
             </div>
+
+            <div>
+              <input
+                type="text"
+                id="pincode"
+                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#6C5CE7] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]"
+                placeholder="Enter your pincode"
+                required
+              />
+            </div>
+
             <div>
               <select
                 id="course"
@@ -112,49 +125,55 @@ function InternationalBusinessHero() {
           />
         </div>
 
-{/* Funky Rectangle Stats (Replaced with new stats) */}
+        {/* Funky Rectangle Stats (Replaced with new stats) */}
 
-{/* First Box - 30 Years of Excellence */}
-<div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-{/* Icon inside a circle */}
-<div className="bg-blue-500 text-white p-2 rounded-full">
-<FaUserGraduate className="text-3xl" />
-</div>
-<div>
-<h3 className="font-semibold text-xl text-black">30 Years of Excellence</h3>
-<p className="text-sm text-black">
-In Business Education with <br /> top-tier programs.
-</p>
-</div>
-</div>
+        {/* First Box - 30 Years of Excellence */}
+        <div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+          {/* Icon inside a circle */}
+          <div className="bg-blue-500 text-white p-2 rounded-full">
+            <FaUserGraduate className="text-3xl" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-xl text-black">
+              30 Years of Excellence
+            </h3>
+            <p className="text-sm text-black">
+              In Business Education with <br /> top-tier programs.
+            </p>
+          </div>
+        </div>
 
-{/* Second Box - 8 Specializations */}
-<div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-{/* Icon inside a circle */}
-<div className="bg-red-500 text-white p-2 rounded-full">
-<FaChalkboardTeacher className="text-3xl" />
-</div>
-<div>
-<h3 className="font-semibold text-xl text-black">8 Specializations</h3>
-<p className="text-sm text-black">
-Tailored programs across <br /> diverse business sectors.
-</p>
-</div>
-</div>
+        {/* Second Box - 8 Specializations */}
+        <div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+          {/* Icon inside a circle */}
+          <div className="bg-red-500 text-white p-2 rounded-full">
+            <FaChalkboardTeacher className="text-3xl" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-xl text-black">
+              8 Specializations
+            </h3>
+            <p className="text-sm text-black">
+              Tailored programs across <br /> diverse business sectors.
+            </p>
+          </div>
+        </div>
 
-{/* Third Box - 100% Placement Assistance */}
-<div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-{/* Icon inside a circle */}
-<div className="bg-green-500 text-white p-2 rounded-full">
-<FaUsers className="text-3xl" />
-</div>
-<div>
-<h3 className="font-semibold text-xl text-black">100% Placement Assistance</h3>
-<p className="text-sm text-black">
-Ensuring career growth and <br /> success for every student.
-</p>
-</div>
-</div>
+        {/* Third Box - 100% Placement Assistance */}
+        <div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+          {/* Icon inside a circle */}
+          <div className="bg-green-500 text-white p-2 rounded-full">
+            <FaUsers className="text-3xl" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-xl text-black">
+              100% Placement Assistance
+            </h3>
+            <p className="text-sm text-black">
+              Ensuring career growth and <br /> success for every student.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
