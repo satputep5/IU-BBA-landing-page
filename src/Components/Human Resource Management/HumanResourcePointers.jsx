@@ -26,7 +26,7 @@ function HumanResourcePointers() {
         >
           <div className="flex items-center justify-center mr-4 space-x-4">
             {/* Changed icon color to Emerald Green */}
-            <FaCalendarAlt size={40} className="text-[#2A9D57]" />
+            <FaCalendarAlt size={40} className="text-red-500" />
             <div className="text-center">
               <h2 className="text-[#2A9D57]">Program Format</h2>
               <p className="mt-2 text-2xl font-semibold text-[#2A9D57]">Offline</p>
@@ -44,7 +44,7 @@ function HumanResourcePointers() {
             <FaRegClock size={40} className="text-[#4C8BF5]" />
             <div className="text-center">
               <h2 className="text-[#2A9D57]">Duration</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#2A9D57]">2 Years</p>
+              <p className="mt-2 text-2xl font-semibold text-[#2A9D57]">3 Years</p>
             </div>
           </div>
         </div>
@@ -56,10 +56,10 @@ function HumanResourcePointers() {
         >
           <div className="flex items-center justify-center mr-4 space-x-4">
             {/* Changed icon color to fresh green */}
-            <FaMoneyBillWave size={40} className="text-[#2A9D57]" />
+            <FaMoneyBillWave size={40} className="text-[#38d473]" />
             <div className="text-center">
               <h2 className="text-[#2A9D57]">Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#2A9D57]">Rs. 85000/-</p>
+              <p className="mt-2 text-2xl font-semibold text-[#2A9D57]">Rs. 125000/-</p>
             </div>
           </div>
         </div>

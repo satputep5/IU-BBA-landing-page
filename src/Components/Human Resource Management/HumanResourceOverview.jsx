@@ -30,71 +30,16 @@ function HumanResourceOverview() {
           Human Resource Management
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide">
-          The Human Resource Management program is designed to equip students
-          with the knowledge and skills required to manage and develop an
-          organization's workforce effectively. The program covers key HR
-          functions such as recruitment, training, performance management, and
-          employee relations.
+        <p className="text-2xl text-gray-600 tracking-wide mb-2">
+        Human Resource Management is the backbone of every successful organization. With businesses evolving rapidly, the demand for skilled HR professionals who can manage talent, drive employee engagement, and build strong work cultures is higher than ever.
+        
         </p>
 
-        {/* List of Points with Emerald Green Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Emerald Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-[#2A9D64] rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Get access to 4,000+ of our top courses</p>
-          </div>
-          <div className="flex items-center">
-            {/* Emerald Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-[#2A9D64] rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Popular topics to learn now</p>
-          </div>
-          <div className="flex items-center">
-            {/* Emerald Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-[#2A9D64] rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Find the right instructor for you</p>
-          </div>
-        </div>
+        <p className="text-2xl text-gray-700 tracking-wide">
+        Learn it with Indira’s BBA in HRM!
+        </p>
+
+
       </div>
 
       {/* Right Part: First and Second Images */}

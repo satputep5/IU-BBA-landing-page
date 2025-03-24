@@ -3,7 +3,6 @@ import React from 'react';
 // Import images
 import logo from '../assets/Images/IU-Logo.jpg';
 
-
 function Navbar() {
   return (
     <nav className="bg-gray-900 shadow-lg w-full">
@@ -16,7 +15,12 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Right Logo */}
+        {/* Centered Text */}
+        <div className="flex-grow text-center text-white text-xl md:text-3xl font-bold py-4">
+          One of the Top BBA colleges in Pune, Maharashtra
+        </div>
+        
+        {/* Right Logo (if needed in the future) */}
         {/* <div className="p-2">
           <a href="/">
             <img src={autonomousLogo} alt="Autonomous Logo" className="h-auto max-w-xs md:max-w-28" />

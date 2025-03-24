@@ -2,9 +2,9 @@ import React from 'react'
 import HumanResourceHero from '../Components/Human Resource Management/HumanResourceHero'
 import HumanResourcePointers from '../Components/Human Resource Management/HumanResourcePointers'
 import HumanResourceOverview from '../Components/Human Resource Management/HumanResourceOverview'
-import HumanResourceOfferings from '../Components/Human Resource Management/HumanResourceOfferings'
+import HumanResourceWhy from '../Components/Human Resource Management/HumanResourceWhy'
 import HumanResourceStudying from '../Components/Human Resource Management/HumanResourceStudying'
-import HumanResourceNumbers from '../Components/Human Resource Management/HumanResourceNumbers'
+// import HumanResourceNumbers from '../Components/Human Resource Management/HumanResourceNumbers'
 import HumanResourceHighlights from '../Components/Human Resource Management/HumanResourceHighlights'
 import HumanResourceJoin from '../Components/Human Resource Management/HumanResourceJoin'
 import HumanResourcePlacement from '../Components/Human Resource Management/HumanResourcePlacement'
@@ -25,10 +25,10 @@ const HumanResourceManagement = () => {
       <HumanResourceHero/>
       <HumanResourcePointers/>
       <HumanResourceOverview/>
-      <HumanResourceOfferings/>
+      <HumanResourceWhy/>
       <HumanResourceStudying/>
-      <HumanResourceNumbers/>
-      <HumanResourceHighlights/>
+      {/* <HumanResourceNumbers/> */}
+      {/* <HumanResourceHighlights/> */}
       <HumanResourceJoin/>
       <HumanResourcePlacement/>
       <HumanResourceTestimonials/>

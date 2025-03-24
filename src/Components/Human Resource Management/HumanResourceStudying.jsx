@@ -4,17 +4,18 @@ import {
   FaHandshake,
   FaChartLine,
   FaRegCalendarAlt,
-  FaPenAlt,
   FaUsers,
+  FaBrain,
+  FaRobot,
 } from "react-icons/fa";
 import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
 import Image1 from "../../assets/Images/mm-study.png"; // Import your 3D-style image
 import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
-import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import your smaller circle PNG image
+import SmallCircleImage from "../../assets/Images/green-circle.png"; // Import your smaller circle PNG image
 
 function HumanResourceStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-12 mb-12 poppins-regular h-screen">
+    <div className="flex px-8 md:px-16 py-2 mb-2 poppins-regular h-[60vh]">
       {/* Left Side (Vertical Green Container with Full Height, Image on Top, and Rounded Top Corners) */}
       <div className="w-1/2 bg-white h-full relative overflow-hidden">
         {/* Image with object-cover property and rounded top corners */}
@@ -68,58 +69,39 @@ function HumanResourceStudying() {
         <h1 className="text-4xl font-extralight text-left text-[#2A9D64] mb-6">
           Human Resource Management Program
         </h1>
-        <p className="text-left text-lg mb-6 text-[#000000]">
-          Indira University offers an innovative Human Resource Management program that prepares students to effectively manage talent, optimize organizational performance, and lead in a fast-changing business environment. The program focuses on leadership, strategic HR practices, and employee relations.
-        </p>
 
-        {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-2 grid-rows-3 gap-6 flex-grow">
-          {/* Card 1 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#2A9D64]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaBullhorn className="text-[#2A9D64] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                25+ YEARS OF HR EXCELLENCE
-              </span>
-            </span>
-          </div>
-          {/* Card 2 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#2A9D64]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaHandshake className="text-[#2A9D64] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">500+ INDUSTRY PARTNERS</span>
-            </span>
-          </div>
-          {/* Card 3 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#2A9D64]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaChartLine className="text-[#2A9D64] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">INNOVATIVE HR STRATEGIES</span>
-            </span>
-          </div>
-          {/* Card 4 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#2A9D64]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaRegCalendarAlt className="text-[#2A9D64] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                EXPOSURE TO GLOBAL HR TRENDS
-              </span>
-            </span>
-          </div>
-          {/* Card 5 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#2A9D64]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaPenAlt className="text-[#2A9D64] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">HANDS-ON HR TECHNOLOGIES</span>
-            </span>
-          </div>
-          {/* Card 6 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#2A9D64]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaUsers className="text-[#2A9D64] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">EXCEPTIONAL TEAM-BUILDING SKILLS</span>
-            </span>
-          </div>
+        <h2 className="text-2xl font-bold text-left mb-4 text-[#000000]">
+          What Will You Learn? (A People-First Approach)
+        </h2>
+
+        <div className="text-left text-lg mb-6 text-[#000000]">
+          <p className="flex items-center">
+            <FaRegCalendarAlt className="mr-2 text-[#2A9D64]" size={20} />
+            <strong>Year 1:</strong> Fundamentals of HR, Organizational Behavior, Workplace Psychology
+          </p>
+          <p className="flex items-center">
+            <FaUsers className="mr-2 text-[#2A9D64]" size={20} />
+            <strong>Year 2:</strong> Talent Acquisition, Performance Management, HR Analytics
+          </p>
+          <p className="flex items-center">
+            <FaChartLine className="mr-2 text-[#2A9D64]" size={20} />
+            <strong>Year 3:</strong> Leadership Development, HR Tech, Global HR Strategies
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-left mb-4 text-[#000000]">
+          Exclusive Add-ons:
+        </h2>
+
+        <div className="text-left text-lg mb-6 text-[#000000]">
+          <p className="flex items-center">
+            <FaRobot className="mr-2 text-[#2A9D64]" size={20} />
+            <strong>AI & HR Tech</strong> – Learn how AI is reshaping talent management.
+          </p>
+          <p className="flex items-center">
+            <FaBrain className="mr-2 text-[#2A9D64]" size={20} />
+            <strong>Emotional Intelligence Training</strong> – Understand the psychology behind leadership.
+          </p>
         </div>
       </div>
     </div>
