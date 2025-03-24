@@ -107,39 +107,49 @@ function FinanceManagementHero() {
           />
         </div>
 
-        {/* Funky Rectangle Stats */}
-        <div className="absolute bottom-6/12 left-0 p-3 bg-white flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-[#ef8711] text-white p-2 rounded-full">
-            <FaUserGraduate className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">350 Students</h3>
-            <p className="text-sm text-[#3b4241]">Enrolled in finance management.</p>
-          </div>
-        </div>
+{/* Funky Rectangle Stats (Replaced with new stats) */}
 
-        <div className="absolute bottom-1/12 left-0 p-3 bg-white flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-[#da0707] text-white p-2 rounded-full">
-            <FaChalkboardTeacher className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">400 Classes</h3>
-            <p className="text-sm text-[#3b4241]">Interactive and informative sessions.</p>
-          </div>
-        </div>
+{/* First Box - 30 Years of Excellence */}
+<div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+  {/* Icon inside a circle */}
+  <div className="bg-blue-500 text-white p-2 rounded-full">
+    <FaUserGraduate className="text-3xl" />
+  </div>
+  <div>
+    <h3 className="font-semibold text-xl text-black">30 Years of Excellence</h3>
+    <p className="text-sm text-black">
+      In Business Education with <br /> top-tier programs.
+    </p>
+  </div>
+</div>
 
-        <div className="absolute bottom-3/12 right-0 p-3 bg-white flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-[#1528da] text-white p-2 rounded-full">
-            <FaUsers className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">100 Alumni</h3>
-            <p className="text-sm text-[#3b4241]">Successful graduates making a difference.</p>
-          </div>
-        </div>
+{/* Second Box - 8 Specializations */}
+<div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+  {/* Icon inside a circle */}
+  <div className="bg-red-500 text-white p-2 rounded-full">
+    <FaChalkboardTeacher className="text-3xl" />
+  </div>
+  <div>
+    <h3 className="font-semibold text-xl text-black">8 Specializations</h3>
+    <p className="text-sm text-black">
+      Tailored programs across <br /> diverse business sectors.
+    </p>
+  </div>
+</div>
+
+{/* Third Box - 100% Placement Assistance */}
+<div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
+  {/* Icon inside a circle */}
+  <div className="bg-green-500 text-white p-2 rounded-full">
+    <FaUsers className="text-3xl" />
+  </div>
+  <div>
+    <h3 className="font-semibold text-xl text-black">100% Placement Assistance</h3>
+    <p className="text-sm text-black">
+      Ensuring career growth and <br /> success for every student.
+    </p>
+  </div>
+</div>
       </div>
     </div>
   );
