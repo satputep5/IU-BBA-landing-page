@@ -9,6 +9,7 @@ import InternationalBusinessHighlights from '../Components/InternationalBusiness
 import InternationalBusinessJoin from '../Components/InternationalBusiness/InternationalBusinessJoin'
 import InternationalBusinessTestimonials from '../Components/InternationalBusiness/InternationalBusinessTestimonials'
 import InternationalBusinessPlacement from '../Components/InternationalBusiness/InternationalBusinessPlacement'
+import InternationalBusinessCreative from '../Components/InternationalBusiness/InternationalBusinessCreative'
 
 function InternationalBusiness() {
   return (
@@ -18,8 +19,9 @@ function InternationalBusiness() {
       <InternationalBusinessOverview />
       <InternationalBusinessOfferings />
       <InternationalBusinessStudying />
-      <InternationalBusinessNumbers />
-      <InternationalBusinessHighlights />
+      <InternationalBusinessCreative  />
+      {/* <InternationalBusinessNumbers />
+      <InternationalBusinessHighlights /> */}
       <InternationalBusinessJoin />
       <InternationalBusinessPlacement />
       <InternationalBusinessTestimonials />

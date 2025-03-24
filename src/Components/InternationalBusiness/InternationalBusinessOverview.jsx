@@ -30,72 +30,14 @@ function MarketingManagementOverview() {
         International Business
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide">
-        The International Business program prepares students to navigate the complexities of global 
-        markets and international trade. This program emphasizes strategic decision-making, cross-cultural 
-        communication, and global market analysis. Students will gain the skills necessary to manage diverse
-         teams, negotiate across borders, and thrive in the ever-evolving global economy. With a focus on 
-         international finance, trade regulations, and emerging global trends, graduates will be equipped 
-         to lead in multinational corporations, startups, or global supply chain management roles.
+        <p className="text-lg text-gray-600 tracking-wide">
+        Looking for the best BBA college in Pune? Indira University, a newly established institution with a 30-year legacy from Indira Group of Institutes, offers one of the top BBA programs in India. Our BBA course details cover everything from marketing, finance, and human resources to international business and logistics, ensuring students gain real-world skills and industry exposure. With BBA course eligibility designed for 12th-pass students from any stream, and BBA program with placement opportunities in leading companies, we provide a strong career foundation.
+       
         </p>
 
-        {/* List of Points with Green Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Get access to 4,000+ of our top courses</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Popular topics to learn now</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Find the right instructor for you</p>
-          </div>
-        </div>
+        <p className="text-sm text-gray-700 mt-4 underline"> BBA at Indira University School of Business – Your Gateway to a Future-Ready Career.</p>
+
+
       </div>
 
       {/* Right Part: First and Second Images */}

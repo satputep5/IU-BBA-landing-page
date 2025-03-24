@@ -17,13 +17,12 @@ function MarketingManagementJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the Marketing Management Program at Indira University Pune
+          Apply for BBA in International Business at Indira University Today!
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            Empowering the next generation of marketing leaders. Unlock your potential
-            with our innovative curriculum and experienced faculty.
+          Are You Ready to Build Global Empires?
           </p>
-          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-green-700 hover:text-white transition-all">
+          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-violet-700 hover:text-white transition-all">
             Apply Now
           </button>
         </div>
