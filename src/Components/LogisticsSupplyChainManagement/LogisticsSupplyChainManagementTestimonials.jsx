@@ -157,9 +157,9 @@ const Testimonials = () => {
   {groupedTestimonials[activeDot]?.map((testimonial, index) => (
     <div
       key={index}
-      className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600" // Added default border and hover border effect
+      className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-[#F26F08] hover:shadow-xl hover:border-2 hover:border-[#F26F08]" // Updated border color
       style={{
-        boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
+        boxShadow: "0 2px 4px rgba(242, 111, 8, 0.4)", // Light orange shadow
       }}
     >
       <img
@@ -167,9 +167,9 @@ const Testimonials = () => {
         alt={testimonial.name}
         className="w-16 h-16 rounded-full mx-auto mb-4"
       />
-      <h3 className="text-xl font-semibold text-center mb-1">{testimonial.name}</h3>
-      <p className="text-center text-sm text-sky-900">{testimonial.department}</p>
-      <p className="text-center text-xs text-sky-700">{testimonial.year}</p>
+      <h3 className="text-xl font-semibold text-center mb-1 text-black">{testimonial.name}</h3> {/* Updated text color */}
+      <p className="text-center text-sm text-[#F26F08]">{testimonial.department}</p> {/* Updated text color */}
+      <p className="text-center text-xs text-[#F26F08]">{testimonial.year}</p> {/* Updated text color */}
       <p className="text-center text-black mt-4">{testimonial.text}</p>
     </div>
   ))}
@@ -182,8 +182,8 @@ const Testimonials = () => {
           <button
             key={index}
             className={`h-3 w-3 rounded-full mx-1 ${
-              activeDot === index ? "bg-blue-500" : "bg-gray-300"
-            } transition-all duration-300 ease-in-out`}
+              activeDot === index ? "bg-[#F26F08]" : "bg-[#FFAD65]"
+            } transition-all duration-300 ease-in-out`} // Updated active dot color
             onClick={() => setActiveDot(index)}
           />
         ))}
@@ -195,7 +195,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-4xl font-bold text-center pt-4 text-[#F26F08]">
         What Our Students Say
       </h1>
       <Testimonials />

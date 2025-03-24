@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS
 
-function MarketingManagementOfferings() {
+function LogisticsAndSCMOfferings() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -35,7 +35,7 @@ function MarketingManagementOfferings() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        What Our Top Offerings
+        Why Choose Indira University for Logistics & SCM?
       </h2>
 
       <div className="flex justify-center gap-6 flex-nowrap">
@@ -45,8 +45,8 @@ function MarketingManagementOfferings() {
           data-aos="fade-up"
         >
           <FaBullhorn size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">4,000 Online Courses</p>
-          <p className="text-sm text-white mt-2">Arse over tit morish wind up gormless butty.!</p>
+          <p className="text-lg font-semibold text-white">Hands-on Learning</p>
+          <p className="text-sm text-white mt-2">Get a practical learning experience with real-world applications.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -56,8 +56,8 @@ function MarketingManagementOfferings() {
           data-aos="fade-up"
         >
           <FaHandshake size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Job Placement Support</p>
-          <p className="text-sm text-white mt-2">Arse over tit morish wind up gormless butty.!</p>
+          <p className="text-lg font-semibold text-white">Industry Visits</p>
+          <p className="text-sm text-white mt-2">Explore logistics & supply chain operations in the real world through visits to top companies.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -67,8 +67,8 @@ function MarketingManagementOfferings() {
           data-aos="fade-up"
         >
           <FaRegCalendarAlt size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Lifetime Slack Chat Support</p>
-          <p className="text-sm text-white mt-2">Arse over tit morish wind up gormless butty.!</p>
+          <p className="text-lg font-semibold text-white">Industry Mentors</p>
+          <p className="text-sm text-white mt-2">Learn from top industry professionals from Amazon, FedEx, and Flipkart.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -78,8 +78,8 @@ function MarketingManagementOfferings() {
           data-aos="fade-up"
         >
           <FaChartLine size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Research and Innovation</p>
-          <p className="text-sm text-white mt-2">Arse over tit morish wind up gormless butty.!</p>
+          <p className="text-lg font-semibold text-white">Global Supply Chain Simulations</p>
+          <p className="text-sm text-white mt-2">Solve real-world trade challenges through cutting-edge simulations.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
       </div>
@@ -87,4 +87,4 @@ function MarketingManagementOfferings() {
   );
 }
 
-export default MarketingManagementOfferings;
+export default LogisticsAndSCMOfferings;

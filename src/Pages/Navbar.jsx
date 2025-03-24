@@ -4,30 +4,52 @@ import React from 'react';
 import logo from '../assets/Images/IU-Logo.jpg';
 
 function Navbar() {
-  return (
-    <nav className="bg-gray-900 shadow-lg w-full">
-      <div className="mx-auto flex items-center justify-between px-2 md:px-16">
-        
-        {/* Left Logo */}
-        <div className="py-4">
-          <a href="/">
-            <img src={logo} alt="Logo" className="h-auto max-w-xs md:max-w-42" />
-          </a>
-        </div>
+  const pulseTextAnimation = {
+    animation: 'pulseText 2s ease-in-out infinite',
+  };
 
-        {/* Centered Text */}
-        <div className="flex-grow text-center text-white text-xl md:text-3xl font-bold py-4">
-          One of the Top BBA colleges in Pune, Maharashtra
+  const pulseKeyframes = `
+    @keyframes pulseText {
+      0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+        transform: scale(1.05);
+      }
+      100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
+        transform: scale(1);
+      }
+    }
+  `;
+
+  return (
+    <>
+      {/* Inject CSS into the page */}
+      <style>{pulseKeyframes}</style>
+
+      {/* Navbar (not fixed, so it will scroll with the page) */}
+      <nav className="bg-gray-900 shadow-lg w-full">
+        <div className="mx-auto flex items-center justify-between px-2 md:px-16 py-1">
+          {/* Left Logo */}
+          <div className="py-4">
+            <a href="/">
+              <img src={logo} alt="Logo" className="h-auto max-w-xs md:max-w-42" />
+            </a>
+          </div>
+
+          {/* Centered Text with Animation and Effects */}
+          <div
+            className="flex-grow text-center text-white text-xl md:text-3xl font-bold"
+            style={pulseTextAnimation}
+          >
+            One of the Top BBA colleges in Pune, Maharashtra
+          </div>
         </div>
-        
-        {/* Right Logo (if needed in the future) */}
-        {/* <div className="p-2">
-          <a href="/">
-            <img src={autonomousLogo} alt="Autonomous Logo" className="h-auto max-w-xs md:max-w-28" />
-          </a>
-        </div> */}
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 

@@ -4,11 +4,12 @@ import LogisticsSupplyChainManagementPointers from '../Components/LogisticsSuppl
 import LogisticsSupplyChainManagementOverview from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementOverview'
 import LogisticsSupplyChainManagementOfferings from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementOfferings'
 import LogisticsSupplyChainManagementStudying from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementStudying'
-import LogisticsSupplyChainManagementNumbers from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementNumbers'
-import LogisticsSupplyChainManagementHighlights from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementHighlights'
+// import LogisticsSupplyChainManagementNumbers from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementNumbers'
+// import LogisticsSupplyChainManagementHighlights from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementHighlights'
 import LogisticsSupplyChainManagementJoin from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementJoin'
 import LogisticsSupplyChainManagementTestimonials from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementTestimonials'
 import LogisticsSupplyChainManagementPlacement from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementPlacement'
+import LogisticsSupplyChainManagementCreative from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementCreative'
 
 function LogisticsSupplyChainManagement() {
   return (
@@ -18,8 +19,9 @@ function LogisticsSupplyChainManagement() {
       <LogisticsSupplyChainManagementOverview />
       <LogisticsSupplyChainManagementOfferings />
       <LogisticsSupplyChainManagementStudying />
-      <LogisticsSupplyChainManagementNumbers />
-      <LogisticsSupplyChainManagementHighlights />
+      <LogisticsSupplyChainManagementCreative />
+      {/* <LogisticsSupplyChainManagementNumbers />
+      <LogisticsSupplyChainManagementHighlights /> */}
       <LogisticsSupplyChainManagementJoin />
       <LogisticsSupplyChainManagementPlacement />
       <LogisticsSupplyChainManagementTestimonials />

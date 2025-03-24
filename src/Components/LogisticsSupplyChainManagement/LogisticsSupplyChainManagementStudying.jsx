@@ -4,124 +4,103 @@ import {
   FaHandshake,
   FaChartLine,
   FaRegCalendarAlt,
-  FaPenAlt,
-  FaUsers,
+  FaMapPin,
+  FaArrowRight,
+  FaClipboardList,
+  FaTruck,
+  FaGlobe,
+  FaCogs,
+  FaRobot,
+  FaBriefcase
 } from "react-icons/fa";
-import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
-import Image1 from "../../assets/Images/mm-study.png"; // Import your 3D-style image
-import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
-import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import your smaller circle PNG image
+
+// Import images for the page
+import MyImage from "../../assets/Images/iu-campus.png"; // Main campus image
+import Image1 from "../../assets/Images/lscm-std.jpg"; // 3D-style image
+import CircleImage from "../../assets/Images/green-circle.png"; // Floating larger circle
+import SmallCircleImage from "../../assets/Images/green-circle.png"; // Floating smaller circle
 
 function MarketingManagementStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-12 mb-12 poppins-regular h-screen">
-      {/* Left Side (Vertical Green Container with Full Height, Image on Top, and Rounded Top Corners) */}
-      <div className="w-1/2 bg-white h-full relative overflow-hidden">
-        {/* Image with object-cover property and rounded top corners */}
+    <div className="flex px-6 md:px-16 py-16 bg-[#ffffff]">
+      {/* Left Section: Image and Floating Elements */}
+      <div className="w-full md:w-1/2 bg-white rounded-lg relative overflow-hidden">
+        {/* Main Campus Image */}
         <img
           src={MyImage}
-          alt="Marketing Management"
-          className="w-7/10 h-full object-cover absolute top-0 left-0 rounded-t-full"
+          alt="Marketing Management Campus"
+          className="w-auto h-full object-cover absolute top-0 right-24 rounded-t-lg"
         />
 
-        {/* 3D Image on the right corner */}
+        {/* 3D Image at the bottom-right */}
         <img
-          src={Image1}  // You can replace with a different 3D-style image if needed
-          alt="3D Image"
-          className="w-1/2 h-56 object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg"
+          src={Image1}
+          alt="3D Study Image"
+          className="w-60 h-48 object-cover absolute bottom-8 right-8 transform shadow-lg rounded-lg"
         />
 
-        {/* Floating Tiny Circle PNG (Larger Circle) */}
+        {/* Floating Large Circle */}
         <img
-          src={CircleImage}  // Tiny circle PNG image
-          alt="Floating Circle"
-          style={{
-            position: "absolute",
-            top: "30%",
-            right: "25%",
-            width: "70px",  // Adjust size as needed
-            height: "70px", // Adjust size as needed
-            animation: "float 2s ease-in-out infinite",
-          }}
+          src={CircleImage}
+          alt="Floating Large Circle"
+          className="absolute top-[25%] right-[20%] w-16 h-16 animation-float"
         />
 
-        {/* Floating Tiny Circle PNG (Smaller Circle at Bottom Left) */}
+        {/* Floating Small Circle */}
         <img
-          src={SmallCircleImage}  // Smaller circle PNG image
+          src={SmallCircleImage}
           alt="Floating Small Circle"
-          style={{
-            position: "absolute",
-            bottom: "10%",
-            left: "1%",
-            width: "50px",  // Smaller size
-            height: "50px", // Smaller size
-            animation: "float 3s ease-in-out infinite",
-          }}
+          className="absolute bottom-[10%] left-[5%] w-12 h-12 animation-float-slow"
         />
       </div>
 
-      {/* Right Side (Text Content Section with Dynamic Height) */}
-      <div className="w-[50%] pl-8 flex flex-col">
-      <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
-  Studying Logistics Supply Chain Management at Indira University
-</h1>
-<h1 className="text-4xl font-extralight text-left text-[#f07a1d] mb-6">
-Logistics Supply Chain Management Program
-</h1>
-<p className="text-left text-lg mb-6 text-[#000000]">
-Indira University offers an innovative Logistics and Supply Chain Management program that blends 
-theoretical concepts with practical applications. Students gain comprehensive knowledge of global
- logistics, supply chain optimization, and operations management, equipping them with the skills necessary
-  to excel in the dynamic and fast-growing logistics industry.
-</p>
+      {/* Right Section: Text Content */}
+      <div className="w-full md:w-1/2 pl-8 flex flex-col justify-center space-y-6">
+        <h1 className="text-3xl md:text-4xl font-semibold text-left text-[#1f2937] mb-4">
+          What You Will Learn: From Warehouses to Whiteboards
+        </h1>
+        <h2 className="text-2xl font-light text-left text-[#f07a1d] mb-6">
+          Logistics & Supply Chain Management Program
+        </h2>
 
+        <div className="space-y-4">
+          <div className="flex items-center">
+            <FaClipboardList size={36} className="mr-3 text-[#f07a1d]" />
+            <span className="text-lg text-[#1f2937]">
+              <strong>Year 1:</strong> Logistics Fundamentals | Inventory Management | Procurement Basics
+            </span>
+          </div>
+          <div className="flex items-center">
+            <FaTruck size={36} className="mr-3 text-[#f07a1d]" />
+            <span className="text-lg text-[#1f2937]">
+              <strong>Year 2:</strong> Transportation Networks | Warehouse Optimization | Demand Forecasting
+            </span>
+          </div>
+          <div className="flex items-center">
+            <FaGlobe size={36} className="mr-3 text-[#f07a1d]" />
+            <span className="text-lg text-[#1f2937]">
+              <strong>Year 3:</strong> Global Supply Chains | AI & Automation in Logistics | Risk Management
+            </span>
+          </div>
 
-        {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-2 grid-rows-3 gap-6 flex-grow">
-          {/* Card 1 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#f59b53]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaBullhorn className="text-[#ed6f0c] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                25+ YEARS OF MARKETING EXCELLENCE
-              </span>
+          <div className="flex items-center">
+            <FaCogs size={36} className="mr-3 text-[#f07a1d]" />
+            <span className="text-lg text-[#1f2937]">
+              <strong>Amazon-style Logistics Simulations</strong> – Learn the secrets behind their efficiency!
             </span>
           </div>
-          {/* Card 2 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#f59b53]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaHandshake className="text-[#ed6f0c] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">500+ INDUSTRY PARTNERS</span>
+
+          <div className="flex items-center">
+            <FaRobot size={36} className="mr-3 text-[#f07a1d]" />
+            <span className="text-lg text-[#1f2937]">
+              <strong>AI in Supply Chain</strong> – Discover how companies like DHL & Flipkart use AI for cost reduction.
             </span>
           </div>
-          {/* Card 3 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#f59b53]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaChartLine className="text-[#ed6f0c] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">INNOVATIVE MARKETING STRATEGIES</span>
-            </span>
-          </div>
-          {/* Card 4 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#f59b53]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaRegCalendarAlt className="text-[#ed6f0c] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                EXPOSURE TO GLOBAL MARKETING TRENDS
-              </span>
-            </span>
-          </div>
-          {/* Card 5 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#f59b53]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaPenAlt className="text-[#ed6f0c] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">HANDS-ON DIGITAL MARKETING</span>
-            </span>
-          </div>
-          {/* Card 6 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#f59b53]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaUsers className="text-[#ed6f0c] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">EXCEPTIONAL TEAM-BUILDING SKILLS</span>
+
+          <div className="flex items-center">
+            <FaBriefcase size={36} className="mr-3 text-[#f07a1d]" />
+            <span className="text-lg text-[#1f2937]">
+              <strong>Live Industry Case Studies</strong> – Work on real supply chain disruptions & solutions.
             </span>
           </div>
         </div>

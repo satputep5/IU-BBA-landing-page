@@ -28,7 +28,7 @@ function MarketingManagementPointers() {
             {/* Changed icon color to fresh red */}
             <FaCalendarAlt size={40} className="text-[#FF4C4C]" />
             <div className="text-center">
-              <h2 className="text-[#f26f07]">Program Format</h2>
+              <h2 className="text-[#0b0a0a]">Program Format</h2>
               <p className="mt-2 text-2xl font-semibold text-[#f76d00]">Offline</p>
             </div>
           </div>
@@ -43,8 +43,8 @@ function MarketingManagementPointers() {
             {/* Changed icon color to fresh blue */}
             <FaRegClock size={40} className="text-[#4C8BF5]" />
             <div className="text-center">
-              <h2 className="text-[#f26f07]">Duration</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#f76d00]">4 Years</p>
+              <h2 className="text-[#000000]">Duration</h2>
+              <p className="mt-2 text-2xl font-semibold text-[#f76d00]">3 Years</p>
             </div>
           </div>
         </div>
@@ -58,8 +58,8 @@ function MarketingManagementPointers() {
             {/* Changed icon color to fresh pink */}
             <FaMoneyBillWave size={40} className="text-[#09955d]" />
             <div className="text-center">
-              <h2 className="text-[#f26f07]">Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#f76d00]">Rs. 108000/-</p>
+              <h2 className="text-[#000000]">Program Fees</h2>
+              <p className="mt-2 text-2xl font-semibold text-[#f76d00]">Rs. 125000/-</p>
             </div>
           </div>
         </div>

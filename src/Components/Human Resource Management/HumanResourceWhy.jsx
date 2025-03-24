@@ -38,7 +38,7 @@ function HumanResourceOfferings() {
         Why BBA HRM at Indira University?
       </h2>
 
-      <div className="flex justify-center gap-6 flex-wrap lg:flex-nowrap">
+      <div className="flex justify-center gap-6 flex-wrap ">
         {/* Card 1 - 30+ Years of Excellence */}
         <div
           className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"

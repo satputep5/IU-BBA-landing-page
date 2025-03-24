@@ -9,6 +9,7 @@ import HumanResourceHighlights from '../Components/Human Resource Management/Hum
 import HumanResourceJoin from '../Components/Human Resource Management/HumanResourceJoin'
 import HumanResourcePlacement from '../Components/Human Resource Management/HumanResourcePlacement'
 import HumanResourceTestimonials from '../Components/Human Resource Management/HumanResourceTestimonials'
+import HumanResourceJobs from '../Components/Human Resource Management/HumanResourceJobs'
 
 const HumanResourceManagement = () => {
   return (
@@ -27,6 +28,7 @@ const HumanResourceManagement = () => {
       <HumanResourceOverview/>
       <HumanResourceWhy/>
       <HumanResourceStudying/>
+      <HumanResourceJobs/>
       {/* <HumanResourceNumbers/> */}
       {/* <HumanResourceHighlights/> */}
       <HumanResourceJoin/>

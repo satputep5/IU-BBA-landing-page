@@ -24,79 +24,19 @@ function MarketingManagementOverview() {
       {/* Left Part: Program Overview */}
       <div className="flex-1" data-aos="fade-left">
         {/* Small "Marketing Management" Text above heading */}
-        <p className="text-lg text-[#f26f07] mb-2">Program Overview</p>
+        <p className="text-lg text-gray-800 mb-2">Program Overview</p>
 
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-[#f26f07] mb-4">
           Logistics Supply Chain Management
         </h2>
 
+<p className="text-2xl font-medium text-gray-800 mb-4">Master the Flow. Optimize the Chain. Drive Global Commerce.</p>
+
         <p className="text-2xl text-gray-600 tracking-wide">
-        The Logistics and Supply Chain Management program is designed to cultivate problem-solving 
-        leaders with expertise in global logistics, supply chain operations, and inventory management. 
-        This program covers key areas such as procurement, transportation, warehouse management, and
-         supply chain optimization. Students will gain the skills and insights required to excel in today’s 
-         fast-paced and globally interconnected industry.
-
-
+        In today’s fast-paced global economy, businesses rely on seamless logistics, procurement, and distribution networks to stay competitive. A degree in Supply Chain Management (SCM) equips you with expertise in inventory management, logistics, procurement, operations, and global trade, making you an indispensable part of any industry.
         </p>
 
-        {/* List of Points with Green Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Get access to 4,000+ of our top courses</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Popular topics to learn now</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Find the right instructor for you</p>
-          </div>
-        </div>
+
       </div>
 
       {/* Right Part: First and Second Images */}

@@ -18,13 +18,12 @@ function MarketingManagementJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the Logistics Supply Chain Management Program at Indira University Pune
+          Apply for BBA in Logistics & Supply Chain Management Now!
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-          Empowering the next generation of logistics leaders. Unlock your potential
-          with our cutting-edge curriculum and industry-experienced faculty.
+          Are You Ready to Optimize the World?
           </p>
-          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-green-700 hover:text-white transition-all">
+          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-orange-700 hover:text-white transition-all">
             Apply Now
           </button>
         </div>
