@@ -26,7 +26,7 @@ function BankingAndFinancialServicesPointers() {
         >
           <div className="flex items-center justify-center mr-4 space-x-4">
             {/* Changed icon color to navy blue */}
-            <FaCalendarAlt size={40} className="text-[#2a9d8f]" />
+            <FaCalendarAlt size={40} className="text-[#75b7d1]" />
             <div className="text-center">
               <h2 className="text-[#264653]">Program Format</h2>
               <p className="mt-2 text-2xl font-semibold text-[#264653]">Offline</p>
@@ -41,10 +41,10 @@ function BankingAndFinancialServicesPointers() {
         >
           <div className="flex items-center justify-center mr-4 space-x-4">
             {/* Changed icon color to a lighter blue */}
-            <FaRegClock size={40} className="text-[#2a9d8f]" />
+            <FaRegClock size={40} className="text-[#75b7d1]" />
             <div className="text-center">
               <h2 className="text-[#264653]">Duration</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#264653]">4 Years</p>
+              <p className="mt-2 text-2xl font-semibold text-[#264653]">3 Years</p>
             </div>
           </div>
         </div>
@@ -56,10 +56,10 @@ function BankingAndFinancialServicesPointers() {
         >
           <div className="flex items-center justify-center mr-4 space-x-4">
             {/* Changed icon color to greenish blue */}
-            <FaMoneyBillWave size={40} className="text-[#2a9d8f]" />
+            <FaMoneyBillWave size={40} className="text-[#75b7d1]" />
             <div className="text-center">
               <h2 className="text-[#264653]">Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#264653]">Rs. 120000/-</p>
+              <p className="mt-2 text-2xl font-semibold text-[#264653]">Rs. 1,25,000/-</p>
             </div>
           </div>
         </div>

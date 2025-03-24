@@ -4,11 +4,12 @@ import BankingAndFinancialServicesPointers from '../Components/BankingAndFinanci
 import BankingAndFinancialServicesOverview from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesOverview'
 import BankingAndFinancialServicesOfferings from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesOfferings'
 import BankingAndFinancialServicesStudying from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesStudying'
-import BankingAndFinancialServicesNumbers from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesNumbers'
-import BankingAndFinancialServicesHighlights from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesHighlights'
+// import BankingAndFinancialServicesNumbers from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesNumbers'
+// import BankingAndFinancialServicesHighlights from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesHighlights'
 import BankingAndFinancialServicesJoin from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesJoin'
 import BankingAndFinancialServicesTestimonials from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesTestimonials'
 import BankingAndFinancialServicesPlacement from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesPlacement'
+import BankingAndFinancialServicesCareerPaths from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesCareerPaths'
 
 function BankingAndFinancialServices() {
   return (
@@ -18,8 +19,9 @@ function BankingAndFinancialServices() {
       <BankingAndFinancialServicesOverview />
       <BankingAndFinancialServicesOfferings />
       <BankingAndFinancialServicesStudying />
-      <BankingAndFinancialServicesNumbers />
-      <BankingAndFinancialServicesHighlights />
+      <BankingAndFinancialServicesCareerPaths />
+      {/* <BankingAndFinancialServicesNumbers />
+      <BankingAndFinancialServicesHighlights /> */}
       <BankingAndFinancialServicesJoin />
       <BankingAndFinancialServicesPlacement />
       <BankingAndFinancialServicesTestimonials />

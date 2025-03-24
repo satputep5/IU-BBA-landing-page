@@ -11,18 +11,18 @@ function MarketingManagementJoin() {
       ></div>
 
       {/* Green overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-70 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[#264653] opacity-70 z-10"></div>
 
       {/* Text content */}
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the Banking & Financial Services Program at Indira University Pune
+          Apply for BBA in Banking & Financial Services Today!
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-          Unlock your potential with our cutting-edge curriculum and seasoned industry professionals. Prepare for a successful career in banking, finance, and beyond with real-world insights and hands-on learning.
+          The Future is Financial – Are You Ready?
           </p>
-          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-blue-700 hover:text-white transition-all">
+          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-[#75b7d1] hover:text-white transition-all">
             Apply Now
           </button>
         </div>

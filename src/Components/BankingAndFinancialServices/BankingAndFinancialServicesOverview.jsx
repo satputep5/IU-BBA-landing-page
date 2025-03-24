@@ -29,70 +29,14 @@ function BankingAndFinancialServicesOverview() {
           Banking & Financial Services
         </h2>
 
-        <p className="text-2xl text-[#3E4B49] tracking-wide">
-          The Banking and Financial Services program equips you with the necessary
-          skills to understand and navigate the dynamic financial sector. The program
-          covers topics such as investment management, financial planning, and banking operations.
-          Students will be prepared to take on strategic roles in banks and financial institutions.
+        <p className="text-xl text-[#3E4B49]">
+        Looking for a high-paying career in banking and finance after 12th? A BBA in Banking and Financial Services is your gateway to investment banking, wealth management, and digital finance. This course covers essential topics like risk management, stock markets, financial planning, and fintech innovations. With the growing demand for banking professionals in India, graduates can secure top roles in private banks, corporate finance, and NBFCs. Get hands-on experience with internships in leading banks, and earn industry-recognized certifications in financial analysis. 
         </p>
 
-        {/* List of Points with Green Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-[#264653]">Gain hands-on experience with financial tools</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-[#264653]">Work with industry experts in the field of finance</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-[#264653]">Explore career opportunities in banks and financial institutions</p>
-          </div>
-        </div>
+<p className="text-xl text-[#3E4B49] tracking-wide mt-2 font-semibold ">
+Explore the best BBA colleges for banking and finance in India and take the first step toward a rewarding career
+</p>
+
       </div>
 
       {/* Right Part: First and Second Images */}
