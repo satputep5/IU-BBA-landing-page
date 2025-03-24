@@ -44,7 +44,7 @@ function MarketingManagementPointers() {
             <FaRegClock size={40} className="text-[#4C8BF5]" />
             <div className="text-center">
               <h2 className="text-[#388A86]">Duration</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#388A86]">4 Years</p>
+              <p className="mt-2 text-2xl font-semibold text-[#388A86]">3 Years</p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ function MarketingManagementPointers() {
             <FaMoneyBillWave size={40} className="text-[#09955d]" />
             <div className="text-center">
               <h2 className="text-[#388A86]">Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#388A86]">Rs. 108000/-</p>
+              <p className="mt-2 text-2xl font-semibold text-[#388A86]">Rs. 125000/-</p>
             </div>
           </div>
         </div>

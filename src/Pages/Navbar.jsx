@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import images
-import logo from '../assets/Images/iu-combine.png';
+import logo from '../assets/Images/IU-Logo.jpg';
 
 
 function Navbar() {

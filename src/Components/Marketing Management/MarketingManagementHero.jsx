@@ -24,15 +24,14 @@ function MarketingManagementHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[40px] text-[#0e1133] font-semibold leading-tight mb-6">
-          Lead the Future of Marketing with{" "}
+        From crafting unforgettable ads to building billion-dollar  {" "}
           <span className="text-[#388A86] font-bold">
-            Marketing Management
+          brands—Marketing
           </span>{" "}
-          at Indira University
+          is the art of influence.
         </h1>
         <p className="mt-4 text-2xl text-black">
-          Innovative programs, expert faculty, and endless opportunities for
-          growth await you.
+        Where Creativity Meets Strategy, and Brands Come to Life!  
         </p>
 
         {/* Form container below the text */}
@@ -92,7 +91,7 @@ function MarketingManagementHero() {
         </div>
         {/* Small text below the form */}
         <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          You’re guaranteed to find something that’s right for you.
+        Master it with Indira University School of Business
         </p>
       </div>
 

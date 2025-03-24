@@ -31,70 +31,11 @@ function MarketingManagementOverview() {
         </h2>
 
         <p className="text-2xl text-gray-600 tracking-wide">
-          The Marketing Management program focuses on developing strategic
-          thinkers and creative leaders in the field of marketing. The program
-          covers various aspects such as market. Students will
-          be equipped with the tools necessary to thrive in a fast-paced,
-          dynamic industry.
+        Looking for the Best BBA in Marketing colleges to kickstart your career? Indira University offers an industry-aligned BBA in Marketing course designed to help students master brand management, market research, digital marketing, sales strategies, and advertising—making you a key player in the business world.
         </p>
 
         {/* List of Points with Green Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Get access to 4,000+ of our top courses</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Popular topics to learn now</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Find the right instructor for you</p>
-          </div>
-        </div>
+
       </div>
 
       {/* Right Part: First and Second Images */}

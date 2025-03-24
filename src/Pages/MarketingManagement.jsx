@@ -2,13 +2,14 @@ import React from 'react'
 import MarketingManagementHero from '../Components/Marketing Management/MarketingManagementHero'
 import MarketingManagementPointers from '../Components/Marketing Management/MarketingManagementPointers'
 import MarketingManagementOverview from '../Components/Marketing Management/MarketingManagementOverview'
-import MarketingManagementOfferings from '../Components/Marketing Management/MarketingManagementOfferings'
+import MarketingManagementWhy from '../Components/Marketing Management/MarketingManagementWhy'
 import MarketingManagementStudying from '../Components/Marketing Management/MarketingManagementStudying'
-import MarketingManagementNumbers from '../Components/Marketing Management/MarketingManagementNumbers'
+import MarketingManagementCreative from '../Components/Marketing Management/MarketingManagementCreative'
 import MarketingManagementHighlights from '../Components/Marketing Management/MarketingManagementHighlights'
 import MarketingManagementJoin from '../Components/Marketing Management/MarketingManagementJoin'
 import MarketingManagementTestimonials from '../Components/Marketing Management/MarketingManagementTestimonials'
 import MarketingManagementPlacement from '../Components/Marketing Management/MarketingManagementPlacement'
+import MarketingManagementPersona from '../Components/Marketing Management/MarketingManagementPersona'
 
 function MarketingManagement() {
   return (
@@ -16,10 +17,11 @@ function MarketingManagement() {
       <MarketingManagementHero />
       <MarketingManagementPointers />
       <MarketingManagementOverview />
-      <MarketingManagementOfferings />
+      <MarketingManagementWhy />
       <MarketingManagementStudying />
-      <MarketingManagementNumbers />
-      <MarketingManagementHighlights />
+      <MarketingManagementCreative />
+      {/* <MarketingManagementPersona /> */}
+      {/* <MarketingManagementHighlights /> */}
       <MarketingManagementJoin />
       <MarketingManagementPlacement />
       <MarketingManagementTestimonials />

@@ -1,6 +1,5 @@
-// src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Importing pages
 import MarketingManagement from './Pages/MarketingManagement';
@@ -10,10 +9,11 @@ import LogisticsSupplyChainManagement from './Pages/LogisticsSupplyChainManageme
 import InternationalBusiness from './Pages/InternationalBusiness';
 import BankingFinancialServices from './Pages/BankingFinancialServices';
 import DigitalMarketing from './Pages/DigitalMarketing';
-import InnovationEntrepreneurship from './Pages/InnovationEntrepreneurship';
+import InnovationEntrepreneurship from './Pages/InnovationAndEntrepreneurship';
 import Navbar from './Pages/Navbar';
 import Footer from './Pages/Footer';
 import Brochure from './Pages/Brochure';
+import BbaAdmission from './Pages/BbaAdmission';
 
 function App() {
   return (
@@ -23,6 +23,8 @@ function App() {
           <Navbar />
           <Brochure />
           <Routes>
+            {/* Set the main route to BbaAdmission */}
+            <Route path="/" element={<BbaAdmission />} />
             <Route path="/marketing-management" element={<MarketingManagement />} />
             <Route path="/financial-management" element={<FinancialManagement />} />
             <Route path="/human-resource-management" element={<HumanResourceManagement />} />

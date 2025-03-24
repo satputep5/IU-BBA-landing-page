@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import logo from "../assets/Images/Icem-footer-logo.png";
-import blogImage1 from "../assets/Images/blog1.png";
-import blogImage2 from "../assets/Images/blog2.png";
+import logo from "../assets/Images/IU-Logo.jpg";
+import blogImage1 from "../assets/Images/post1.png";
+import blogImage2 from "../assets/Images/post2.png";
 
 function Footer() {
   useEffect(() => {
@@ -35,9 +35,8 @@ function Footer() {
                 <div className="flex items-center space-x-2">
                   <i className="fas fa-map-marker-alt text-xl hover:text-blue-500"></i>
                   <div>
-                    <p> Indira Chanakya Campus (ICC)</p>
-                    <p>S.No. 64,65, Gat No. 276 At Post : Parandwadi,</p>
-                    <p>Near Somatne phata, Tal. : Maval, Dist. Pune – 410 506</p>
+                    <p>85/5 A, Tapasya, New Mumbai Pune Highway,</p>
+                    <p>Tathawade, Pune - 411033</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -49,7 +48,7 @@ function Footer() {
                 <div className="flex items-center space-x-2">
                   <i className="fas fa-envelope text-xl hover:text-gray-500"></i>
                   <div>
-                    <p>info@indiraicem.ac.in</p>
+                    <p>ibba.admissions@indiraiimp.edu.in</p>
                   </div>
                 </div>
                 <div className="flex space-x-4 text-xl mb-4">
@@ -94,7 +93,9 @@ function Footer() {
           </div>
           {/* Middle Column */}
           <div className="space-y-6">
-            <h3 className="text-2xl text-[#023b5e] font-bold">Important Links</h3>
+            <h3 className="text-2xl text-[#023b5e] font-bold">
+              Important Links
+            </h3>
             {/* Grid layout for links */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-8">
@@ -139,28 +140,43 @@ function Footer() {
             <h3 className="text-2xl font-bold text-[#023b5e]">Popular Posts</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <img
-                  src={blogImage1}
-                  alt="Investment Opportunities for Women Blog Image"
-                  className="w-36 h-24 object-contain rounded-lg"
-                />
-                <div>
-                  <h4 className="font-semibold text-lg">
-                    Investment Opportunities for Women in India
-                  </h4>
-                  <p className="text-sm text-gray-400">March 13, 2024</p>
-                </div>
+                <a
+                  href="https://indiraiimp.edu.in/blog/bba-in-logistics-and-supply-chain-management-course-at-iimp-bba-pune/" // Add your actual link here
+                  className="flex items-center space-x-4 cursor-pointer" // Added cursor-pointer to make both image and text clickable
+                   target="_blank"
+                >
+                  <img
+                    src={blogImage1}
+                    alt="Investment Opportunities for Women Blog Image"
+                    className="w-36 h-24 object-contain rounded-lg"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-lg">
+                      BBA in Logistics and Supply Chain Management Course at
+                      IIMP BBA Pune
+                    </h4>
+                    <p className="text-sm text-gray-400">July 12, 2022</p>
+                  </div>
+                </a>
               </div>
               <div className="flex items-center space-x-4">
-                <img
-                  src={blogImage2}
-                  alt="Blog Post 2"
-                  className="w-36 h-24 object-contain rounded-lg"
-                />
-                <div>
-                  <h4 className="font-semibold text-lg">Blog Post 2</h4>
-                  <p className="text-sm text-gray-400">March 13, 2024</p>
-                </div>
+                <a
+                  href="https://indiraiimp.edu.in/blog/why-study-bba-after-12th/" // Add your actual link here
+                  className="flex items-center space-x-4 cursor-pointer"
+                  target="_blank" // Added cursor-pointer to make both image and text clickable
+                >
+                  <img
+                    src={blogImage2}
+                    alt="Blog Post 2"
+                    className="w-36 h-24 object-contain rounded-lg"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-lg">
+                      Why Study BBA after 12th?
+                    </h4>
+                    <p className="text-sm text-gray-400">July 12, 2022</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

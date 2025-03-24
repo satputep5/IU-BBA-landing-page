@@ -8,13 +8,13 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
-import Image1 from "../../assets/Images/mm-study.png"; // Import your 3D-style image
+import Image1 from "../../assets/Images/std-mark.jpg"; // Import your 3D-style image
 import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
 import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import your smaller circle PNG image
 
 function MarketingManagementStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-12 mb-12 poppins-regular h-screen">
+    <div className="flex px-8 md:px-16 py-6 mb-6 poppins-regular h-[70vh]">
       {/* Left Side (Vertical Green Container with Full Height, Image on Top, and Rounded Top Corners) */}
       <div className="w-1/2 bg-white h-full relative overflow-hidden">
         {/* Image with object-cover property and rounded top corners */}
@@ -69,59 +69,13 @@ function MarketingManagementStudying() {
   Marketing Management Program
 </h1>
 <p className="text-left text-lg mb-6 text-[#000000]">
-  Indira University offers an innovative Marketing Management program that merges academic theories with real-world marketing practices. Students gain exposure to the latest market trends, digital marketing strategies, and leadership skills essential for a career in the marketing field.
+This course equips you with the skills to master brand management, market research, digital marketing, sales strategies, and advertising, making you a key player in any industry.
 </p>
 
 
-        {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-2 grid-rows-3 gap-6 flex-grow">
-          {/* Card 1 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#388A86]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaBullhorn className="text-[#71bfb7] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                25+ YEARS OF MARKETING EXCELLENCE
-              </span>
-            </span>
-          </div>
-          {/* Card 2 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#388A86]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaHandshake className="text-[#71bfb7] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">500+ INDUSTRY PARTNERS</span>
-            </span>
-          </div>
-          {/* Card 3 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#388A86]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaChartLine className="text-[#71bfb7] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">INNOVATIVE MARKETING STRATEGIES</span>
-            </span>
-          </div>
-          {/* Card 4 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#388A86]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaRegCalendarAlt className="text-[#71bfb7] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                EXPOSURE TO GLOBAL MARKETING TRENDS
-              </span>
-            </span>
-          </div>
-          {/* Card 5 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#388A86]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaPenAlt className="text-[#71bfb7] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">HANDS-ON DIGITAL MARKETING</span>
-            </span>
-          </div>
-          {/* Card 6 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#388A86]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaUsers className="text-[#71bfb7] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">EXCEPTIONAL TEAM-BUILDING SKILLS</span>
-            </span>
-          </div>
-        </div>
+<p className="text-left text-lg mb-6 text-[#000000]">Our BBA Marketing syllabus is crafted to keep up with evolving industry trends, ensuring you gain real-world experience through live projects, internships, and hands-on exposure. Whether you're passionate about digital marketing in BBA curriculum or aspire to become a brand strategist, Indira University prepares you for the dynamic marketing landscape.
+</p>
+
       </div>
     </div>
   );
