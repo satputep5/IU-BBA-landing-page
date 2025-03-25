@@ -9,6 +9,7 @@ import InnovationAndEntrepreneurshipHighlights from '../Components/InnovationAnd
 import InnovationAndEntrepreneurshipJoin from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipJoin'
 import InnovationAndEntrepreneurshipTestimonials from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipTestimonials'
 import InnovationAndEntrepreneurshipPlacement from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipPlacement'
+import InnovationAndEntrepreneurshipBusinessEmpire from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipBusinessEmpire'
 
 function InnovationAndEntrepreneurship() {
   return (
@@ -18,8 +19,9 @@ function InnovationAndEntrepreneurship() {
       <InnovationAndEntrepreneurshipOverview />
       <InnovationAndEntrepreneurshipOfferings />
       <InnovationAndEntrepreneurshipStudying />
-      <InnovationAndEntrepreneurshipNumbers />
-      <InnovationAndEntrepreneurshipHighlights />
+      <InnovationAndEntrepreneurshipBusinessEmpire />
+      {/* <InnovationAndEntrepreneurshipNumbers />
+      <InnovationAndEntrepreneurshipHighlights /> */}
       <InnovationAndEntrepreneurshipJoin />
       <InnovationAndEntrepreneurshipPlacement />
       <InnovationAndEntrepreneurshipTestimonials />

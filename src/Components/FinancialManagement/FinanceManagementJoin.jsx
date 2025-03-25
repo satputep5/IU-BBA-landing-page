@@ -1,5 +1,6 @@
 import React from "react";
 import backgroundImage from "../../assets/Images/brochure-bg.png"; // Adjust the path as necessary
+import ApplyButton from '../ApplyButton'; // Import the ApplyButton component
 
 function FinanceManagementJoin() {
   return (
@@ -22,9 +23,7 @@ function FinanceManagementJoin() {
           <p className="text-xl text-gray-200 mb-8">
             The Future is Yours – Are You Ready to Take Control?
           </p>
-          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-[#7aa5e1] hover:text-white transition-all">
-            Apply Now
-          </button>
+          <ApplyButton /> {/* Using the ApplyButton component */}
         </div>
       </div>
     </div>

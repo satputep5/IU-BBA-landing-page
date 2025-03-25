@@ -30,71 +30,11 @@ function MarketingManagementOverview() {
           Digital Marketing Program
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide">
-          The Digital Marketing program focuses on developing strategic
-          thinkers and creative leaders in the field of marketing. The program
-          covers various aspects such as market. Students will
-          be equipped with the tools necessary to thrive in a fast-paced,
-          dynamic industry.
+        <p className="text-xl text-gray-600 ">
+        In today’s digital era, businesses rely on SEO, social media, and performance marketing to grow. A BBA in Digital Marketing equips you with in-demand skills like Google Ads, content strategy, and growth hacking. The career scope after BBA in Digital Marketing in India is vast, with high-paying roles in SEO, analytics, and brand strategy. Unlike traditional marketing, BBA Digital Marketing focuses on data-driven campaigns and AI-powered tools. With Google certifications and hands-on internships, graduates from the best BBA Digital Marketing colleges in India secure top jobs with excellent salary packages.
         </p>
 
-        {/* List of Points with Green Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Get access to 4,000+ of our top courses</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Popular topics to learn now</p>
-          </div>
-          <div className="flex items-center">
-            {/* Green Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Find the right instructor for you</p>
-          </div>
-        </div>
+
       </div>
 
       {/* Right Part: First and Second Images */}
@@ -121,10 +61,11 @@ function MarketingManagementOverview() {
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-              <div>
-                <span className="text-6xl">10k+</span> <br />{" "}
-                <span className="text-xl"> Students Active Our Courses</span>
-              </div>
+            <div>
+  <span className="text-6xl">10k+</span> <br />
+  <span className="text-xl">Students Impacted in Thriving BBA Careers</span>
+</div>
+
             </div>
           </div>
 

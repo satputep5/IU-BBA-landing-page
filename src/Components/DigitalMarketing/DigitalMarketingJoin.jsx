@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundImage from '../../assets/Images/mark-join.jpg'; // Adjust the path as necessary
+import ApplyButton from '../ApplyButton'; // Import the ApplyButton component
 
 function MarketingManagementJoin() {
   return (
@@ -17,15 +18,12 @@ function MarketingManagementJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the Marketing Management Program at Indira University Pune
+          Apply for BBA in Digital Marketing Now!
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            Empowering the next generation of marketing leaders. Unlock your potential
-            with our innovative curriculum and experienced faculty.
+          The Future is Digital – Are You Ready to Lead It?
           </p>
-          <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-cyan-500 hover:text-white transition-all">
-            Apply Now
-          </button>
+ <ApplyButton /> {/* Using the ApplyButton component */}
         </div>
       </div>
     </div>

@@ -3,124 +3,85 @@ import {
   FaBullhorn,
   FaHandshake,
   FaChartLine,
-  FaRegCalendarAlt,
-  FaPenAlt,
-  FaUsers,
 } from "react-icons/fa";
-import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
-import Image1 from "../../assets/Images/mm-study.png"; // Import your 3D-style image
-import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
-import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import your smaller circle PNG image
+import MyImage from "../../assets/Images/iu-campus.png";
+import Image1 from "../../assets/Images/mm-study.png";
+import CircleImage from "../../assets/Images/green-circle.png";
+import SmallCircleImage from "../../assets/Images/red-circle.png";
 
 function DigitalMarketingStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-12 mb-12 poppins-regular h-screen">
-      {/* Left Side (Vertical Green Container with Full Height, Image on Top, and Rounded Top Corners) */}
-      <div className="w-1/2 bg-white h-full relative overflow-hidden">
-        {/* Image with object-cover property and rounded top corners */}
+    <div className="flex px-8 md:px-16 py-8 mb-2 poppins-regular">
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 bg-white relative overflow-hidden">
+        {/* Main Image */}
         <img
           src={MyImage}
-          alt="Digital Marketing"
-          className="w-7/10 h-full object-cover absolute top-0 left-0 rounded-t-full"
+          alt="Finance Management"
+          className="w-full h-full object-cover absolute top-0 right-20 rounded-t-xl"
         />
 
-        {/* 3D Image on the right corner */}
+        {/* 3D Effect Image */}
         <img
-          src={Image1}  // You can replace with a different 3D-style image if needed
+          src={Image1}
           alt="3D Image"
-          className="w-1/2 h-56 object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg"
+          className="w-1/2 h-auto object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg z-10"
         />
 
-        {/* Floating Tiny Circle PNG (Larger Circle) */}
+        {/* Floating Circle 1 */}
         <img
-          src={CircleImage}  // Tiny circle PNG image
+          src={CircleImage}
           alt="Floating Circle"
-          style={{
-            position: "absolute",
-            top: "30%",
-            right: "25%",
-            width: "70px",  // Adjust size as needed
-            height: "70px", // Adjust size as needed
-            animation: "float 2s ease-in-out infinite",
-          }}
+          className="absolute top-[30%] right-[25%] w-16 h-16 animate-float z-20"
         />
 
-        {/* Floating Tiny Circle PNG (Smaller Circle at Bottom Left) */}
+        {/* Floating Circle 2 */}
         <img
-          src={SmallCircleImage}  // Smaller circle PNG image
+          src={SmallCircleImage}
           alt="Floating Small Circle"
-          style={{
-            position: "absolute",
-            bottom: "10%",
-            left: "1%",
-            width: "50px",  // Smaller size
-            height: "50px", // Smaller size
-            animation: "float 3s ease-in-out infinite",
-          }}
+          className="absolute bottom-[10%] left-[1%] w-12 h-12 animate-float-slow z-20"
         />
       </div>
 
-      {/* Right Side (Text Content Section with Dynamic Height) */}
-      <div className="w-[50%] pl-8 flex flex-col">
-        <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
-          Studying Digital Marketing at Indira University
-        </h1>
-        <h1 className="text-4xl font-extralight text-left text-[#00B4D8] mb-6">
-          Digital Marketing Program
-        </h1>
-        <p className="text-left text-lg mb-6 text-[#000000]">
-          Indira University offers an innovative Digital Marketing program that merges academic theories with real-world marketing practices. Students gain exposure to the latest digital marketing strategies, trends, and essential skills needed to succeed in the tech-driven marketing industry.
-        </p>
+      {/* Right Side */}
+      <div className="w-full md:w-[50%] pl-8 flex flex-col">
 
-        {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-2 grid-rows-3 gap-6 flex-grow">
-          {/* Card 1 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#00B4D8]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaBullhorn className="text-[#00B4D8] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                25+ YEARS OF DIGITAL MARKETING EXCELLENCE
-              </span>
-            </span>
+        <h1 className="text-4xl font-bold text-left mb-4 text-[#000000]">
+        Why Digital Marketing?
+        </h1>
+
+        <h1 className="text-3xl font-semilight text-left mb-4 text-[#000000]">
+          Marketing today is all about clicks, trends & conversions—businesses no longer rely just on traditional methods.
+        </h1>
+        <h1 className="text-2xl font-extralight text-left text-[#1D3557] mb-4">
+          • Amazon generates ₹100+ Crores daily from digital marketing-driven sales!
+        </h1>
+        <h1 className="text-2xl font-extralight text-left text-[#1D3557] mb-4">
+          • India’s e-commerce market is projected to reach $200 billion by 2026, creating massive digital jobs.
+        </h1>
+
+        <div className="text-left text-lg mb-1 text-[#000000]">
+          <div className="flex items-center gap-4 mb-4">
+            <FaChartLine className="text-[#1D3557]" size={24} />
+            <span className="font-semibold">Year 1:</span>
+            <span>Fundamentals of Digital Marketing, SEO, Social Media Marketing</span>
           </div>
-          {/* Card 2 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#00B4D8]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaHandshake className="text-[#00B4D8] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">500+ INDUSTRY PARTNERS</span>
-            </span>
+          <div className="flex items-center gap-4 mb-4">
+            <FaBullhorn className="text-[#388A86]" size={24} />
+            <span className="font-semibold">Year 2:</span>
+            <span>Google Ads, Analytics, Performance Marketing, Email Marketing</span>
           </div>
-          {/* Card 3 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#00B4D8]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaChartLine className="text-[#00B4D8] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">INNOVATIVE DIGITAL MARKETING STRATEGIES</span>
-            </span>
-          </div>
-          {/* Card 4 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#00B4D8]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaRegCalendarAlt className="text-[#00B4D8] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">
-                EXPOSURE TO GLOBAL DIGITAL MARKETING TRENDS
-              </span>
-            </span>
-          </div>
-          {/* Card 5 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#00B4D8]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaPenAlt className="text-[#00B4D8] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">HANDS-ON DIGITAL MARKETING EXPERIENCE</span>
-            </span>
-          </div>
-          {/* Card 6 */}
-          <div className="bg-[#f1f7f6] p-4 shadow-lg shadow-[#00B4D8]/50 flex justify-between items-center rounded-lg">
-            <span className="flex items-center">
-              <FaUsers className="text-[#00B4D8] mr-4 text-4xl" />
-              <span className="text-sm text-[#000000]">EXCEPTIONAL TEAM-BUILDING SKILLS</span>
-            </span>
+          <div className="flex items-center gap-4 mb-4">
+            <FaHandshake className="text-[#09955D]" size={24} />
+            <span className="font-semibold">Year 3:</span>
+            <span>Growth Hacking, Influencer Marketing, AI in Digital Strategies</span>
           </div>
         </div>
+
+        <p className="text-2xl text-[#1D3557] tracking-wide my-2">
+          <span className="block text-left mb-1">✅ Want to dominate the digital world and drive brand success? This is your gateway!</span> 
+        </p>
+
       </div>
     </div>
   );

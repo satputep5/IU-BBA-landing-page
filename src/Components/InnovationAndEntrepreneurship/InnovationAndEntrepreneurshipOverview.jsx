@@ -29,67 +29,11 @@ function InnovationAndEntrepreneurshipOverview() {
           Innovation & Entrepreneurship
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide">
-          The Innovation & Entrepreneurship program focuses on developing creative thinkers and dynamic leaders ready to take on the world of startups and business innovation. The program covers various aspects, including ideation, funding, and scaling, to equip students with the necessary tools for success in the fast-paced entrepreneurial world.
+        <p className="text-xl text-gray-600">
+        A BBA in Entrepreneurship equips students with the skills to turn ideas into successful businesses. As one of the best colleges for BBA Entrepreneurship in India, we provide hands-on experience in business incubators for BBA students, mentorship from industry leaders, and real-world exposure to startup opportunities after BBA Entrepreneurship. Whether you're exploring funding options for BBA entrepreneurs or learning the difference between BBA Entrepreneurship & MBA Entrepreneurship, this program prepares you for success. With high salary after BBA in Entrepreneurship and countless top business ideas after BBA Entrepreneurship, your journey as a future business leader starts here!
         </p>
 
-        {/* List of Points with Golden Circles and Checkmarks */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center">
-            {/* Golden Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Access to a variety of startup resources</p>
-          </div>
-          <div className="flex items-center">
-            {/* Golden Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Mentorship from successful entrepreneurs</p>
-          </div>
-          <div className="flex items-center">
-            {/* Golden Circle and Checkmark */}
-            <div className="w-6 h-6 flex justify-center items-center bg-green-500 rounded-full text-white mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </div>
-            <p className="text-lg text-gray-700">Opportunities to pitch your startup ideas</p>
-          </div>
-        </div>
+
       </div>
 
       {/* Right Part: First and Second Images */}

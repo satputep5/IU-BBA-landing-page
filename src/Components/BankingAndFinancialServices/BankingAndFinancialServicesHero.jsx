@@ -22,12 +22,12 @@ function BankingAndFinancialServicesHero() {
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        <h1 className="text-[36px] text-[#FFFFFF] font-semibold leading-tight mb-6">
+        <h1 className="text-2xl text-[#FFFFFF] font-semibold leading-tight mb-6">
           Bachelors of Business Administration in Banking & Financial Services
           with Indira School of Business at Indira University
         </h1>
 
-        <h1 className="text-3xl text-[#FFFFFF] font-semibold leading-tight mb-6">
+        <h1 className="text-[40px] text-[#FFFFFF] font-semibold leading-tight mb-6">
           <span className="text-[#264653] font-bold">
             Banking and Financial Services:
           </span>{" "}
@@ -84,15 +84,22 @@ function BankingAndFinancialServicesHero() {
               />
             </div>
             <div>
-              <select
-                id="course"
-                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72]"
-                required
-              >
-                <option value="">Select Course</option>
-                {/* Add course options here */}
-              </select>
-            </div>
+  <select
+    id="course"
+    className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72]"
+    required
+  >
+    <option value="Banking and Financial Services">Banking and Financial Services</option>
+    <option value="Marketing Management">Marketing Management</option>
+    <option value="Financial Management">Financial Management</option>
+    <option value="Human Resource Management">Human Resource Management</option>
+    <option value="Logistics and Supply Chain Management">Logistics and Supply Chain Management</option>
+    <option value="International Business">International Business</option>
+    <option value="Digital Marketing">Digital Marketing</option>
+    <option value="Innovation and Entrepreneurship">Innovation and Entrepreneurship</option>
+  </select>
+</div>
+
             <div>
               <button
                 type="submit"
@@ -104,7 +111,7 @@ function BankingAndFinancialServicesHero() {
           </form>
         </div>
         {/* Small text below the form */}
-        <p className="text-[#A1B6B0] text-sm mt-4 text-center ml-6">
+        <p className="text-gray-800 text-sm mt-4 text-center ml-6">
           You’re guaranteed to find something that’s right for you.
         </p>
       </div>

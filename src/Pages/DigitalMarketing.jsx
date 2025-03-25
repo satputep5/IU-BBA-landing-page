@@ -4,11 +4,12 @@ import DigitalMarketingPointers from '../Components/DigitalMarketing/DigitalMark
 import DigitalMarketingOverview from '../Components/DigitalMarketing/DigitalMarketingOverview'
 import DigitalMarketingOfferings from '../Components/DigitalMarketing/DigitalMarketingOfferings'
 import DigitalMarketingStudying from '../Components/DigitalMarketing/DigitalMarketingStudying'
-import DigitalMarketingNumbers from '../Components/DigitalMarketing/DigitalMarketingNumbers'
-import DigitalMarketingHighlights from '../Components/DigitalMarketing/DigitalMarketingHighlights'
+// import DigitalMarketingNumbers from '../Components/DigitalMarketing/DigitalMarketingNumbers'
+// import DigitalMarketingHighlights from '../Components/DigitalMarketing/DigitalMarketingHighlights'
 import DigitalMarketingJoin from '../Components/DigitalMarketing/DigitalMarketingJoin'
 import DigitalMarketingTestimonials from '../Components/DigitalMarketing/DigitalMarketingTestimonials'
 import DigitalMarketingPlacement from '../Components/DigitalMarketing/DigitalMarketingPlacement'
+import DigitalMarketingCarrerPaths from '../Components/DigitalMarketing/DigitalMarketingCarrerPaths'
 
 function DigitalMarketing() {
   return (
@@ -18,8 +19,9 @@ function DigitalMarketing() {
       <DigitalMarketingOverview />
       <DigitalMarketingOfferings />
       <DigitalMarketingStudying />
-      <DigitalMarketingNumbers />
-      <DigitalMarketingHighlights />
+      <DigitalMarketingCarrerPaths />
+      {/* <DigitalMarketingNumbers />
+      <DigitalMarketingHighlights /> */}
       <DigitalMarketingJoin />
       <DigitalMarketingPlacement />
       <DigitalMarketingTestimonials />

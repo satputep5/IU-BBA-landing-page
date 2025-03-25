@@ -42,7 +42,7 @@ function Navbar() {
 
           {/* Centered Text with Animation and Effects */}
           <div
-            className="flex-grow text-center text-white text-xl md:text-3xl font-bold"
+            className="flex-grow text-center text-white text-xl md:text-3xl font-bold uppercase"
             style={pulseTextAnimation}
           >
             One of the Top BBA colleges in Pune, Maharashtra
