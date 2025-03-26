@@ -34,14 +34,14 @@ function BbaAdmissionOfferings() {
 
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#135783]" data-aos="fade-up">
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#000000]" data-aos="fade-up">
         Why Choose BBA at Indira University?
       </h2>
 
-      <div className="flex justify-center gap-6 flex-nowrap">
+      <div className="flex justify-center gap-6 flex-wrap">
         {/* Card 1 - Placement Assistance */}
         <div
-          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
+          className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaBullhorn size={50} className="text-white mb-4 icon" />
@@ -51,7 +51,7 @@ function BbaAdmissionOfferings() {
 
         {/* Card 2 - Top Recruiters */}
         <div
-          className="bg-[#EC4899] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
+          className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaHandshake size={50} className="text-white mb-4 icon" />
@@ -61,7 +61,7 @@ function BbaAdmissionOfferings() {
 
         {/* Card 3 - Industry-Focused Course */}
         <div
-          className="bg-[#9333EA] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
+          className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaRegCalendarAlt size={50} className="text-white mb-4 icon" />
@@ -71,19 +71,17 @@ function BbaAdmissionOfferings() {
 
         {/* Card 4 - Industry-Focused Course */}
         <div
-          className="bg-[#10B981] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
+          className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaChartLine size={50} className="text-white mb-4 icon" />
           <p className="text-lg font-semibold text-white">Industry-focused BBA course details with hands-on projects & internships</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
-      </div>
 
-      <div className="flex justify-center gap-6 flex-nowrap mt-8">
-        {/* Card 5 - Eligibility */}
-        <div
-          className="bg-[#F59E0B] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
+                {/* Card 5 - Eligibility */}
+                <div
+          className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaUsers size={50} className="text-white mb-4 icon" />
@@ -93,7 +91,7 @@ function BbaAdmissionOfferings() {
 
         {/* Card 6 - Modern Campus */}
         <div
-          className="bg-[#F472B6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
+          className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaRegClipboard size={50} className="text-white mb-4 icon" />

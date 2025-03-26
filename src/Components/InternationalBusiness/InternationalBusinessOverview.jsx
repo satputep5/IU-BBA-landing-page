@@ -64,10 +64,11 @@ function MarketingManagementOverview() {
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-              <div>
-                <span className="text-6xl">10k+</span> <br />{" "}
-                <span className="text-xl"> Students Active Our Courses</span>
-              </div>
+            <div>
+  <span className="text-6xl">10k+</span> <br />
+  <span className="text-xl">Students Impacted in Thriving BBA Careers</span>
+</div>
+
             </div>
           </div>
 

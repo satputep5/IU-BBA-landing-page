@@ -101,9 +101,13 @@ function BbaAdmissionCourses() {
               <p className="text-sm text-[#f3f4f6]">Duration: {course.duration}</p>
               <p className="text-sm text-[#f3f4f6] mt-2">Fees: {course.fees}</p>
 
+              {/* Apply Now Button with Yellow Border */}
               <a
                 href={course.applyLink}
-                className="mt-auto text-center bg-[#2563EB] text-white px-3 py-2 rounded-full font-semibold transform transition-all hover:bg-[#3B82F6] hover:scale-105"
+                className="mt-auto text-center bg-[#2563EB] text-white px-4 py-2 rounded-full font-semibold border-2 border-[#FBBF24] transform transition-all hover:bg-[#3B82F6] hover:scale-105 hover:border-[#FBBF24] hover:shadow-lg"
+                style={{
+                  boxShadow: "0px 4px 15px rgba(37, 99, 235, 0.3)" // Optional shadow for extra emphasis
+                }}
               >
                 Apply Now
               </a>

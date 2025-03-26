@@ -1,24 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Importing pages
-import MarketingManagement from './Pages/MarketingManagement';
-import FinancialManagement from './Pages/FinancialManagement';
-import HumanResourceManagement from './Pages/HumanResourceManagement';
-import LogisticsSupplyChainManagement from './Pages/LogisticsSupplyChainManagement';
-import InternationalBusiness from './Pages/InternationalBusiness';
-import BankingFinancialServices from './Pages/BankingFinancialServices';
-import DigitalMarketing from './Pages/DigitalMarketing';
-import InnovationEntrepreneurship from './Pages/InnovationAndEntrepreneurship';
-import Navbar from './Pages/Navbar';
-import Footer from './Pages/Footer';
-import Brochure from './Pages/Brochure';
-import BbaAdmission from './Pages/BbaAdmission';
+import MarketingManagement from "./Pages/MarketingManagement";
+import FinancialManagement from "./Pages/FinancialManagement";
+import HumanResourceManagement from "./Pages/HumanResourceManagement";
+import LogisticsSupplyChainManagement from "./Pages/LogisticsSupplyChainManagement";
+import InternationalBusiness from "./Pages/InternationalBusiness";
+import BankingFinancialServices from "./Pages/BankingFinancialServices";
+import DigitalMarketing from "./Pages/DigitalMarketing";
+import InnovationEntrepreneurship from "./Pages/InnovationAndEntrepreneurship";
+import Navbar from "./Pages/Navbar";
+import Footer from "./Pages/Footer";
+import Brochure from "./Pages/Brochure";
+import BbaAdmission from "./Pages/BbaAdmission";
+import PopupForm from "./Components/PopupForm"; 
 
 function App() {
   return (
     <Router>
       <div style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}>
+        {/* Display the PopupForm globally */}
+        {/* <PopupForm /> */}
+        
         <main>
           <Navbar />
           <Brochure />

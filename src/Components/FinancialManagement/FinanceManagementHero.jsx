@@ -24,7 +24,8 @@ function FinanceManagementHero() {
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         {/* New Heading Above Existing Heading */}
         <h1 className="text-[34px] text-[#0e1133] font-bold leading-tight mb-6">
-          Bachelors of Business Administration in Finance with Indira School of Business at Indira University
+          Bachelors of Business Administration in Finance with Indira School of
+          Business at Indira University
         </h1>
 
         <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">
@@ -105,8 +106,7 @@ function FinanceManagementHero() {
         </div>
         {/* Small text below the form */}
         <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          
-Your journey to a successful business career starts here!
+          Your journey to a successful business career starts here!
         </p>
       </div>
 

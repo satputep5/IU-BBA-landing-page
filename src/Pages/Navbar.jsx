@@ -12,15 +12,12 @@ function Navbar() {
     @keyframes pulseText {
       0% {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
-        transform: scale(1);
       }
       50% {
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
-        transform: scale(1.05);
       }
       100% {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
-        transform: scale(1);
       }
     }
   `;
@@ -32,20 +29,25 @@ function Navbar() {
 
       {/* Navbar (not fixed, so it will scroll with the page) */}
       <nav className="bg-gray-900 shadow-lg w-full">
-        <div className="mx-auto flex items-center justify-between px-2 md:px-16 py-1">
+        <div className="mx-auto flex flex-col sm:flex-row items-center justify-between px-4 md:px-16 py-2 md:py-2">
           {/* Left Logo */}
-          <div className="py-4">
+          <div className="py-2">
             <a href="/">
-              <img src={logo} alt="Logo" className="h-auto max-w-xs md:max-w-42" />
+              <img 
+                src={logo} 
+                alt="Logo" 
+                className="h-auto max-w-28 md:max-w-42" 
+              />
             </a>
           </div>
 
           {/* Centered Text with Animation and Effects */}
           <div
-            className="flex-grow text-center text-white text-xl md:text-3xl font-bold uppercase"
+            className="flex-grow text-center text-white text-lg sm:text-xl md:text-3xl font-bold  mt-2 sm:mt-0"
             style={pulseTextAnimation}
           >
-            One of the Top BBA colleges in Pune, Maharashtra
+            Indira University <br />
+            <span className="text-sm">(formerly known as Indira Group of Institutes)</span>
           </div>
         </div>
       </nav>

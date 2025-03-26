@@ -21,46 +21,46 @@ function MarketingManagementPointers() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16">
         {/* Card 1: Program Format */}
         <div
-          className="bg-[#F6FBFF] p-6 shadow-lg flex items-center justify-center" 
+          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center space-y-2" 
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            {/* Changed icon color to fresh red */}
-            <FaCalendarAlt size={40} className="text-[#FF4C4C]" />
-            <div className="text-center">
-              <h2 className="text-[#388A86]">Program Format</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#388A86]">Offline</p>
-            </div>
+          {/* Icon */}
+          <FaCalendarAlt size={40} className="text-[#FF4C4C]" />
+          
+          {/* Text */}
+          <div className="text-center">
+            <h2 className="text-[#388A86]">Program Format</h2>
+            <p className="mt-1 text-2xl font-semibold text-[#388A86]">Offline</p>
           </div>
         </div>
 
         {/* Card 2: Duration */}
         <div
-          className="bg-[#F6FBFF] p-6 shadow-lg flex items-center justify-center" 
+          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center space-y-2" 
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            {/* Changed icon color to fresh blue */}
-            <FaRegClock size={40} className="text-[#4C8BF5]" />
-            <div className="text-center">
-              <h2 className="text-[#388A86]">Duration</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#388A86]">3 Years</p>
-            </div>
+          {/* Icon */}
+          <FaRegClock size={40} className="text-[#4C8BF5]" />
+          
+          {/* Text */}
+          <div className="text-center">
+            <h2 className="text-[#388A86]">Duration</h2>
+            <p className="mt-1 text-2xl font-semibold text-[#388A86]">3 Years</p>
           </div>
         </div>
 
         {/* Card 3: Program Fees */}
         <div
-          className="bg-[#F6FBFF] p-6 shadow-lg flex items-center justify-center" 
+          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center space-y-2" 
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            {/* Changed icon color to fresh pink */}
-            <FaMoneyBillWave size={40} className="text-[#09955d]" />
-            <div className="text-center">
-              <h2 className="text-[#388A86]">Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#388A86]">Rs. 125000/-</p>
-            </div>
+          {/* Icon */}
+          <FaMoneyBillWave size={40} className="text-[#09955d]" />
+          
+          {/* Text */}
+          <div className="text-center">
+            <h2 className="text-[#388A86]">Program Fees</h2>
+            <p className="mt-1 text-2xl font-semibold text-[#388A86]">Rs. 125000/-</p>
           </div>
         </div>
       </div>

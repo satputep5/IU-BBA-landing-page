@@ -31,11 +31,14 @@ function MarketingManagementOverview() {
         </h2>
 
         <p className="text-2xl text-gray-600 tracking-wide">
-        Looking for the Best BBA in Marketing colleges to kickstart your career? Indira University offers an industry-aligned BBA in Marketing course designed to help students master brand management, market research, digital marketing, sales strategies, and advertising—making you a key player in the business world.
+          Looking for the Best BBA in Marketing colleges to kickstart your
+          career? Indira University offers an industry-aligned BBA in Marketing
+          course designed to help students master brand management, market
+          research, digital marketing, sales strategies, and advertising—making
+          you a key player in the business world.
         </p>
 
         {/* List of Points with Green Circles and Checkmarks */}
-
       </div>
 
       {/* Right Part: First and Second Images */}
@@ -63,8 +66,10 @@ function MarketingManagementOverview() {
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
               <div>
-                <span className="text-6xl">10k+</span> <br />{" "}
-                <span className="text-xl"> Students Active Our Courses</span>
+                <span className="text-6xl">10k+</span> <br />
+                <span className="text-xl">
+                  Students Impacted in Thriving BBA Careers
+                </span>
               </div>
             </div>
           </div>

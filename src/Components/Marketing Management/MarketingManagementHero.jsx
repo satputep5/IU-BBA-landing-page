@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap"; // Import GSAP for animations
-import girlImage from "../../assets/Images/girl-wow.png"; // Ensure the girl image path is correct
-import { FaUserGraduate, FaChalkboardTeacher, FaUsers } from "react-icons/fa"; // Importing icons for each section
+import RightSideSection from "../RightSideSection"; // Import the new child component
 
 function MarketingManagementHero() {
   useEffect(() => {
@@ -114,64 +113,8 @@ Your journey to a successful business career starts here!
         </p>
       </div>
 
-      {/* Right side (Image of a girl) */}
-      <div className="flex justify-end w-full md:w-1/2 z-20 relative overflow-hidden">
-        <div className="w-full h-full">
-          <img
-            src={girlImage}
-            alt="Girl Image"
-            className="w-full h-full object-contain"
-            style={{
-              maxHeight: "100vh",
-              objectFit: "contain",
-            }}
-          />
-        </div>
-
-        {/* Funky Rectangle Stats (Replaced with new stats) */}
-
-        {/* First Box - 30 Years of Excellence */}
-        <div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-blue-500 text-white p-2 rounded-full">
-            <FaUserGraduate className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">30 Years of Excellence</h3>
-            <p className="text-sm text-black">
-              In Business Education with <br /> top-tier programs.
-            </p>
-          </div>
-        </div>
-
-        {/* Second Box - 8 Specializations */}
-        <div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-red-500 text-white p-2 rounded-full">
-            <FaChalkboardTeacher className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">8 Specializations</h3>
-            <p className="text-sm text-black">
-              Tailored programs across <br /> diverse business sectors.
-            </p>
-          </div>
-        </div>
-
-        {/* Third Box - 100% Placement Assistance */}
-        <div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-green-500 text-white p-2 rounded-full">
-            <FaUsers className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">100% Placement Assistance</h3>
-            <p className="text-sm text-black">
-              Ensuring career growth and <br /> success for every student.
-            </p>
-          </div>
-        </div>
-      </div>
+      {/* Right side content now handled by the RightSideSection component */}
+      <RightSideSection />
     </div>
   );
 }

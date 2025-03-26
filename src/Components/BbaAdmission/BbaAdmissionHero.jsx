@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap"; // Import GSAP for animations
-import studentImage from "../../assets/Images/girl-wow.png"; // Ensure the image path is correct
-import { FaUserGraduate, FaChalkboardTeacher, FaUsers } from "react-icons/fa"; // Importing icons for each section
+
+import RightSideSection from "../RightSideSection"; // Import the new child component
 
 function BbaAdmission() {
   useEffect(() => {
@@ -17,33 +17,28 @@ function BbaAdmission() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-gradient-to-r from-[#135683] via-[#208098] to-[#2A9DA2] text-white flex items-center min-h-screen"
+      className="px-8 md:px-16 relative bg-gradient-to-r from-[#135683] via-[#208098] to-[#2A9DA2] text-white flex flex-col md:flex-row items-center h-full space-x-2"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1
-          className="text-3xl text-[#FFFFFF] font-semibold leading-tight mb-4"
-          data-aos="fade-down"
+          className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-1 md:mb-6"
+          data-aos="fade-up"
         >
-          BBA at Indira University
-        </h1>
-        <h1 className="text-4xl text-[#FFFFFF] font-semibold leading-tight mb-6"
-          data-aos="fade-up">
           Build Your Business Future with <span className="font-bold">BBA</span>{" "}
-          at Indira School of Business
+          at Indira School of Business (Indira University)
         </h1>
 
         {/* Form container below the text */}
         <div
           className="p-6 max-w-md w-full shadow-md mt-6"
-           data-aos="fade-right"
+          data-aos="fade-right"
           style={{
             backgroundColor: "rgba(0, 0, 0, 0.4)", // Semi-transparent dark background for form container
           }}
         >
-          <form className="space-y-4"
-           >
+          <form className="space-y-4">
             <div>
               <input
                 type="text"
@@ -59,25 +54,6 @@ function BbaAdmission() {
                 id="mobile"
                 className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#2A9DA2] focus:outline-none focus:ring-2 focus:ring-[#2A9DA2] backdrop-blur-md"
                 placeholder="Enter your mobile number"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#2A9DA2] focus:outline-none focus:ring-2 focus:ring-[#2A9DA2] backdrop-blur-md"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                id="pincode"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#2A9DA2] focus:outline-none focus:ring-2 focus:ring-[#2A9DA2] backdrop-blur-md"
-                placeholder="Enter your pincode"
-                pattern="\d{6}"
                 required
               />
             </div>
@@ -126,72 +102,16 @@ function BbaAdmission() {
           </form>
         </div>
         {/* Small text below the form */}
-        <p className="text-gray-200 text-sm mt-4 text-center ml-6"
-         data-aos="fade-up">
-         
-Your journey to a successful business career starts here!
+        <p
+          className="text-gray-200 text-sm mt-4 text-center ml-6"
+          data-aos="fade-up"
+        >
+          Your journey to a successful business career starts here!
         </p>
       </div>
 
-      {/* Right side (Image of a student) */}
-      <div className="flex justify-end w-full md:w-1/2 z-20 relative overflow-hidden">
-        <div className="w-full h-full">
-          <img
-            src={studentImage}
-            alt="Student Image"
-            className="w-full h-full object-contain"
-            style={{
-              maxHeight: "100vh",
-              objectFit: "contain",
-            }}
-          />
-        </div>
-
-{/* Funky Rectangle Stats (Replaced with new stats) */}
-
-{/* First Box - 30 Years of Excellence */}
-<div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-  {/* Icon inside a circle */}
-  <div className="bg-blue-500 text-white p-2 rounded-full">
-    <FaUserGraduate className="text-3xl" />
-  </div>
-  <div>
-    <h3 className="font-semibold text-xl text-black">30 Years of Excellence</h3>
-    <p className="text-sm text-black">
-      In Business Education with <br /> top-tier programs.
-    </p>
-  </div>
-</div>
-
-{/* Second Box - 8 Specializations */}
-<div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-  {/* Icon inside a circle */}
-  <div className="bg-red-500 text-white p-2 rounded-full">
-    <FaChalkboardTeacher className="text-3xl" />
-  </div>
-  <div>
-    <h3 className="font-semibold text-xl text-black">8 Specializations</h3>
-    <p className="text-sm text-black">
-      Tailored programs across <br /> diverse business sectors.
-    </p>
-  </div>
-</div>
-
-{/* Third Box - 100% Placement Assistance */}
-<div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-  {/* Icon inside a circle */}
-  <div className="bg-green-500 text-white p-2 rounded-full">
-    <FaUsers className="text-3xl" />
-  </div>
-  <div>
-    <h3 className="font-semibold text-xl text-black">100% Placement Assistance</h3>
-    <p className="text-sm text-black">
-      Ensuring career growth and <br /> success for every student.
-    </p>
-  </div>
-</div>
-
-      </div>
+      {/* Right side content now handled by the RightSideSection component */}
+      <RightSideSection />
     </div>
   );
 }
