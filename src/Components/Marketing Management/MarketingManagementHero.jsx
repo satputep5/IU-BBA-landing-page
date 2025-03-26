@@ -13,7 +13,6 @@ function MarketingManagementHero() {
       ease: "power1.inOut", // Smooth easing
     });
   }, []);
-  
 
   return (
     <div
@@ -30,12 +29,10 @@ function MarketingManagementHero() {
         {/* Existing Heading */}
         <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">
           From crafting unforgettable ads to building billion-dollar {"  "}
-          <span className="text-[#388A86] font-bold">
-             brands—Marketing
-          </span>{"  "}
+          <span className="text-[#388A86] font-bold">brands—Marketing</span>
+          {"  "}
           is the art of influence.
         </h1>
-
 
         {/* Form container below the text */}
         <div
@@ -63,26 +60,6 @@ function MarketingManagementHero() {
                 required
               />
             </div>
-            <div>
-  <input
-    type="email"
-    id="email"
-    className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86]"
-    placeholder="Enter your email"
-    required
-  />
-</div>
-
-{/* Pincode Input */}
-<div>
-  <input
-    type="text"
-    id="pincode"
-    className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86]"
-    placeholder="Enter your pincode"
-    required
-  />
-</div>
 
             <div>
               <select
@@ -106,8 +83,7 @@ function MarketingManagementHero() {
         </div>
         {/* Small text below the form */}
         <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          
-Your journey to a successful business career starts here!
+          Your journey to a successful business career starts here!
         </p>
       </div>
 
