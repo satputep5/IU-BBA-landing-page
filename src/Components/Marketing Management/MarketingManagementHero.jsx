@@ -24,7 +24,7 @@ function MarketingManagementHero() {
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         {/* New Heading */}
         <h1 className="text-[34px] text-[#0e1133] font-bold leading-tight mb-6">
-          Bachelors of Business Administration in Marketing with Indira School of Business at Indira University
+          BBA in Marketing with Indira School of Business at Indira University
         </h1>
 
         {/* Existing Heading */}
@@ -35,9 +35,7 @@ function MarketingManagementHero() {
           </span>{"  "}
           is the art of influence.
         </h1>
-        <p className="mt-4 text-2xl text-black">
-          Where Creativity Meets Strategy, and Brands Come to Life!
-        </p>
+
 
         {/* Form container below the text */}
         <div
