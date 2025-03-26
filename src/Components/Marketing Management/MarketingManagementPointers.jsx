@@ -45,7 +45,9 @@ function MarketingManagementPointers() {
           {/* Text */}
           <div className="text-center">
             <h2 className="text-[#388A86]">Duration</h2>
-            <p className="mt-1 text-2xl font-semibold text-[#388A86]">3 Years</p>
+            <p className="mt-2 text-2xl font-semibold text-[#2A9DA2]">
+            BBA - 3 yrs <br /> Hons. - 4 yrs
+            </p>
           </div>
         </div>
 
@@ -60,7 +62,7 @@ function MarketingManagementPointers() {
           {/* Text */}
           <div className="text-center">
             <h2 className="text-[#388A86]">Program Fees</h2>
-            <p className="mt-1 text-2xl font-semibold text-[#388A86]">Rs. 125000/-</p>
+            <p className="mt-1 text-2xl font-semibold text-[#388A86]">Rs. 1,25,000/-</p>
           </div>
         </div>
       </div>

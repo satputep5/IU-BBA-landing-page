@@ -35,7 +35,7 @@ function MarketingManagementOfferings() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        Why Indira University for BBA in Marketing?
+        Why Indira University ?
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-center">

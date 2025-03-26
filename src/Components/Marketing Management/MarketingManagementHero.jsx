@@ -23,8 +23,10 @@ function MarketingManagementHero() {
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         {/* New Heading */}
         <h1 className="text-[34px] text-[#0e1133] font-bold leading-tight mb-6">
-          BBA in Marketing with Indira School of Business at Indira University
+          BBA in Marketing at School of Business (Indira University)
         </h1>
+
+<p className="font-italic text-black my-2">30 Years of Excellence in Business Education | 8 Specializations | 100% Placement Assistance</p>
 
         {/* Existing Heading */}
         <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">

@@ -14,7 +14,7 @@ import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import you
 
 function MarketingManagementStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-6 mb-6 poppins-regular h-[70vh]">
+    <div className="flex px-8 md:px-16 py-6 mb-6 poppins-regular h-[100vh]">
       {/* Left Side (Vertical Green Container with Full Height, Image on Top, and Rounded Top Corners) */}
       <div className="w-1/2 bg-white h-full relative overflow-hidden">
         {/* Image with object-cover property and rounded top corners */}
@@ -62,20 +62,49 @@ function MarketingManagementStudying() {
 
       {/* Right Side (Text Content Section with Dynamic Height) */}
       <div className="w-[50%] pl-8 flex flex-col">
-      <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
-  Studying Marketing Management at Indira University
-</h1>
-<h1 className="text-4xl font-extralight text-left text-[#71bfb7] mb-6">
-  Marketing Management Program
-</h1>
-<p className="text-left text-lg mb-6 text-[#000000]">
-This course equips you with the skills to master brand management, market research, digital marketing, sales strategies, and advertising, making you a key player in any industry.
-</p>
+        <h1 className="text-4xl font-semibold text-left mb-4 text-[#71bfb7]">
+          Study Marketing at Indira University
+        </h1>
+        <p className="text-left text-lg mb-6 text-[#000000]">
+          This course equips you with the skills to master brand management, market research, digital marketing, sales strategies, and advertising, making you a key player in any industry.
+        </p>
 
+        <p className="text-left text-lg mb-6 text-[#000000]">
+          Our BBA Marketing syllabus is crafted to keep up with evolving industry trends, ensuring you gain real-world experience through live projects, internships, and hands-on exposure. Whether you're passionate about digital marketing in BBA curriculum or aspire to become a brand strategist, Indira University prepares you for the dynamic marketing landscape.
+        </p>
 
-<p className="text-left text-lg mb-6 text-[#000000]">Our BBA Marketing syllabus is crafted to keep up with evolving industry trends, ensuring you gain real-world experience through live projects, internships, and hands-on exposure. Whether you're passionate about digital marketing in BBA curriculum or aspire to become a brand strategist, Indira University prepares you for the dynamic marketing landscape.
-</p>
-
+        {/* What Will You Learn? Section */}
+        <div className="mt-1">
+          <h2 className="text-2xl font-semibold text-[#71bfb7] mb-4">
+            What Will You Learn? (A Journey from Beginner to Marketing Expert!)
+          </h2>
+          <div className="grid grid-cols-3 gap-6 text-sm text-[#333333]">
+            <div>
+              <h3 className="font-semibold text-lg">Year 1</h3>
+              <ul className="list-disc pl-2">
+                <li>Marketing Fundamentals</li>
+                <li>Consumer Psychology</li>
+                <li>Market Research</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Year 2</h3>
+              <ul className="list-disc pl-2">
+                <li>Digital Marketing</li>
+                <li>Brand Management</li>
+                <li>Advertising Strategies</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Year 3</h3>
+              <ul className="list-disc pl-2">
+                <li>Integrated Campaigns</li>
+                <li>Business Strategy</li>
+                <li>Growth Hacking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

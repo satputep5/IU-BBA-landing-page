@@ -55,7 +55,7 @@ function BbaAdmissionOfferings() {
           data-aos="fade-up"
         >
           <FaHandshake size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Top recruiters like Deloitte, KPMG, EY, HDFC Bank, Amazon, and Infosys</p>
+          <p className="text-lg font-semibold text-white">Top recruiters like JusPay, KPMG, Amazon, Accenture, Airtel, and Zomato</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 

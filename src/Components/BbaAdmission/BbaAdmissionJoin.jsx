@@ -22,7 +22,7 @@ function MarketingManagementJoin() {
             Apply for BBA today to secure admission at Indira University, one of the top BBA colleges in Pune.
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            Your journey to a successful business career starts here!
+            Your journey to a successful career starts here!
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */}
         </div>

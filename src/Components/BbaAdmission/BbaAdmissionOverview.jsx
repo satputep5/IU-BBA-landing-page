@@ -48,11 +48,11 @@ function BbaAdmissionOverview() {
         <p className="text-lg text-[#2896A0] mb-2">Program Overview</p>
 
         <h2 className="text-3xl md:text-4xl font-bold text-[#135883] mb-4">
-          BBA Admission
+          BBA Programme
         </h2>
 
-        <p className="text-lg md:text-2xl text-gray-600 tracking-wide">
-          Our BBA Admission process offers you a chance to step into the business world with the right blend of theoretical knowledge and practical experience. The program equips you with leadership skills and business acumen to thrive in a dynamic global marketplace.
+        <p className="text-md md:text-lg text-gray-600 tracking-wide">
+        Looking for the best BBA colleges in Pune? Indira University, an established institution with a 30-year legacy of Indira Group of Institutes, offers a top BBA program in India designed for students who want to build a successful career across diverse industries. Our BBA admissions 2025 are now open, giving all ambitious students their chance to specialize in Marketing, Finance, HR, International Relations, Logistics & Supply Chain, Banking and Financial Services, Digital Marketing, Innovation, and Entrepreneurship.
         </p>
       </div>
 
@@ -84,7 +84,7 @@ function BbaAdmissionOverview() {
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
               <div>
                 <span className="text-4xl md:text-6xl">10k+</span> <br />
-                <span className="text-base md:text-xl">Students Impacted in Thriving BBA Careers</span>
+                <span className="text-base md:text-xl">Students Impacted</span>
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ function MarketingManagementPointers() {
             <h2 className="text-[#135683]">Duration</h2>
             {/* Here, we are showing two options: BBA Honors (4 years) and Normal BBA (3 years) */}
             <p className="mt-2 text-2xl font-semibold text-[#2A9DA2]">
-            BBA honours - 4 years <br /> Or  3 Years - Degree
+            BBA - 3 yrs <br /> Hons. - 4 yrs
             </p>
           </div>
         </div>

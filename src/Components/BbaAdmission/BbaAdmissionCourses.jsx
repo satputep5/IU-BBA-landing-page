@@ -73,7 +73,7 @@ function BbaAdmissionCourses() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#135783]" data-aos="fade-up">
-        BBA Admission Courses
+        BBA Courses
       </h2>
 
       {/* Grid layout for courses */}

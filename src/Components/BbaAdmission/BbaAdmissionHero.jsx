@@ -26,7 +26,7 @@ function BbaAdmission() {
           className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-1 md:mb-6"
           data-aos="fade-up"
         >
-          Build Your Business Future with <span className="font-bold">BBA</span>{" "}
+          Build Your Future with <span className="font-bold">BBA</span>{" "}
           at Indira School of Business (Indira University)
         </h1>
 
