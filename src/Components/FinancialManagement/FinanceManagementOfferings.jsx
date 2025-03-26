@@ -1,4 +1,4 @@
-import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaUniversity, FaBriefcase, FaRobot, FaMicrophoneAlt } from 'react-icons/fa';
+import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaUniversity, FaBriefcase, FaRobot, FaMicrophoneAlt, FaCertificate } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';
@@ -32,48 +32,59 @@ function FinanceManagementOfferings() {
     });
   }, []);
 
+  const cardData = [
+    {
+      color: '#007BFF',
+      icon: <FaUniversity size={50} className="text-white mb-4 icon" />,
+      title: 'Live Stock Market Trading Labs',
+      description: 'Learn how to analyze real-time markets!',
+    },
+    {
+      color: '#28A745',
+      icon: <FaBriefcase size={50} className="text-white mb-4 icon" />,
+      title: 'Internships in Top Banks',
+      description: 'Work with the best investment firms.',
+    },
+    {
+      color: '#17A2B8',
+      icon: <FaRobot size={50} className="text-white mb-4 icon" />,
+      title: 'AI-Powered Finance Tools',
+      description: 'Hands-on training with Bloomberg, Reuters, and Algo Trading.',
+    },
+    {
+      color: '#FFC107',
+      icon: <FaMicrophoneAlt size={50} className="text-white mb-4 icon" />,
+      title: 'Exclusive Guest Lectures',
+      description: 'Learn from CFOs, Fund Managers, and Banking Experts.',
+    },
+    {
+      color: '#DC3545',
+      icon: <FaCertificate size={50} className="text-white mb-4 icon" />,
+      title: 'Certification Courses in Banking & Finance',
+      description: 'Boost your resume with certifications in Financial Modeling, Investment Banking, and Risk Management.',
+    },
+  ];
+
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1D3557]" data-aos="fade-up">
-        Why Indira University School of Business for Finance?
+        Why Indira University ?
       </h2>
 
-      <div className="flex justify-center gap-6 flex-nowrap">
-        {/* Card 1 - Live Stock Market Trading Labs */}
-        <div className="bg-[#1D3557] p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]" data-aos="fade-up">
-          <FaUniversity size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Live Stock Market Trading Labs</p>
-          <p className="text-sm text-white mt-2">Learn how to analyze real-time markets!</p>
-          {/* Circle on hover */}
-          <div className="circle absolute -bottom-4 -right-4 w-10 h-10 rounded-full bg-white opacity-0 transition-all duration-300"></div>
-        </div>
-
-        {/* Card 2 - Internships in Top Banks */}
-        <div className="bg-[#388A86] p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]" data-aos="fade-up">
-          <FaBriefcase size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Internships in Top Banks</p>
-          <p className="text-sm text-white mt-2">Work with the best investment firms.</p>
-          {/* Circle on hover */}
-          <div className="circle absolute -bottom-4 -right-4 w-10 h-10 rounded-full bg-white opacity-0 transition-all duration-300"></div>
-        </div>
-
-        {/* Card 3 - AI-Powered Finance Tools */}
-        <div className="bg-[#09955D] p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]" data-aos="fade-up">
-          <FaRobot size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">AI-Powered Finance Tools</p>
-          <p className="text-sm text-white mt-2">Hands-on training with Bloomberg, Reuters, and Algo Trading.</p>
-          {/* Circle on hover */}
-          <div className="circle absolute -bottom-4 -right-4 w-10 h-10 rounded-full bg-white opacity-0 transition-all duration-300"></div>
-        </div>
-
-        {/* Card 4 - Exclusive Guest Lectures */}
-        <div className="bg-[#4C8BF5] p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]" data-aos="fade-up">
-          <FaMicrophoneAlt size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Exclusive Guest Lectures</p>
-          <p className="text-sm text-white mt-2">Learn from CFOs, Fund Managers, and Banking Experts.</p>
-          {/* Circle on hover */}
-          <div className="circle absolute -bottom-4 -right-4 w-10 h-10 rounded-full bg-white opacity-0 transition-all duration-300"></div>
-        </div>
+      <div className="flex justify-center gap-6 flex-wrap">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]"
+            style={{ backgroundColor: card.color }}
+            data-aos="fade-up"
+          >
+            {card.icon}
+            <p className="text-lg font-semibold text-white">{card.title}</p>
+            <p className="text-sm text-white mt-2">{card.description}</p>
+            <div className="circle absolute -bottom-4 -right-4 w-10 h-10 rounded-full bg-white opacity-0 transition-all duration-300"></div>
+          </div>
+        ))}
       </div>
     </div>
   );

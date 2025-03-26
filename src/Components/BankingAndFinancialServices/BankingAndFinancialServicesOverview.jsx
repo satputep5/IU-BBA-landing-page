@@ -30,13 +30,20 @@ function BankingAndFinancialServicesOverview() {
         </h2>
 
         <p className="text-xl text-[#3E4B49]">
-        Looking for a high-paying career in banking and finance after 12th? A BBA in Banking and Financial Services is your gateway to investment banking, wealth management, and digital finance. This course covers essential topics like risk management, stock markets, financial planning, and fintech innovations. With the growing demand for banking professionals in India, graduates can secure top roles in private banks, corporate finance, and NBFCs. Get hands-on experience with internships in leading banks, and earn industry-recognized certifications in financial analysis. 
+          A BBA in Banking and Financial Services is your gateway to investment
+          banking, wealth management, and digital finance. This course consists
+          risk management, stock markets, financial planning, and fintech
+          innovations. With the growing demand for banking professionals in
+          India, graduates can secure top roles in private banks, corporate
+          finance, and NBFCs. Get hands-on experience with internships in
+          leading banks, and earn industry-recognized certifications in
+          financial analysis.
         </p>
 
-<p className="text-xl text-[#3E4B49] tracking-wide mt-2 font-semibold ">
-Explore the best BBA colleges for banking and finance in India and take the first step toward a rewarding career
-</p>
-
+        {/* <p className="text-xl text-[#3E4B49] tracking-wide mt-2 font-semibold ">
+          Explore the best BBA colleges for banking and finance in India and
+          take the first step toward a rewarding career
+        </p> */}
       </div>
 
       {/* Right Part: First and Second Images */}
@@ -63,11 +70,10 @@ Explore the best BBA colleges for banking and finance in India and take the firs
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-            <div>
-  <span className="text-6xl">10k+</span> <br />
-  <span className="text-xl">Students Impacted in Thriving BBA Careers</span>
-</div>
-
+              <div>
+                <span className="text-6xl">10k+</span> <br />
+                <span className="text-xl">Students Impacted</span>
+              </div>
             </div>
           </div>
 

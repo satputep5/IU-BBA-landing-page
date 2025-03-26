@@ -10,12 +10,14 @@ import LogisticsSupplyChainManagementJoin from '../Components/LogisticsSupplyCha
 import LogisticsSupplyChainManagementTestimonials from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementTestimonials'
 import LogisticsSupplyChainManagementPlacement from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementPlacement'
 import LogisticsSupplyChainManagementCreative from '../Components/LogisticsSupplyChainManagement/LogisticsSupplyChainManagementCreative'
+import Recruiter from '../Pages/Recruiter'
 
 function LogisticsSupplyChainManagement() {
   return (
     <div>
       <LogisticsSupplyChainManagementHero />
       <LogisticsSupplyChainManagementPointers />
+      <Recruiter />
       <LogisticsSupplyChainManagementOverview />
       <LogisticsSupplyChainManagementOfferings />
       <LogisticsSupplyChainManagementStudying />

@@ -10,12 +10,14 @@ import InternationalBusinessJoin from '../Components/InternationalBusiness/Inter
 import InternationalBusinessTestimonials from '../Components/InternationalBusiness/InternationalBusinessTestimonials'
 import InternationalBusinessPlacement from '../Components/InternationalBusiness/InternationalBusinessPlacement'
 import InternationalBusinessCreative from '../Components/InternationalBusiness/InternationalBusinessCreative'
+import Recruiter from '../Pages/Recruiter'
 
 function InternationalBusiness() {
   return (
     <div>
       <InternationalBusinessHero />
       <InternationalBusinessPointers />
+      <Recruiter />
       <InternationalBusinessOverview />
       <InternationalBusinessOfferings />
       <InternationalBusinessStudying />

@@ -1,13 +1,9 @@
 import React from "react";
-import {
-  FaBullhorn,
-  FaHandshake,
-  FaChartLine,
-} from "react-icons/fa";
 import MyImage from "../../assets/Images/iu-campus.png";
 import Image1 from "../../assets/Images/mm-study.png";
 import CircleImage from "../../assets/Images/green-circle.png";
 import SmallCircleImage from "../../assets/Images/red-circle.png";
+import Image2 from "../../assets/Images/goldman-sachs1.webp";
 
 function FinanceManagementStudying() {
   return (
@@ -52,28 +48,58 @@ function FinanceManagementStudying() {
           Finance Management Program
         </h1>
 
-        <div className="text-left text-lg mb-1 text-[#000000]">
-          <div className="flex items-center gap-4 mb-4">
-            <FaChartLine className="text-[#1D3557]" size={24} />
-            <span className="font-semibold">Year 1:</span>
-            <span>Accounting, Financial Mathematics, Investment Basics</span>
+        {/* Horizontal Year Sections */}
+        <div className="flex justify-between mb-8">
+          {/* Year 1 */}
+          <div className="text-center">
+            
+            <h2 className="text-xl font-semibold mb-2">Year 1</h2>
+            <ul className="list-disc ml-4 text-lg">
+              <li>Accounting</li>
+              <li>Financial Mathematics</li>
+              <li>Investment Basics</li>
+            </ul>
           </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FaBullhorn className="text-[#388A86]" size={24} />
-            <span className="font-semibold">Year 2:</span>
-            <span>Stock Markets, Financial Modeling, Risk Management</span>
+
+          {/* Divider */}
+          <div className="border-l border-gray-300 h-auto"></div>
+
+          {/* Year 2 */}
+          <div className="text-center">
+           
+            <h2 className="text-xl font-semibold mb-2">Year 2</h2>
+            <ul className="list-disc ml-4 text-lg">
+              <li>Stock Markets</li>
+              <li>Financial Modeling</li>
+              <li>Risk Management</li>
+            </ul>
           </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FaHandshake className="text-[#09955D]" size={24} />
-            <span className="font-semibold">Year 3:</span>
-            <span>Wealth Management, Mergers & Acquisitions, Corporate Finance</span>
+
+          {/* Divider */}
+          <div className="border-l border-gray-300 h-auto"></div>
+
+          {/* Year 3 */}
+          <div className="text-center">
+           
+            <h2 className="text-xl font-semibold mb-2">Year 3</h2>
+            <ul className="list-disc ml-4 text-lg">
+              <li>Wealth Management</li>
+              <li>Mergers & Acquisitions</li>
+              <li>Corporate Finance</li>
+            </ul>
           </div>
         </div>
 
-        <p className="text-2xl text-[#1D3557] tracking-wide my-2">
-          <span className="block text-left mb-1">Dream Big?</span> 
-          Investment Bankers at firms like Goldman Sachs earn ₹50+ LPA!
-        </p>
+        <div className="flex items-center gap-1 my-1">
+          <p className="text-4xl text-[#1D3557] tracking-wide">
+            Investment Bankers at firms like Goldman Sachs earn ₹50+ LPA!
+          </p>
+          <img
+            src={Image2}
+            alt="Goldman Sachs Logo"
+            className="w-1/2 h-3/4 object-cover"
+          />
+        </div>
 
         <p className="text-lg text-[#000000] tracking-wide my-1">
           💰 BBA in Finance Salary in India – Freshers earn ₹6-8 LPA, while experienced professionals go beyond ₹30+ LPA in top firms like Goldman Sachs, JP Morgan, and Deloitte.

@@ -26,16 +26,6 @@ function MarketingManagementHero() {
           BBA in Marketing at School of Business (Indira University)
         </h1>
 
-<p className="font-italic text-black my-2">30 Years of Excellence in Business Education | 8 Specializations | 100% Placement Assistance</p>
-
-        {/* Existing Heading */}
-        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">
-          From crafting unforgettable ads to building billion-dollar {"  "}
-          <span className="text-[#388A86] font-bold">brands—Marketing</span>
-          {"  "}
-          is the art of influence.
-        </h1>
-
         {/* Form container below the text */}
         <div
           className="p-6 max-w-md w-full shadow-md mt-6"
@@ -69,8 +59,28 @@ function MarketingManagementHero() {
                 className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86]"
                 required
               >
-                <option value="">Select Course</option>
-                {/* Add course options here */}
+                <option value="Marketing Management">
+                  Marketing Management
+                </option>
+                <option value="Financial Management">
+                  Financial Management
+                </option>
+                <option value="Banking and Financial Services">
+                  Banking and Financial Services
+                </option>
+                <option value="Human Resource Management">
+                  Human Resource Management
+                </option>
+                <option value="Logistics and Supply Chain Management">
+                  Logistics and Supply Chain Management
+                </option>
+                <option value="International Business">
+                  International Business
+                </option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Innovation and Entrepreneurship">
+                  Innovation and Entrepreneurship
+                </option>
               </select>
             </div>
             <div>
@@ -83,8 +93,22 @@ function MarketingManagementHero() {
             </div>
           </form>
         </div>
+
+        <p className="italic text-black my-2 text-xl">
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
+        </p>
+
+        {/* Existing Heading */}
+        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-4">
+          From crafting unforgettable ads to building billion-dollar {"  "}
+          <span className="text-[#388A86] font-bold">brands—Marketing</span>
+          {"  "}
+          is the art of influence.
+        </h1>
+
         {/* Small text below the form */}
-        <p className="text-gray-500 text-sm mt-4 text-center ml-6">
+        <p className="text-gray-700 text-sm mt-2 text-center ml-6">
           Your journey to a successful business career starts here!
         </p>
       </div>

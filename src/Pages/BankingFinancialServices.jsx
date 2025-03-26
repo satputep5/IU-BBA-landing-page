@@ -10,12 +10,14 @@ import BankingAndFinancialServicesJoin from '../Components/BankingAndFinancialSe
 import BankingAndFinancialServicesTestimonials from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesTestimonials'
 import BankingAndFinancialServicesPlacement from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesPlacement'
 import BankingAndFinancialServicesCareerPaths from '../Components/BankingAndFinancialServices/BankingAndFinancialServicesCareerPaths'
+import Recruiter from '../Pages/Recruiter'
 
 function BankingAndFinancialServices() {
   return (
     <div>
       <BankingAndFinancialServicesHero />
       <BankingAndFinancialServicesPointers />
+      <Recruiter />
       <BankingAndFinancialServicesOverview />
       <BankingAndFinancialServicesOfferings />
       <BankingAndFinancialServicesStudying />

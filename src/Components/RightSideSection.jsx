@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import dummyuserImage from "../assets/Images/dum-plac.png";
-import accentureLogo from "../assets/Images/came/1.avif";  // Import company logos
-import airtelLogo from "../assets/Images/came/10.avif";
-import amazonLogo from "../assets/Images/came/13.avif";
+import accentureLogo from "../assets/Images/acc.png";  // Import company logos
+import airtelLogo from "../assets/Images/air.png";
+import amazonLogo from "../assets/Images/amz.png";
 
 // Sample student data (3 students)
 const students = [
@@ -86,15 +86,15 @@ function RightSideSection() {
 
       {/* Circular LPA Container with floating effect */}
       <div
-        className="absolute z-20 w-24 h-24 rounded-full bg-gray-800 text-white flex items-center justify-center text-xl font-semibold animate-float"
+        className="absolute z-20 w-32 h-32 rounded-full bg-gray-800 text-white flex items-center justify-center text-xl font-semibold animate-float"
         style={{
           top: "20px",
           left: "20px",
           flexDirection: "column", // Stack text and LPA vertically
         }}
       >
-        <span className="text-sm">CTC</span> {/* Add CTC as a label */}
-        <span>{students[activeIndex].lpa}</span> {/* Display the LPA value */}
+        <span className="text-md">CTC</span> {/* Add CTC as a label */}
+        <span className="text-xl">{students[activeIndex].lpa}</span> {/* Display the LPA value */}
       </div>
 
       {/* Student Profiles Slider */}
@@ -116,13 +116,13 @@ function RightSideSection() {
               </div>
               {/* Text Information */}
               <h3 className="text-xl font-semibold text-center">{student.name}</h3>
-              <p className="text-sm text-gray-200 text-center">{student.department}</p>
+              <p className="text-md text-gray-900 text-center">{student.department}</p>
               {/* Company Logo Instead of Name */}
               <div className="flex justify-center items-center rounded-2xl">
                 <img
                   src={student.companyLogo}
                   alt={student.companyLogo}
-                  className="w-24 h-24 object-contain rounded-2xl"
+                  className="w-42 h-42 object-contain rounded-2xl"
                 />
               </div>
             </div>

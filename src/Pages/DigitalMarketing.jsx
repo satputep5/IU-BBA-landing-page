@@ -10,12 +10,14 @@ import DigitalMarketingJoin from '../Components/DigitalMarketing/DigitalMarketin
 import DigitalMarketingTestimonials from '../Components/DigitalMarketing/DigitalMarketingTestimonials'
 import DigitalMarketingPlacement from '../Components/DigitalMarketing/DigitalMarketingPlacement'
 import DigitalMarketingCarrerPaths from '../Components/DigitalMarketing/DigitalMarketingCarrerPaths'
+import Recruiter from '../Pages/Recruiter'
 
 function DigitalMarketing() {
   return (
     <div>
       <DigitalMarketingHero />
       <DigitalMarketingPointers />
+      <Recruiter />
       <DigitalMarketingOverview />
       <DigitalMarketingOfferings />
       <DigitalMarketingStudying />

@@ -7,12 +7,13 @@ import BbaAdmissionCourses from '../Components/BbaAdmission/BbaAdmissionCourses'
 import BbaAdmissionJoin from '../Components/BbaAdmission/BbaAdmissionJoin'
 import BbaAdmissionPlacement from '../Components/BbaAdmission/BbaAdmissionPlacement'
 import BbaAdmissionTestimonials from '../Components/BbaAdmission/BbaAdmissionTestimonials'
-
+import Recruiter from '../Pages/Recruiter'
 function BbaAdmission() {
   return (
     <div>
         <BbaAdmissionHero />
         <BbaAdmissionPointers />
+        <Recruiter />
         <BbaAdmissionOverview />
         <BbaAdmissionCourses />
         <BbaAdmissionOfferings />

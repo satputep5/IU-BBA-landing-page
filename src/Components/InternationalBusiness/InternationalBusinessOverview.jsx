@@ -27,17 +27,26 @@ function MarketingManagementOverview() {
         <p className="text-lg text-[#321aed] mb-2">Program Overview</p>
 
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
-        International Business
+          International Business
         </h2>
 
         <p className="text-lg text-gray-600 tracking-wide">
-        Looking for the best BBA college in Pune? Indira University, a newly established institution with a 30-year legacy from Indira Group of Institutes, offers one of the top BBA programs in India. Our BBA course details cover everything from marketing, finance, and human resources to international business and logistics, ensuring students gain real-world skills and industry exposure. With BBA course eligibility designed for 12th-pass students from any stream, and BBA program with placement opportunities in leading companies, we provide a strong career foundation.
-       
+          Looking for the best BBA college in Pune? Indira University, a newly
+          established institution with a 30-year legacy from Indira Group of
+          Institutes, offers one of the top BBA programs in India. Our BBA
+          course details cover everything from marketing, finance, and human
+          resources to international business and logistics, ensuring students
+          gain real-world skills and industry exposure. With BBA course
+          eligibility designed for 12th-pass students from any stream, and BBA
+          program with placement opportunities in leading companies, we provide
+          a strong career foundation.
         </p>
 
-        <p className="text-sm text-gray-700 mt-4 underline"> BBA at Indira University School of Business – Your Gateway to a Future-Ready Career.</p>
-
-
+        <p className="text-sm text-gray-700 mt-4 underline">
+          {" "}
+          BBA at Indira University School of Business – Your Gateway to a
+          Future-Ready Career.
+        </p>
       </div>
 
       {/* Right Part: First and Second Images */}
@@ -64,11 +73,12 @@ function MarketingManagementOverview() {
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-            <div>
-  <span className="text-6xl">10k+</span> <br />
-  <span className="text-xl">Students Impacted in Thriving BBA Careers</span>
-</div>
-
+              <div>
+                <span className="text-6xl">10k+</span> <br />
+                <span className="text-xl">
+                  Students Impacted
+                </span>
+              </div>
             </div>
           </div>
 

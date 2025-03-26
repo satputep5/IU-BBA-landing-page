@@ -10,12 +10,14 @@ import MarketingManagementJoin from '../Components/Marketing Management/Marketin
 import MarketingManagementTestimonials from '../Components/Marketing Management/MarketingManagementTestimonials'
 import MarketingManagementPlacement from '../Components/Marketing Management/MarketingManagementPlacement'
 import MarketingManagementPersona from '../Components/Marketing Management/MarketingManagementPersona'
+import Recruiter from '../Pages/Recruiter'
 
 function MarketingManagement() {
   return (
     <div>
       <MarketingManagementHero />
       <MarketingManagementPointers />
+      <Recruiter />
       <MarketingManagementOverview />
       <MarketingManagementWhy />
       <MarketingManagementStudying />

@@ -40,12 +40,7 @@ const FinanceCareerPaths = () => {
           </div>
         </div>
 
-        {/* Salary after BBA in Banking and Financial Services */}
-        <div className="mt-12">
-          <p className="text-xl text-[#264653]">
-            🔹 Salary after BBA in Banking and Financial Services: Top banking professionals earn ₹25+ LPA in investment firms!
-          </p>
-        </div>
+
       </div>
     </div>
   );

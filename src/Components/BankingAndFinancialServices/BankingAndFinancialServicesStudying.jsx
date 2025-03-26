@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBullhorn, FaHandshake, FaChartLine } from "react-icons/fa";
 import MyImage from "../../assets/Images/iu-campus.png";
 import Image1 from "../../assets/Images/mm-study.png";
 import CircleImage from "../../assets/Images/green-circle.png";
@@ -44,9 +43,6 @@ function BankingAndFinancialServicesStudying() {
         <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
           Why Banking & Financial Services?
         </h1>
-        <h1 className="text-3xl font-extralight text-left text-[#1D3557] mb-4">
-          Finance Management Program
-        </h1>
 
         <div className="text-left text-lg mb-1 text-[#000000]">
           <p className="text-lg text-[#000000] tracking-wide my-2">
@@ -65,25 +61,49 @@ function BankingAndFinancialServicesStudying() {
           <h2 className="text-2xl font-semibold text-[#1D3557] mt-6 mb-4">
             What Will You Learn?
           </h2>
-          <div className="text-left text-lg mb-1 text-[#000000]">
-            <div className="flex items-center gap-4 mb-4">
-              <FaChartLine className="text-[#1D3557]" size={24} />
-              <span className="font-semibold">Year 1:</span>
-              <span>Financial Accounting, Banking Operations, Micro & Macro Economics</span>
-            </div>
-            <div className="flex items-center gap-4 mb-4">
-              <FaBullhorn className="text-[#388A86]" size={24} />
-              <span className="font-semibold">Year 2:</span>
-              <span>Investment Banking, Risk Assessment, Wealth Management</span>
-            </div>
-            <div className="flex items-center gap-4 mb-4">
-              <FaHandshake className="text-[#09955D]" size={24} />
-              <span className="font-semibold">Year 3:</span>
-              <span>Digital Banking, FinTech, Mergers & Acquisitions</span>
-            </div>
-          </div>
-        </div>
+          
+ {/* 3 Columns for Year 1, 2, and 3 */}
+<div className="flex gap-8">
+  {/* Year 1 */}
+  <div className="text-left text-lg mb-1 text-[#000000]">
+    <span className="font-semibold">Year 1:</span>
+    <ul className="list-disc pl-5">
+      <li>Financial Accounting</li>
+      <li>Banking Operations</li>
+      <li>Micro & Macro Economics</li>
+    </ul>
+  </div>
 
+  {/* Divider between Year 1 and Year 2 */}
+  <div className="border-l-2 border-gray-300 h-auto"></div>
+
+  {/* Year 2 */}
+  <div className="text-left text-lg mb-1 text-[#000000]">
+    <span className="font-semibold">Year 2:</span>
+    <ul className="list-disc pl-5">
+      <li>Investment Banking</li>
+      <li>Risk Assessment</li>
+      <li>Wealth Management</li>
+    </ul>
+  </div>
+
+  {/* Divider between Year 2 and Year 3 */}
+  <div className="border-l-2 border-gray-300 h-auto"></div>
+
+  {/* Year 3 */}
+  <div className="text-left text-lg mb-1 text-[#000000]">
+    <span className="font-semibold">Year 3:</span>
+    <ul className="list-disc pl-5">
+      <li>Digital Banking</li>
+      <li>FinTech</li>
+      <li>Mergers & Acquisitions</li>
+    </ul>
+  </div>
+</div>
+
+
+
+        </div>
       </div>
     </div>
   );

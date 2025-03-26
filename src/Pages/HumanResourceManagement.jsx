@@ -10,6 +10,7 @@ import HumanResourceJoin from '../Components/Human Resource Management/HumanReso
 import HumanResourcePlacement from '../Components/Human Resource Management/HumanResourcePlacement'
 import HumanResourceTestimonials from '../Components/Human Resource Management/HumanResourceTestimonials'
 import HumanResourceJobs from '../Components/Human Resource Management/HumanResourceJobs'
+import Recruiter from '../Pages/Recruiter'
 
 const HumanResourceManagement = () => {
   return (
@@ -25,6 +26,7 @@ const HumanResourceManagement = () => {
       <MarketingManagementTestimonials /> */} 
       <HumanResourceHero/>
       <HumanResourcePointers/>
+      <Recruiter/>
       <HumanResourceOverview/>
       <HumanResourceWhy/>
       <HumanResourceStudying/>

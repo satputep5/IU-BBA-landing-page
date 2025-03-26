@@ -24,7 +24,7 @@ function FinanceManagementPointers() {
           className="bg-[#F6FBFF] p-1 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaChalkboard size={40} className="text-[#1D3557]" /> {/* Updated Icon */}
+          <FaChalkboard size={40} className="text-[#2498e5]" /> {/* Updated Icon */}
           <h2 className="mt-2 text-[#1D3557]">Program Format</h2>
           <p className="mt-2 text-xl font-semibold text-[#1D3557]">Offline</p>
         </div>
@@ -36,7 +36,7 @@ function FinanceManagementPointers() {
         >
           <FaRegClock size={40} className="text-[#1D3557]" />
           <h2 className="mt-2 text-[#1D3557]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#1D3557]">3 Years</p>
+          <p className="mt-2 text-xl font-semibold text-[#1D3557]"> BBA - 3 yrs <br /> Hons. - 4 yrs</p>
         </div>
 
         {/* Card 3: Program Fees */}

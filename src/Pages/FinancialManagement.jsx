@@ -10,11 +10,14 @@ import FinanceManagementHighlights from '../Components/FinancialManagement/Finan
 import FinanceManagementJoin from '../Components/FinancialManagement/FinanceManagementJoin'
 import FinanceManagementPlacement from '../Components/FinancialManagement/FinanceManagementPlacement'
 import FinanceManagementTestimonials from '../Components/FinancialManagement/FinanceManagementTestimonials'
+import Recruiter from '../Pages/Recruiter'
+
 const FinancialManagement = () => {
   return (
     <div>
       <FinanceManagementHero/>
       <FinanceManagementPointers/>
+      <Recruiter/>
       <FinanceManagementOverview/>
       <FinanceManagementOfferings/>
       <FinanceManagementStudying/>

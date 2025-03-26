@@ -10,12 +10,14 @@ import InnovationAndEntrepreneurshipJoin from '../Components/InnovationAndEntrep
 import InnovationAndEntrepreneurshipTestimonials from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipTestimonials'
 import InnovationAndEntrepreneurshipPlacement from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipPlacement'
 import InnovationAndEntrepreneurshipBusinessEmpire from '../Components/InnovationAndEntrepreneurship/InnovationAndEntrepreneurshipBusinessEmpire'
+import Recruiter from '../Pages/Recruiter'
 
 function InnovationAndEntrepreneurship() {
   return (
     <div>
       <InnovationAndEntrepreneurshipHero />
       <InnovationAndEntrepreneurshipPointers />
+      <Recruiter />
       <InnovationAndEntrepreneurshipOverview />
       <InnovationAndEntrepreneurshipOfferings />
       <InnovationAndEntrepreneurshipStudying />

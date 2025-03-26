@@ -35,7 +35,7 @@ function BankingAndFinancialServicesOfferings() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        Why Choose Indira University for BBA Banking & Financial Services?
+        Why Indira University ?
       </h2>
 
       <div className="flex flex-wrap justify-center gap-6">
@@ -103,6 +103,20 @@ function BankingAndFinancialServicesOfferings() {
           </p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
+
+        {/* New Card - Certifications */}
+        <div
+          className="bg-[#F59E0B] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[230px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaRegClipboard size={50} className="text-white mb-4 icon" />
+          <p className="text-xl md:text-lg font-semibold text-white">Industry-Recognized Certifications</p>
+          <p className="text-sm sm:text-base text-white mt-2">
+            Earn certifications like CFA (Level 1), CIBOP, NCMP, CFP, FRM (Level 1), Digital Banking & FinTech, AML, and Tally with GST, giving you a competitive edge in the banking & finance sector.
+          </p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
       </div>
     </div>
   );

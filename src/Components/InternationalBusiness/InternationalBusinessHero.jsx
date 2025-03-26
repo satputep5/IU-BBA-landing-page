@@ -21,20 +21,10 @@ function InternationalBusinessHero() {
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        <h1 className="text-[36px] text-white font-bold leading-tight mb-6">
-          Bachelors of Business Administration in International Business with
-          School of Business at Indira University
+        <h1 className="text-[34px] text-white font-bold leading-tight mb-2">
+          BBA in International Business with School of Business at Indira
+          University
         </h1>
-
-        <h1 className="text-3xl text-white font-medium leading-tight mb-6">
-          From Local Markets to{" "}
-          <span className="text-[#15068a] font-bold">Global Giants</span> –
-          Master the Business of the World.
-        </h1>
-
-        <p className="mt-4 text-2xl text-white">
-          The best BBA college in Pune!
-        </p>
 
         {/* Form container below the text */}
         <div
@@ -64,33 +54,33 @@ function InternationalBusinessHero() {
             </div>
 
             <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#6C5CE7] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                id="pincode"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#6C5CE7] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]"
-                placeholder="Enter your pincode"
-                required
-              />
-            </div>
-
-            <div>
               <select
                 id="course"
                 className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#6C5CE7] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]"
                 required
               >
-                <option value="">Select Course</option>
-                {/* Add course options here */}
+                <option value="Marketing Management">
+                  Marketing Management
+                </option>
+                <option value="Financial Management">
+                  Financial Management
+                </option>
+                <option value="Banking and Financial Services">
+                  Banking and Financial Services
+                </option>
+                <option value="Human Resource Management">
+                  Human Resource Management
+                </option>
+                <option value="Logistics and Supply Chain Management">
+                  Logistics and Supply Chain Management
+                </option>
+                <option value="International Business">
+                  International Business
+                </option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Innovation and Entrepreneurship">
+                  Innovation and Entrepreneurship
+                </option>
               </select>
             </div>
             <div>
@@ -104,13 +94,24 @@ function InternationalBusinessHero() {
           </form>
         </div>
 
+        <p className="font-italic text-black my-2">
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
+        </p>
+
+        <h1 className="text-3xl text-white font-medium leading-tight mb-6">
+          From Local Markets to{" "}
+          <span className="text-[#15068a] font-bold">Global Giants</span> –
+          Master the Business of the World.
+        </h1>
+
         {/* Small text below the form */}
         <p className="text-gray-200 text-sm mt-4 text-center ml-6">
           You’re guaranteed to find something that’s right for you.
         </p>
       </div>
 
-          <RightSideSection />
+      <RightSideSection />
     </div>
   );
 }

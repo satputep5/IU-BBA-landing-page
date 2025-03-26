@@ -36,7 +36,7 @@ function BankingAndFinancialServicesPointers() {
         >
           <FaRegClock size={40} className="text-[#75b7d1]" />
           <h2 className="mt-2 text-[#264653]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#264653]">3 Years</p>
+          <p className="mt-2 text-xl font-semibold text-[#264653]">BBA - 3 yrs <br /> Hons. - 4 yrs</p>
         </div>
 
         {/* Card 3: Program Fees */}
