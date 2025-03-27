@@ -71,7 +71,7 @@ function MarketingManagementOverview() {
               <div>
                 <span className="text-6xl">10k+</span> <br />
                 <span className="text-xl">
-                  Students Impacted in Thriving BBA Careers
+                  Students Impacted 
                 </span>
               </div>
             </div>

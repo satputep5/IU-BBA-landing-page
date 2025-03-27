@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import { FaCalendarAlt } from 'react-icons/fa'; 
-import { FaRegClock } from 'react-icons/fa';  
-import { FaMoneyBillWave } from 'react-icons/fa'; 
+import React, { useEffect } from "react";
+import { FaCalendarAlt } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa";
+import { FaMoneyBillWave } from "react-icons/fa";
 
 // Import AOS for animations
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function InnovationAndEntrepreneurshipPointers() {
   useEffect(() => {
@@ -36,7 +36,10 @@ function InnovationAndEntrepreneurshipPointers() {
         >
           <FaRegClock size={40} className="text-red-500" />
           <h2 className="mt-4 text-[#000000]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#FDCB6E]">3 Years</p>
+          <p className="mt-2 text-xl font-semibold text-[#FDCB6E]">
+            {" "}
+            BBA - 3 yrs <br /> Hons. - 4 yrs
+          </p>
         </div>
 
         {/* Card 3: Program Fees */}
@@ -46,7 +49,9 @@ function InnovationAndEntrepreneurshipPointers() {
         >
           <FaMoneyBillWave size={40} className="text-green-500" />
           <h2 className="mt-4 text-[#070706]">Program Fees</h2>
-          <p className="mt-2 text-xl font-semibold text-[#FDCB6E]">Rs. 1,25,000/-</p>
+          <p className="mt-2 text-xl font-semibold text-[#FDCB6E]">
+            Rs. 1,25,000/-
+          </p>
         </div>
       </div>
     </div>

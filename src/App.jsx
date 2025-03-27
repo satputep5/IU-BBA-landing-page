@@ -14,20 +14,21 @@ import Navbar from "./Pages/Navbar";
 import Footer from "./Pages/Footer";
 import Brochure from "./Pages/Brochure";
 import BbaAdmission from "./Pages/BbaAdmission";
-import PopupForm from "./Components/PopupForm"; 
+import ApplyButtonRight from "./Components/ApplyButtonRight";
+
+// Importing the 404 Page
+import NotFoundPage from "./Components/NotFoundPage"; // Make sure this is the correct path to your 404 page
 
 function App() {
   return (
     <Router>
       <div style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}>
-        {/* Display the PopupForm globally */}
-        {/* <PopupForm /> */}
-        
+        <ApplyButtonRight />
         <main>
           <Navbar />
           <Brochure />
           <Routes>
-            {/* Set the main route to BbaAdmission */}
+            {/* Define routes for all the pages */}
             <Route path="/" element={<BbaAdmission />} />
             <Route path="/marketing-management" element={<MarketingManagement />} />
             <Route path="/financial-management" element={<FinancialManagement />} />
@@ -37,6 +38,9 @@ function App() {
             <Route path="/banking-financial-services" element={<BankingFinancialServices />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/innovation-entrepreneurship" element={<InnovationEntrepreneurship />} />
+
+            {/* Catch-all route for 404 page */}
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer />
         </main>

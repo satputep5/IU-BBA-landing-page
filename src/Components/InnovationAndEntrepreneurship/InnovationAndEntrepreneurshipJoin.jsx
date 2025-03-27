@@ -19,10 +19,10 @@ function InnovationAndEntrepreneurshipJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Apply for BBA in Financial Management Now!
+            Apply for BBA in Innovation & Entrepreneurship Now!
           </h1>
           <p className="text-xl text-gray-100 mb-8">
-            The Future is Yours – Are You Ready to Take Control?
+            Ready to Build the Next Big Unicorn ?
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */} 
         </div>

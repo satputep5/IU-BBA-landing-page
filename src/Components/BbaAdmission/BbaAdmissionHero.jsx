@@ -27,7 +27,7 @@ function BbaAdmission() {
           data-aos="fade-up"
         >
           Build Your Future with <span className="font-bold">BBA</span>{" "}
-          at Indira School of Business (Indira University)
+          at School of Business (Indira University)
         </h1>
 
         {/* Form container below the text */}
@@ -101,13 +101,7 @@ function BbaAdmission() {
             </div>
           </form>
         </div>
-        {/* Small text below the form */}
-        <p
-          className="text-gray-200 text-sm mt-4 text-center ml-6"
-          data-aos="fade-up"
-        >
-          Your journey to a successful business career starts here!
-        </p>
+
       </div>
 
       {/* Right side content now handled by the RightSideSection component */}

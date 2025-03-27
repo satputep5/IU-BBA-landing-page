@@ -32,9 +32,7 @@ function BusinessEmpire() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
       </div>
-      <p className="text-xl font-semibold text-[#000000] mt-6">
-        Salary after BBA in Entrepreneurship? <span className="text-green-600">Sky’s the limit—startup founders can make millions!</span>
-      </p>
+
     </div>
   );
 }

@@ -1,9 +1,4 @@
 import React from "react";
-import {
-  FaBullhorn,
-  FaHandshake,
-  FaChartLine,
-} from "react-icons/fa";
 import MyImage from "../../assets/Images/iu-campus.png";
 import Image1 from "../../assets/Images/mm-study.png";
 import CircleImage from "../../assets/Images/green-circle.png";
@@ -45,51 +40,71 @@ function InnovationAndEntrepreneurshipStudying() {
 
       {/* Right Side */}
       <div className="w-full md:w-[50%] pl-8 flex flex-col">
-        <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
-        Why Innovation & Entrepreneurship?
-        </h1>
-        <h1 className="text-3xl font-extralight text-left text-[#1D3557] mb-4">
-          Finance Management Program
+        <h1 className="text-3xl font-semibold text-left mb-4 text-[#000000]">
+          Why Innovation & Entrepreneurship? (Real-World Impact & Oppurtunities )
         </h1>
 
         <p className="text-lg text-[#000000] tracking-wide my-1 mb-2">
-        The world’s biggest companies—Apple, Tesla, Zomato—started as ideas. With a BBA in Entrepreneurship, you’ll learn to launch, scale, and sustain your business in competitive markets.
+          The world’s biggest companies—Apple, Tesla, Zomato—started as ideas. With a BBA in Entrepreneurship, you’ll learn to launch, scale, and sustain your business in competitive markets.
         </p>
 
-      {/* Advertisement Section */}
-      <div className="my-2 text-left">
-        <p className="text-lg text-[#000000] font-medium mb-2">
-          <span className="font-semibold">✅ India’s startup ecosystem is booming </span> —with over 100+ unicorns and new opportunities every day!
-        </p>
-        <p className="text-lg text-[#000000]  mb-2">
-        <span className="font-semibold">✅ Want to be your own boss? </span> A BBA Entrepreneurship degree helps you build and fund your dream startup!
-        </p>
-        <p className="text-lg text-[#000000]  mb-2">
-        <span className="font-semibold"> ✅ Learn from success stories </span> of entrepreneurs who started with just an idea and built billion-dollar businesses.
-        </p>
-      </div>
-
-        <div className="text-left text-lg mb-1 text-[#000000]">
-        <h1 className="text-3xl font-semibold text-left mb-4 text-[#000000]">
-        What Will You Learn?
-        </h1>
-          <div className="flex items-center gap-4 mb-4">
-            <FaChartLine className="text-[#1D3557]" size={24} />
-            <span className="font-semibold">Year 1:</span>
-            <span>Fundamentals of Entrepreneurship, Business Models, Market Research</span>
-          </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FaBullhorn className="text-[#388A86]" size={24} />
-            <span className="font-semibold">Year 2:</span>
-            <span>Digital Business, Lean Startups, Growth Hacking & Innovation Strategies</span>
-          </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FaHandshake className="text-[#09955D]" size={24} />
-            <span className="font-semibold">Year 3:</span>
-            <span>Venture Capital, Mergers & Acquisitions, Scaling a Business</span>
-          </div>
+        {/* Advertisement Section */}
+        <div className="my-2 text-left">
+          <p className="text-lg text-[#000000] font-medium mb-2">
+            <span className="font-semibold">✅ India’s startup ecosystem is booming </span> —with over 100+ unicorns and new opportunities every day!
+          </p>
+          <p className="text-lg text-[#000000]  mb-2">
+            <span className="font-semibold">✅ Want to be your own boss? </span> A BBA Entrepreneurship degree helps you build and fund your dream startup!
+          </p>
+          <p className="text-lg text-[#000000]  mb-2">
+            <span className="font-semibold"> ✅ Learn from success stories </span> of entrepreneurs who started with just an idea and built billion-dollar businesses.
+          </p>
         </div>
 
+        <div className="text-left text-lg mb-1 text-[#000000]">
+          <h1 className="text-3xl font-semibold text-left mb-4 text-[#000000]">
+            What Will You Learn?
+          </h1>
+
+          {/* Year Columns with One Divider Between Columns */}
+          <div className="flex gap-6 mb-6">
+            {/* Year 1 */}
+            <div className="flex-1 pr-2">
+              <h2 className="font-semibold text-lg mb-2">Year 1</h2>
+              <ul className="list-disc ml-5 text-sm text-[#000000]">
+                <li>Fundamentals of Entrepreneurship</li>
+                <li>Business Models</li>
+                <li>Market Research</li>
+              </ul>
+            </div>
+
+            {/* Divider */}
+            <div className="border-l-2 border-gray-300"></div>
+
+            {/* Year 2 */}
+            <div className="flex-1 pr-2">
+              <h2 className="font-semibold text-lg mb-2">Year 2</h2>
+              <ul className="list-disc ml-5 text-sm text-[#000000]">
+                <li>Digital Business</li>
+                <li>Lean Startups</li>
+                <li>Growth Hacking & Innovation Strategies</li>
+              </ul>
+            </div>
+
+            {/* Divider */}
+            <div className="border-l-2 border-gray-300"></div>
+
+            {/* Year 3 */}
+            <div className="flex-1">
+              <h2 className="font-semibold text-lg mb-2">Year 3</h2>
+              <ul className="list-disc ml-5 text-sm text-[#000000]">
+                <li>Venture Capital</li>
+                <li>Mergers & Acquisitions</li>
+                <li>Scaling a Business</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

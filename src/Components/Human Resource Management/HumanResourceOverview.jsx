@@ -31,15 +31,16 @@ function HumanResourceOverview() {
         </h2>
 
         <p className="text-2xl text-gray-600 tracking-wide mb-2">
-        Human Resource Management is the backbone of every successful organization. With businesses evolving rapidly, the demand for skilled HR professionals who can manage talent, drive employee engagement, and build strong work cultures is higher than ever.
-        
+        In today’s fast-paced corporate world, Human Resource Management (HRM) is more than just hiring and payroll—it’s about shaping workplace culture, driving employee performance, and creating a thriving work environment.
+        <br />
+At ICEM, our BBA in HRM equips you with HR strategies, leadership skills, and industry insights to excel in talent management, organizational behavior, employee relations, and HR analytics.
+ <br /> 
+With expert faculty, real-world case studies, live projects, and top industry connections, you’ll be prepared for rewarding careers in corporate HR, recruitment, training & development, and strategic human capital management. 
         </p>
 
-        <p className="text-2xl text-gray-700 tracking-wide">
-        Learn it with Indira’s BBA in HRM!
+        <p className="text-2xl text-gray-800 tracking-wide">
+          Learn it with Indira’s BBA in HRM!
         </p>
-
-
       </div>
 
       {/* Right Part: First and Second Images */}
@@ -66,11 +67,12 @@ function HumanResourceOverview() {
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-            <div>
-  <span className="text-6xl">10k+</span> <br />
-  <span className="text-xl">Students Impacted in Thriving BBA Careers</span>
-</div>
-
+              <div>
+                <span className="text-6xl">10k+</span> <br />
+                <span className="text-xl">
+                  Students Impacted
+                </span>
+              </div>
             </div>
           </div>
 

@@ -44,7 +44,7 @@ function MarketingManagementStudying() {
            Why International Business?
            </h1>
            <h2 className="text-2xl font-light text-left text-[#6C5CE7] mb-6">
-           International Business Program
+           International Business Programme
            </h2>
    
 <p className="text-lg text-gray-600 tracking-wide">In today’s interconnected world, businesses no longer operate within a single country—they expand across global markets, navigate international trade policies, and engage in cross-border investments. If you dream of a career in global business management, this program equips you with export-import expertise, foreign exchange knowledge, and international marketing strategies to thrive in the global economy.</p>

@@ -7,7 +7,7 @@ import {
 import MyImage from "../../assets/Images/iu-campus.png";
 import Image1 from "../../assets/Images/mm-study.png";
 import CircleImage from "../../assets/Images/green-circle.png";
-import SmallCircleImage from "../../assets/Images/red-circle.png";
+import SmallCircleImage from "../../assets/Images/green-circle.png";
 
 function DigitalMarketingStudying() {
   return (
@@ -46,40 +46,61 @@ function DigitalMarketingStudying() {
       {/* Right Side */}
       <div className="w-full md:w-[50%] pl-8 flex flex-col">
 
-        <h1 className="text-4xl font-bold text-left mb-4 text-[#000000]">
-        Why Digital Marketing?
+        <h1 className="text-4xl font-bold text-left mb-4 text-[#00B4D8]"> {/* Darker shade for main heading */}
+          Why Digital Marketing?
         </h1>
 
-        <h1 className="text-3xl font-semilight text-left mb-4 text-[#000000]">
+        <h1 className="text-2xl font-semilight text-left mb-4 text-[#000000]">
           Marketing today is all about clicks, trends & conversions—businesses no longer rely just on traditional methods.
         </h1>
-        <h1 className="text-2xl font-extralight text-left text-[#1D3557] mb-4">
+        <h1 className="text-xl font-extralight text-left text-[#1D3557] mb-4">
           • Amazon generates ₹100+ Crores daily from digital marketing-driven sales!
         </h1>
-        <h1 className="text-2xl font-extralight text-left text-[#1D3557] mb-4">
+        <h1 className="text-xl font-extralight text-left text-[#1D3557] mb-4">
           • India’s e-commerce market is projected to reach $200 billion by 2026, creating massive digital jobs.
         </h1>
 
         <div className="text-left text-lg mb-1 text-[#000000]">
-          <div className="flex items-center gap-4 mb-4">
-            <FaChartLine className="text-[#1D3557]" size={24} />
-            <span className="font-semibold">Year 1:</span>
-            <span>Fundamentals of Digital Marketing, SEO, Social Media Marketing</span>
-          </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FaBullhorn className="text-[#388A86]" size={24} />
-            <span className="font-semibold">Year 2:</span>
-            <span>Google Ads, Analytics, Performance Marketing, Email Marketing</span>
-          </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FaHandshake className="text-[#09955D]" size={24} />
-            <span className="font-semibold">Year 3:</span>
-            <span>Growth Hacking, Influencer Marketing, AI in Digital Strategies</span>
+          <div className="flex gap-8 mb-8">
+            {/* Year 1 */}
+            <div className="flex-1">
+              <div className="flex items-center  mb-4">
+                <span className="font-semibold text-[#00B4D8]">Year 1:</span> {/* Year 1 color changed */}
+              </div>
+              <ul className="list-disc ml-2 text-sm">
+                <li>Fundamentals of Digital Marketing</li>
+                <li>SEO (Search Engine Optimization)</li>
+                <li>Social Media Marketing</li>
+              </ul>
+            </div>
+            {/* Year 2 */}
+            <div className="flex-1">
+              <div className="flex items-center  mb-4">
+                <span className="font-semibold text-[#00B4D8]">Year 2:</span> {/* Year 2 color changed */}
+              </div>
+              <ul className="list-disc ml-2 text-sm">
+                <li>Google Ads</li>
+                <li>Analytics</li>
+                <li>Performance Marketing</li>
+                <li>Email Marketing</li>
+              </ul>
+            </div>
+            {/* Year 3 */}
+            <div className="flex-1">
+              <div className="flex items-center  mb-4">
+                <span className="font-semibold text-[#00B4D8]">Year 3:</span> {/* Year 3 color changed */}
+              </div>
+              <ul className="list-disc ml-2 text-sm">
+                <li>Growth Hacking</li>
+                <li>Influencer Marketing</li>
+                <li>AI in Digital Strategies</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <p className="text-2xl text-[#1D3557] tracking-wide my-2">
-          <span className="block text-left mb-1">✅ Want to dominate the digital world and drive brand success? This is your gateway!</span> 
+          <span className="block text-left mb-1">✅ Want to dominate the digital world and drive brand success? This is your gateway!</span>
         </p>
 
       </div>

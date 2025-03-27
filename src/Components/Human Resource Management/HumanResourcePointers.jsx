@@ -36,7 +36,7 @@ function HumanResourcePointers() {
         >
           <FaRegClock size={40} className="text-[#4C8BF5]" />
           <h2 className="mt-4 text-[#2A9D57]">Duration</h2>
-          <p className="mt-2 text-2xl font-semibold text-[#2A9DA2]">
+          <p className="mt-2 text-xl font-semibold text-[#2A9D57]">
             BBA - 3 yrs <br /> Hons. - 4 yrs
             </p>
         </div>

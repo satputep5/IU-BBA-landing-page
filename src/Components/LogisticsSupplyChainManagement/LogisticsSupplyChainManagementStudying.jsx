@@ -1,18 +1,7 @@
 import React from "react";
-import {
-  FaBullhorn,
-  FaHandshake,
-  FaChartLine,
-  FaRegCalendarAlt,
-  FaMapPin,
-  FaArrowRight,
-  FaClipboardList,
-  FaTruck,
-  FaGlobe,
-  FaCogs,
-  FaRobot,
-  FaBriefcase
-} from "react-icons/fa";
+
+// Import only relevant icons for the additional content
+import { FaCogs, FaRobot, FaBriefcase } from "react-icons/fa";
 
 // Import images for the page
 import MyImage from "../../assets/Images/iu-campus.png"; // Main campus image
@@ -63,43 +52,67 @@ function MarketingManagementStudying() {
           Logistics & Supply Chain Management Program
         </h2>
 
-        <div className="space-y-4">
-          <div className="flex items-center">
-            <FaClipboardList size={36} className="mr-3 text-[#f07a1d]" />
-            <span className="text-lg text-[#1f2937]">
-              <strong>Year 1:</strong> Logistics Fundamentals | Inventory Management | Procurement Basics
-            </span>
-          </div>
-          <div className="flex items-center">
-            <FaTruck size={36} className="mr-3 text-[#f07a1d]" />
-            <span className="text-lg text-[#1f2937]">
-              <strong>Year 2:</strong> Transportation Networks | Warehouse Optimization | Demand Forecasting
-            </span>
-          </div>
-          <div className="flex items-center">
-            <FaGlobe size={36} className="mr-3 text-[#f07a1d]" />
-            <span className="text-lg text-[#1f2937]">
-              <strong>Year 3:</strong> Global Supply Chains | AI & Automation in Logistics | Risk Management
-            </span>
+        {/* Container for Year Columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {/* Year 1 */}
+          <div className="flex flex-col items-start space-y-4">
+            <div className="text-md text-[#1f2937]">
+              <strong>Year 1:</strong>
+              <ul className="list-disc pl-2">
+                <li>Logistics Fundamentals</li>
+                <li>Inventory Management</li>
+                <li>Procurement Basics</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="flex items-center">
+          {/* Year 2 */}
+          <div className="flex flex-col items-start space-y-4">
+            <div className="text-md text-[#1f2937]">
+              <strong>Year 2:</strong>
+              <ul className="list-disc pl-2">
+                <li>Transportation Networks</li>
+                <li>Warehouse Optimization</li>
+                <li>Demand Forecasting</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Year 3 */}
+          <div className="flex flex-col items-start space-y-4">
+            <div className="text-md text-[#1f2937]">
+              <strong>Year 3:</strong>
+              <ul className="list-disc pl-2">
+                <li>Global Supply Chains</li>
+                <li>AI & Automation in Logistics</li>
+                <li>Risk Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Content */}
+        <div className="space-y-4">
+          {/* Amazon-style Logistics Simulations */}
+          <div className="flex items-center text-lg text-[#1f2937]">
             <FaCogs size={36} className="mr-3 text-[#f07a1d]" />
-            <span className="text-lg text-[#1f2937]">
+            <span>
               <strong>Amazon-style Logistics Simulations</strong> – Learn the secrets behind their efficiency!
             </span>
           </div>
 
-          <div className="flex items-center">
+          {/* AI in Supply Chain */}
+          <div className="flex items-center text-lg text-[#1f2937]">
             <FaRobot size={36} className="mr-3 text-[#f07a1d]" />
-            <span className="text-lg text-[#1f2937]">
+            <span>
               <strong>AI in Supply Chain</strong> – Discover how companies like DHL & Flipkart use AI for cost reduction.
             </span>
           </div>
 
-          <div className="flex items-center">
+          {/* Live Industry Case Studies */}
+          <div className="flex items-center text-lg text-[#1f2937]">
             <FaBriefcase size={36} className="mr-3 text-[#f07a1d]" />
-            <span className="text-lg text-[#1f2937]">
+            <span>
               <strong>Live Industry Case Studies</strong> – Work on real supply chain disruptions & solutions.
             </span>
           </div>

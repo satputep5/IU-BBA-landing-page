@@ -16,23 +16,16 @@ function InnovationAndEntrepreneurshipHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#f8f0e3] bg-right md:bg-center bg-no-repeat text-white flex items-center max-h-screen"
+      className="px-8 md:px-16 relative bg-cover bg-[#f8f0e3] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-screen"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[36px] text-[#0e1133] font-bold leading-tight mb-6">
-          Bachelors of Business Administration in Innovation & Entrepreneurship
-          with Indira School of Business at Indira University
+          BBA in Innovation & Entrepreneurship at School of Business (Indira University)
         </h1>
-        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">
-          The Future Belongs to{" "}
-          <span className="text-[#FDCB6E] font-bold">Innovators</span> &
-          Entrepreneurs
-        </h1>
-        <p className="mt-4 text-2xl text-black">
-          The best BBA college in Pune!
-        </p>
+
+
 
         {/* Form container below the text */}
         <div
@@ -60,26 +53,7 @@ function InnovationAndEntrepreneurshipHero() {
                 required
               />
             </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                id="pincode"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E]"
-                placeholder="Enter your pincode"
-                required
-                maxLength="6" // Assuming India postal code is 6 digits
-                pattern="\d{6}" // Ensures only 6 digits are entered
-              />
-            </div>
+
             <div>
               <select
                 id="course"
@@ -100,10 +74,19 @@ function InnovationAndEntrepreneurshipHero() {
             </div>
           </form>
         </div>
-        {/* Small text below the form */}
-        <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          You’re guaranteed to find something that’s right for you.
+
+        <p className="font-italic text-black my-2">
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
         </p>
+
+        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight my-6">
+          The Future Belongs to{" "}
+          <span className="text-[#FDCB6E] font-bold">Innovators</span> &
+          Entrepreneurs
+        </h1>
+
+
       </div>
 
       <RightSideSection /> {/* New child component */}

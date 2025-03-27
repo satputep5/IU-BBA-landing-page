@@ -30,16 +30,9 @@ function MarketingManagementOverview() {
           International Business
         </h2>
 
-        <p className="text-lg text-gray-600 tracking-wide">
-          Looking for the best BBA college in Pune? Indira University, a newly
-          established institution with a 30-year legacy from Indira Group of
-          Institutes, offers one of the top BBA programs in India. Our BBA
-          course details cover everything from marketing, finance, and human
-          resources to international business and logistics, ensuring students
-          gain real-world skills and industry exposure. With BBA course
-          eligibility designed for 12th-pass students from any stream, and BBA
-          program with placement opportunities in leading companies, we provide
-          a strong career foundation.
+        <p className="text-md text-gray-600">
+        Looking for the best BBA International Business college in India? Indira University, backed by a 30-year legacy of the Indira Group of Institutes, offers a globally focused BBA in International Business program. This course equips students with expertise in global trade, export-import management, foreign exchange, international marketing, and supply chain logistics, ensuring they are industry-ready.
+        With BBA International Business course eligibility open to 12th-pass students from any stream, and placement opportunities in top multinational companies, our program prepares you for careers in global markets.
         </p>
 
         <p className="text-sm text-gray-700 mt-4 underline">

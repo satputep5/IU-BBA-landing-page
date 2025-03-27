@@ -29,18 +29,8 @@ function InnovationAndEntrepreneurshipOverview() {
           Innovation & Entrepreneurship
         </h2>
 
-        <p className="text-xl text-gray-600">
-          A BBA in Entrepreneurship equips students with the skills to turn
-          ideas into successful businesses. As one of the best colleges for BBA
-          Entrepreneurship in India, we provide hands-on experience in business
-          incubators for BBA students, mentorship from industry leaders, and
-          real-world exposure to startup opportunities after BBA
-          Entrepreneurship. Whether you're exploring funding options for BBA
-          entrepreneurs or learning the difference between BBA Entrepreneurship
-          & MBA Entrepreneurship, this program prepares you for success. With
-          high salary after BBA in Entrepreneurship and countless top business
-          ideas after BBA Entrepreneurship, your journey as a future business
-          leader starts here!
+        <p className="text-lg text-gray-600">
+        A BBA in Entrepreneurship equips students with the skills to turn ideas into successful businesses. As one of the best colleges for BBA Entrepreneurship in India, we provide hands-on experience in business incubators for BBA students, mentorship from industry leaders, and real-world exposure to startup opportunities after BBA Entrepreneurship. With high salary after BBA in Entrepreneurship and countless top business ideas after BBA Entrepreneurship, your journey as a future business leader starts here! 
         </p>
       </div>
 
@@ -71,7 +61,7 @@ function InnovationAndEntrepreneurshipOverview() {
               <div>
                 <span className="text-6xl">10k+</span> <br />
                 <span className="text-xl">
-                  Students Impacted in Thriving BBA Careers
+                  Students Impacted
                 </span>
               </div>
             </div>

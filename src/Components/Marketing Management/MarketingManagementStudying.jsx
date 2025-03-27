@@ -10,53 +10,38 @@ import {
 import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
 import Image1 from "../../assets/Images/std-mark.jpg"; // Import your 3D-style image
 import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
-import SmallCircleImage from "../../assets/Images/red-circle.png"; // Import your smaller circle PNG image
+import SmallCircleImage from "../../assets/Images/green-circle.png"; // Import your smaller circle PNG image
 
 function MarketingManagementStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-6 mb-6 poppins-regular h-[100vh]">
-      {/* Left Side (Vertical Green Container with Full Height, Image on Top, and Rounded Top Corners) */}
-      <div className="w-1/2 bg-white h-full relative overflow-hidden">
-        {/* Image with object-cover property and rounded top corners */}
+    <div className="flex px-8 md:px-16 py-8 mb-2 poppins-regular">
+<div className="w-full md:w-1/2 bg-white relative overflow-hidden">
+        {/* Main Image */}
         <img
           src={MyImage}
-          alt="Marketing Management"
-          className="w-7/10 h-full object-cover absolute top-0 left-0 rounded-t-full"
+          alt="Finance Management"
+          className="w-full h-full object-cover absolute top-0 right-20 rounded-t-xl"
         />
 
-        {/* 3D Image on the right corner */}
+        {/* 3D Effect Image */}
         <img
-          src={Image1}  // You can replace with a different 3D-style image if needed
+          src={Image1}
           alt="3D Image"
-          className="w-1/2 h-56 object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg"
+          className="w-1/2 h-auto object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg z-10"
         />
 
-        {/* Floating Tiny Circle PNG (Larger Circle) */}
+        {/* Floating Circle 1 */}
         <img
-          src={CircleImage}  // Tiny circle PNG image
+          src={CircleImage}
           alt="Floating Circle"
-          style={{
-            position: "absolute",
-            top: "30%",
-            right: "25%",
-            width: "70px",  // Adjust size as needed
-            height: "70px", // Adjust size as needed
-            animation: "float 2s ease-in-out infinite",
-          }}
+          className="absolute top-[30%] right-[25%] w-16 h-16 animate-float z-20"
         />
 
-        {/* Floating Tiny Circle PNG (Smaller Circle at Bottom Left) */}
+        {/* Floating Circle 2 */}
         <img
-          src={SmallCircleImage}  // Smaller circle PNG image
+          src={SmallCircleImage}
           alt="Floating Small Circle"
-          style={{
-            position: "absolute",
-            bottom: "10%",
-            left: "1%",
-            width: "50px",  // Smaller size
-            height: "50px", // Smaller size
-            animation: "float 3s ease-in-out infinite",
-          }}
+          className="absolute bottom-[10%] left-[1%] w-12 h-12 animate-float-slow z-20"
         />
       </div>
 

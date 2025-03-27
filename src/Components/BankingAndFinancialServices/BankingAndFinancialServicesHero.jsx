@@ -22,7 +22,7 @@ function BankingAndFinancialServicesHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[34px] text-[#FFFFFF] font-semibold leading-tight mb-6">
-          BBA in Banking & Financial Services at Indira School of Business
+          BBA in Banking & Financial Services at School of Business
           (Indira University)
         </h1>
 
@@ -107,10 +107,7 @@ function BankingAndFinancialServicesHero() {
           Power economies and shape futures
         </h1>
 
-        {/* Small text below the form */}
-        <p className="text-gray-800 text-sm mt-2 text-center ml-6">
-          You’re guaranteed to find something that’s right for you.
-        </p>
+
       </div>
 
       <RightSideSection />

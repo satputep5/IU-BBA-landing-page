@@ -22,18 +22,9 @@ function HumanResourceHero() {
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         {/* New heading added above the existing one */}
         <h2 className="text-[36px] text-[#0e1133] font-bold mb-6">
-          Bachelors of Business Administration in Human Resource Management with
-          Indira School of Business at Indira University
+          BBA in Human Resource Management at School of Business (Indira University)
         </h2>
 
-        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-6">
-          Empowering People. Building{" "}
-          <span className="text-[#2A9D57] font-bold">Leaders.</span> Driving
-          Success.
-        </h1>
-        <p className="mt-4 text-2xl text-black">
-          The best BBA college in Pune!
-        </p>
 
         {/* Form container below the text */}
         <div
@@ -61,26 +52,7 @@ function HumanResourceHero() {
                 required
               />
             </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#2A9D57] focus:outline-none focus:ring-2 focus:ring-[#2A9D57]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
 
-            {/* Pincode input field */}
-            <div>
-              <input
-                type="text"
-                id="pincode"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#2A9D57] focus:outline-none focus:ring-2 focus:ring-[#2A9D57]"
-                placeholder="Enter your pincode"
-                required
-              />
-            </div>
 
             <div>
               <select
@@ -104,13 +76,20 @@ function HumanResourceHero() {
             </div>
           </form>
         </div>
-        {/* Small text below the form */}
-        <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          Your journey to a successful business career starts here!
-        </p>
-      </div>
 
-<RightSideSection /> {/* Include the new child component */}
+        <p className="font-italic text-black my-2">
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
+        </p>
+
+        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight my-6">
+          Empowering People. Building{" "}
+          <span className="text-[#2A9D57] font-bold">Leaders.</span> Driving
+          Success.
+        </h1>
+
+      </div>
+      <RightSideSection /> {/* Include the new child component */}
     </div>
   );
 }

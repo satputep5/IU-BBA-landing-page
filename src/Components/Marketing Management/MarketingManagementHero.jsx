@@ -107,10 +107,7 @@ function MarketingManagementHero() {
           is the art of influence.
         </h1>
 
-        {/* Small text below the form */}
-        <p className="text-gray-700 text-sm mt-2 text-center ml-6">
-          Your journey to a successful business career starts here!
-        </p>
+
       </div>
 
       {/* Right side content now handled by the RightSideSection component */}

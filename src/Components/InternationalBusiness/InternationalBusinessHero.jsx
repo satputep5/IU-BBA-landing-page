@@ -22,8 +22,7 @@ function InternationalBusinessHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[34px] text-white font-bold leading-tight mb-2">
-          BBA in International Business with School of Business at Indira
-          University
+          BBA in International Business with School of Business (Indira University)
         </h1>
 
         {/* Form container below the text */}
@@ -105,10 +104,7 @@ function InternationalBusinessHero() {
           Master the Business of the World.
         </h1>
 
-        {/* Small text below the form */}
-        <p className="text-gray-200 text-sm mt-4 text-center ml-6">
-          You’re guaranteed to find something that’s right for you.
-        </p>
+
       </div>
 
       <RightSideSection />

@@ -21,17 +21,8 @@ function LogisticsManagementHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[36px] text-[#070b1a] font-bold leading-tight mb-6">
-          Bachelors of Business Administration in Logistics & Supply Chain
-          Management with Indira School of Business at Indira University
+          BBA in Logistics & Supply Chain Management at School of Business (Indira University)
         </h1>
-
-        <h1 className="text-3xl text-[#070b1a] font-medium leading-tight mb-6">
-          From Factory Floors to Front Doors – Be the Mastermind Behind Global{" "}
-          <span className="text-[#ed6f0c] font-bold">Supply Chains.</span>{" "}
-        </h1>
-        <p className="mt-4 text-2xl text-black">
-          The best BBA college in Pune!
-        </p>
 
         {/* Form container below the text */}
         <div
@@ -59,25 +50,7 @@ function LogisticsManagementHero() {
                 required
               />
             </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fff7f0] to-[#ffead6] text-black rounded border border-[#F4A261] focus:outline-none focus:ring-2 focus:ring-[#F4A261]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
 
-            <div class="mt-4">
-              <input
-                type="text"
-                id="pincode"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fff7f0] to-[#ffead6] text-black rounded border border-[#F4A261] focus:outline-none focus:ring-2 focus:ring-[#F4A261]"
-                placeholder="Enter your pincode"
-                required
-              />
-            </div>
 
             <div>
               <select
@@ -99,10 +72,13 @@ function LogisticsManagementHero() {
             </div>
           </form>
         </div>
-        {/* Small text below the form */}
-        <p className="text-gray-700 text-sm mt-4 text-center ml-6">
-          You’re guaranteed to find something that’s right for you.
-        </p>
+
+        <h1 className="text-3xl text-[#070b1a] font-medium leading-tight my-6">
+          From Factory Floors to Front Doors – Be the Mastermind Behind Global{" "}
+          <span className="text-[#ed6f0c] font-bold">Supply Chains.</span>{" "}
+        </h1>
+
+
       </div>
 
       {/* Right side content now handled by the RightSideSection component */}

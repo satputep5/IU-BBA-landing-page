@@ -1,50 +1,71 @@
 import React from "react";
+import { FaChartLine, FaGlobeAmericas, FaTrophy } from "react-icons/fa"; // Importing relevant icons
 
-const DigitalMarketingCareerPaths = () => {
+const DigitalPowerPyramid = () => {
   return (
-    <div className="bg-white py-4 px-8">
+    <div className="bg-gray-100 py-8 px-8 md:px-16">
       <div className="container mx-auto text-center">
         {/* Title */}
-        <h2 className="text-5xl font-semibold text-[#000000] mb-12">
-          Career Paths – The Digital Power Pyramid
+        <h2 className="text-4xl font-semibold text-[#1D3557] mb-8">
+          Digital Career Pathways
         </h2>
 
-        {/* Career Paths */}
-        <div className="relative">
-          {/* Entry-Level */}
-          <div className="mb-12">
-            <div className="text-2xl font-semibold text-[#00A8D8]">Entry-Level</div>
-            <div className="mt-4 text-3xl font-bold text-[#0099C1]">₹6-8 LPA</div>
-            <div className="text-sm text-gray-500 mt-2">Digital Marketing Executive, SEO Analyst, Social Media Coordinator</div>
-            <div className="h-1 bg-[#00A8D8] my-6 mx-auto w-1/3"></div> {/* Small divider for Entry Level */}
+        {/* Career Path Breakdown */}
+        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Entry-Level Card */}
+          <div className="bg-white border border-[#E0E0E0] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
+            <div className="text-3xl font-semibold text-[#1D3557] flex items-center justify-center">
+              <FaChartLine size={40} className="text-[#00B4D8] mr-4" />
+              Entry Level
+            </div>
+            <div className="mt-6 text-xl font-semibold text-[#00B4D8]">
+              Digital Marketing Executive, SEO Analyst, Social Media Coordinator
+            </div>
+            <div className="mt-4 text-lg text-gray-600">
+              Starting your career in digital marketing, focusing on SEO, social
+              media, and digital content.
+            </div>
           </div>
 
-          {/* Mid-Level */}
-          <div className="mb-12">
-            <div className="text-3xl font-semibold text-[#0099C1]">Mid-Level</div>
-            <div className="mt-4 text-4xl font-bold text-[#008FB1]">₹15-30 LPA</div>
-            <div className="text-lg text-gray-500 mt-2">Performance Marketer, Content Strategist, Brand Manager</div>
-            <div className="h-2 bg-[#0099C1] my-6 mx-auto w-2/3"></div> {/* Medium divider for Mid-Level */}
+          {/* Mid-Level Card */}
+          <div className="bg-white border border-[#E0E0E0] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
+            <div className="text-3xl font-semibold text-[#1D3557] flex items-center justify-center">
+              <FaGlobeAmericas size={40} className="text-[#00B4D8] mr-4" />
+              Mid-Level
+            </div>
+            <div className="mt-6 text-xl font-semibold text-[#00B4D8]">
+              Performance Marketer, Content Strategist, Brand Manager
+            </div>
+            <div className="mt-4 text-lg text-gray-600">
+              Managing and optimizing digital marketing campaigns, creating
+              content strategies, and building brand presence.
+            </div>
           </div>
 
-          {/* Elite Tier */}
-          <div>
-            <div className="text-4xl font-semibold text-[#008FB1]">Elite Tier</div>
-            <div className="mt-4 text-5xl font-bold text-[#007A99]">₹50+ LPA</div>
-            <div className="text-xl text-gray-500 mt-2">Chief Marketing Officer (CMO), Growth Hacker, Digital Director</div>
-            <div className="h-3 bg-[#008FB1] my-6 mx-auto w-3/4"></div> {/* Large divider for Elite Tier */}
+          {/* Elite Tier Card */}
+          <div className="bg-white border border-[#E0E0E0] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
+            <div className="text-3xl font-semibold text-[#1D3557] flex items-center justify-center">
+              <FaTrophy size={40} className="text-[#00B4D8] mr-4" />
+              Elite Tier
+            </div>
+            <div className="mt-6 text-xl font-semibold text-[#00B4D8]">
+              Chief Marketing Officer (CMO), Growth Hacker, Digital Director
+            </div>
+            <div className="mt-4 text-lg text-gray-600">
+              Leading digital marketing efforts, driving growth, and directing
+              the company's digital strategy.
+            </div>
           </div>
         </div>
 
-        {/* Dream Big Section */}
-        <div className="mt-12">
-          <p className="text-xl text-[#00A8D8]">
-            🔹 Dream Big? <br /> - Digital Marketers at top firms like Google & Amazon earn ₹30+ LPA!
-          </p>
+        {/* Salary Information */}
+        <div className="mt-12 text-lg font-semibold text-[#00B4D8]">
+          🔹 Dream Big? Digital Marketers at top firms like Google & Amazon earn
+          ₹30+ LPA!
         </div>
       </div>
     </div>
   );
 };
 
-export default DigitalMarketingCareerPaths;
+export default DigitalPowerPyramid;

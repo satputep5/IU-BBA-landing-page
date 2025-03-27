@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap"; // Import GSAP for animations
-import girlImage from "../../assets/Images/girl-wow.png"; // Ensure the girl image path is correct
-import { FaUserGraduate, FaChalkboardTeacher, FaUsers } from "react-icons/fa"; // Importing icons for each section
+import RightSideSection from "../RightSideSection";
 
 function DigitalMarketingHero() {
   useEffect(() => {
@@ -23,17 +22,10 @@ function DigitalMarketingHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1 className="text-[36px] text-[#0e1133] font-semibold leading-tight mb-6">
-          Bachelors of Business Administration in Digital Marketing with Indira
-          School of Business at Indira University
+          BBA in Digital Marketing at School of Business (Indira University)
         </h1>
 
-        <h1 className="text-3xl text-[#0e1133] font-semibold leading-tight mb-6">
-          The <span className="text-[#00B4D8] font-bold">Internet</span> Never
-          Sleeps – Why Should Your Career?
-        </h1>
-        <p className="mt-4 text-2xl text-black">
-          The best BBA college in Pune!
-        </p>
+
 
         {/* Form container below the text */}
         <div
@@ -61,27 +53,7 @@ function DigitalMarketingHero() {
                 required
               />
             </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#00B4D8] focus:outline-none focus:ring-2 focus:ring-[#00B4D8]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
 
-            <div>
-              <input
-                type="text"
-                id="pincode"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557]"
-                placeholder="Enter your pincode"
-                required
-                maxLength="6" // Assuming India postal code is 6 digits
-                pattern="\d{6}" // Ensures only 6 digits are entered
-              />
-            </div>
 
             <div>
               <select
@@ -103,76 +75,23 @@ function DigitalMarketingHero() {
             </div>
           </form>
         </div>
-        {/* Small text below the form */}
-        <p className="text-gray-500 text-sm mt-4 text-center ml-6">
-          You’re guaranteed to find something that’s right for you.
+
+
+        <p className="italic text-black my-4">
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
         </p>
+
+        <h1 className="text-3xl text-[#0e1133] font-semibold leading-tight mb-6">
+          The <span className="text-[#00B4D8] font-bold">Internet</span> Never
+          Sleeps – Why Should Your Career?
+        </h1>
+
+
       </div>
 
-      {/* Right side (Image of a girl) */}
-      <div className="flex justify-end w-full md:w-1/2 z-20 relative overflow-hidden">
-        <div className="w-full h-full">
-          <img
-            src={girlImage}
-            alt="Girl Image"
-            className="w-full h-full object-contain"
-            style={{
-              maxHeight: "100vh",
-              objectFit: "contain",
-            }}
-          />
-        </div>
+            <RightSideSection />
 
-        {/* Funky Rectangle Stats (Replaced with new stats) */}
-
-        {/* First Box - 30 Years of Excellence */}
-        <div className="absolute bottom-6/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-blue-500 text-white p-2 rounded-full">
-            <FaUserGraduate className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">
-              30 Years of Excellence
-            </h3>
-            <p className="text-sm text-black">
-              In Business Education with <br /> top-tier programs.
-            </p>
-          </div>
-        </div>
-
-        {/* Second Box - 8 Specializations */}
-        <div className="absolute bottom-1/12 left-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-red-500 text-white p-2 rounded-full">
-            <FaChalkboardTeacher className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">
-              8 Specializations
-            </h3>
-            <p className="text-sm text-black">
-              Tailored programs across <br /> diverse business sectors.
-            </p>
-          </div>
-        </div>
-
-        {/* Third Box - 100% Placement Assistance */}
-        <div className="absolute bottom-3/12 right-0 p-3 bg-[#ffffff] text-black flex items-center space-x-4 rounded-lg shadow-md stat-box">
-          {/* Icon inside a circle */}
-          <div className="bg-green-500 text-white p-2 rounded-full">
-            <FaUsers className="text-3xl" />
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl text-black">
-              100% Placement Assistance
-            </h3>
-            <p className="text-sm text-black">
-              Ensuring career growth and <br /> success for every student.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

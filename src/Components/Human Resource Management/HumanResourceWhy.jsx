@@ -1,4 +1,4 @@
-import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaUsers, FaRegClipboard, FaDollarSign } from 'react-icons/fa';
+import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaUsers, FaRegClipboard } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
@@ -35,10 +35,10 @@ function HumanResourceOfferings() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        Why BBA HRM at Indira University?
+        Why Indira University?
       </h2>
 
-      <div className="flex justify-center gap-6 flex-wrap ">
+      <div className="flex justify-center gap-6 flex-wrap">
         {/* Card 1 - 30+ Years of Excellence */}
         <div
           className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
@@ -83,7 +83,7 @@ function HumanResourceOfferings() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
-        {/* Card 5 - Internships */}
+        {/* Card 5 - Internships for BBA HR Students */}
         <div
           className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
@@ -93,9 +93,18 @@ function HumanResourceOfferings() {
           <p className="text-sm text-white mt-2">Practical exposure in HR operations, recruitment, and performance management.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
+
+        {/* Card 6 - HR Certification Courses */}
+        <div
+          className="bg-[#EC4899] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaRegClipboard size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">HR Certification Courses</p>
+          <p className="text-sm text-white mt-2">Boost your profile with certifications in Talent Management, HR Analytics, Organizational Behavior, and Payroll & Compensation Management.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
       </div>
-
-
     </div>
   );
 }

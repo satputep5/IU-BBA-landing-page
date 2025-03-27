@@ -30,13 +30,17 @@ function MarketingManagementOverview() {
           Logistics Supply Chain Management
         </h2>
 
-<p className="text-2xl font-medium text-gray-800 mb-4">Master the Flow. Optimize the Chain. Drive Global Commerce.</p>
-
-        <p className="text-2xl text-gray-600 tracking-wide">
-        In today’s fast-paced global economy, businesses rely on seamless logistics, procurement, and distribution networks to stay competitive. A degree in Supply Chain Management (SCM) equips you with expertise in inventory management, logistics, procurement, operations, and global trade, making you an indispensable part of any industry.
+        <p className="text-xl font-medium text-gray-800 mb-4">
+          Master the Flow. Optimize the Chain. Drive Global Commerce.
         </p>
 
-
+        <p className="text-lg text-gray-600 tracking-wide">
+          In today’s fast-paced global economy, businesses rely on seamless
+          logistics, procurement, and distribution networks to stay competitive.
+          A degree in Supply Chain Management (SCM) equips you with expertise in
+          inventory management, logistics, procurement, operations, and global
+          trade, making you an indispensable part of any industry.
+        </p>
       </div>
 
       {/* Right Part: First and Second Images */}
@@ -63,12 +67,10 @@ function MarketingManagementOverview() {
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-            <div>
-  <span className="text-6xl">10k+</span> <br />
-  <span className="text-xl">Students Impacted in Thriving BBA Careers</span>
-</div>
-
-
+              <div>
+                <span className="text-6xl">10k+</span> <br />
+                <span className="text-xl">Students Impacted</span>
+              </div>
             </div>
           </div>
 

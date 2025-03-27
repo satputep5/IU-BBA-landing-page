@@ -36,7 +36,7 @@ function DigitalMarketingPointers() {
         >
           <FaRegClock size={40} className="text-red-500" />
           <h2 className="mt-2 text-[#000000]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#00B4D8]">3 Years</p>
+          <p className="mt-2 text-xl font-semibold text-[#00B4D8]">BBA - 3 yrs <br /> Hons. - 4 yrs</p>
         </div>
 
         {/* Card 3: Program Fees */}

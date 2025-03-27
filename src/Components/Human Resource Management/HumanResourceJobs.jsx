@@ -35,7 +35,7 @@ function HumanResourceOfferings() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        HR Jobs After BBA Degree
+        Career Paths
       </h2>
 
       {/* Adding justify-center to center the grid items */}

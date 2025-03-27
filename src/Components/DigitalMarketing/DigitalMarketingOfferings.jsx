@@ -35,22 +35,12 @@ function MarketingManagementOfferings() {
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        Why Indira School of Business for Digital Marketing?
+        Why Indira University?
       </h2>
 
       <div className="flex flex-wrap justify-center gap-6">
-        {/* Card 1 - SEO & Social Media */}
-        <div
-          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
-          data-aos="fade-up"
-        >
-          <FaBullhorn size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Hands-on SEO & Social Media</p>
-          <p className="text-sm text-white mt-2">Learn to rank #1 on Google & trend on Instagram!</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
-        </div>
 
-        {/* Card 2 - Internships */}
+        {/* Card 1 - Internships */}
         <div
           className="bg-[#EC4899] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
@@ -61,7 +51,7 @@ function MarketingManagementOfferings() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
-        {/* Card 3 - Google Certifications */}
+        {/* Card 2 - Google Certifications */}
         <div
           className="bg-[#9333EA] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
@@ -72,18 +62,7 @@ function MarketingManagementOfferings() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
-        {/* Card 4 - AI-Powered Labs */}
-        <div
-          className="bg-[#10B981] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
-          data-aos="fade-up"
-        >
-          <FaChartLine size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">AI-Powered Marketing Labs</p>
-          <p className="text-sm text-white mt-2">Gain expertise in automation tools, paid ads, & chatbot marketing.</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
-        </div>
-
-        {/* Card 5 - Growth Hacking Workshops */}
+        {/* Card 3 - Growth Hacking Workshops */}
         <div
           className="bg-[#F59E0B] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
@@ -93,6 +72,62 @@ function MarketingManagementOfferings() {
           <p className="text-sm text-white mt-2">Learn strategies used by startups to scale 10X.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
+
+        {/* Card 4 - Exclusive Guest Lectures */}
+        <div
+          className="bg-[#34D399] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaBullhorn size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Exclusive Guest Lectures</p>
+          <p className="text-sm text-white mt-2">Learn from CEOs, startup mentors, and angel investors.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* Card 5 - Industry Readiness Programme */}
+        <div
+          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaChartLine size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Industry Readiness Programme</p>
+          <p className="text-sm text-white mt-2">Gain business skills, leadership training & market insights.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* Card 6 - Vibrant Campus Life */}
+        <div
+          className="bg-[#F43F5E] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaUsers size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Vibrant Campus Life</p>
+          <p className="text-sm text-white mt-2">Experience entrepreneurship events & business competitions.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* Card 7 - Sports & Extracurriculars */}
+        <div
+          className="bg-[#EAB308] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaBullhorn size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Sports & Extracurriculars</p>
+          <p className="text-sm text-white mt-2">Stay active with sports facilities & inter-college championships.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* Card 8 - Top Placements & Career Support */}
+        <div
+          className="bg-[#10B981] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaBullhorn size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Top Placements & Career Support</p>
+          <p className="text-sm text-white mt-2">Secure opportunities with leading startups & venture-backed firms.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
       </div>
     </div>
   );
