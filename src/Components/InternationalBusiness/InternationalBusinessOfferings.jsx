@@ -1,4 +1,4 @@
-import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaBuilding, FaGlobe } from 'react-icons/fa';
+import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaBuilding, FaGlobe, FaChalkboardTeacher, FaUsers, FaRunning } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
@@ -61,29 +61,7 @@ function MarketingManagementOfferings() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
-        {/* Card 3 - International Internships & Exchange Programs */}
-        <div
-          className="bg-[#9333EA] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
-          data-aos="fade-up"
-        >
-          <FaRegCalendarAlt size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">International Internships & Exchange Programs</p>
-          <p className="text-sm text-white mt-2">Get real exposure in foreign markets.</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
-        </div>
-
-        {/* Card 4 - Live Export-Import Case Studies */}
-        <div
-          className="bg-[#10B981] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
-          data-aos="fade-up"
-        >
-          <FaChartLine size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Live Export-Import Case Studies</p>
-          <p className="text-sm text-white mt-2">Work on real-world international trade projects.</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
-        </div>
-
-        {/* Card 5 - International Business Collaborations */}
+        {/* Card 5 - Top Placements in Leading Global Firms */}
         <div
           className="bg-[#F59E0B] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
@@ -94,16 +72,50 @@ function MarketingManagementOfferings() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
-        {/* Card 6 - Global Networking Opportunities */}
+        {/* New Card 1 - Exclusive Guest Lectures */}
         <div
-          className="bg-[#0EA5E9] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#10B981] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaGlobe size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Global Networking Opportunities</p>
-          <p className="text-sm text-white mt-2">Build connections across continents.</p>
+          <FaChalkboardTeacher size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Exclusive Guest Lectures</p>
+          <p className="text-sm text-white mt-2">Learn from CEOs, startup mentors, and angel investors who share insights into the entrepreneurial world.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
+
+        {/* New Card 2 - Industry Readiness Programme */}
+        <div
+          className="bg-[#F59E0B] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaRegCalendarAlt size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Industry Readiness Programme</p>
+          <p className="text-sm text-white mt-2">Gain critical business skills, leadership training, and market insights to thrive in the startup ecosystem.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* New Card 3 - Vibrant Campus Life */}
+        <div
+          className="bg-[#F43F5E] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaUsers size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Vibrant Campus Life</p>
+          <p className="text-sm text-white mt-2">Experience exciting entrepreneurship events, business competitions, and networking summits while being part of a dynamic student community.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* New Card 4 - Sports & Extracurriculars */}
+        <div
+          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaRunning size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Sports & Extracurriculars</p>
+          <p className="text-sm text-white mt-2">Stay active with state-of-the-art sports facilities, tournaments, and inter-college championships for a well-rounded college experience.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
       </div>
     </div>
   );

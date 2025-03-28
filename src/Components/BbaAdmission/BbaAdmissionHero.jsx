@@ -17,7 +17,7 @@ function BbaAdmission() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-gradient-to-r from-[#135683] via-[#208098] to-[#2A9DA2] text-white flex flex-col md:flex-row items-center h-full space-x-2"
+      className="px-8 md:px-16  relative bg-gradient-to-r from-[#135683] via-[#208098] to-[#2A9DA2] text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}

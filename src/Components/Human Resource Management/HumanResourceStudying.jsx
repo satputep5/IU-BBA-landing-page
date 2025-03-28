@@ -22,7 +22,7 @@ function MarketingManagementStudying() {
         <img
           src={Image1}
           alt="3D Study Image"
-          className="w-60 h-48 object-cover absolute bottom-8 right-8 transform shadow-lg rounded-lg"
+          className="w-60 h-48 object-contain absolute bottom-8 right-8 transform shadow-lg rounded-lg"
         />
 
         {/* Floating Large Circle */}

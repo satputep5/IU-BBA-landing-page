@@ -1,4 +1,4 @@
-import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaUsers, FaRegClipboard } from 'react-icons/fa';
+import { FaBullhorn, FaHandshake, FaChartLine, FaRegCalendarAlt, FaUsers, FaRegClipboard, FaChalkboardTeacher, FaRunning } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
@@ -39,16 +39,8 @@ function HumanResourceOfferings() {
       </h2>
 
       <div className="flex justify-center gap-6 flex-wrap">
-        {/* Card 1 - 30+ Years of Excellence */}
-        <div
-          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
-          data-aos="fade-up"
-        >
-          <FaBullhorn size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">30+ Years of Excellence</p>
-          <p className="text-sm text-white mt-2">A legacy of producing top HR leaders.</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
-        </div>
+
+        {/* Existing Cards */}
 
         {/* Card 2 - Industry-Focused Curriculum */}
         <div
@@ -83,17 +75,6 @@ function HumanResourceOfferings() {
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
-        {/* Card 5 - Internships for BBA HR Students */}
-        <div
-          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
-          data-aos="fade-up"
-        >
-          <FaUsers size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Internships for BBA HR Students</p>
-          <p className="text-sm text-white mt-2">Practical exposure in HR operations, recruitment, and performance management.</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
-        </div>
-
         {/* Card 6 - HR Certification Courses */}
         <div
           className="bg-[#EC4899] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
@@ -104,6 +85,40 @@ function HumanResourceOfferings() {
           <p className="text-sm text-white mt-2">Boost your profile with certifications in Talent Management, HR Analytics, Organizational Behavior, and Payroll & Compensation Management.</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
+
+        {/* New Card 1 - Exclusive Guest Lectures */}
+        <div
+          className="bg-[#10B981] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaChalkboardTeacher size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Exclusive Guest Lectures</p>
+          <p className="text-sm text-white mt-2">Learn from CEOs, startup mentors, and angel investors who share insights into the entrepreneurial world.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* New Card 2 - Vibrant Campus Life */}
+        <div
+          className="bg-[#F59E0B] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaUsers size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Vibrant Campus Life</p>
+          <p className="text-sm text-white mt-2">Experience exciting entrepreneurship events, business competitions, and networking summits while being part of a dynamic student community.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
+        {/* New Card 3 - Sports & Extracurriculars */}
+        <div
+          className="bg-[#3B82F6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          data-aos="fade-up"
+        >
+          <FaRunning size={50} className="text-white mb-4 icon" />
+          <p className="text-lg font-semibold text-white">Sports & Extracurriculars</p>
+          <p className="text-sm text-white mt-2">Stay active with state-of-the-art sports facilities, tournaments, and inter-college championships for a well-rounded college experience.</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
+        </div>
+
       </div>
     </div>
   );

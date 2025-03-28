@@ -53,28 +53,28 @@ function Footer() {
                 </div>
                 <div className="flex space-x-4 text-xl mb-4">
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/iccs.ac.in/"
                     aria-label="Facebook"
                     className="hover:text-blue-600"
                   >
                     <i className="fab fa-facebook-f"></i>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/iccs_pune/"
                     aria-label="Instagram"
                     className="hover:text-pink-600"
                   >
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/school/indira-college-of-commerce-science-pune/?originalSubdomain=in"
                     aria-label="LinkedIn"
                     className="hover:text-blue-700"
                   >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/igipune"
                     aria-label="Twitter"
                     className="hover:text-blue-400"
                   >
@@ -93,42 +93,81 @@ function Footer() {
           </div>
           {/* Middle Column */}
           <div className="space-y-6">
-  <h3 className="text-2xl text-[#023b5e] font-bold">
-    Important Links
-  </h3>
-  {/* Grid layout for links */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <div className="space-y-8">
-      <a href="https://indiraedu.com/" className="block text-gray-500 hover:text-gray-400">
-        Home
-      </a>
-      <a href="https://indiraedu.com/index.php?/about-us" className="block text-gray-500 hover:text-gray-400">
-        About Us
-      </a>
-      <a href="https://indiraedu.com/index.php?/institutes" className="block text-gray-500 hover:text-gray-400">
-        Institutes
-      </a>
-      <a href="https://indiraedu.com/index.php?/admissions" className="block text-gray-500 hover:text-gray-400">
-        Admissions
-      </a>
-    </div>
-    <div className="space-y-8">
-      <a href="https://indiraedu.com/index.php?/contact-us" className="block text-gray-500 hover:text-gray-400">
-        Contact Us
-      </a>
-      <a href="https://indiraedu.com/index.php?/accreditations-and-recognition" className="block text-gray-500 hover:text-gray-400">
-        Accreditations and Recognition
-      </a>
-      <a href="https://indiraedu.com/index.php?/PrivacyPolicy" className="block text-gray-500 hover:text-gray-400">
-        Privacy Policy
-      </a>
-      <a href="#" className="block text-gray-500 hover:text-gray-400">
-        SPPU
-      </a>
-    </div>
-  </div>
-</div>
-
+            <h3 className="text-2xl text-[#023b5e] font-bold">
+              Important Links
+            </h3>
+            {/* Grid layout for links */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="space-y-8">
+                <a
+                  href="https://indiraedu.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  Home
+                </a>
+                <a
+                  href="https://indiraedu.com/index.php?/about-us"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  About Us
+                </a>
+                <a
+                  href="https://indiraedu.com/index.php?/institutes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  Institutes
+                </a>
+                <a
+                  href="https://indiraedu.com/index.php?/admissions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  Admissions
+                </a>
+              </div>
+              <div className="space-y-8">
+                <a
+                  href="https://indiraedu.com/index.php?/contact-us"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  Contact Us
+                </a>
+                <a
+                  href="https://indiraedu.com/index.php?/accreditations-and-recognition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  Accreditations and Recognition
+                </a>
+                <a
+                  href="https://indiraedu.com/index.php?/PrivacyPolicy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="http://www.unipune.ac.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-500 hover:text-gray-400"
+                >
+                  SPPU
+                </a>
+              </div>
+            </div>
+          </div>
 
           {/* Right Column */}
           <div className="space-y-6">
@@ -138,7 +177,7 @@ function Footer() {
                 <a
                   href="https://indiraiimp.edu.in/blog/bba-in-logistics-and-supply-chain-management-course-at-iimp-bba-pune/" // Add your actual link here
                   className="flex items-center space-x-4 cursor-pointer" // Added cursor-pointer to make both image and text clickable
-                   target="_blank"
+                  target="_blank"
                 >
                   <img
                     src={blogImage1}

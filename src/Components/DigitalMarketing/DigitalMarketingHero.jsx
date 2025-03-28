@@ -16,7 +16,7 @@ function DigitalMarketingHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-screen"
+      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-[80vh]"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
@@ -61,7 +61,29 @@ function DigitalMarketingHero() {
                 className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#00B4D8] focus:outline-none focus:ring-2 focus:ring-[#00B4D8]"
                 required
               >
-                <option value="">Select Course</option>
+                       <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Banking and Financial Services">
+                  Banking and Financial Services
+                </option>
+                <option value="Marketing Management">
+                  Marketing Management
+                </option>
+                <option value="Financial Management">
+                  Financial Management
+                </option>
+                <option value="Human Resource Management">
+                  Human Resource Management
+                </option>
+                <option value="Logistics and Supply Chain Management">
+                  Logistics and Supply Chain Management
+                </option>
+                <option value="International Business">
+                  International Business
+                </option>
+         
+                <option value="Innovation and Entrepreneurship">
+                  Innovation and Entrepreneurship
+                </option>
                 {/* Add course options here */}
               </select>
             </div>

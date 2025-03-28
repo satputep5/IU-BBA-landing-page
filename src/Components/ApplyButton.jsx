@@ -9,13 +9,13 @@ function ApplyButton() {
         {`
           @keyframes glow {
             0% {
-              text-shadow: 0 0 10px #a3c4f3, 0 0 20px #a3c4f3, 0 0 30px #a3c4f3, 0 0 40px #4a90e2;
+              text-shadow: 0 0 10px #ff704d, 0 0 20px #ff704d, 0 0 30px #ff704d;
             }
             50% {
-              text-shadow: 0 0 15px #a3c4f3, 0 0 25px #a3c4f3, 0 0 35px #4a90e2, 0 0 50px #4a90e2;
+              text-shadow: 0 0 15px #ff704d, 0 0 25px #ff704d, 0 0 35px #ff4500;
             }
             100% {
-              text-shadow: 0 0 10px #a3c4f3, 0 0 20px #a3c4f3, 0 0 30px #a3c4f3, 0 0 40px #4a90e2;
+              text-shadow: 0 0 10px #ff704d, 0 0 20px #ff704d, 0 0 30px #ff704d;
             }
           }
 
@@ -30,16 +30,16 @@ function ApplyButton() {
 
           @keyframes borderGlow {
             0% {
-              border-color: #a3c4f3;
-              box-shadow: 0 0 5px #a3c4f3, 0 0 10px #4a90e2;
+              border-color: #ff704d;
+              box-shadow: 0 0 5px #ff704d, 0 0 10px #ff4500;
             }
             50% {
-              border-color: #a3c4f3;
-              box-shadow: 0 0 10px #4a90e2, 0 0 15px #4a90e2;
+              border-color: #ff704d;
+              box-shadow: 0 0 10px #ff4500, 0 0 15px #ff4500;
             }
             100% {
-              border-color: #a3c4f3;
-              box-shadow: 0 0 5px #a3c4f3, 0 0 10px #4a90e2;
+              border-color: #ff704d;
+              box-shadow: 0 0 5px #ff704d, 0 0 10px #ff4500;
             }
           }
 
@@ -48,13 +48,13 @@ function ApplyButton() {
               transform: translateY(0);
             }
             25% {
-              transform: translateY(-10px);
+              transform: translateY(-5px);
             }
             50% {
               transform: translateY(0);
             }
             75% {
-              transform: translateY(-5px);
+              transform: translateY(-3px);
             }
             100% {
               transform: translateY(0);
@@ -66,7 +66,7 @@ function ApplyButton() {
           }
 
           .shimmer-animation {
-            background: linear-gradient(90deg, #a3c4f3 25%, #b5e3e6 50%, #a3c4f3 75%);
+            background: linear-gradient(90deg, #ff704d 25%, #ffbc93 50%, #ff704d 75%);
             background-size: 200% 100%;
             animation: shimmer 1.5s infinite;
           }
@@ -86,7 +86,7 @@ function ApplyButton() {
           }
 
           .apply-button {
-            border: 2px solid #a3c4f3;
+            border: 2px solid #ff704d;
             background-color: transparent;
             color: #ffffff;
             padding: 10px 25px;
@@ -107,7 +107,7 @@ function ApplyButton() {
           }
 
           .apply-button:hover {
-            border: 2px solid #4a90e2;  /* Glowing border color on hover */
+            border: 2px solid #ff4500;  /* Glowing border color on hover */
             animation: borderGlow 1.5s ease-in-out infinite;
           }
         `}

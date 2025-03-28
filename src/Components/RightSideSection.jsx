@@ -4,55 +4,68 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import dummyuserImage from "../assets/Images/dum-plac.png";
-import accentureLogo from "../assets/Images/acc.png";  // Import company logos
+import accentureLogo from "../assets/Images/acc.png";
 import airtelLogo from "../assets/Images/air.png";
 import amazonLogo from "../assets/Images/amz.png";
 
-// Sample student data (3 students)
 const students = [
   {
     name: "Aman Nishikant Sawarkar",
     department: "BBA",
     lpa: "4.5 LPA",
-    companyLogo: accentureLogo, // Use the company logo image instead of name
-    image: dummyuserImage, 
+    companyLogo: accentureLogo,
+    image: dummyuserImage,
   },
   {
     name: "Akash Raghunath Malpure",
     department: " BBA",
     lpa: "5.3 LPA",
-    companyLogo: airtelLogo, // Use the company logo image instead of name
-    image: dummyuserImage, 
+    companyLogo: airtelLogo,
+    image: dummyuserImage,
   },
   {
     name: "Harshada Navale",
     department: " BBA-IB",
     lpa: "4.5 LPA",
-    companyLogo: amazonLogo, // Use the company logo image instead of name
-    image: dummyuserImage, 
+    companyLogo: amazonLogo,
+    image: dummyuserImage,
   },
 ];
 
 function RightSideSection() {
-  const [activeIndex, setActiveIndex] = useState(0); // Track the active student index
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const settings = {
-    infinite: true, // Enable infinite loop
-    slidesToShow: 1, // Show 1 student at a time
-    slidesToScroll: 1, // Scroll 1 student at a time
-    dots: false, // Remove navigation dots
-    arrows: false, // Remove navigation arrows
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Time between slides
-    centerMode: true, // Enable centering of the slide
-    centerPadding: "0", // Remove any padding around the centered slide
-    focusOnSelect: true, // Focus on selecting the active slide
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: "0",
+    focusOnSelect: true,
     beforeChange: (current, next) => {
-      setActiveIndex(next); // Update the active index on slide change
+      setActiveIndex(next);
     },
     responsive: [
       {
-        breakpoint: 768, // Adjust for smaller screens
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -62,8 +75,8 @@ function RightSideSection() {
   };
 
   return (
-    <div className="flex justify-center items-center w-1/2 min-h-screen relative overflow-hidden">
-      {/* Inline Style for Floating Effect */}
+    <div className="flex justify-center items-center w-full lg:w-1/2 min-h-[35vh] md:min-h-[80vh] relative overflow-hidden my-4">
+      {/* Floating effect */}
       <style>
         {`
           @keyframes float {
@@ -84,45 +97,51 @@ function RightSideSection() {
         `}
       </style>
 
-      {/* Circular LPA Container with floating effect */}
+      {/* Circular LPA Container */}
       <div
-        className="absolute z-20 w-32 h-32 rounded-full bg-gray-800 text-white flex items-center justify-center text-xl font-semibold animate-float"
+        className="absolute z-20 w-16  md:w-32 h-16  md:h-32 rounded-full bg-gray-800 text-white flex items-center justify-center text-xs sm:text-sm md:text-xl font-semibold animate-float"
         style={{
           top: "20px",
           left: "20px",
-          flexDirection: "column", // Stack text and LPA vertically
+          flexDirection: "column",
         }}
       >
-        <span className="text-md">CTC</span> {/* Add CTC as a label */}
-        <span className="text-xl">{students[activeIndex].lpa}</span> {/* Display the LPA value */}
+        <span className="text-xs sm:text-sm md:text-md">CTC</span>
+        <span className="text-sm sm:text-lg md:text-xl">
+          {students[activeIndex].lpa}
+        </span>
       </div>
 
-      {/* Student Profiles Slider */}
-      <div className="absolute z-30 w-full h-full flex justify-center items-center mb-28">
+      {/* Slider Container */}
+      <div className="absolute z-30 w-full h-full flex justify-center items-center ">
         <Slider {...settings} className="w-full">
           {students.map((student, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center w-full h-full "
-              style={{ padding: "20px" }} // Ensuring the container is well-spaced
+              className="flex flex-col items-center justify-center w-full h-full"
+              style={{ padding: "10px" }} // Adjusted padding for better responsiveness
             >
-              {/* Center the profile image container */}
-              <div className="flex justify-center items-center w-full h-full  overflow-hidden mb-4">
+              {/* Profile Image Container */}
+              <div className="flex justify-center items-center w-full h-full overflow-hidden mb-4">
                 <img
                   src={student.image}
                   alt={student.name}
-                  className="w-full h-full object-cover"
+                  className="w-28 md:w-full h-28 md:h-full object-cover rounded-full"
                 />
               </div>
               {/* Text Information */}
-              <h3 className="text-xl font-semibold text-center">{student.name}</h3>
-              <p className="text-md text-gray-900 text-center">{student.department}</p>
-              {/* Company Logo Instead of Name */}
-              <div className="flex justify-center items-center rounded-2xl">
+              <h3 className="text-sm sm:text-lg md:text-xl font-semibold text-center">
+                {student.name}
+              </h3>
+              <p className="text-xs sm:text-sm md:text-md text-gray-900 text-center">
+                {student.department}
+              </p>
+              {/* Company Logo */}
+              <div className="flex justify-center items-center rounded-2xl px-4">
                 <img
                   src={student.companyLogo}
                   alt={student.companyLogo}
-                  className="w-42 h-42 object-contain rounded-2xl"
+                  className="w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 object-contain rounded-2xl"
                 />
               </div>
             </div>

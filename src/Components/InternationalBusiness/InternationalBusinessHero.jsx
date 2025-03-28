@@ -16,7 +16,7 @@ function InternationalBusinessHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#6C5CE7] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-screen"
+      className="px-8 md:px-16 relative bg-cover bg-[#6C5CE7] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-[80vh]"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}

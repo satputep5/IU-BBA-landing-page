@@ -15,12 +15,12 @@ function LogisticsManagementHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#F4A261] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-screen"
+      className="px-8 md:px-16 relative bg-cover bg-[#F4A261] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-[80vh] "
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        <h1 className="text-[36px] text-[#070b1a] font-bold leading-tight mb-6">
+        <h1 className="text-[36px] text-[#070b1a] font-bold leading-tight mb-2">
           BBA in Logistics & Supply Chain Management at School of Business (Indira University)
         </h1>
 
