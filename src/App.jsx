@@ -26,7 +26,7 @@ function App() {
         {/* <ApplyButtonRight /> */}
         <main>
           <Navbar />
-          <Brochure />
+          {/* <Brochure /> */}
           <Routes>
             {/* Define routes for all the pages */}
             <Route path="/" element={<BbaAdmission />} />
