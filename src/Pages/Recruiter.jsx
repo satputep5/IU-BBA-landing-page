@@ -2,39 +2,39 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Importing images
-import logo1 from "../assets/Images/acc.png";
-import logo2 from "../assets/Images/air.png";
-import logo3 from "../assets/Images/amz.png";
-import logo21 from "../assets/Images/came/21.avif";
-import logo22 from "../assets/Images/came/22.avif";
-import logo6 from "../assets/Images/came/24.avif";
-import logo7 from "../assets/Images/came/7.avif";
-import logo8 from "../assets/Images/came/8.avif";
-import logo9 from "../assets/Images/came/9.avif";
-import logo10 from "../assets/Images/came/10.avif";
-import logo11 from "../assets/Images/came/11.avif";
-import logo12 from "../assets/Images/came/12.avif";
-import logo13 from "../assets/Images/came/13.avif";
-import logo15 from "../assets/Images/came/15.avif";
-import logo19 from "../assets/Images/came/19.avif";
-import logo20 from "../assets/Images/came/20.avif";
-import logo25 from "../assets/Images/came/25.avif";
-import logo29 from "../assets/Images/came/29.avif";
-import logo32 from "../assets/Images/came/32.avif";
-import logo34 from "../assets/Images/came/34.avif";
-import logo37 from "../assets/Images/came/37.avif";
-import logo39 from "../assets/Images/came/39.avif";
-import logo40 from "../assets/Images/came/40.avif";
-import logo41 from "../assets/Images/came/41.avif";
-import logo42 from "../assets/Images/came/42.avif";
-import logo43 from "../assets/Images/came/43.avif";
-import logo44 from "../assets/Images/came/44.avif";
-import logo46 from "../assets/Images/came/46.avif";
-import logo47 from "../assets/Images/came/47.avif";
-import logo48 from "../assets/Images/came/48.avif";
-import logo50 from "../assets/Images/came/50.avif";
-import logo51 from "../assets/Images/came/51.avif";
+import logo1 from "../assets/Images/bba-logo/Wireframe - 1.png";
+import logo2 from "../assets/Images/bba-logo/Wireframe - 2.png";
+import logo3 from "../assets/Images/bba-logo/Wireframe - 3.png";
+import logo4 from "../assets/Images/bba-logo/Wireframe - 4.png";
+import logo5 from "../assets/Images/bba-logo/Wireframe - 5.png";
+import logo6 from "../assets/Images/bba-logo/Wireframe - 6.png";
+import logo7 from "../assets/Images/bba-logo/Wireframe - 7.png";
+import logo8 from "../assets/Images/bba-logo/Wireframe - 8.png";
+import logo9 from "../assets/Images/bba-logo/Wireframe - 9.png";
+import logo10 from "../assets/Images/bba-logo/Wireframe - 10.png";
+import logo11 from "../assets/Images/bba-logo/Wireframe - 11.png";
+import logo12 from "../assets/Images/bba-logo/Wireframe - 12.png";
+import logo13 from "../assets/Images/bba-logo/Wireframe - 13.png";
+import logo14 from "../assets/Images/bba-logo/Wireframe - 14.png";
+import logo15 from "../assets/Images/bba-logo/Wireframe - 15.png";
+import logo16 from "../assets/Images/bba-logo/Wireframe - 16.png";
+import logo17 from "../assets/Images/bba-logo/Wireframe - 17.png";
+import logo18 from "../assets/Images/bba-logo/Wireframe - 18.png";
+import logo19 from "../assets/Images/bba-logo/Wireframe - 19.png";
+import logo20 from "../assets/Images/bba-logo/Wireframe - 20.png";
+import logo21 from "../assets/Images/bba-logo/Wireframe - 21.png";
+import logo22 from "../assets/Images/bba-logo/Wireframe - 22.png";
+import logo23 from "../assets/Images/bba-logo/Wireframe - 23.png";
+import logo24 from "../assets/Images/bba-logo/Wireframe - 24.png";
+import logo25 from "../assets/Images/bba-logo/Wireframe - 25.png";
+import logo26 from "../assets/Images/bba-logo/Wireframe - 26.png";
+import logo27 from "../assets/Images/bba-logo/Wireframe - 27.png";
+import logo28 from "../assets/Images/bba-logo/Wireframe - 28.png";
+import logo29 from "../assets/Images/bba-logo/Wireframe - 29.png";
+import logo30 from "../assets/Images/bba-logo/Wireframe - 30.png";
+import logo31 from "../assets/Images/bba-logo/Wireframe - 31.png";
+import logo32 from "../assets/Images/bba-logo/Wireframe - 32.png";
+
 
 const sponsorsData = [
   {
@@ -43,8 +43,8 @@ const sponsorsData = [
       logo1,
       logo2,
       logo3,
-      logo21,
-      logo22,
+      logo4,
+      logo5,
       logo6,
       logo7,
       logo8,
@@ -53,33 +53,34 @@ const sponsorsData = [
       logo11,
       logo12,
       logo13,
+      logo14,
       logo15,
-      logo19,
-      logo20,
+      logo16,
     ],
   },
   {
     title: "PARTICIPATING DELEGATES",
     logos: [
+      logo17,
+      logo18,
+      logo19,
+      logo20,
+      logo21,
+      logo22,
+      logo23,
+      logo24,
       logo25,
+      logo26,
+      logo27,
+      logo28,
       logo29,
+      logo30,
+      logo31,
       logo32,
-      logo34,
-      logo37,
-      logo39,
-      logo40,
-      logo41,
-      logo42,
-      logo43,
-      logo44,
-      logo46,
-      logo47,
-      logo48,
-      logo50,
-      logo51,
     ],
   },
 ];
+
 
 const App = () => {
   const settings = {
@@ -93,7 +94,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex poppins-regular flex-col justify-center items-center py-2 md:py-4 bg-white px-0 md:px-16 font-poppins mb-10">
+    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins">
       {/* Heading above the slider */}
       <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
         Our Recruiters

@@ -16,7 +16,7 @@ function BbaAdmissionOverview() {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
-    
+
     window.addEventListener("resize", handleResize);
 
     // Initialize AOS
@@ -54,7 +54,14 @@ function BbaAdmissionOverview() {
         </h2>
 
         <p className="text-md md:text-lg text-gray-600 tracking-wide">
-          Looking for the best BBA colleges in Pune? Indira University, an established institution with a 30-year legacy of Indira Group of Institutes, offers a top BBA program in India designed for students who want to build a successful career across diverse industries. Our BBA admissions 2025 are now open, giving all ambitious students their chance to specialize in Marketing, Finance, HR, International Relations, Logistics & Supply Chain, Banking and Financial Services, Digital Marketing, Innovation, and Entrepreneurship.
+          Looking for the best BBA colleges in Pune? Indira University, an
+          established institution with a 30-year legacy of Indira Group of
+          Institutes, offers a top BBA program in India designed for students
+          who want to build a successful career across diverse industries. Our
+          BBA admissions 2025 are now open, giving all ambitious students their
+          chance to specialize in Marketing, Finance, HR, International
+          Relations, Logistics & Supply Chain, Banking and Financial Services,
+          Digital Marketing, Innovation, and Entrepreneurship.
         </p>
       </div>
 
@@ -62,17 +69,17 @@ function BbaAdmissionOverview() {
       <div className="flex-1 bg-white flex flex-col md:flex-row gap-4 md:gap-0">
         {/* First Image - Takes 100% width on small screens, 65% on large screens */}
         <div className="h-full flex-grow" style={firstImageStyle}>
-          <div className="w-full h-full">
+          <div className="w-full h-auto">
             <img
               src={Image1}
               alt="Image 1"
-              className="w-full h-full object-cover" // Ensures image fills the container
+              className="w-full h-full md:h-[50vh] object-cover" // Ensures image fills the container
             />
           </div>
         </div>
 
         {/* Gap - 5% */}
-        <div className="w-[5%] hidden md:block"></div>
+        <div className="w-[2%] hidden md:block"></div>
 
         {/* Second Part - Two Vertical Images in 100% width on small and medium screens, 30% on large screens */}
         <div className="flex flex-col gap-4 h-full" style={secondPartStyle}>
@@ -84,7 +91,8 @@ function BbaAdmissionOverview() {
               className="w-full h-full object-cover rounded-md" // Ensures image fills the container
             />
             {/* Black overlay */}
-            <div className="absolute inset-0 bg-black opacity-50"></div> {/* Black overlay */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+            {/* Black overlay */}
             <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
               <div>
                 <span className="text-4xl md:text-6xl">10k+</span> <br />

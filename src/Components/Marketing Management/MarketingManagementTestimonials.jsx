@@ -1,116 +1,62 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
 
-// Import images from the 'src' folder
-import vikramImage from "../../assets/Images/user.png";
-import simranImage from "../../assets/Images/user.png";
-import arjunImage from "../../assets/Images/user.png";
-import meeraImage from "../../assets/Images/user.png";
-import karanImage from "../../assets/Images/user.png";
-import nishaImage from "../../assets/Images/user.png";
-import aartiImage from "../../assets/Images/user.png";
+// Import real images from URLs
+import ankitImage from "../../assets/Images/Ankit_Jain.jpg";
+import misbahImage from "../../assets/Images/Misbah_Aryan.png";
+import akankshaImage from "../../assets/Images/Akanksha_Jain.png";
+import tanishaImage from "../../assets/Images/Tanisha_B.png";
+import salilImage from "../../assets/Images/Salil_Deshpande.jpg";
+import krishnaImage from "../../assets/Images/Krishna-prajapat.png";
+import giteshImage from "../../assets/Images/Gitesh-Agarwal.png";
 
+// Real testimonials
 const testimonials = [
   {
-    name: "Amit Kumar - Marketing Manager",
-    department: "Marketing Management",
-    year: "Batch-2024",
-    text: '"IU provided me with invaluable insights into business strategies and marketing techniques. The curriculum was practical and prepared me well for my career!"',
-    image: vikramImage,
+    name: "Ankit Jain - JP Morgan Chase, Associate",
+    text: `"ICCS is fantastic college and provides you with an excellent faculty and extracurricular activities throughout your journey. The teaching-learning structure is designed with a mix balance of theory and practical learning, which gives you a strong platform to grow further."`,
+    image: ankitImage,
   },
   {
-    name: "Priya Sharma - HR Executive",
-    department: "Human Resource Management",
-    year: "Batch-2023",
-    text: '"The hands-on experience and exposure to real-world HR practices at IU made me confident in my role as an HR Executive. I am grateful for the learning opportunities!"',
-    image: simranImage,
+    name: "Misbah Afshari - DOT, CEO",
+    text: `"Fun loving moments I spent at ICCS. ICCS provided me the best memories in the campus, classroom, and in real life with events too. Only because of this I created my own stand in this competitive world. I never felt like an outsider, foreigner student. Faculties and students were very cooperative and taught me good lessons when I was at ICCS. I would like to thank all the faculties of ICCS for understanding us and treating us like their own children."`,
+    image: misbahImage,
   },
   {
-    name: "Ravi Singh - Financial Analyst",
-    department: "Financial Management",
-    year: "Batch-2025",
-    text: '"IU’s finance program equipped me with all the skills needed for my career as a financial analyst. The faculty were experts, and the case studies were enriching!"',
-    image: arjunImage,
+    name: "Akanksha Jain - Central Convoy, Founder & CEO",
+    text: `"ICCS has opened me to my fullest potential making me eligible to avail the opportunities out there. Throughout my time here, I have been entrusted with various responsibilities and tasks that have molded my personality and leadership skills. The teachers at ICCS embody purposefulness and prioritize students' growth."`,
+    image: akankshaImage,
   },
   {
-    name: "Neha Patel - Business Development Executive",
-    department: "Marketing Management",
-    year: "Batch-2024",
-    text: '"The curriculum at IU helped me build my foundation in business development. From learning negotiation tactics to understanding market trends, it was the perfect preparation for my career!"',
-    image: meeraImage,
+    name: "Tanisha Barnwal - Northern Trust, Hedge Fund Analyst",
+    text: `"The flourishing 3-year journey of ICCS BBA has helped me improvise my skills, gain confidence, and focus on self-development. Right from numerous presentations, academic activities, college fests, cultural events, and industrial visits, I have gained immense learning, greater knowledge, and exciting experiences."`,
+    image: tanishaImage,
   },
   {
-    name: "Sanjay Yadav - Operations Manager",
-    department: "Logistics and Supply Chain Management",
-    year: "Batch-2024",
-    text: '"The real-world projects and internships provided by IU were essential in developing my problem-solving skills in operations management. I am proud to be part of such a wonderful institute!"',
-    image: karanImage,
+    name: "Salil Deshpande - Deutsche Bank, Senior Analyst",
+    text: `"ICCS has helped me develop a love for learning. It has given me a platform to build myself as well as my career. Every individual needs a platform to enrich their personality to face the world, and ICCS has given me that platform."`,
+    image: salilImage,
   },
   {
-    name: "Anjali Gupta - Entrepreneur",
-    department: "Innovation and Entrepreneurship",
-    year: "Batch-2025",
-    text: '"IU’s focus on entrepreneurship gave me the confidence to start my own business. The business strategy and startup courses were perfect for preparing me for the challenges of running my own company."',
-    image: nishaImage,
+    name: "Krishna Prajapat - Anand Rathi Wealth Limited, Vice President",
+    text: `"ICCS provides career guidance and campus placements which help build an inspired career and make students competent in the world of high competition. ICCS provides numerous opportunities for placements and has highly qualified and experienced faculty members who are very supportive."`,
+    image: krishnaImage,
   },
   {
-    name: "Vikram Mehta - Supply Chain Coordinator",
-    department: "Logistics and Supply Chain Management",
-    year: "Batch-2025",
-    text: '"The Supply Chain Management program at IU prepared me for a dynamic and fast-paced career. The practical knowledge and internships were key in shaping my current role."',
-    image: aartiImage,
-  },
-  {
-    name: "Manish Kumar - Project Manager",
-    department: "International Business",
-    year: "Batch-2024",
-    text: '"At IU, I learned the critical aspects of managing projects efficiently. The knowledge I gained in project planning, resource allocation, and risk management has been crucial to my role as a project manager."',
-    image: arjunImage,
-  },
-  {
-    name: "Simran Kaur - Marketing Executive",
-    department: "Digital Marketing",
-    year: "Batch-2024",
-    text: '"IU’s marketing program provided me with the tools I needed to develop and execute marketing strategies. The exposure to industry case studies helped me land my role as a marketing executive."',
-    image: meeraImage,
-  },
-  {
-    name: "Rajesh Verma - Finance Consultant",
-    department: "Banking and Financial Services",
-    year: "Batch-2025",
-    text: '"The finance courses at IU were extremely comprehensive, and the real-life case studies helped me develop critical thinking skills that are now essential in my role as a finance consultant."',
-    image: karanImage,
-  },
-  {
-    name: "Maya Singh - Business Analyst",
-    department: "Financial Management",
-    year: "Batch-2025",
-    text: '"IU’s business analytics program provided me with the expertise I needed to analyze and interpret business data effectively. This program laid the foundation for my career as a business analyst."',
-    image: nishaImage,
-  },
-  {
-    name: "Rahul Desai - International Business Manager",
-    department: "International Business",
-    year: "Batch-2024",
-    text: '"The global perspective I gained at IU has been indispensable in my career in international business. The international case studies and faculty expertise were top-notch."',
-    image: aartiImage,
+    name: "Gitesh Agarwal - Vennplay, CEO and Founder",
+    text: `"ICCS has a great and huge campus. The infrastructure is amazing, and there are different buildings for BBA, BBA IB, BBA CA, and B.Sc. Faculty members are the best for the course, and they have good knowledge about the subjects they teach. The teaching quality is the best, and they provide a wide perspective about the subjects."`,
+    image: giteshImage,
   },
 ];
-
-
 
 const Testimonials = () => {
   const [activeDot, setActiveDot] = useState(0);
   const [isHovered, setIsHovered] = useState(false); // Track hover state
   const intervalRef = useRef(null); // To store the interval ID
 
-  // Group testimonials into chunks of 4
+  // Group testimonials into chunks of 1 for horizontal scroll (1 per set)
   const groupedTestimonials = useMemo(() => {
-    const result = [];
-    for (let i = 0; i < testimonials.length; i += 4) {
-      result.push(testimonials.slice(i, i + 4));
-    }
-    return result;
-  }, [testimonials]);
+    return testimonials.map((testimonial) => [testimonial]); // Each testimonial as a separate group
+  }, []); // No need for testimonials in the dependency array
 
   // Function to start auto-sliding
   const startAutoSlide = () => {
@@ -136,7 +82,7 @@ const Testimonials = () => {
     return () => {
       stopAutoSlide(); // Cleanup interval on component unmount
     };
-  }, [groupedTestimonials.length, isHovered]); // Trigger on hover changes
+  }, [groupedTestimonials.length]); // Trigger only when length changes
 
   // Handle mouse enter and leave events to control auto sliding
   useEffect(() => {
@@ -145,33 +91,36 @@ const Testimonials = () => {
     } else {
       startAutoSlide(); // Start auto slide when hover ends
     }
-  }, [isHovered]);
+  }, [isHovered]); // Dependency on hover state
 
   return (
     <div
-      className="overflow-hidden w-full py-8 flex flex-col justify-center items-center"
+      className="overflow-hidden w-full py-4 flex flex-col justify-center items-center"
       onMouseEnter={() => setIsHovered(true)} // Stop auto slide on hover
       onMouseLeave={() => setIsHovered(false)} // Resume auto slide when hover ends
     >
-      {/* Testimonials Container */}
       <div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
         {groupedTestimonials[activeDot]?.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg flex-1 min-w-[250px] max-w-xs mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-[#388A86] hover:shadow-xl hover:border-2 hover:border-[#2C7667]" // Updated border and hover border
+            className="bg-white p-6 rounded-lg flex w-full max-w-[800px] mx-4 flex-row flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
             style={{
-              boxShadow: "0 2px 4px rgba(56, 138, 134, 0.4)", // Added rgba for primary color shadow effect
+              boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
             }}
           >
-            <img
-              src={testimonial.image}
-              alt={testimonial.name}
-              className="w-16 h-16 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-center mb-1">{testimonial.name}</h3>
-            <p className="text-center text-sm text-[#388A86]">{testimonial.department}</p>
-            <p className="text-center text-xs text-[#2C7667]">{testimonial.year}</p>
-            <p className="text-center text-black mt-4">{testimonial.text}</p>
+            <div className="flex-shrink-0">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-24 h-24 rounded-full"
+              />
+            </div>
+            <div className="ml-6 flex flex-col justify-center">
+              <p className="text-lg text-black mb-4">{testimonial.text}</p>
+              <div className="mt-4 text-right text-sm text-gray-600">
+                <p>{testimonial.name}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -182,8 +131,8 @@ const Testimonials = () => {
           <button
             key={index}
             className={`h-3 w-3 rounded-full mx-1 ${
-              activeDot === index ? "bg-[#388A86]" : "bg-[#B3D9D3]"
-            } transition-all duration-300 ease-in-out`} // Update active dot color and non-active color
+              activeDot === index ? "bg-blue-500" : "bg-gray-300"
+            } transition-all duration-300 ease-in-out`}
             onClick={() => setActiveDot(index)}
           />
         ))}
@@ -195,8 +144,8 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold text-center pt-4 text-[#388A86]">
-        What Our Students Say
+      <h1 className="text-4xl font-bold text-center pt-4 text-[#135683]">
+        What Our Alumni Say
       </h1>
       <Testimonials />
     </div>
