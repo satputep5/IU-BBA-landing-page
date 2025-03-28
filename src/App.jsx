@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <div style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}>
-        <ApplyButtonRight />
+        {/* <ApplyButtonRight /> */}
         <main>
           <Navbar />
           <Brochure />
