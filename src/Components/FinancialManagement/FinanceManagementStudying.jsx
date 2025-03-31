@@ -2,26 +2,27 @@ import React from "react";
 import MyImage from "../../assets/Images/iu-campus.png";
 import Image1 from "../../assets/Images/mm-study.png";
 import CircleImage from "../../assets/Images/green-circle.png";
-import SmallCircleImage from "../../assets/Images/red-circle.png";
+import SmallCircleImage from "../../assets/Images/green-circle.png";
 import Image2 from "../../assets/Images/goldman-sachs1.webp";
 
 function FinanceManagementStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-8 mb-2 poppins-regular">
+    <div className="flex flex-wrap px-4 md:px-8 lg:px-16 py-2 md:py-6 mb-4 ">
       {/* Left Side */}
-      <div className="w-full md:w-1/2 bg-white relative overflow-hidden">
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 bg-white relative">
         {/* Main Image */}
         <img
           src={MyImage}
           alt="Finance Management"
-          className="w-full h-full object-cover absolute top-0 right-20 rounded-t-xl"
+          className="w-full h-full object-cover rounded-t-xl pr-0 md:pr-10"
         />
 
         {/* 3D Effect Image */}
         <img
           src={Image1}
           alt="3D Image"
-          className="w-1/2 h-auto object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg z-10"
+          className="w-1/2 h-auto object-cover absolute bottom-10 right-2 md:-right-4 transform shadow-lg rounded-lg z-10"
         />
 
         {/* Floating Circle 1 */}
@@ -40,69 +41,74 @@ function FinanceManagementStudying() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-[50%] pl-8 flex flex-col">
-        <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
+      <div className="w-full md:w-1/2 pl-0 md:pl-8 flex flex-col justify-center">
+        <h1 className="text-3xl md:text-4xl font-semibold text-[#000000] my-4 text-left">
           Studying Finance Management at Indira University
         </h1>
-        <h1 className="text-4xl font-extralight text-left text-[#1D3557] mb-4">
+
+        <h2 className="text-2xl md:text-3xl font-extralight text-[#1D3557] mb-4 md:mb-6 text-left">
           Finance Management Program
-        </h1>
+        </h2>
 
-        {/* Horizontal Year Sections */}
-        <div className="flex justify-between mb-8">
-          {/* Year 1 */}
-          <div className="text-center">
-            
-            <h2 className="text-xl font-semibold mb-2">Year 1</h2>
-            <ul className="list-disc ml-4 text-lg">
-              <li>Accounting</li>
-              <li>Financial Mathematics</li>
-              <li>Investment Basics</li>
-            </ul>
-          </div>
-
-          {/* Divider */}
-          <div className="border-l border-gray-300 h-auto"></div>
-
-          {/* Year 2 */}
-          <div className="text-center">
-           
-            <h2 className="text-xl font-semibold mb-2">Year 2</h2>
-            <ul className="list-disc ml-4 text-lg">
-              <li>Stock Markets</li>
-              <li>Financial Modeling</li>
-              <li>Risk Management</li>
-            </ul>
-          </div>
-
-          {/* Divider */}
-          <div className="border-l border-gray-300 h-auto"></div>
-
-          {/* Year 3 */}
-          <div className="text-center">
-           
-            <h2 className="text-xl font-semibold mb-2">Year 3</h2>
-            <ul className="list-disc ml-4 text-lg">
-              <li>Wealth Management</li>
-              <li>Mergers & Acquisitions</li>
-              <li>Corporate Finance</li>
-            </ul>
-          </div>
+        {/* Year-wise Curriculum */}
+        <div className="flex flex-wrap gap-4 justify-center mb-6">
+          {[
+            {
+              year: "Year 1",
+              subjects: [
+                "Accounting",
+                "Financial Mathematics",
+                "Investment Basics",
+              ],
+            },
+            {
+              year: "Year 2",
+              subjects: [
+                "Stock Markets",
+                "Financial Modeling",
+                "Risk Management",
+              ],
+            },
+            {
+              year: "Year 3",
+              subjects: [
+                "Wealth Management",
+                "Mergers & Acquisitions",
+                "Corporate Finance",
+              ],
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex-1 text-center text-sm md:text-lg text-[#000000]"
+            >
+              <h3 className="text-xl font-semibold text-[#00B4D8] mb-2">
+                {item.year}
+              </h3>
+              <ul className="list-disc ml-4">
+                {item.subjects.map((subject, idx) => (
+                  <li key={idx}>{subject}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        <div className="flex items-center gap-1 my-1">
-          <p className="text-4xl text-[#1D3557] tracking-wide">
+        <div className="flex items-center gap-4 my-4">
+          <p className="text-xl md:text-2xl text-[#1D3557] tracking-wide">
             Investment Bankers at firms like Goldman Sachs earn ₹50+ LPA!
           </p>
           <img
             src={Image2}
             alt="Goldman Sachs Logo"
-            className="w-1/2 h-3/4 object-cover"
+            className="w-1/3 h-auto object-cover rounded-lg"
           />
         </div>
 
-        <p className="text-lg text-[#000000] tracking-wide my-1">
-          💰 BBA in Finance Salary in India – Freshers earn ₹6-8 LPA, while experienced professionals go beyond ₹30+ LPA in top firms like Goldman Sachs, JP Morgan, and Deloitte.
+        <p className="text-md md:text-lg text-[#000000] tracking-wide my-2">
+          💰 BBA in Finance Salary in India – Freshers earn ₹6-8 LPA, while
+          experienced professionals go beyond ₹30+ LPA in top firms like Goldman
+          Sachs, JP Morgan, and Deloitte.
         </p>
       </div>
     </div>

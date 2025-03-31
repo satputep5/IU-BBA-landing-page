@@ -1,45 +1,66 @@
-import React, { useEffect } from "react";
-import gsap from "gsap"; // Import GSAP for animations
-import RightSideSection from "../RightSideSection"; // Import the new child component
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import RightSideSection from "../RightSideSection";
 
 function InnovationAndEntrepreneurshipHero() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef(null);
+
   useEffect(() => {
-    // GSAP animation for floating effect on the stats rectangles
+    // GSAP floating animation for stats
     gsap.to(".stat-box", {
-      y: "-10px", // Move up by 10px
-      repeat: -1, // Repeat forever
-      yoyo: true, // Alternate up and down
-      duration: 1, // Duration of 1 second for each cycle
-      ease: "power1.inOut", // Smooth easing
+      y: "-10px",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+      ease: "power1.inOut",
     });
+
+    // Form entrance animation
+    gsap.fromTo(
+      formRef.current,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+    );
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false);
+      alert("Form submitted successfully!");
+      formRef.current.reset();
+    }, 2000);
+  };
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#f8f0e3] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-[80vh]"
+      className="px-8 md:px-16 relative bg-cover bg-[#f8f0e3] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        <h1 className="text-[36px] text-[#0e1133] font-bold leading-tight mb-6">
-          BBA in Innovation & Entrepreneurship at School of Business (Indira University)
+      <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl text-[#0e1133] font-bold mb-4 leading-tight">
+          BBA in <span className="text-[#FDCB6E]">Innovation & Entrepreneurship</span> at School of Business (Indira University)
         </h1>
 
-
-
-        {/* Form container below the text */}
         <div
+          ref={formRef}
           className="p-6 max-w-md w-full shadow-md mt-6"
           style={{
-            backgroundColor: "rgba(253, 203, 110, 0.3)", // Semi-transparent #FDCB6E
+            backgroundColor: "rgba(253, 203, 110, 0.4)",
+            backdropFilter: "blur(8px)",
           }}
         >
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <input
                 type="text"
                 id="name"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E] transition duration-300"
                 placeholder="Enter your name"
                 required
               />
@@ -48,8 +69,9 @@ function InnovationAndEntrepreneurshipHero() {
               <input
                 type="tel"
                 id="mobile"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E] transition duration-300"
                 placeholder="Enter your mobile number"
+                pattern="[0-9]{10}"
                 required
               />
             </div>
@@ -57,39 +79,48 @@ function InnovationAndEntrepreneurshipHero() {
             <div>
               <select
                 id="course"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E] transition duration-300"
                 required
               >
                 <option value="">Select Course</option>
-                {/* Add course options here */}
+                <option value="Innovation">Innovation Strategies</option>
+                <option value="Entrepreneurship">Entrepreneurship Fundamentals</option>
+                <option value="Startup-Management">Startup Management</option>
+                <option value="Business-Leadership">Business Leadership</option>
               </select>
             </div>
+
             <div>
               <button
                 type="submit"
-                className="w-full py-2 bg-[#FDCB6E] text-white rounded-lg hover:bg-[#D79C4C]"
+                disabled={isSubmitting}
+                className={`w-full py-3 text-white rounded-lg transition duration-300 ${
+                  isSubmitting
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-[#FDCB6E] hover:bg-[#D79C4C]"
+                }`}
               >
-                Submit
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>
         </div>
 
-        <p className="font-italic text-black my-2">
-          30 Years of Excellence in Education | 8 Specializations | 100%
-          Placement Assistance
+        <p className="italic text-black my-4 text-xl">
+          30 Years of Excellence in Education | 8 Specializations | 100% Placement Assistance
         </p>
 
-        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight my-6">
+        <h1 className="text-2xl text-[#0e1133] font-medium leading-tight my-6">
           The Future Belongs to{" "}
-          <span className="text-[#FDCB6E] font-bold">Innovators</span> &
-          Entrepreneurs
+          <span className="text-[#FDCB6E] font-bold">Innovators</span> &{" "}
+          <span className="text-[#D79C4C] font-bold">Entrepreneurs</span>
         </h1>
-
-
       </div>
 
-      <RightSideSection /> {/* New child component */}
+      <RightSideSection
+        title="Fuel Your Entrepreneurial Spirit"
+        description="Join our Innovation & Entrepreneurship program to turn your ideas into impactful businesses."
+      />
     </div>
   );
 }

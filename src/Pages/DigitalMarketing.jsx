@@ -21,7 +21,7 @@ function DigitalMarketing() {
       <DigitalMarketingOverview />
       <DigitalMarketingOfferings />
       <DigitalMarketingStudying />
-      <DigitalMarketingCarrerPaths />
+     <DigitalMarketingCarrerPaths /> 
       {/* <DigitalMarketingNumbers />
       <DigitalMarketingHighlights /> */}
       <DigitalMarketingJoin />

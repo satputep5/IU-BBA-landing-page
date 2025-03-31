@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 // Import images
-import logo from '../assets/Images/IU-Logo.jpg';
+import logo from "../assets/Images/IU-Logo.jpg";
 
 function Navbar() {
   const pulseTextAnimation = {
-    animation: 'pulseText 2s ease-in-out infinite',
+    animation: "pulseText 2s ease-in-out infinite",
   };
 
   const pulseKeyframes = `
@@ -29,25 +29,27 @@ function Navbar() {
 
       {/* Navbar (not fixed, so it will scroll with the page) */}
       <nav className="bg-gray-900 shadow-lg w-full">
-        <div className="mx-auto flex flex-col sm:flex-row items-center justify-between px-4 md:px-16 py-2 md:py-2">
+        <div className="mx-auto flex flex-col sm:flex-row items-center justify-between px-4 md:px-16 py-0 md:py-2">
           {/* Left Logo */}
-          <div className="py-2">
+          <div className="mt-2">
             <a href="/">
-              <img 
-                src={logo} 
-                alt="Logo" 
-                className="h-auto max-w-28 md:max-w-42" 
+              <img
+                src={logo}
+                alt="Logo"
+                className="h-auto max-w-28 md:max-w-42"
               />
             </a>
           </div>
 
           {/* Centered Text with Animation and Effects */}
           <div
-            className="flex-grow text-center text-white text-lg sm:text-xl md:text-3xl font-bold  mt-2 sm:mt-0"
+            className="flex-grow text-center text-white text-md  md:text-3xl font-bold  sm:mt-0"
             style={pulseTextAnimation}
           >
             Indira University <br />
-            <span className="text-lg">(formerly known as Indira Group of Institutes)</span>
+            <span className="text-md">
+              (formerly known as Indira Group of Institutes)
+            </span>
           </div>
         </div>
       </nav>

@@ -18,10 +18,10 @@ function MarketingManagementJoin() {
       {/* Text content */}
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
-          <h1 className="text-5xl font-bold text-white mb-6 mt-2">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 md:mb-6 mt-2">
             Apply for BBA today to secure admission at Indira University, one of the top BBA colleges in Pune.
           </h1>
-          <p className="text-xl text-gray-200 mb-8">
+          <p className="text-xl text-gray-200 mb-4 md:mb-8">
             Your journey to a successful career starts here!
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */}

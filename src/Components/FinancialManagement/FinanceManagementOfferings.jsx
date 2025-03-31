@@ -79,16 +79,16 @@ function FinanceManagementOfferings() {
   ];
 
   return (
-    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1D3557]" data-aos="fade-up">
+    <div className="px-8 md:px-16 py-2 md:py-6 bg-[#f3f4f6] poppins-regular">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 md:mb-8 text-[#1D3557]" data-aos="fade-up">
         Why Indira University ?
       </h2>
 
-      <div className="flex justify-center gap-6 flex-wrap">
+      <div className="flex justify-center gap-4 md:gap-6 flex-wrap">
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]"
+            className="p-3 md:p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px]"
             style={{ backgroundColor: card.color }}
             data-aos="fade-up"
           >

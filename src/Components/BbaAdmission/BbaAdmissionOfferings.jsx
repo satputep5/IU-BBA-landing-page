@@ -33,19 +33,19 @@ function BbaAdmissionOfferings() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#000000]" data-aos="fade-up">
+    <div className="px-8 md:px-16 py-4 md:py-8 bg-[#f3f4f6] poppins-regular">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8 text-[#000000]" data-aos="fade-up">
         Why Choose BBA at Indira University?
       </h2>
 
-      <div className="flex justify-center gap-6 flex-wrap">
+      <div className="flex justify-center gap-2 md:gap-6 flex-wrap">
         {/* Card 1 - Placement Assistance */}
         <div
           className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaBullhorn size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Best private BBA college with 100% placement assistance</p>
+          <FaBullhorn size={40}  className="text-white mb-4 icon" />
+          <p className="text-md md:text-lg font-semibold text-white">Best private BBA college with 100% placement assistance</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -54,8 +54,8 @@ function BbaAdmissionOfferings() {
           className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaHandshake size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Top recruiters like JusPay, KPMG, Amazon, Accenture, Airtel, and Zomato</p>
+          <FaHandshake size={40} className="text-white mb-4 icon" />
+          <p className="text-md md:text-lg font-semibold text-white">Top recruiters like JusPay, KPMG, Amazon, Accenture, Airtel, and Zomato</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -64,8 +64,8 @@ function BbaAdmissionOfferings() {
           className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaRegCalendarAlt size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">BBA program with placement in leading MNCs and startups</p>
+          <FaRegCalendarAlt size={40} className="text-white mb-4 icon" />
+          <p className="text-md md:text-lg font-semibold text-white">BBA program with placement in leading MNCs and startups</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -74,8 +74,8 @@ function BbaAdmissionOfferings() {
           className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaChartLine size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Industry-focused BBA course details with hands-on projects & internships</p>
+          <FaChartLine size={40} className="text-white mb-4 icon" />
+          <p className="text-md md:text-lg font-semibold text-white">Industry-focused BBA course details with hands-on projects & internships</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -84,8 +84,8 @@ function BbaAdmissionOfferings() {
           className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaUsers size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">BBA course eligibility – Open to students from any stream after 12th</p>
+          <FaUsers size={40} className="text-white mb-4 icon" />
+          <p className="text-md md:text-lg font-semibold text-white">BBA course eligibility – Open to students from any stream after 12th</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
 
@@ -94,8 +94,8 @@ function BbaAdmissionOfferings() {
           className="bg-[#135783] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
-          <FaRegClipboard size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Modern campus, expert faculty, global exposure, massive brand events, GUSTO, Sports facilities</p>
+          <FaRegClipboard size={40} className="text-white mb-4 icon" />
+          <p className="text-md md:text-lg font-semibold text-white">Modern campus, expert faculty, global exposure, massive brand events, GUSTO, Sports facilities</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
         </div>
       </div>

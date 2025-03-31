@@ -1,44 +1,66 @@
-import React, { useEffect } from "react";
-import gsap from "gsap"; // Import GSAP for animations
-import RightSideSection from "../RightSideSection"; // Import the new child component
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import RightSideSection from "../RightSideSection";
 
 function BankingAndFinancialServicesHero() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef(null);
+
   useEffect(() => {
     // GSAP animation for floating effect on the stats rectangles
     gsap.to(".stat-box", {
-      y: "-10px", // Move up by 10px
-      repeat: -1, // Repeat forever
-      yoyo: true, // Alternate up and down
-      duration: 1, // Duration of 1 second for each cycle
-      ease: "power1.inOut", // Smooth easing
+      y: "-10px",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+      ease: "power1.inOut",
     });
+
+    // Form animation
+    gsap.fromTo(
+      formRef.current,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+    );
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false);
+      alert("Form submitted successfully!");
+      formRef.current.reset();
+    }, 2000);
+  };
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#75b7d1] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-[80vh]"
+      className="px-8 md:px-16 relative bg-cover bg-[#75b7d1] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        <h1 className="text-[34px] text-[#FFFFFF] font-semibold leading-tight mb-6">
-          BBA in Banking & Financial Services at School of Business
-          (Indira University)
+      <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-4">
+          BBA in <span className="text-[#2A7B72]">Banking & Financial Services</span> at School of Business (Indira University)
         </h1>
 
-        {/* Form container below the text */}
         <div
+          ref={formRef}
           className="p-6 max-w-md w-full shadow-md mt-6"
           style={{
-            backgroundColor: "rgba(29, 53, 87, 0.3)", // Semi-transparent #1D3557
+            backgroundColor: "rgba(29, 53, 87, 0.4)",
+            backdropFilter: "blur(8px)",
           }}
         >
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <input
                 type="text"
                 id="name"
-                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72] transition duration-300"
                 placeholder="Enter your name"
                 required
               />
@@ -47,8 +69,9 @@ function BankingAndFinancialServicesHero() {
               <input
                 type="tel"
                 id="mobile"
-                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72] transition duration-300"
                 placeholder="Enter your mobile number"
+                pattern="[0-9]{10}"
                 required
               />
             </div>
@@ -56,61 +79,50 @@ function BankingAndFinancialServicesHero() {
             <div>
               <select
                 id="course"
-                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72] transition duration-300"
                 required
               >
-                <option value="Banking and Financial Services">
-                  Banking and Financial Services
-                </option>
-                <option value="Marketing Management">
-                  Marketing Management
-                </option>
-                <option value="Financial Management">
-                  Financial Management
-                </option>
-                <option value="Human Resource Management">
-                  Human Resource Management
-                </option>
-                <option value="Logistics and Supply Chain Management">
-                  Logistics and Supply Chain Management
-                </option>
-                <option value="International Business">
-                  International Business
-                </option>
+                <option value="Banking and Financial Services">Banking and Financial Services</option>
+                <option value="Marketing Management">Marketing Management</option>
+                <option value="Financial Management">Financial Management</option>
+                <option value="Human Resource Management">Human Resource Management</option>
+                <option value="Logistics and Supply Chain Management">Logistics and Supply Chain Management</option>
+                <option value="International Business">International Business</option>
                 <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Innovation and Entrepreneurship">
-                  Innovation and Entrepreneurship
-                </option>
+                <option value="Innovation and Entrepreneurship">Innovation and Entrepreneurship</option>
               </select>
             </div>
 
             <div>
               <button
                 type="submit"
-                className="w-full py-3 bg-[#264653] text-white rounded-lg hover:bg-[#75b7d1]"
+                disabled={isSubmitting}
+                className={`w-full py-3 text-white rounded-lg transition duration-300 ${
+                  isSubmitting
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-[#264653] hover:bg-[#75b7d1]"
+                }`}
               >
-                Submit
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>
         </div>
 
-        <p className="italic text-black my-4 text-2xl">
-          30 Years of Excellence in Education | 8 Specializations | 100%
-          Placement Assistance
+        <p className="italic text-black my-4 text-xl">
+          30 Years of Excellence in Education | 8 Specializations | 100% Placement Assistance
         </p>
 
-        <h1 className="text-3xl text-[#FFFFFF] font-semibold leading-tight mb-6">
-          <span className="text-[#264653] font-bold">
-            Banking and Financial Services:
-          </span>{" "}
-          Power economies and shape futures
+        <h1 className="text-2xl text-[#FFFFFF] font-semibold leading-tight mb-4">
+          <span className="text-[#264653] font-bold">Banking and Financial Services:</span> Power economies and shape futures
         </h1>
-
-
       </div>
 
-      <RightSideSection />
+      {/* Right side content with dynamic props */}
+      <RightSideSection
+        title="Empower Your Future in Finance"
+        description="Join our dynamic BBA program designed to equip you with the skills needed for success in the financial world."
+      />
     </div>
   );
 }

@@ -95,20 +95,20 @@ const Testimonials = () => {
 
   return (
     <div
-      className="overflow-hidden w-full py-4 flex flex-col justify-center items-center"
+      className=" w-auto py-2 md:py-4 flex flex-col justify-center items-center overflow-hidden"
       onMouseEnter={() => setIsHovered(true)} // Stop auto slide on hover
       onMouseLeave={() => setIsHovered(false)} // Resume auto slide when hover ends
     >
-      <div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
+      <div className="flex flex-col md:flex-row space-x-8 w-full max-w-[1200px] overflow-x-hidden py-2 md:py-4 justify-center transition-all duration-500 ease-in-out px-8 ">
         {groupedTestimonials[activeDot]?.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg flex w-full max-w-[800px] mx-4 flex-row flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
+            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
             style={{
               boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
             }}
           >
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 justify-center flex mb-1">
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
@@ -116,8 +116,8 @@ const Testimonials = () => {
               />
             </div>
             <div className="ml-6 flex flex-col justify-center">
-              <p className="text-lg text-black mb-4">{testimonial.text}</p>
-              <div className="mt-4 text-right text-sm text-gray-600">
+              <p className="text-sm md:text-lg text-black mb-4">{testimonial.text}</p>
+              <div className="mt-4 text-right text-sm sm:text-base text-gray-600">
                 <p>{testimonial.name}</p>
               </div>
             </div>
@@ -144,7 +144,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center pt-4 text-[#135683]">
         What Our Alumni Say
       </h1>
       <Testimonials />

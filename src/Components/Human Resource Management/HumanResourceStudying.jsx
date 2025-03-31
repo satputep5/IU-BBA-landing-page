@@ -1,105 +1,93 @@
 import React from "react";
-
-// Import images for the page
-import MyImage from "../../assets/Images/iu-campus.png"; // Main campus image
-import Image1 from "../../assets/Images/std-hr.jpg"; // 3D-style image
-import CircleImage from "../../assets/Images/green-circle.png"; // Floating larger circle
-import SmallCircleImage from "../../assets/Images/green-circle.png"; // Floating smaller circle
+import MyImage from "../../assets/Images/iu-campus.png";
+import Image1 from "../../assets/Images/std-hr.jpg";
+import CircleImage from "../../assets/Images/green-circle.png";
+import SmallCircleImage from "../../assets/Images/green-circle.png";
 
 function MarketingManagementStudying() {
   return (
-    <div className="flex px-6 md:px-16 py-16 bg-[#f9fafb]">
-      {/* Left Section: Image and Floating Elements */}
-      <div className="w-full md:w-[40%] bg-white rounded-lg relative overflow-hidden">
-        {/* Main Campus Image */}
+    <div className="flex flex-wrap px-6 md:px-16 py-16 bg-[#f9fafb]">
+      {/* Left Section: Image & Floating Elements */}
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 bg-white relative">
+        {/* Main Image */}
         <img
           src={MyImage}
-          alt="Marketing Management Campus"
-          className="w-auto h-full object-cover absolute top-0 right-24 rounded-t-lg"
+          alt="Finance Management"
+          className="w-full h-full object-cover rounded-t-xl pr-0 md:pr-10"
         />
 
-        {/* 3D Image at the bottom-right */}
+        {/* 3D Effect Image */}
         <img
           src={Image1}
-          alt="3D Study Image"
-          className="w-60 h-48 object-contain absolute bottom-8 right-8 transform shadow-lg rounded-lg"
+          alt="3D Image"
+          className="w-1/2 h-auto object-cover absolute bottom-10 right-2 md:-right-4 transform shadow-lg rounded-lg z-10"
         />
 
-        {/* Floating Large Circle */}
+        {/* Floating Circle 1 */}
         <img
           src={CircleImage}
-          alt="Floating Large Circle"
-          className="absolute top-[25%] right-[20%] w-16 h-16 animation-float"
+          alt="Floating Circle"
+          className="absolute top-[30%] right-[25%] w-16 h-16 animate-float z-20"
         />
 
-        {/* Floating Small Circle */}
+        {/* Floating Circle 2 */}
         <img
           src={SmallCircleImage}
           alt="Floating Small Circle"
-          className="absolute bottom-[10%] left-[5%] w-12 h-12 animation-float-slow"
+          className="absolute bottom-[10%] left-[1%] w-12 h-12 animate-float-slow z-20"
         />
       </div>
 
-      {/* Right Side (Text Content Section with Dynamic Height) */}
-      <div className="w-[60%] pl-8 flex flex-col">
-        <h1 className="text-4xl font-semibold text-left mb-4 text-[#000000]">
+      {/* Right Section: Text Content */}
+      <div className="w-full md:w-1/2 pl-4 md:pl-8 flex flex-col justify-center">
+        <h1 className="text-3xl md:text-4xl font-semibold text-[#000000] mb-4 text-left">
           Studying Human Resource Management at Indira University
         </h1>
-        <h1 className="text-4xl font-extralight text-left text-[#2A9D64] mb-6">
-          Human Resource Management Program
-        </h1>
 
-        <h2 className="text-2xl font-bold text-left mb-4 text-[#000000]">
-          What Will You Learn? (A People-First Approach)
+        <h2 className="text-2xl font-extralight text-[#2A9D64] mb-6 text-left">
+          Human Resource Management Program
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-6 text-[#000000]">
-          {/* Year 1 */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-lg font-semibold text-[#2A9D64] mb-4">
-              Year 1: Fundamentals of HR
-            </h3>
-            <ul className="list-disc pl-5 text-md">
-              <li>Organizational Behavior</li>
-              <li>Workplace Psychology</li>
-              <li>Introduction to HR Management</li>
-              <li>HR Ethics and Legal Issues</li>
-            </ul>
-          </div>
+        <h3 className="text-xl font-bold text-[#000000] mb-4">
+          What Will You Learn? (A People-First Approach)
+        </h3>
 
-          {/* Year 2 */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-lg font-semibold text-[#2A9D64] mb-4">
-              Year 2: Talent Management
-            </h3>
-            <ul className="list-disc pl-5 text-md">
-              <li>Talent Acquisition</li>
-              <li>Performance Management</li>
-              <li>HR Analytics</li>
-              <li>Employee Engagement</li>
-            </ul>
-          </div>
-
-          {/* Year 3 */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-lg font-semibold text-[#2A9D64] mb-4">
-              Year 3: Leadership & Strategy
-            </h3>
-            <ul className="list-disc pl-5 text-md">
-              <li>Leadership Development</li>
-              <li>Global HR Strategies</li>
-              <li>HR Tech and Innovation</li>
-              <li>Strategic HR Planning</li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-6 text-[#000000]">
+          {[
+            {
+              year: "Year 1",
+              title: "Fundamentals of HR",
+              subjects: ["Organizational Behavior", "Workplace Psychology", "Introduction to HR Management", "HR Ethics and Legal Issues"],
+            },
+            {
+              year: "Year 2",
+              title: "Talent Management",
+              subjects: ["Talent Acquisition", "Performance Management", "HR Analytics", "Employee Engagement"],
+            },
+            {
+              year: "Year 3",
+              title: "Leadership & Strategy",
+              subjects: ["Leadership Development", "Global HR Strategies", "HR Tech and Innovation", "Strategic HR Planning"],
+            },
+          ].map((item, index) => (
+            <div key={index} className="flex flex-col items-start">
+              <h4 className="text-lg font-semibold text-[#2A9D64] mb-2">{item.year}: {item.title}</h4>
+              <ul className="list-disc pl-5 text-md">
+                {item.subjects.map((subject, idx) => (
+                  <li key={idx}>{subject}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         <div className="text-left text-md mb-6 text-[#000000]">
-          <p className="flex items-center">
-            <strong>AI & HR Tech</strong> – Learn how AI is reshaping talent management.
+          <p className="flex items-center gap-2">
+            <strong className="text-[#2A9D64]">AI & HR Tech:</strong> Learn how AI is reshaping talent management.
           </p>
-          <p className="flex items-center">
-            <strong>Emotional Intelligence Training</strong> – Understand the psychology behind leadership.
+          <p className="flex items-center gap-2">
+            <strong className="text-[#2A9D64]">Emotional Intelligence Training:</strong> Understand the psychology behind leadership.
           </p>
         </div>
       </div>

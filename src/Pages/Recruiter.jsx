@@ -94,18 +94,18 @@ const App = () => {
   };
 
   return (
-    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins">
+    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins overflow-hidden">
       {/* Heading above the slider */}
-      <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
+      <div className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
         Our Recruiters
       </div>
 
       <Slider {...settings} className="w-full">
         {sponsorsData.map((slide, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="flex flex-row justify-center items-center w-full px-4">
+            <div className="flex flex-row justify-center items-center w-full ">
               <div
-                className="grid grid-cols-4 md:grid-cols-8 gap-4 justify-items-center w-full px-6"
+                className="grid grid-cols-4 md:grid-cols-8 gap-4 justify-items-center w-full px-6 md:px-0"
                 style={{ gridTemplateRows: "repeat(2, auto)" }} // Enforcing only two rows
               >
                 {slide.logos.map((logo, idx) => (

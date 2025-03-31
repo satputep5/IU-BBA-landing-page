@@ -1,48 +1,67 @@
-import React, { useEffect } from "react";
-import gsap from "gsap"; // Import GSAP for animations
-import RightSideSection from "../RightSideSection"; // Import the new child component
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import RightSideSection from "../RightSideSection";
 
 function FinanceManagementHero() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef(null);
+
   useEffect(() => {
-    // GSAP animation for floating effect on the stats rectangles
+    // GSAP floating animation for stats
     gsap.to(".stat-box", {
-      y: "-10px", // Move up by 10px
-      repeat: -1, // Repeat forever
-      yoyo: true, // Alternate up and down
-      duration: 1, // Duration of 1 second for each cycle
-      ease: "power1.inOut", // Smooth easing
+      y: "-10px",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+      ease: "power1.inOut",
     });
+
+    // Form entrance animation
+    gsap.fromTo(
+      formRef.current,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+    );
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false);
+      alert("Form submitted successfully!");
+      formRef.current.reset();
+    }, 2000);
+  };
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex items-center min-h-[80vh]"
+      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
       style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
     >
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-        {/* New Heading Above Existing Heading */}
-        <h1 className="text-[34px] text-[#0e1133] font-bold leading-tight mb-6">
-          BBA in Finance at School of Business (Indira University)
+      <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl text-[#0e1133] font-bold leading-tight mb-4">
+          BBA in <span className="text-[#1D3557]">Finance Management</span> at
+          School of Business (Indira University)
         </h1>
 
-        {/* <p className="mt-4 text-2xl text-black">
-          The best BBA college in Pune!
-        </p> */}
-
-        {/* Form container below the text */}
         <div
+          ref={formRef}
           className="p-6 max-w-md w-full shadow-md mt-6"
           style={{
-            backgroundColor: "rgba(29, 53, 87, 0.3)", // Semi-transparent #1D3557
+            backgroundColor: "rgba(29, 53, 87, 0.4)",
+            backdropFilter: "blur(8px)",
           }}
         >
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <input
                 type="text"
                 id="name"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557] transition duration-300"
                 placeholder="Enter your name"
                 required
               />
@@ -51,8 +70,9 @@ function FinanceManagementHero() {
               <input
                 type="tel"
                 id="mobile"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557] transition duration-300"
                 placeholder="Enter your mobile number"
+                pattern="[0-9]{10}"
                 required
               />
             </div>
@@ -60,7 +80,7 @@ function FinanceManagementHero() {
             <div>
               <select
                 id="course"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557]"
+                className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#1D3557] focus:outline-none focus:ring-2 focus:ring-[#1D3557] transition duration-300"
                 required
               >
                 <option value="Financial Management">
@@ -72,7 +92,6 @@ function FinanceManagementHero() {
                 <option value="Marketing Management">
                   Marketing Management
                 </option>
-
                 <option value="Human Resource Management">
                   Human Resource Management
                 </option>
@@ -88,31 +107,39 @@ function FinanceManagementHero() {
                 </option>
               </select>
             </div>
+
             <div>
               <button
                 type="submit"
-                className="w-full py-2 bg-[#1D3557] text-white rounded-lg hover:bg-[#132b47]"
+                disabled={isSubmitting}
+                className={`w-full py-3 text-white rounded-lg transition duration-300 ${
+                  isSubmitting
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-[#1D3557] hover:bg-[#132b47]"
+                }`}
               >
-                Submit
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>
         </div>
 
-        <p className="italic text-black my-4">
+        <p className="italic text-black my-4 text-xl">
           30 Years of Excellence in Education | 8 Specializations | 100%
           Placement Assistance
         </p>
 
-        <h1 className="text-3xl text-[#0e1133] font-medium leading-tight mb-4">
+        <h1 className="text-2xl text-[#0e1133] font-medium leading-tight mb-4">
           Master the Language of{" "}
-          <span className="text-[#1D3557] font-bold">Money.</span> Turn Numbers
+          <span className="text-[#1D3557] font-bold">Money</span>. Turn Numbers
           into Strategy. Drive the Economy.
         </h1>
-
       </div>
 
-      <RightSideSection />
+      <RightSideSection
+        title="Your Future in Finance Starts Here"
+        description="Join our BBA Finance program to unlock the doors to dynamic career opportunities in the financial world."
+      />
     </div>
   );
 }

@@ -59,6 +59,7 @@ function InnovationAndEntrepreneurshipOverview() {
       </div>
 
       {/* Right Part: First and Second Images */}
+      {/* Right Part: First and Second Images */}
       <div className="flex-1 bg-white flex flex-col md:flex-row gap-4 md:gap-0">
         {/* First Image - Takes 100% width on small screens, 65% on large screens */}
         <div className="h-full flex-grow" style={firstImageStyle}>
@@ -75,23 +76,15 @@ function InnovationAndEntrepreneurshipOverview() {
         <div className="w-[2%] hidden md:block"></div>
 
         {/* Second Part - Two Vertical Images in 100% width on small and medium screens, 30% on large screens */}
-        <div className="flex flex-col gap-4 h-full" style={secondPartStyle}>
+        <div className="flex flex-col gap-4 h-full " style={secondPartStyle}>
           {/* First Image with full overlay text and black overlay */}
           <div className="relative w-full h-full">
             <img
               src={Image2}
               alt="Image 2"
-              className="w-full h-full object-cover rounded-md" // Ensures image fills the container
+              className="w-full h-full hidden md:block object-cover rounded-md" // Ensures image fills the container
             />
-            {/* Black overlay */}
-            <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
-            {/* Black overlay */}
-            <div className="absolute inset-0 flex justify-center items-center bg-opacity-10 text-white text-lg font-semibold p-4 text-center">
-              <div>
-                <span className="text-4xl md:text-6xl">10k+</span> <br />
-                <span className="text-base md:text-xl">Students Impacted</span>
-              </div>
-            </div>
+
           </div>
 
           {/* Second Image below with padding */}
@@ -99,7 +92,7 @@ function InnovationAndEntrepreneurshipOverview() {
             <img
               src={Image3}
               alt="Image 3"
-              className="w-full h-full object-cover rounded-md" // Ensures image fills the container
+              className="w-full h-full object-cover hidden md:block rounded-md" // Ensures image fills the container
             />
           </div>
         </div>

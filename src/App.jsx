@@ -15,6 +15,7 @@ import Footer from "./Pages/Footer";
 import Brochure from "./Pages/Brochure";
 import BbaAdmission from "./Pages/BbaAdmission";
 import ApplyButtonRight from "./Components/ApplyButtonRight";
+import BbaExam from "./Pages/BbaExam";
 
 // Importing the 404 Page
 import NotFoundPage from "./Components/NotFoundPage"; // Make sure this is the correct path to your 404 page
@@ -23,13 +24,14 @@ function App() {
   return (
     <Router>
       <div style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}>
-        {/* <ApplyButtonRight /> */}
+        <ApplyButtonRight />
         <main>
           <Navbar />
-          {/* <Brochure /> */}
+          <Brochure />
           <Routes>
             {/* Define routes for all the pages */}
             <Route path="/" element={<BbaAdmission />} />
+            <Route path="/bba-exam" element={<BbaExam />} />
             <Route path="/marketing-management" element={<MarketingManagement />} />
             <Route path="/financial-management" element={<FinancialManagement />} />
             <Route path="/human-resource-management" element={<HumanResourceManagement />} />

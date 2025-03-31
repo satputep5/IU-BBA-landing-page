@@ -23,7 +23,7 @@ function BbaAdmission() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1
-          className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-1 md:mb-6"
+          className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-1 md:mb-6 mt-2"
           data-aos="fade-up"
         >
           Build Your Future with <span className="font-bold">BBA</span>{" "}

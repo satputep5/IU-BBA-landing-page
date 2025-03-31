@@ -15,12 +15,12 @@ function MarketingManagementJoin() {
       <div className="absolute top-0 left-0 w-full h-full bg-[#264653] opacity-70 z-10"></div>
 
       {/* Text content */}
-      <div className="relative z-20 px-8 md:px-16 py-4">
+      <div className="relative z-20 px-4 md:px-16 py-4">
         <div className="text-center mb-2">
-          <h1 className="text-5xl font-bold text-white mb-6 mt-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6 mt-2">
           Apply for BBA in Banking & Financial Services Today!
           </h1>
-          <p className="text-xl text-gray-200 mb-8">
+          <p className="text-xl text-gray-200 mb-4 md:mb-8">
           The Future is Financial – Are You Ready?
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */}

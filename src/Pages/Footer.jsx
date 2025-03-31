@@ -93,7 +93,7 @@ function Footer() {
           </div>
           {/* Middle Column */}
           <div className="space-y-6">
-            <h3 className="text-2xl text-[#023b5e] font-bold">
+            <h3 className="text-xl md:text-2xl text-[#023b5e] font-bold">
               Important Links
             </h3>
             {/* Grid layout for links */}
@@ -103,7 +103,7 @@ function Footer() {
                   href="https://indiraedu.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   Home
                 </a>
@@ -111,7 +111,7 @@ function Footer() {
                   href="https://indiraedu.com/index.php?/about-us"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   About Us
                 </a>
@@ -119,7 +119,7 @@ function Footer() {
                   href="https://indiraedu.com/index.php?/institutes"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   Institutes
                 </a>
@@ -127,7 +127,7 @@ function Footer() {
                   href="https://indiraedu.com/index.php?/admissions"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   Admissions
                 </a>
@@ -137,7 +137,7 @@ function Footer() {
                   href="https://indiraedu.com/index.php?/contact-us"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   Contact Us
                 </a>
@@ -145,7 +145,7 @@ function Footer() {
                   href="https://indiraedu.com/index.php?/accreditations-and-recognition"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   Accreditations and Recognition
                 </a>
@@ -153,7 +153,7 @@ function Footer() {
                   href="https://indiraedu.com/index.php?/PrivacyPolicy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   Privacy Policy
                 </a>
@@ -161,7 +161,7 @@ function Footer() {
                   href="http://www.unipune.ac.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-500 hover:text-gray-400"
+                  className="block text-gray-500 hover:text-gray-400 text-sm md:text-lg"
                 >
                   SPPU
                 </a>
@@ -171,7 +171,7 @@ function Footer() {
 
           {/* Right Column */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-[#023b5e]">Popular Posts</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-[#023b5e]">Popular Posts</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <a
@@ -185,7 +185,7 @@ function Footer() {
                     className="w-36 h-24 object-contain rounded-lg"
                   />
                   <div>
-                    <h4 className="font-semibold text-lg">
+                    <h4 className="font-semibold text-sm md:text-lg">
                       BBA in Logistics and Supply Chain Management Course at
                       IIMP BBA Pune
                     </h4>
@@ -205,7 +205,7 @@ function Footer() {
                     className="w-36 h-24 object-contain rounded-lg"
                   />
                   <div>
-                    <h4 className="font-semibold text-lg">
+                    <h4 className="font-semibold text-sm md:text-lg">
                       Why Study BBA after 12th?
                     </h4>
                     <p className="text-sm text-gray-400">July 12, 2022</p>

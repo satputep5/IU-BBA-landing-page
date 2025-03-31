@@ -6,21 +6,22 @@ import SmallCircleImage from "../../assets/Images/red-circle.png";
 
 function InnovationAndEntrepreneurshipStudying() {
   return (
-    <div className="flex px-8 md:px-16 py-8 mb-2 poppins-regular">
+    <div className="flex flex-wrap min-h-screen px-4 md:px-16 py-4 md:py-8 mb-2 poppins-regular bg-[#f9fafb]">
       {/* Left Side */}
-      <div className="w-full md:w-1/2 bg-white relative overflow-hidden">
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 bg-white relative">
         {/* Main Image */}
         <img
           src={MyImage}
           alt="Finance Management"
-          className="w-full h-full object-cover absolute top-0 right-20 rounded-t-xl"
+          className="w-full h-full object-cover rounded-t-xl pr-0 md:pr-10"
         />
 
         {/* 3D Effect Image */}
         <img
           src={Image1}
           alt="3D Image"
-          className="w-1/2 h-auto object-cover absolute bottom-10 right-0 transform shadow-lg rounded-lg z-10"
+          className="w-1/2 h-auto object-cover absolute bottom-10 right-2 md:-right-4 transform shadow-lg rounded-lg z-10"
         />
 
         {/* Floating Circle 1 */}
@@ -39,71 +40,48 @@ function InnovationAndEntrepreneurshipStudying() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-[50%] pl-8 flex flex-col">
-        <h1 className="text-3xl font-semibold text-left mb-4 text-[#000000]">
-          Why Innovation & Entrepreneurship? (Real-World Impact & Oppurtunities )
+      <div className="w-full md:w-1/2 pl-4 md:pl-8 flex flex-col">
+        <h1 className="text-3xl md:text-4xl font-semibold text-left my-2 text-[#000000]">
+          Why Innovation & Entrepreneurship? (Real-World Impact & Opportunities)
         </h1>
 
-        <p className="text-lg text-[#000000] tracking-wide my-1 mb-2">
+        <p className="text-sm md:text-lg text-[#000000] tracking-wide my-2">
           The world’s biggest companies—Apple, Tesla, Zomato—started as ideas. With a BBA in Entrepreneurship, you’ll learn to launch, scale, and sustain your business in competitive markets.
         </p>
 
         {/* Advertisement Section */}
-        <div className="my-2 text-left">
-          <p className="text-lg text-[#000000] font-medium mb-2">
-            <span className="font-semibold">✅ India’s startup ecosystem is booming </span> —with over 100+ unicorns and new opportunities every day!
-          </p>
-          <p className="text-lg text-[#000000]  mb-2">
-            <span className="font-semibold">✅ Want to be your own boss? </span> A BBA Entrepreneurship degree helps you build and fund your dream startup!
-          </p>
-          <p className="text-lg text-[#000000]  mb-2">
-            <span className="font-semibold"> ✅ Learn from success stories </span> of entrepreneurs who started with just an idea and built billion-dollar businesses.
-          </p>
+        <div className="my-4 text-left">
+          {[
+            "India’s startup ecosystem is booming — with over 100+ unicorns and new opportunities every day!",
+            "Want to be your own boss? A BBA Entrepreneurship degree helps you build and fund your dream startup!",
+            "Learn from success stories of entrepreneurs who started with just an idea and built billion-dollar businesses.",
+          ].map((text, index) => (
+            <p key={index} className="text-sm md:text-lg text-[#000000] font-medium mb-2 flex items-center">
+              <span className="font-semibold">✅ {text}</span>
+            </p>
+          ))}
         </div>
 
-        <div className="text-left text-lg mb-1 text-[#000000]">
-          <h1 className="text-3xl font-semibold text-left mb-4 text-[#000000]">
-            What Will You Learn?
-          </h1>
+        <h2 className="text-xl md:text-2xl font-semibold text-[#1D3557] mt-6 mb-4">
+          What Will You Learn?
+        </h2>
 
-          {/* Year Columns with One Divider Between Columns */}
-          <div className="flex gap-6 mb-6">
-            {/* Year 1 */}
-            <div className="flex-1 pr-2">
-              <h2 className="font-semibold text-lg mb-2">Year 1</h2>
-              <ul className="list-disc ml-5 text-sm text-[#000000]">
-                <li>Fundamentals of Entrepreneurship</li>
-                <li>Business Models</li>
-                <li>Market Research</li>
+        {/* 3 Columns for Year 1, 2, and 3 */}
+        <div className="flex flex-wrap gap-4 md:gap-6">
+          {[
+            { year: "Year 1", subjects: ["Fundamentals of Entrepreneurship", "Business Models", "Market Research"] },
+            { year: "Year 2", subjects: ["Digital Business", "Lean Startups", "Growth Hacking & Innovation Strategies"] },
+            { year: "Year 3", subjects: ["Venture Capital", "Mergers & Acquisitions", "Scaling a Business"] },
+          ].map((item, index) => (
+            <div key={index} className="text-left text-sm md:text-lg mb-1 text-[#000000] w-full md:w-1/3">
+              <span className="font-semibold">{item.year}:</span>
+              <ul className="list-disc pl-5">
+                {item.subjects.map((subject, idx) => (
+                  <li key={idx}>{subject}</li>
+                ))}
               </ul>
             </div>
-
-            {/* Divider */}
-            <div className="border-l-2 border-gray-300"></div>
-
-            {/* Year 2 */}
-            <div className="flex-1 pr-2">
-              <h2 className="font-semibold text-lg mb-2">Year 2</h2>
-              <ul className="list-disc ml-5 text-sm text-[#000000]">
-                <li>Digital Business</li>
-                <li>Lean Startups</li>
-                <li>Growth Hacking & Innovation Strategies</li>
-              </ul>
-            </div>
-
-            {/* Divider */}
-            <div className="border-l-2 border-gray-300"></div>
-
-            {/* Year 3 */}
-            <div className="flex-1">
-              <h2 className="font-semibold text-lg mb-2">Year 3</h2>
-              <ul className="list-disc ml-5 text-sm text-[#000000]">
-                <li>Venture Capital</li>
-                <li>Mergers & Acquisitions</li>
-                <li>Scaling a Business</li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
