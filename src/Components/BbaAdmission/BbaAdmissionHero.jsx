@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import gsap from "gsap"; // Import GSAP for animations
 
 import RightSideSection from "../RightSideSection"; // Import the new child component
+import bgImage from '../../assets/Images/main-bg.png'; // Adjust the path as needed
+
 
 function BbaAdmission() {
   useEffect(() => {
@@ -17,13 +19,18 @@ function BbaAdmission() {
 
   return (
     <div
-      className="px-8 md:px-16  relative bg-gradient-to-r from-[#135683] via-[#208098] to-[#2A9DA2] text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
-      style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
+      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
+      style={{
+        fontFamily: "Helvetica Neue Black, sans-serif",
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
         <h1
-          className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-1 md:mb-6 mt-2"
+          className="text-3xl md:text-4xl text-[#000000] font-semibold leading-tight mb-1 md:mb-6 mt-2"
           data-aos="fade-up"
         >
           Build Your Future with <span className="font-bold">BBA</span>{" "}

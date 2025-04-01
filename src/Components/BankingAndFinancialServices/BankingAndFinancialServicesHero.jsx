@@ -82,14 +82,29 @@ function BankingAndFinancialServicesHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72] transition duration-300"
                 required
               >
-                <option value="Banking and Financial Services">Banking and Financial Services</option>
-                <option value="Marketing Management">Marketing Management</option>
-                <option value="Financial Management">Financial Management</option>
-                <option value="Human Resource Management">Human Resource Management</option>
-                <option value="Logistics and Supply Chain Management">Logistics and Supply Chain Management</option>
-                <option value="International Business">International Business</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Innovation and Entrepreneurship">Innovation and Entrepreneurship</option>
+                             <option value="banking-financial-services">
+                  Banking & Financial Services
+                </option>
+                <option value="marketing-management">
+                  Marketing Management
+                </option>
+                <option value="financial-management">
+                  Financial Management
+                </option>
+                <option value="human-resource-management">
+                  Human Resource Management
+                </option>
+                <option value="logistics-supply-chain-management">
+                  Logistics & Supply Chain Management
+                </option>
+                <option value="international-business">
+                  International Business
+                </option>
+   
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="innovation-entrepreneurship">
+                  Innovation & Entrepreneurship
+                </option>
               </select>
             </div>
 

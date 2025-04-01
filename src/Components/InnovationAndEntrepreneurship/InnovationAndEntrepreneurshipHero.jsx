@@ -82,11 +82,29 @@ function InnovationAndEntrepreneurshipHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E] transition duration-300"
                 required
               >
-                <option value="">Select Course</option>
-                <option value="Innovation">Innovation Strategies</option>
-                <option value="Entrepreneurship">Entrepreneurship Fundamentals</option>
-                <option value="Startup-Management">Startup Management</option>
-                <option value="Business-Leadership">Business Leadership</option>
+                  <option value="innovation-entrepreneurship">
+                  Innovation & Entrepreneurship
+                </option>
+                <option value="marketing-management">
+                  Marketing Management
+                </option>
+                <option value="financial-management">
+                  Financial Management
+                </option>
+                <option value="human-resource-management">
+                  Human Resource Management
+                </option>
+                <option value="logistics-supply-chain-management">
+                  Logistics & Supply Chain Management
+                </option>
+                <option value="international-business">
+                  International Business
+                </option>
+                <option value="banking-financial-services">
+                  Banking & Financial Services
+                </option>
+                <option value="digital-marketing">Digital Marketing</option>
+              
               </select>
             </div>
 

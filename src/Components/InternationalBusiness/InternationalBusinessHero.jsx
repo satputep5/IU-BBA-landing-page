@@ -82,15 +82,29 @@ function InternationalBusinessHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#6C5CE7] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7] transition duration-300"
                 required
               >
-                <option value="">Select Course</option>
-                <option value="Marketing Management">Marketing Management</option>
-                <option value="Financial Management">Financial Management</option>
-                <option value="Banking and Financial Services">Banking & Financial Services</option>
-                <option value="Human Resource Management">Human Resource Management</option>
-                <option value="Logistics and Supply Chain Management">Logistics & Supply Chain</option>
-                <option value="International Business">International Business</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Innovation and Entrepreneurship">Innovation & Entrepreneurship</option>
+                  <option value="international-business">
+                  International Business
+                </option>
+                <option value="marketing-management">
+                  Marketing Management
+                </option>
+                <option value="financial-management">
+                  Financial Management
+                </option>
+                <option value="human-resource-management">
+                  Human Resource Management
+                </option>
+                <option value="logistics-supply-chain-management">
+                  Logistics & Supply Chain Management
+                </option>
+              
+                <option value="banking-financial-services">
+                  Banking & Financial Services
+                </option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="innovation-entrepreneurship">
+                  Innovation & Entrepreneurship
+                </option>
               </select>
             </div>
 

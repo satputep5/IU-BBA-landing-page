@@ -82,12 +82,29 @@ function LogisticsManagementHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#fff7f0] to-[#ffead6] text-black rounded border border-[#F4A261] focus:outline-none focus:ring-2 focus:ring-[#F4A261] transition duration-300"
                 required
               >
-                <option value="">Select Course</option>
-                <option value="Logistics Management">Logistics Management</option>
-                <option value="Supply Chain Operations">Supply Chain Operations</option>
-                <option value="Inventory Control">Inventory Control</option>
-                <option value="Global Trade">Global Trade</option>
-                <option value="Operations Management">Operations Management</option>
+                                <option value="logistics-supply-chain-management">
+                  Logistics & Supply Chain Management
+                </option>
+                <option value="marketing-management">
+                  Marketing Management
+                </option>
+                <option value="financial-management">
+                  Financial Management
+                </option>
+                <option value="human-resource-management">
+                  Human Resource Management
+                </option>
+
+                <option value="international-business">
+                  International Business
+                </option>
+                <option value="banking-financial-services">
+                  Banking & Financial Services
+                </option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="innovation-entrepreneurship">
+                  Innovation & Entrepreneurship
+                </option>
               </select>
             </div>
 

@@ -44,7 +44,8 @@ function DigitalMarketingHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
         <h1 className="text-3xl md:text-4xl text-[#0e1133] font-semibold leading-tight mb-4">
-          BBA in <span className="text-[#00B4D8]">Digital Marketing</span> at School of Business (Indira University)
+          BBA in <span className="text-[#00B4D8]">Digital Marketing</span> at
+          School of Business (Indira University)
         </h1>
 
         <div
@@ -82,14 +83,29 @@ function DigitalMarketingHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#00B4D8] focus:outline-none focus:ring-2 focus:ring-[#00B4D8] transition duration-300"
                 required
               >
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Banking and Financial Services">Banking and Financial Services</option>
-                <option value="Marketing Management">Marketing Management</option>
-                <option value="Financial Management">Financial Management</option>
-                <option value="Human Resource Management">Human Resource Management</option>
-                <option value="Logistics and Supply Chain Management">Logistics and Supply Chain Management</option>
-                <option value="International Business">International Business</option>
-                <option value="Innovation and Entrepreneurship">Innovation and Entrepreneurship</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="marketing-management">
+                  Marketing Management
+                </option>
+                <option value="financial-management">
+                  Financial Management
+                </option>
+                <option value="human-resource-management">
+                  Human Resource Management
+                </option>
+                <option value="logistics-supply-chain-management">
+                  Logistics & Supply Chain Management
+                </option>
+                <option value="international-business">
+                  International Business
+                </option>
+                <option value="banking-financial-services">
+                  Banking & Financial Services
+                </option>
+
+                <option value="innovation-entrepreneurship">
+                  Innovation & Entrepreneurship
+                </option>
               </select>
             </div>
 
@@ -110,11 +126,13 @@ function DigitalMarketingHero() {
         </div>
 
         <p className="italic text-black my-4 text-xl">
-          30 Years of Excellence in Education | 8 Specializations | 100% Placement Assistance
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
         </p>
 
         <h1 className="text-2xl text-[#0e1133] font-semibold leading-tight mb-4">
-          <span className="text-[#00B4D8] font-bold">The Internet</span> Never Sleeps – Why Should Your Career?
+          <span className="text-[#00B4D8] font-bold">The Internet</span> Never
+          Sleeps – Why Should Your Career?
         </h1>
       </div>
 

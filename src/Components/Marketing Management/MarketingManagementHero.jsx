@@ -44,7 +44,8 @@ function MarketingManagementHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
         <h1 className="text-3xl md:text-4xl text-[#0e1133] font-bold mb-4 leading-tight">
-          BBA in <span className="text-[#388A86]">Marketing Management</span> at School of Business (Indira University)
+          BBA in <span className="text-[#388A86]">Marketing Management</span> at
+          School of Business (Indira University)
         </h1>
 
         <div
@@ -82,13 +83,30 @@ function MarketingManagementHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#388A86] focus:outline-none focus:ring-2 focus:ring-[#388A86] transition duration-300"
                 required
               >
-                <option value="">Select Course</option>
-                <option value="Marketing Management">Marketing Management</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Brand Management">Brand Management</option>
-                <option value="Market Research">Market Research</option>
-                <option value="Advertising">Advertising</option>
-                <option value="International Marketing">International Marketing</option>
+                <option value="marketing-management">
+                  Marketing Management
+                </option>
+                <option value="logistics-supply-chain-management">
+                  Logistics & Supply Chain Management
+                </option>
+
+                <option value="financial-management">
+                  Financial Management
+                </option>
+                <option value="human-resource-management">
+                  Human Resource Management
+                </option>
+
+                <option value="international-business">
+                  International Business
+                </option>
+                <option value="banking-financial-services">
+                  Banking & Financial Services
+                </option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="innovation-entrepreneurship">
+                  Innovation & Entrepreneurship
+                </option>
               </select>
             </div>
 
@@ -115,7 +133,8 @@ function MarketingManagementHero() {
 
         <h1 className="text-2xl text-[#0e1133] font-medium leading-tight my-6">
           From crafting unforgettable ads to building billion-dollar{" "}
-          <span className="text-[#388A86] font-bold">brands—Marketing</span> is the art of influence.
+          <span className="text-[#388A86] font-bold">brands—Marketing</span> is
+          the art of influence.
         </h1>
       </div>
 
