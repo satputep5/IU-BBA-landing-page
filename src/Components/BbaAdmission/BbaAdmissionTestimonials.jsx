@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
 
 // Import real images from URLs
-import ankitImage from "../../assets/Images/Ankit_Jain.jpg";
-import misbahImage from "../../assets/Images/Misbah_Aryan.png";
-import akankshaImage from "../../assets/Images/Akanksha_Jain.png";
-import tanishaImage from "../../assets/Images/Tanisha_B.png";
-import salilImage from "../../assets/Images/Salil_Deshpande.jpg";
-import krishnaImage from "../../assets/Images/Krishna-prajapat.png";
-import giteshImage from "../../assets/Images/Gitesh-Agarwal.png";
+import ankitImage from "../../assets/Images/test-user/Ankit_Jain.avif";
+import misbahImage from "../../assets/Images/test-user/Misbah_Aryan.avif";
+import akankshaImage from "../../assets/Images/test-user/Akanksha_Jain.avif";
+import tanishaImage from "../../assets/Images/test-user/Tanisha_B.avif";
+import salilImage from "../../assets/Images/test-user/Salil_Deshpande.avif";
+import krishnaImage from "../../assets/Images/test-user/Krishna-prajapat.avif";
+import giteshImage from "../../assets/Images/test-user/Gitesh-Agarwal.avif";
 
 // Real testimonials
 const testimonials = [

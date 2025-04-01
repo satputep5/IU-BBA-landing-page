@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Importing images
-import marketingImage from '../../assets/Images/mm.jpg'; 
-import financialImage from '../../assets/Images/fm.jpg'; 
-import hrImage from '../../assets/Images/hrm.jpg'; 
-import logisticsImage from '../../assets/Images/lscp.jpg'; 
-import internationalBusinessImage from '../../assets/Images/ib.jpg'; 
-import bankingImage from '../../assets/Images/bfs.jpg'; 
+import marketingImage from '../../assets/Images/mm.avif'; 
+import financialImage from '../../assets/Images/fm.avif'; 
+import hrImage from '../../assets/Images/hrm.avif'; 
+import logisticsImage from '../../assets/Images/lscp.avif'; 
+import internationalBusinessImage from '../../assets/Images/ib.avif'; 
+import bankingImage from '../../assets/Images/bfs.avif'; 
 import digitalMarketingImage from '../../assets/Images/dm.avif'; 
-import innovationImage from '../../assets/Images/ie.jpg'; 
+import innovationImage from '../../assets/Images/ie.avif'; 
 
 function BbaAdmissionCourses() {
   const courses = [

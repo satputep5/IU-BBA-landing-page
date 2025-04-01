@@ -2,24 +2,24 @@
 import React from "react";
 
 // Import the images for recruiters section
-import img1 from "../../assets/Images/bba-logo/Wireframe - 1.png";
-import img2 from "../../assets/Images/bba-logo/Wireframe - 2.png";
-import img3 from "../../assets/Images/bba-logo/Wireframe - 3.png";
-import img4 from "../../assets/Images/bba-logo/Wireframe - 4.png";
-import img5 from "../../assets/Images/bba-logo/Wireframe - 5.png";
-import img6 from "../../assets/Images/bba-logo/Wireframe - 6.png";
-import img7 from "../../assets/Images/bba-logo/Wireframe - 7.png";
-import img8 from "../../assets/Images/bba-logo/Wireframe - 8.png";
-import img9 from "../../assets/Images/bba-logo/Wireframe - 9.png";
-import img10 from "../../assets/Images/bba-logo/Wireframe - 10.png";
-import img11 from "../../assets/Images/bba-logo/Wireframe - 11.png";
-import img12 from "../../assets/Images/bba-logo/Wireframe - 12.png";
-import img13 from "../../assets/Images/bba-logo/Wireframe - 13.png";
-import img14 from "../../assets/Images/bba-logo/Wireframe - 14.png";
-import img15 from "../../assets/Images/bba-logo/Wireframe - 15.png";
+import img1 from "../../assets/Images/bba-logo/Wireframe - 1.avif";
+import img2 from "../../assets/Images/bba-logo/Wireframe - 2.avif";
+import img3 from "../../assets/Images/bba-logo/Wireframe - 3.avif";
+import img4 from "../../assets/Images/bba-logo/Wireframe - 4.avif";
+import img5 from "../../assets/Images/bba-logo/Wireframe - 5.avif";
+import img6 from "../../assets/Images/bba-logo/Wireframe - 6.avif";
+import img7 from "../../assets/Images/bba-logo/Wireframe - 7.avif";
+import img8 from "../../assets/Images/bba-logo/Wireframe - 8.avif";
+import img9 from "../../assets/Images/bba-logo/Wireframe - 9.avif";
+import img10 from "../../assets/Images/bba-logo/Wireframe - 10.avif";
+import img11 from "../../assets/Images/bba-logo/Wireframe - 11.avif";
+import img12 from "../../assets/Images/bba-logo/Wireframe - 12.avif";
+import img13 from "../../assets/Images/bba-logo/Wireframe - 13.avif";
+import img14 from "../../assets/Images/bba-logo/Wireframe - 14.avif";
+import img15 from "../../assets/Images/bba-logo/Wireframe - 15.avif";
 
 // Import the placement image
-import placementImage from "../../assets/Images/bba-plac.jpeg";
+import placementImage from "../../assets/Images/bba-plac.avif";
 
 function MarketingManagementPlacement() {
   // Array of image sources for the recruiters section

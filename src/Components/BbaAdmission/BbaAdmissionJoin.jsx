@@ -1,6 +1,6 @@
 // src/components/MarketingManagementJoin.js
 import React from 'react';
-import backgroundImage from '../../assets/Images/nb-abstract.jpg'; // Adjust the path as necessary
+import backgroundImage from '../../assets/Images/nb-abstract.avif'; // Adjust the path as necessary
 import ApplyButton from '../ApplyButton'; // Import the ApplyButton component
 
 function MarketingManagementJoin() {
