@@ -7,7 +7,7 @@ import hrImage from '../../assets/Images/hrm.jpg';
 import logisticsImage from '../../assets/Images/lscp.jpg'; 
 import internationalBusinessImage from '../../assets/Images/ib.jpg'; 
 import bankingImage from '../../assets/Images/bfs.jpg'; 
-import digitalMarketingImage from '../../assets/Images/dm.jpg'; 
+import digitalMarketingImage from '../../assets/Images/dm.avif'; 
 import innovationImage from '../../assets/Images/ie.jpg'; 
 
 function BbaAdmissionCourses() {

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 // Import the images
-import Image1 from "../../assets/Images/isbs-1.jpg"; // Add your first image
-import Image2 from "../../assets/Images/isbs-std.jpg"; // Add your second image
-import Image3 from "../../assets/Images/isbs-class.jpg"; // Add your third image
+import Image1 from "../../assets/Images/isbs-1.avif"; // Add your first image
+import Image2 from "../../assets/Images/isbs-std.avif"; // Add your second image
+import Image3 from "../../assets/Images/isbs-class.avif"; // Add your third image
 
 // Import AOS and its CSS
 import AOS from "aos";
@@ -43,17 +43,17 @@ function MarketingManagementOverview() {
     };
 
   return (
-    <div className="flex flex-col md:flex-row-reverse justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular gap-x-8 ">
+    <div className="flex flex-col md:flex-row-reverse justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular gap-x-8 overflow-hidden">
       {/* Left Part: Program Overview */}
       <div className="flex-1" data-aos="fade-left">
         {/* Small "Marketing Management" Text above heading */}
         <p className="text-lg text-[#388a86] mb-2">Program Overview</p>
 
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4">
           Marketing Management
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide">
+        <p className="text-lg md:text-2xl text-gray-600 tracking-wide">
           Looking for the Best BBA in Marketing colleges to kickstart your
           career? Indira University offers an industry-aligned BBA in Marketing
           course designed to help students master brand management, market

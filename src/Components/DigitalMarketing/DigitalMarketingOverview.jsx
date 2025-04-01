@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 // Import the images
-import Image1 from "../../assets/Images/isbs-1.jpg"; // Add your first image
-import Image2 from "../../assets/Images/isbs-std.jpg"; // Add your second image
-import Image3 from "../../assets/Images/isbs-class.jpg"; // Add your third image
+import Image1 from "../../assets/Images/isbs-1.avif"; // Add your first image
+import Image2 from "../../assets/Images/isbs-std.avif"; // Add your second image
+import Image3 from "../../assets/Images/isbs-class.avif"; // Add your third image
 
 // Import AOS and its CSS
 import AOS from "aos";
@@ -49,7 +49,7 @@ function DigitalMarketingOverview() {
         {/* Small "Marketing Management" Text above heading */}
         <p className="text-lg text-[#00B4D8] mb-2">Program Overview</p>
 
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
           Digital Marketing Program
         </h2>
 

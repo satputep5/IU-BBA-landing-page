@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 // Import the images
-import Image1 from "../../assets/Images/isbs-1.jpg"; // Add your first image
-import Image2 from "../../assets/Images/isbs-std.jpg"; // Add your second image
-import Image3 from "../../assets/Images/isbs-class.jpg"; // Add your third image
+import Image1 from "../../assets/Images/isbs-1.avif"; // Add your first image
+import Image2 from "../../assets/Images/isbs-std.avif"; // Add your second image
+import Image3 from "../../assets/Images/isbs-class.avif"; // Add your third image
 
 // Import AOS and its CSS
 import AOS from "aos";
@@ -49,11 +49,11 @@ function HumanResourceOverview() {
         {/* Small "Human Resource" Text above heading */}
         <p className="text-lg text-[#2A9D64] mb-2">Program Overview</p>
 
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
           Human Resource Management
         </h2>
 
-        <p className="text-2xl text-gray-600 tracking-wide mb-2">
+        <p className="text-md md:text-xl text-gray-600 tracking-wide mb-2">
           In today’s fast-paced corporate world, Human Resource Management (HRM)
           is more than just hiring and payroll—it’s about shaping workplace
           culture, driving employee performance, and creating a thriving work
@@ -69,7 +69,7 @@ function HumanResourceOverview() {
           capital management.
         </p>
 
-        <p className="text-2xl text-gray-800 tracking-wide">
+        <p className="text-md md:text-xl text-gray-800 tracking-wide">
           Learn it with Indira’s BBA in HRM!
         </p>
       </div>

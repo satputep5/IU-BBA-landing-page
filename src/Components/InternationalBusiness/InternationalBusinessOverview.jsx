@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 // Import the images
-import Image1 from "../../assets/Images/isbs-1.jpg"; // Add your first image
-import Image2 from "../../assets/Images/isbs-std.jpg"; // Add your second image
-import Image3 from "../../assets/Images/isbs-class.jpg"; // Add your third image
+import Image1 from "../../assets/Images/isbs-1.avif"; // Add your first image
+import Image2 from "../../assets/Images/isbs-std.avif"; // Add your second image
+import Image3 from "../../assets/Images/isbs-class.avif"; // Add your third image
 
 // Import AOS and its CSS
 import AOS from "aos";

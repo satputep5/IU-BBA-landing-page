@@ -9,7 +9,7 @@ function DigitalMarketingStudying() {
   return (
     <div className="flex flex-wrap px-4 md:px-16 py-4 md:py-8 mb-2 overflow-hidden bg-[#f9fafb]">
       {/* Left Side */}
-      <div className="w-full md:w-1/2 bg-white relative">
+      <div className="w-full md:w-1/2 bg-white relative overflow-hidden">
         <img
           src={MyImage}
           alt="Finance Management"

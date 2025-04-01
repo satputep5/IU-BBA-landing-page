@@ -4,7 +4,7 @@ import { FaBox, FaIndustry, FaTruckLoading, FaCheckCircle, FaWarehouse, FaTools,
 function SupplyChainPillars() {
   return (
     <div className="px-8 md:px-16 py-4 bg-gradient-to-r from-[#F9F7F2] to-[#FFFFFF] poppins-regular">
-      <h1 className="text-5xl font-bold text-center text-[#1D3557] mb-12 leading-tight">
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-[#1D3557] mb-4 md:mb-8 leading-tight">
         Supply & Chain: <span className="text-[#F26F08]">The Two Pillars</span> of Global Business
       </h1>
 

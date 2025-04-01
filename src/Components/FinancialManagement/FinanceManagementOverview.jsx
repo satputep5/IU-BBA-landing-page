@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Image1 from "../../assets/Images/isbs-1.jpg";
-import Image2 from "../../assets/Images/isbs-std.jpg";
-import Image3 from "../../assets/Images/isbs-class.jpg";
+import Image1 from "../../assets/Images/isbs-1.avif";
+import Image2 from "../../assets/Images/isbs-std.avif";
+import Image3 from "../../assets/Images/isbs-class.avif";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

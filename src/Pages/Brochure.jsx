@@ -57,7 +57,7 @@ const Brochure = () => {
             <img
               src={brochureImage}
               alt="Brochure"
-              className="w-24 h-24 object-contain cursor-pointer"
+              className="w-20 h-20 md:w-24 md:h-24 object-contain cursor-pointer"
               onClick={openPopup} // Open the form when the image is clicked
             />
             {/* Close button for brochure */}

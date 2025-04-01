@@ -33,15 +33,16 @@ function MarketingManagementOfferings() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
-        Why Indira University ?
-      </h2>
+    <div className="px-4 md:px-16 py-2 md:py-6 bg-[#f3f4f6] poppins-regular">
+<h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#1f2937] hover:text-[#F26F08] transition duration-300 ease-in-out transform hover:scale-105" data-aos="fade-up">
+  Why Indira University?
+</h2>
+
 
       <div className="flex justify-center gap-6 flex-wrap">
         {/* Card 1 - One of the Best Colleges for BBA in Marketing */}
         <div
-          className="bg-[#3498db] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#3498db] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaUsers size={50} className="text-white mb-4 icon" />
@@ -52,7 +53,7 @@ function MarketingManagementOfferings() {
 
         {/* Card 2 - Industry-Integrated Curriculum */}
         <div
-          className="bg-[#e74c3c] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#e74c3c] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaBullhorn size={50} className="text-white mb-4 icon" />
@@ -63,7 +64,7 @@ function MarketingManagementOfferings() {
 
         {/* Card 3 - Exclusive Guest Lectures */}
         <div
-          className="bg-[#9b59b6] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#9b59b6] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaUserTie size={50} className="text-white mb-4 icon" />
@@ -76,7 +77,7 @@ function MarketingManagementOfferings() {
 
         {/* Card 4 - Industry Readiness Programme */}
         <div
-          className="bg-[#2ecc71] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#2ecc71] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaChalkboardTeacher size={50} className="text-white mb-4 icon" />
@@ -89,7 +90,7 @@ function MarketingManagementOfferings() {
 
         {/* Card 5 - Vibrant Campus Life */}
         <div
-          className="bg-[#f39c12] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#f39c12] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaLeaf size={50} className="text-white mb-4 icon" />
@@ -102,7 +103,7 @@ function MarketingManagementOfferings() {
 
         {/* Card 6 - Sports & Extracurriculars */}
         <div
-          className="bg-[#f1c40f] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#f1c40f] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaFutbol size={50} className="text-white mb-4 icon" />
@@ -115,7 +116,7 @@ function MarketingManagementOfferings() {
 
         {/* Card 7 - Top Placements & Career Support */}
         <div
-          className="bg-[#1abc9c] p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
+          className="bg-[#1abc9c] p-2 md:p-4 shadow-xl flex flex-col items-start justify-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 max-w-[250px] flex-shrink-0"
           data-aos="fade-up"
         >
           <FaBriefcase size={50} className="text-white mb-4 icon" />

@@ -1,6 +1,6 @@
-import React from 'react';
-import backgroundImage from '../../assets/Images/mark-join.jpg'; // Adjust the path as necessary
-import ApplyButton from '../ApplyButton'; // Import the ApplyButton component
+import React from "react";
+import backgroundImage from "../../assets/Images/mark-join.jpg"; // Adjust the path as necessary
+import ApplyButton from "../ApplyButton"; // Import the ApplyButton component
 
 function MarketingManagementJoin() {
   return (
@@ -17,11 +17,11 @@ function MarketingManagementJoin() {
       {/* Text content */}
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
-          <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-          Apply for BBA in Logistics & Supply Chain Management Now!
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6 mt-2">
+            Apply for BBA in Logistics & Supply Chain Management Now!
           </h1>
-          <p className="text-xl text-gray-200 mb-8">
-          Are You Ready to Optimize the World?
+          <p className="text-xl text-gray-200 mb-4 md:mb-8">
+            Are You Ready to Optimize the World?
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */}
         </div>

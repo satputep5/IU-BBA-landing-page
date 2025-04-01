@@ -6,7 +6,7 @@ import SmallCircleImage from "../../assets/Images/green-circle.png";
 
 function MarketingManagementStudying() {
   return (
-    <div className="flex flex-wrap px-6 md:px-16 py-16 bg-[#f9fafb]">
+    <div className="flex flex-wrap px-6 md:px-16 py-4 md:py-8 bg-[#f9fafb]">
       {/* Left Section: Image & Floating Elements */}
       {/* Left Side */}
       <div className="w-full md:w-1/2 bg-white relative">
@@ -82,14 +82,15 @@ function MarketingManagementStudying() {
           ))}
         </div>
 
-        <div className="text-left text-md mb-6 text-[#000000]">
-          <p className="flex items-center gap-2">
-            <strong className="text-[#2A9D64]">AI & HR Tech:</strong> Learn how AI is reshaping talent management.
-          </p>
-          <p className="flex items-center gap-2">
-            <strong className="text-[#2A9D64]">Emotional Intelligence Training:</strong> Understand the psychology behind leadership.
-          </p>
-        </div>
+        <div className="text-left text-md mb-6 text-[#000000] space-y-4">
+  <p className="flex flex-wrap items-center gap-2">
+    <strong className="text-[#2A9D64]">AI & HR Tech:</strong> Learn how AI is reshaping talent management.
+  </p>
+  <p className="flex flex-wrap items-center gap-2">
+    <strong className="text-[#2A9D64]">Emotional Intelligence Training:</strong> Understand the psychology behind leadership.
+  </p>
+</div>
+
       </div>
     </div>
   );

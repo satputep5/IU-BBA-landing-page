@@ -15,12 +15,12 @@ function HumanResourceJoin() {
       <div className="absolute top-0 left-0 w-full h-full bg-[#2A9D64] opacity-70 z-10"></div> {/* Emerald Green Overlay */}
 
       {/* Text content */}
-      <div className="relative z-20 px-8 md:px-16 py-4">
+      <div className="relative z-20 px-4 md:px-16 py-2 md:py-4">
         <div className="text-center mb-2">
-          <h1 className="text-5xl font-bold text-white mb-6 mt-2">
+          <h1 className="text-4xl md:text-5xl  font-bold text-white mb-6 mt-2">
           Apply for BBA in Human Resource Management Now!
           </h1>
-          <p className="text-xl text-gray-200 mb-8">
+          <p className="text-xl text-gray-200 mb-4 md:mb-8">
           HR is the Future – Are You Ready to Lead?
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */}

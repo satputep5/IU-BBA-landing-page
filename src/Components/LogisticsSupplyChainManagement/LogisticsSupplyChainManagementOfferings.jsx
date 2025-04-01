@@ -36,7 +36,7 @@ function LogisticsAndSCMOfferings() {
 
   return (
     <div className="px-8 md:px-16 py-6 md:py-8 bg-[#f3f4f6] poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#1f2937]" data-aos="fade-up">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 text-[#1f2937]" data-aos="fade-up">
         Why Choose Indira University for Logistics & SCM?
       </h2>
 

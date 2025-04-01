@@ -1,4 +1,3 @@
-// InnovationAndEntrepreneurshipPlacement.js
 import React from 'react';
 
 // Import the images for recruiters section
@@ -18,12 +17,10 @@ import img13 from '../../assets/Images/bba-logo/Wireframe - 13.png';
 import img14 from '../../assets/Images/bba-logo/Wireframe - 14.png';
 import img15 from '../../assets/Images/bba-logo/Wireframe - 15.png';
 
-
 // Import the placement image
 import placementImage from '../../assets/Images/bba-plac.jpeg';
 
-function InnovationAndEntrepreneurshipPlacement() {
-  // Array of image sources for the recruiters section
+function HumanResourcePlacement() {
   const images = [
     img1, img2, img3, img4, img5, img6,
     img7, img8, img9, img10, img11, img12, img13, img14, img15
@@ -31,26 +28,21 @@ function InnovationAndEntrepreneurshipPlacement() {
 
   return (
     <div className="px-8 md:px-16 py-4">
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 flex-col md:flex-row">
         {/* Left Section: Placement Image */}
-        <div className="w-1/2 flex flex-col items-center">
-          {/* Heading for Placement Section */}
-          <h2 className="text-4xl font-semibold text-[#FDCB6E] mb-4">Top Placements</h2>
-          {/* Placement Image */}
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#FDCB6E] mb-4">Top Placements</h2>
           <img
-            src={placementImage} // Use the imported placement image
+            src={placementImage}
             alt="Placement Design"
-            className="w-full h-auto rounded-lg shadow-lg" // Styling for image
+            className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
 
         {/* Right Section: Recruiters */}
-        <div className="w-1/2 flex flex-col items-center">
-          {/* Heading for Recruiters Section */}
-          <h2 className="text-4xl font-semibold text-[#FDCB6E] mb-4">Our Recruiters</h2>
-          {/* Recruiters Grid */}
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#FDCB6E] mb-4 mt-3">Our Recruiters</h2>
           <div className="grid grid-cols-3 grid-rows-4 gap-4">
-            {/* 12 images for recruiters */}
             {images.map((image, index) => (
               <img
                 key={index}
@@ -66,4 +58,4 @@ function InnovationAndEntrepreneurshipPlacement() {
   );
 }
 
-export default InnovationAndEntrepreneurshipPlacement;
+export default HumanResourcePlacement;

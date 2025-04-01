@@ -45,18 +45,18 @@ function MarketingManagementStudying() {
         />
       </div>
 
-      {/* Right Side (Text Content Section with Dynamic Height) */}
-      <div className="w-[50%] pl-8 flex flex-col">
-        <h1 className="text-4xl font-semibold text-left mb-4 text-[#71bfb7]">
+      {/* Right Section: Text Content */}
+      <div className="w-full md:w-1/2 pl-0 md:pl-8 flex flex-col">
+        <h1 className="text-3xl md:text-4xl font-semibold text-center md:text-left mb-4 text-[#71bfb7]">
           Study Marketing at Indira University
         </h1>
-        <p className="text-left text-lg mb-6 text-[#000000]">
+        <p className="text-left text-md md:text-lg mb-4 text-[#000000] leading-relaxed text-center md:text-left">
           This course equips you with the skills to master brand management,
           market research, digital marketing, sales strategies, and advertising,
           making you a key player in any industry.
         </p>
 
-        <p className="text-left text-lg mb-6 text-[#000000]">
+        <p className="text-left text-md md:text-lg mb-4 text-[#000000] leading-relaxed text-center md:text-left">
           Our BBA Marketing syllabus is crafted to keep up with evolving
           industry trends, ensuring you gain real-world experience through live
           projects, internships, and hands-on exposure. Whether you're
@@ -66,30 +66,35 @@ function MarketingManagementStudying() {
         </p>
 
         {/* What Will You Learn? Section */}
-        <div className="mt-1">
-          <h2 className="text-2xl font-semibold text-[#71bfb7] mb-4">
+        <div className="mt-4">
+          <h2 className="text-2xl font-semibold text-[#71bfb7] mb-4 text-center md:text-left">
             What Will You Learn? (A Journey from Beginner to Marketing Expert!)
           </h2>
-          <div className="grid grid-cols-3 gap-6 text-sm text-[#333333]">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-[#333333]">
+            {/* Year 1 */}
+            <div className="text-left">
               <h3 className="font-semibold text-lg">Year 1</h3>
-              <ul className="list-disc pl-2">
+              <ul className="list-disc pl-4">
                 <li>Marketing Fundamentals</li>
                 <li>Consumer Psychology</li>
                 <li>Market Research</li>
               </ul>
             </div>
-            <div>
+
+            {/* Year 2 */}
+            <div className="text-left">
               <h3 className="font-semibold text-lg">Year 2</h3>
-              <ul className="list-disc pl-2">
+              <ul className="list-disc pl-4">
                 <li>Digital Marketing</li>
                 <li>Brand Management</li>
                 <li>Advertising Strategies</li>
               </ul>
             </div>
-            <div>
+
+            {/* Year 3 */}
+            <div className="text-left">
               <h3 className="font-semibold text-lg">Year 3</h3>
-              <ul className="list-disc pl-2">
+              <ul className="list-disc pl-4">
                 <li>Integrated Campaigns</li>
                 <li>Business Strategy</li>
                 <li>Growth Hacking</li>

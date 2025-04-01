@@ -18,10 +18,10 @@ function MarketingManagementJoin() {
       {/* Text content */}
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
-          <h1 className="text-5xl font-bold text-white mb-6 mt-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3 md:mb-6 mt-2">
           Apply for BBA in Marketing Management Today!
           </h1>
-          <p className="text-xl text-gray-200 mb-8">
+          <p className="text-xl text-gray-200 mb-4 md:mb-8">
           Ready to Build the Next Big Brand?
           </p>
           <ApplyButton /> {/* Using the ApplyButton component */}

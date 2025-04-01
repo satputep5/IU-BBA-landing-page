@@ -31,9 +31,9 @@ function MarketingManagementPlacement() {
 
   return (
     <div className="px-8 md:px-16 py-4">
-      <div className="flex space-x-4">
+      <div className="flex flex-col md:flex-row space-x-4 space-y-4">
         {/* Left Section: Placement Image */}
-        <div className="w-1/2 flex flex-col items-center">
+        <div className="w-full md:w-1/2 flex flex-col items-center">
           {/* Heading for Placement Section */}
           <h2 className="text-4xl font-semibold text-[#6C5CE7] mb-4">Top Placements</h2>
           {/* Placement Image */}
@@ -45,7 +45,7 @@ function MarketingManagementPlacement() {
         </div>
 
         {/* Right Section: Recruiters */}
-        <div className="w-1/2 flex flex-col items-center">
+        <div className="w-full md:w-1/2 flex flex-col items-center">
           {/* Heading for Recruiters Section */}
           <h2 className="text-4xl font-semibold text-[#6C5CE7] mb-4">Our Recruiters</h2>
           {/* Recruiters Grid */}

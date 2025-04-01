@@ -50,24 +50,21 @@ const testimonials = [
 
 const Testimonials = () => {
   const [activeDot, setActiveDot] = useState(0);
-  const [isHovered, setIsHovered] = useState(false); // Track hover state
-  const intervalRef = useRef(null); // To store the interval ID
+  const [isHovered, setIsHovered] = useState(false);
+  const intervalRef = useRef(null);
 
-  // Group testimonials into chunks of 1 for horizontal scroll (1 per set)
   const groupedTestimonials = useMemo(() => {
-    return testimonials.map((testimonial) => [testimonial]); // Each testimonial as a separate group
-  }, []); // No need for testimonials in the dependency array
+    return testimonials.map((testimonial) => [testimonial]);
+  }, []);
 
-  // Function to start auto-sliding
   const startAutoSlide = () => {
     if (!isHovered && !intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setActiveDot((prevDot) => (prevDot + 1) % groupedTestimonials.length);
-      }, 6000); // Change every 6 seconds
+      }, 6000);
     }
   };
 
-  // Function to clear the interval
   const stopAutoSlide = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
@@ -75,40 +72,35 @@ const Testimonials = () => {
     }
   };
 
-  // Auto slide effect, but paused on hover
   useEffect(() => {
     startAutoSlide();
+    return () => stopAutoSlide();
+  }, [groupedTestimonials.length]);
 
-    return () => {
-      stopAutoSlide(); // Cleanup interval on component unmount
-    };
-  }, [groupedTestimonials.length]); // Trigger only when length changes
-
-  // Handle mouse enter and leave events to control auto sliding
   useEffect(() => {
     if (isHovered) {
-      stopAutoSlide(); // Stop auto slide when hovered
+      stopAutoSlide();
     } else {
-      startAutoSlide(); // Start auto slide when hover ends
+      startAutoSlide();
     }
-  }, [isHovered]); // Dependency on hover state
+  }, [isHovered]);
 
   return (
     <div
-      className="overflow-hidden w-full py-4 flex flex-col justify-center items-center"
-      onMouseEnter={() => setIsHovered(true)} // Stop auto slide on hover
-      onMouseLeave={() => setIsHovered(false)} // Resume auto slide when hover ends
+      className="w-auto py-2 md:py-4 flex flex-col justify-center items-center overflow-hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex space-x-8 w-full max-w-[1200px] overflow-x-hidden py-4 justify-center transition-all duration-500 ease-in-out">
+      <div className="flex flex-col md:flex-row space-x-8 w-full max-w-[1200px] overflow-x-hidden py-2 md:py-4 justify-center transition-all duration-500 ease-in-out px-8">
         {groupedTestimonials[activeDot]?.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg flex w-full max-w-[800px] mx-4 flex-row flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
+            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-[#6C5CE7] hover:shadow-xl hover:border-2 hover:border-[#6C5CE7]"
             style={{
-              boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
+              boxShadow: "0 2px 4px rgba(108, 92, 231, 0.4)",
             }}
           >
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 justify-center flex mb-1">
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
@@ -116,8 +108,8 @@ const Testimonials = () => {
               />
             </div>
             <div className="ml-6 flex flex-col justify-center">
-              <p className="text-lg text-black mb-4">{testimonial.text}</p>
-              <div className="mt-4 text-right text-sm text-gray-600">
+              <p className="text-sm md:text-lg text-black mb-4">{testimonial.text}</p>
+              <div className="mt-4 text-right text-sm sm:text-base text-gray-600">
                 <p>{testimonial.name}</p>
               </div>
             </div>
@@ -125,13 +117,13 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {/* Navigation Dots - Placed Below Testimonials */}
+      {/* Navigation Dots */}
       <div className="flex justify-center mt-4">
         {groupedTestimonials.map((_, index) => (
           <button
             key={index}
             className={`h-3 w-3 rounded-full mx-1 ${
-              activeDot === index ? "bg-blue-500" : "bg-gray-300"
+              activeDot === index ? "bg-[#6C5CE7]" : "bg-gray-300"
             } transition-all duration-300 ease-in-out`}
             onClick={() => setActiveDot(index)}
           />
@@ -144,7 +136,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center pt-4 text-[#6C5CE7]">
         What Our Alumni Say
       </h1>
       <Testimonials />
