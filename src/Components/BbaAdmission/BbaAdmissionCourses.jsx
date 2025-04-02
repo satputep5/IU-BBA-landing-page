@@ -1,74 +1,42 @@
-import React from 'react';
+import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Importing images
-import marketingImage from '../../assets/Images/mm.avif'; 
-import financialImage from '../../assets/Images/fm.avif'; 
-import hrImage from '../../assets/Images/hrm.avif'; 
-import logisticsImage from '../../assets/Images/lscp.avif'; 
-import internationalBusinessImage from '../../assets/Images/ib.avif'; 
-import bankingImage from '../../assets/Images/bfs.avif'; 
-import digitalMarketingImage from '../../assets/Images/dm.avif'; 
-import innovationImage from '../../assets/Images/ie.avif'; 
+import marketingImage from "../../assets/Images/mm.avif";
+import financialImage from "../../assets/Images/fm.avif";
+import hrImage from "../../assets/Images/hrm.avif";
+import logisticsImage from "../../assets/Images/lscp.avif";
+import internationalBusinessImage from "../../assets/Images/ib.avif";
+import bankingImage from "../../assets/Images/bfs.avif";
+import digitalMarketingImage from "../../assets/Images/dm.avif";
+import innovationImage from "../../assets/Images/ie.avif";
 
 function BbaAdmissionCourses() {
   const courses = [
-    {
-      name: "Marketing Management",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/marketing-management", // Updated to route path
-      image: marketingImage
-    },
-    {
-      name: "Financial Management",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/financial-management", // Updated to route path
-      image: financialImage
-    },
-    {
-      name: "Human Resource Management",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/human-resource-management", // Updated to route path
-      image: hrImage
-    },
-    {
-      name: "Logistics and Supply Chain Management",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/logistics-supply-chain-management", // Updated to route path
-      image: logisticsImage
-    },
-    {
-      name: "International Business",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/international-business", // Updated to route path
-      image: internationalBusinessImage
-    },
-    {
-      name: "Banking and Financial Services",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/banking-financial-services", // Updated to route path
-      image: bankingImage
-    },
-    {
-      name: "Digital Marketing",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/digital-marketing", // Updated to route path
-      image: digitalMarketingImage
-    },
-    {
-      name: "Innovation and Entrepreneurship",
-      duration: "3 Years",
-      fees: "₹1,25,000/year",
-      applyLink: "/innovation-entrepreneurship", // Updated to route path
-      image: innovationImage
-    }
+    { name: "Marketing Management", duration: "3 Years", fees: "₹1,25,000/year", image: marketingImage },
+    { name: "Financial Management", duration: "3 Years", fees: "₹1,25,000/year", image: financialImage },
+    { name: "Human Resource Management", duration: "3 Years", fees: "₹1,25,000/year", image: hrImage },
+    { name: "Logistics and Supply Chain Management", duration: "3 Years", fees: "₹1,25,000/year", image: logisticsImage },
+    { name: "International Business", duration: "3 Years", fees: "₹1,25,000/year", image: internationalBusinessImage },
+    { name: "Banking and Financial Services", duration: "3 Years", fees: "₹1,25,000/year", image: bankingImage },
+    { name: "Digital Marketing", duration: "3 Years", fees: "₹1,25,000/year", image: digitalMarketingImage },
+    { name: "Innovation and Entrepreneurship", duration: "3 Years", fees: "₹1,25,000/year", image: innovationImage }
   ];
+
+  // Handle Apply button click (scroll & toast)
+  const handleApplyClick = (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+    toast.info("Kindly fill the form.", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  };
 
   return (
     <div className="px-8 md:px-16 py-2 md:py-8 bg-[#f3f4f6] poppins-regular">
@@ -76,7 +44,6 @@ function BbaAdmissionCourses() {
         BBA Courses
       </h2>
 
-      {/* Grid layout for courses */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {courses.map((course, index) => (
           <div
@@ -85,36 +52,51 @@ function BbaAdmissionCourses() {
             data-aos="fade-up"
             style={{
               minHeight: "350px",
-              boxShadow: "0px 4px 20px rgba(19, 86, 131, 0.3), 0px 8px 30px rgba(32, 128, 152, 0.2), 0px 12px 40px rgba(42, 157, 162, 0.1)" 
+              boxShadow: "0px 4px 20px rgba(19, 86, 131, 0.3), 0px 8px 30px rgba(32, 128, 152, 0.2), 0px 12px 40px rgba(42, 157, 162, 0.1)"
             }}
           >
-            {/* Image */}
-            <img
-              src={course.image}
-              alt={course.name}
-              className="w-full h-40 object-cover object-top rounded-t-xl"
-            />
+            <img src={course.image} alt={course.name} className="w-full h-40 object-cover object-top rounded-t-xl" />
 
-            {/* Content section with padding */}
             <div className="px-6 py-2 flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold text-white mb-2">{course.name}</h3>
               <p className="text-sm text-[#f3f4f6]">Duration: {course.duration}</p>
               <p className="text-sm text-[#f3f4f6] mt-2">Fees: {course.fees}</p>
 
-              {/* Apply Now Button with Yellow Border */}
-              <a
-                href={course.applyLink}
+              {/* Apply Now Button */}
+              <button
+                onClick={handleApplyClick}
                 className="mt-auto text-center bg-[#2563EB] text-white px-4 py-2 rounded-full font-semibold border-2 border-[#FBBF24] transform transition-all hover:bg-[#3B82F6] hover:scale-105 hover:border-[#FBBF24] hover:shadow-lg"
                 style={{
-                  boxShadow: "0px 4px 15px rgba(37, 99, 235, 0.3)" // Optional shadow for extra emphasis
+                  boxShadow: "0px 4px 15px rgba(37, 99, 235, 0.3)"
                 }}
               >
                 Apply Now
-              </a>
+              </button>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Toast Container */}
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        style={{
+          position: "fixed",
+          top: "20px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          zIndex: 9999,
+          textAlign: "center",
+        }}
+      />
     </div>
   );
 }

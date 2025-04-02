@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import brochureImage from "../assets/Images/3d-brochure.png"; // Replace with actual image path
-import brochurePDF from "../assets/Images/dummy-pdf.pdf"; // Replace with actual PDF file path
 
 const Brochure = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -9,14 +8,6 @@ const Brochure = () => {
 
   const handleClose = () => {
     setIsVisible(false); // Hide the brochure section
-  };
-
-  const handleDownload = () => {
-    // Trigger PDF download when the image is clicked
-    const link = document.createElement("a");
-    link.href = brochurePDF;
-    link.download = "brochure.pdf"; // Name the PDF file on download
-    link.click();
   };
 
   const openPopup = () => {
@@ -37,13 +28,10 @@ const Brochure = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     // Store the form data in sessionStorage
     sessionStorage.setItem("formData", JSON.stringify(formData));
-
-    // Trigger PDF download after form submission
-    handleDownload();
-
+    // Optionally, show a confirmation message
+    alert("Thank you for your submission! We'll get back to you soon.");
     // Close the form popup
     closePopup();
   };
@@ -60,7 +48,6 @@ const Brochure = () => {
               className="w-20 h-20 md:w-24 md:h-24 object-contain cursor-pointer"
               onClick={openPopup} // Open the form when the image is clicked
             />
-            {/* Close button for brochure */}
             <button
               onClick={handleClose}
               className="absolute top-0 right-0 w-8 h-8 border-2 border-gray-800 text-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white focus:outline-none"
@@ -87,10 +74,9 @@ const Brochure = () => {
               You'll receive immediate access to valuable information about our programs.
             </p>
             <p className="mb-6 text-sm text-gray-500">
-              Don't miss out! Fill out the form and download your brochure right away.
+              Don't miss out! Fill out the form to get in touch with us.
             </p>
 
-            {/* Form Content */}
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <input
@@ -139,13 +125,12 @@ const Brochure = () => {
                 type="submit"
                 className="w-full py-2 bg-[#299BA1] text-white rounded-lg"
               >
-                Submit and Download
+                Submit
               </button>
             </form>
 
-            {/* Close Button */}
             <button
-              onClick={closePopup} // Close the popup when the button is clicked
+              onClick={closePopup}
               className="absolute top-2 right-2 text-black text-xl"
             >
               &times;

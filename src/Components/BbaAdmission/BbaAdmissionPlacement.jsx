@@ -19,7 +19,7 @@ import img14 from "../../assets/Images/bba-logo/Wireframe - 14.avif";
 import img15 from "../../assets/Images/bba-logo/Wireframe - 15.avif";
 
 // Import the placement image
-import placementImage from "../../assets/Images/bba-plac.avif";
+import placementImage from "../../assets/Images/bba-placment.avif";
 
 function MarketingManagementPlacement() {
   // Array of image sources for the recruiters section

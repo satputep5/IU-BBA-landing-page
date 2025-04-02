@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
-import bgImage from '../../assets/Images/innovation.jpg'; // Adjust the path as needed
+import bgImage from "../../assets/Images/innovation.jpg"; // Adjust the path as needed
 
 function InnovationAndEntrepreneurshipHero() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,14 +43,16 @@ function InnovationAndEntrepreneurshipHero() {
       style={{
         fontFamily: "Helvetica Neue Black, sans-serif",
         backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
         <h1 className="text-3xl md:text-4xl text-[#0e1133] font-bold mb-4 leading-tight">
-          BBA in <span className="text-[#6a4502]">Innovation & Entrepreneurship</span> at School of Business (Indira University)
+          BBA in{" "}
+          <span className="text-[#6a4502]">Innovation & Entrepreneurship</span>{" "}
+          at School of Business (Indira University)
         </h1>
 
         <div
@@ -60,7 +62,6 @@ function InnovationAndEntrepreneurshipHero() {
             backgroundColor: "rgba(204, 153, 75, 0.4)", // Darker shade with the same transparency
             backdropFilter: "blur(8px)",
           }}
-          
         >
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
@@ -89,7 +90,7 @@ function InnovationAndEntrepreneurshipHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#fdfff0] to-[#f3ffd6] text-black rounded border border-[#FDCB6E] focus:outline-none focus:ring-2 focus:ring-[#FDCB6E] transition duration-300"
                 required
               >
-                  <option value="innovation-entrepreneurship">
+                <option value="innovation-entrepreneurship">
                   Innovation & Entrepreneurship
                 </option>
                 <option value="marketing-management">
@@ -111,29 +112,28 @@ function InnovationAndEntrepreneurshipHero() {
                   Banking & Financial Services
                 </option>
                 <option value="digital-marketing">Digital Marketing</option>
-              
               </select>
             </div>
 
             <div>
-            <button
-  type="submit"
-  disabled={isSubmitting}
-  className={`w-full py-3 text-white rounded-lg transition duration-300 ${
-    isSubmitting
-      ? "bg-gray-500 cursor-not-allowed"
-      : "bg-[#af7200] hover:bg-[#B88C3D]" // Darker shade on hover
-  }`}
->
-  {isSubmitting ? "Submitting..." : "Submit"}
-</button>
-
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={`w-full py-3 text-white rounded-lg transition duration-300 ${
+                  isSubmitting
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-[#af7200] hover:bg-[#B88C3D]" // Darker shade on hover
+                }`}
+              >
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
             </div>
           </form>
         </div>
 
         <p className="italic text-black my-4 text-xl">
-          30 Years of Excellence in Education | 8 Specializations | 100% Placement Assistance
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
         </p>
 
         <h1 className="text-2xl text-[#0e1133] font-medium leading-tight my-6">
