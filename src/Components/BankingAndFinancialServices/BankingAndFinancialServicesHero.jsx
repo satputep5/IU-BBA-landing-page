@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
+import bgImage from '../../assets/Images/banking.jpg'; // Adjust the path as needed
 
 function BankingAndFinancialServicesHero() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,13 +39,20 @@ function BankingAndFinancialServicesHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#75b7d1] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
-      style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
+      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center h-auto space-x-2"
+      style={{
+        fontFamily: "Helvetica Neue Black, sans-serif",
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
-        <h1 className="text-3xl md:text-4xl text-[#FFFFFF] font-semibold leading-tight mb-4">
-          BBA in <span className="text-[#2A7B72]">Banking & Financial Services</span> at School of Business (Indira University)
+        <h1 className="text-3xl md:text-4xl text-[#fefefe] font-semibold leading-tight mb-4">
+          BBA in{" "}
+          <span className="text-[#fdfdfd]">Banking & Financial Services</span>{" "}
+          at School of Business (Indira University)
         </h1>
 
         <div
@@ -82,7 +90,7 @@ function BankingAndFinancialServicesHero() {
                 className="w-full p-3 bg-gradient-to-r from-[#FFFFFF] via-[#D6F0FF] to-[#F0F8FF] text-black rounded border border-[#2A7B72] focus:outline-none focus:ring-2 focus:ring-[#2A7B72] transition duration-300"
                 required
               >
-                             <option value="banking-financial-services">
+                <option value="banking-financial-services">
                   Banking & Financial Services
                 </option>
                 <option value="marketing-management">
@@ -100,7 +108,7 @@ function BankingAndFinancialServicesHero() {
                 <option value="international-business">
                   International Business
                 </option>
-   
+
                 <option value="digital-marketing">Digital Marketing</option>
                 <option value="innovation-entrepreneurship">
                   Innovation & Entrepreneurship
@@ -115,7 +123,7 @@ function BankingAndFinancialServicesHero() {
                 className={`w-full py-3 text-white rounded-lg transition duration-300 ${
                   isSubmitting
                     ? "bg-gray-500 cursor-not-allowed"
-                    : "bg-[#264653] hover:bg-[#75b7d1]"
+                    : "bg-[#75b7d1] hover:bg-[#75b7d1]"
                 }`}
               >
                 {isSubmitting ? "Submitting..." : "Submit"}
@@ -124,12 +132,16 @@ function BankingAndFinancialServicesHero() {
           </form>
         </div>
 
-        <p className="italic text-black my-4 text-xl">
-          30 Years of Excellence in Education | 8 Specializations | 100% Placement Assistance
+        <p className="italic text-gray-200 my-4 text-xl">
+          30 Years of Excellence in Education | 8 Specializations | 100%
+          Placement Assistance
         </p>
 
         <h1 className="text-2xl text-[#FFFFFF] font-semibold leading-tight mb-4">
-          <span className="text-[#264653] font-bold">Banking and Financial Services:</span> Power economies and shape futures
+          <span className="text-[#75b7d1] font-bold">
+            Banking and Financial Services:
+          </span>{" "}
+          Power economies and shape futures
         </h1>
       </div>
 

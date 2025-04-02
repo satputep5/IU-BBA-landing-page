@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { FaChalkboard } from 'react-icons/fa';  // Using FaChalkboard for offline format
-import { FaRegClock } from 'react-icons/fa';  
-import { FaMoneyBillWave } from 'react-icons/fa'; 
+import { FaChalkboard } from 'react-icons/fa';  // For program format
+import { FaRegClock } from 'react-icons/fa';    // For duration
+import { FaChartLine } from 'react-icons/fa';   // Updated icon for Highest CTC
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -12,7 +12,7 @@ function MarketingManagementPointers() {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration
-      once: true, // Animation happens only once
+      once: true,     // Animation happens only once
     });
   }, []);
 
@@ -24,7 +24,7 @@ function MarketingManagementPointers() {
           className="bg-[#F6FBFF] p-4 shadow-lg flex flex-col items-center justify-center" 
           data-aos="fade-up"
         >
-          <FaChalkboard size={40} className="text-[#135683]" /> {/* Updated Icon */}
+          <FaChalkboard size={40} className="text-[#135683]" />
           <div className="text-center mt-2">
             <h2 className="text-[#135683] text-lg md:text-3xl font-semibold">Program Format</h2>
             <p className="mt-2 text-lg md:text-3xl font-semibold text-[#2A9DA2]">Offline</p>
@@ -45,15 +45,15 @@ function MarketingManagementPointers() {
           </div>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
           className="bg-[#F6FBFF] p-4 shadow-lg flex flex-col items-center justify-center" 
           data-aos="fade-up"
         >
-          <FaMoneyBillWave size={40} className="text-[#2A9DA2]" />
+          <FaChartLine size={40} className="text-[#2A9DA2]" /> {/* Updated Icon */}
           <div className="text-center mt-2">
-            <h2 className="text-[#135683] text-lg md:text-3xl font-semibold">Program Fees</h2>
-            <p className="mt-2 text-lg md:text-3xl font-semibold text-[#2A9DA2]">Rs. 1,25,000/-</p>
+            <h2 className="text-[#135683] text-lg md:text-3xl font-semibold">Highest CTC</h2>
+            <p className="mt-2 text-lg md:text-3xl font-semibold text-[#2A9DA2]">6 LPA</p>
           </div>
         </div>
       </div>

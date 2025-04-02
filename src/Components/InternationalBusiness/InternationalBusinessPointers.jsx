@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { FaCalendarAlt } from 'react-icons/fa'; 
-import { FaRegClock } from 'react-icons/fa';  
-import { FaMoneyBillWave } from 'react-icons/fa'; 
+import { FaCalendarAlt } from 'react-icons/fa';
+import { FaRegClock } from 'react-icons/fa';
+import { FaChartLine } from 'react-icons/fa';  // Updated Icon for Highest CTC
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -12,7 +12,7 @@ function MarketingManagementPointers() {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration
-      once: true, // Animation happens only once
+      once: true,     // Animation happens only once
     });
   }, []);
 
@@ -21,7 +21,7 @@ function MarketingManagementPointers() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16">
         {/* Card 1: Program Format */}
         <div
-          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center" 
+          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
           <FaCalendarAlt size={40} className="text-[#FF4C4C]" />
@@ -31,22 +31,24 @@ function MarketingManagementPointers() {
 
         {/* Card 2: Duration */}
         <div
-          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center" 
+          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
           <FaRegClock size={40} className="text-[#4C8BF5]" />
           <h2 className="mt-2 text-[#321aed]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#0f0273]">  BBA - 3 yrs <br /> Hons. - 4 yrs</p>
+          <p className="mt-2 text-xl font-semibold text-[#0f0273]">
+            BBA - 3 yrs <br /> Hons. - 4 yrs
+          </p>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
-          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center" 
+          className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaMoneyBillWave size={40} className="text-[#09955d]" />
-          <h2 className="mt-2 text-[#321aed]">Program Fees</h2>
-          <p className="mt-2 text-xl font-semibold text-[#0f0273]">Rs. 1,25,000/-</p>
+          <FaChartLine size={40} className="text-[#09955d]" /> {/* Updated Icon */}
+          <h2 className="mt-2 text-[#321aed]">Highest CTC</h2>
+          <p className="mt-2 text-xl font-semibold text-[#0f0273]">6 LPA</p>
         </div>
       </div>
     </div>

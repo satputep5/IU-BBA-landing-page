@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
+import bgImage from '../../assets/Images/blur-main.png'; // Adjust the path as needed
 
 function MarketingManagementHero() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,8 +39,13 @@ function MarketingManagementHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
-      style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
+      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
+      style={{
+        fontFamily: "Helvetica Neue Black, sans-serif",
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">

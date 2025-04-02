@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap"; // Import GSAP for animations
 
 import RightSideSection from "../RightSideSection"; // Import the new child component
-import bgImage from '../../assets/Images/main-bg.png'; // Adjust the path as needed
+import bgImage from '../../assets/Images/blur-main.png'; // Adjust the path as needed
 
 
 function BbaAdmission() {
@@ -19,7 +19,7 @@ function BbaAdmission() {
 
   return (
     <div
-      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
+      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center h-auto space-x-2"
       style={{
         fontFamily: "Helvetica Neue Black, sans-serif",
         backgroundImage: `url(${bgImage})`,
@@ -33,7 +33,7 @@ function BbaAdmission() {
           className="text-3xl md:text-4xl text-[#000000] font-semibold leading-tight mb-1 md:mb-6 mt-2"
           data-aos="fade-up"
         >
-          Build Your Future with <span className="font-bold">BBA</span>{" "}
+          Build Your Future with <span className="font-bold text-[#000000]">BBA</span>{" "}
           at School of Business (Indira University)
         </h1>
 

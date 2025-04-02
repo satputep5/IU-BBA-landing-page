@@ -1,7 +1,7 @@
 import React from "react";
 import MyImage from "../../assets/Images/iu-campus.png"; // Import your image
-import Image1 from "../../assets/Images/mm-study.png"; // Import your 3D-style image
-import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
+import Image1 from "../../assets/Images/int-bus.jpg"; // Import your 3D-style image
+// import CircleImage from "../../assets/Images/green-circle.png"; // Import your tiny circle PNG image
 import SmallCircleImage from "../../assets/Images/green-circle.png"; // Import your smaller circle PNG image
 
 function MarketingManagementStudying() {
@@ -25,11 +25,11 @@ function MarketingManagementStudying() {
         />
 
         {/* Floating Circle 1 */}
-        <img
+        {/* <img
           src={CircleImage}
           alt="Floating Circle"
           className="absolute top-[30%] right-[25%] w-16 h-16 animate-float z-20"
-        />
+        /> */}
 
         {/* Floating Circle 2 */}
         <img

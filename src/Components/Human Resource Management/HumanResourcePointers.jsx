@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { FaCalendarAlt } from 'react-icons/fa'; 
+import { FaCalendarAlt } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';  
-import { FaMoneyBillWave } from 'react-icons/fa'; 
+import { FaChartLine } from 'react-icons/fa';  // Updated Icon for Highest CTC
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -12,7 +12,7 @@ function HumanResourcePointers() {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration
-      once: true, // Animation happens only once
+      once: true,     // Animation happens only once
     });
   }, []);
 
@@ -38,17 +38,17 @@ function HumanResourcePointers() {
           <h2 className="mt-4 text-[#2A9D57]">Duration</h2>
           <p className="mt-2 text-xl font-semibold text-[#2A9D57]">
             BBA - 3 yrs <br /> Hons. - 4 yrs
-            </p>
+          </p>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
           className="bg-[#F6FBFF] p-2 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaMoneyBillWave size={40} className="text-[#38d473]" />
-          <h2 className="mt-4 text-[#2A9D57]">Program Fees</h2>
-          <p className="mt-2 text-xl font-semibold text-[#2A9D57]">Rs. 125000/-</p>
+          <FaChartLine size={40} className="text-[#38d473]" /> {/* Updated Icon */}
+          <h2 className="mt-4 text-[#2A9D57]">Highest CTC</h2>
+          <p className="mt-2 text-xl font-semibold text-[#2A9D57]">6 LPA</p>
         </div>
       </div>
     </div>

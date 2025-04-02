@@ -1,13 +1,13 @@
 import React from "react";
 import MyImage from "../../assets/Images/iu-campus.png";
-import Image1 from "../../assets/Images/mm-study.png";
+import Image1 from "../../assets/Images/std-inno.jpg";
 import CircleImage from "../../assets/Images/green-circle.png";
-import SmallCircleImage from "../../assets/Images/red-circle.png";
+import SmallCircleImage from "../../assets/Images/green-circle.png";
 
 function InnovationAndEntrepreneurshipStudying() {
   return (
     <div className="flex flex-wrap min-h-screen px-4 md:px-16 py-4 md:py-8 mb-2 poppins-regular bg-[#f9fafb]">
-      {/* Left Side */}
+
       {/* Left Side */}
       <div className="w-full md:w-1/2 bg-white relative">
         {/* Main Image */}

@@ -76,7 +76,7 @@ function RightSideSection() {
   };
 
   return (
-    <div className="flex justify-center items-center w-full lg:w-1/2 min-h-[60vh] md:min-h-[70vh] relative my-4 overflow-hidden">
+    <div className="flex justify-center items-center w-full lg:w-1/2 min-h-[60vh] md:min-h-[80vh] relative my-4 overflow-hidden">
 
       {/* Slider Container */}
       <div className="absolute z-30 w-full h-full flex justify-center items-center ">

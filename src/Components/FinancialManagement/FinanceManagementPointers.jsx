@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { FaChalkboard } from 'react-icons/fa';  // Using FaChalkboard for offline format
+import { FaChalkboard } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';
-import { FaMoneyBillWave } from 'react-icons/fa';
+import { FaChartLine } from 'react-icons/fa';  // Updated Icon for Highest CTC
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -12,7 +12,7 @@ function FinanceManagementPointers() {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration
-      once: true, // Animation happens only once
+      once: true,     // Animation happens only once
     });
   }, []);
 
@@ -24,7 +24,7 @@ function FinanceManagementPointers() {
           className="bg-[#F6FBFF] p-1 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaChalkboard size={40} className="text-[#2498e5]" /> {/* Updated Icon */}
+          <FaChalkboard size={40} className="text-[#2498e5]" />
           <h2 className="mt-2 text-[#1D3557]">Program Format</h2>
           <p className="mt-2 text-xl font-semibold text-[#1D3557]">Offline</p>
         </div>
@@ -36,17 +36,19 @@ function FinanceManagementPointers() {
         >
           <FaRegClock size={40} className="text-[#1D3557]" />
           <h2 className="mt-2 text-[#1D3557]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#1D3557]"> BBA - 3 yrs <br /> Hons. - 4 yrs</p>
+          <p className="mt-2 text-xl font-semibold text-[#1D3557]">
+            BBA - 3 yrs <br /> Hons. - 4 yrs
+          </p>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
           className="bg-[#F6FBFF] p-1 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaMoneyBillWave size={40} className="text-[#2E8B57]" />
-          <h2 className="mt-2 text-[#1D3557]">Program Fees</h2>
-          <p className="mt-2 text-xl font-semibold text-[#1D3557]">Rs. 125000/-</p>
+          <FaChartLine size={40} className="text-[#2E8B57]" /> {/* Updated Icon */}
+          <h2 className="mt-2 text-[#1D3557]">Highest CTC</h2>
+          <p className="mt-2 text-xl font-semibold text-[#1D3557]">6 LPA</p>
         </div>
       </div>
     </div>

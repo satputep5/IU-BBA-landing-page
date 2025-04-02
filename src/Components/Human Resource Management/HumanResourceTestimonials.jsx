@@ -103,10 +103,11 @@ const Testimonials = () => {
         {groupedTestimonials[activeDot]?.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
+            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-green-600"
             style={{
-              boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
-            }}
+              boxShadow: "0 2px 4px rgba(41, 157, 143, 0.4)", // Green shadow with #299D8F
+            }}            
+            
           >
             <div className="flex-shrink-0 justify-center flex mb-1">
               <img
@@ -131,7 +132,7 @@ const Testimonials = () => {
           <button
             key={index}
             className={`h-3 w-3 rounded-full mx-1 ${
-              activeDot === index ? "bg-blue-500" : "bg-gray-300"
+              activeDot === index ? "bg-green-500" : "bg-gray-300"
             } transition-all duration-300 ease-in-out`}
             onClick={() => setActiveDot(index)}
           />
@@ -144,7 +145,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center pt-4 text-[#2A9D8F]">
         What Our Alumni Say
       </h1>
       <Testimonials />

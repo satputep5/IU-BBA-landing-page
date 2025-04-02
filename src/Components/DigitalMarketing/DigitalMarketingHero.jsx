@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
+import bgImage from '../../assets/Images/Digital Marketing.jpg'; // Adjust the path as needed
 
 function DigitalMarketingHero() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,13 +39,18 @@ function DigitalMarketingHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#b8dde3] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
-      style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
+      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
+      style={{
+        fontFamily: "Helvetica Neue Black, sans-serif",
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
         <h1 className="text-3xl md:text-4xl text-[#0e1133] font-semibold leading-tight mb-4">
-          BBA in <span className="text-[#00B4D8]">Digital Marketing</span> at
+          BBA in <span className="text-[#000000]">Digital Marketing</span> at
           School of Business (Indira University)
         </h1>
 
@@ -52,9 +58,10 @@ function DigitalMarketingHero() {
           ref={formRef}
           className="p-6 max-w-md w-full shadow-md mt-6"
           style={{
-            backgroundColor: "rgba(0, 180, 216, 0.4)",
+            backgroundColor: "rgba(2, 147, 184, 0.8)", // Using the provided color with some opacity
             backdropFilter: "blur(8px)",
-          }}
+          }}          
+          
         >
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
@@ -113,10 +120,10 @@ function DigitalMarketingHero() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-3 text-white rounded-lg transition duration-300 ${
+                className={`w-full py-3  text-white rounded-lg transition duration-300 ${
                   isSubmitting
                     ? "bg-gray-500 cursor-not-allowed"
-                    : "bg-[#00B4D8] hover:bg-[#008C9E]"
+                    : "bg-[#008C9E] hover:bg-[#02677B]" // Darker shade on hover
                 }`}
               >
                 {isSubmitting ? "Submitting..." : "Submit"}
@@ -131,7 +138,7 @@ function DigitalMarketingHero() {
         </p>
 
         <h1 className="text-2xl text-[#0e1133] font-semibold leading-tight mb-4">
-          <span className="text-[#00B4D8] font-bold">The Internet</span> Never
+          <span className="text-[#0e1133] font-bold">The Internet</span> Never
           Sleeps – Why Should Your Career?
         </h1>
       </div>

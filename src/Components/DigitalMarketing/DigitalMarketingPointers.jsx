@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaChalkboard } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';  
-import { FaMoneyBillWave } from 'react-icons/fa'; 
+import { FaChartLine } from 'react-icons/fa';  // Updated Icon for Highest CTC
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -12,7 +12,7 @@ function DigitalMarketingPointers() {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration
-      once: true, // Animation happens only once
+      once: true,     // Animation happens only once
     });
   }, []);
 
@@ -24,7 +24,7 @@ function DigitalMarketingPointers() {
           className="bg-[#F6FBFF] p-1 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaChalkboard size={40} className="text-blue-500" /> {/* Updated Icon */}
+          <FaChalkboard size={40} className="text-blue-500" />
           <h2 className="mt-2 text-[#000000]">Program Format</h2>
           <p className="mt-2 text-xl font-semibold text-[#00B4D8]">Offline</p>
         </div>
@@ -36,17 +36,19 @@ function DigitalMarketingPointers() {
         >
           <FaRegClock size={40} className="text-red-500" />
           <h2 className="mt-2 text-[#000000]">Duration</h2>
-          <p className="mt-2 text-xl font-semibold text-[#00B4D8]">BBA - 3 yrs <br /> Hons. - 4 yrs</p>
+          <p className="mt-2 text-xl font-semibold text-[#00B4D8]">
+            BBA - 3 yrs <br /> Hons. - 4 yrs
+          </p>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
           className="bg-[#F6FBFF] p-1 shadow-lg flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
-          <FaMoneyBillWave size={40} className="text-green-500" />
-          <h2 className="mt-2 text-[#000000]">Program Fees</h2>
-          <p className="mt-2 text-xl font-semibold text-[#00B4D8]">Rs. 1,25,000/-</p>
+          <FaChartLine size={40} className="text-green-500" /> {/* Updated Icon */}
+          <h2 className="mt-2 text-[#000000]">Highest CTC</h2>
+          <p className="mt-2 text-xl font-semibold text-[#00B4D8]">6 LPA</p>
         </div>
       </div>
     </div>

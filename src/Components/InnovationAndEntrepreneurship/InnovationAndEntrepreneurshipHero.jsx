@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
+import bgImage from '../../assets/Images/innovation.jpg'; // Adjust the path as needed
 
 function InnovationAndEntrepreneurshipHero() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,22 +39,28 @@ function InnovationAndEntrepreneurshipHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative bg-cover bg-[#f8f0e3] bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center min-h-[80vh] space-x-4"
-      style={{ fontFamily: "Helvetica Neue Black, sans-serif" }}
+      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center min-h-[80vh] space-x-2"
+      style={{
+        fontFamily: "Helvetica Neue Black, sans-serif",
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center text-center md:text-left">
         <h1 className="text-3xl md:text-4xl text-[#0e1133] font-bold mb-4 leading-tight">
-          BBA in <span className="text-[#FDCB6E]">Innovation & Entrepreneurship</span> at School of Business (Indira University)
+          BBA in <span className="text-[#6a4502]">Innovation & Entrepreneurship</span> at School of Business (Indira University)
         </h1>
 
         <div
           ref={formRef}
           className="p-6 max-w-md w-full shadow-md mt-6"
           style={{
-            backgroundColor: "rgba(253, 203, 110, 0.4)",
+            backgroundColor: "rgba(204, 153, 75, 0.4)", // Darker shade with the same transparency
             backdropFilter: "blur(8px)",
           }}
+          
         >
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
@@ -109,17 +116,18 @@ function InnovationAndEntrepreneurshipHero() {
             </div>
 
             <div>
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`w-full py-3 text-white rounded-lg transition duration-300 ${
-                  isSubmitting
-                    ? "bg-gray-500 cursor-not-allowed"
-                    : "bg-[#FDCB6E] hover:bg-[#D79C4C]"
-                }`}
-              >
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </button>
+            <button
+  type="submit"
+  disabled={isSubmitting}
+  className={`w-full py-3 text-white rounded-lg transition duration-300 ${
+    isSubmitting
+      ? "bg-gray-500 cursor-not-allowed"
+      : "bg-[#af7200] hover:bg-[#B88C3D]" // Darker shade on hover
+  }`}
+>
+  {isSubmitting ? "Submitting..." : "Submit"}
+</button>
+
             </div>
           </form>
         </div>
