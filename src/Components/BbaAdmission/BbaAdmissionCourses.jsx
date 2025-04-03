@@ -6,10 +6,10 @@ import "react-toastify/dist/ReactToastify.css";
 import marketingImage from "../../assets/Images/mm.avif";
 import financialImage from "../../assets/Images/fm.avif";
 import hrImage from "../../assets/Images/hrm.avif";
-import logisticsImage from "../../assets/Images/lscp.avif";
-import internationalBusinessImage from "../../assets/Images/ib.avif";
-import bankingImage from "../../assets/Images/bfs.avif";
-import digitalMarketingImage from "../../assets/Images/dm.avif";
+import logisticsImage from "../../assets/Images/logi-sup.jpg";
+import internationalBusinessImage from "../../assets/Images/infor-bus.jpg";
+import bankingImage from "../../assets/Images/finance.jpg";
+import digitalMarketingImage from "../../assets/Images/dm-modern.jpg";
 import innovationImage from "../../assets/Images/ie.avif";
 
 function BbaAdmissionCourses() {

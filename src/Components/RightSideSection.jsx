@@ -43,7 +43,7 @@ function RightSideSection() {
     dots: false,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1300,
     centerMode: true,
     centerPadding: "0",
     focusOnSelect: true,
