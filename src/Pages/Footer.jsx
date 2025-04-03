@@ -27,13 +27,14 @@ function Footer() {
             </div>
 
             <div className="text-sm space-y-6">
-              <div className="flex items-center space-x-4">
-                <i className="fas fa-map-marker-alt text-2xl hover:text-blue-500"></i>
-                <div>
-                  <p>85/5 A, Tapasya, New Mumbai Pune Highway,</p>
-                  <p>Tathawade, Pune - 411033</p>
-                </div>
-              </div>
+            <div className="flex items-center space-x-4">
+  <i className="fas fa-map-marker-alt text-2xl hover:text-blue-500"></i>
+  <div>
+    <p>‘Dhruv’, 89/2A, New Pune-Mumbai Highway,</p>
+    <p>Tathwade, Pune – 411033, India</p>
+  </div>
+</div>
+
               <div className="flex items-center space-x-4">
                 <i className="fas fa-phone-alt text-2xl hover:text-green-500"></i>
                 <p>20 6675 9523</p>

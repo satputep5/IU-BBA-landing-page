@@ -47,7 +47,7 @@ function Navbar() {
             style={pulseTextAnimation}
           >
             Indira University <br />
-            <span className="text-md">
+            <span className="text-sm md:text-base">
               (formerly known as Indira Group of Institutes)
             </span>
           </div>

@@ -13,37 +13,37 @@ import giteshImage from "../../assets/Images/test-user/Gitesh-Agarwal.avif";
 const testimonials = [
   {
     name: "Ankit Jain - JP Morgan Chase, Associate",
-    text: `"ICCS is fantastic college and provides you with an excellent faculty and extracurricular activities throughout your journey. The teaching-learning structure is designed with a mix balance of theory and practical learning, which gives you a strong platform to grow further."`,
+    text: `"Indira is fantastic college and provides you with an excellent faculty and extracurricular activities throughout your journey. The teaching-learning structure is designed with a mix balance of theory and practical learning, which gives you a strong platform to grow further."`,
     image: ankitImage,
   },
   {
     name: "Misbah Afshari - DOT, CEO",
-    text: `"Fun loving moments I spent at ICCS. ICCS provided me the best memories in the campus, classroom, and in real life with events too. Only because of this I created my own stand in this competitive world. I never felt like an outsider, foreigner student. Faculties and students were very cooperative and taught me good lessons when I was at ICCS. I would like to thank all the faculties of ICCS for understanding us and treating us like their own children."`,
+    text: `"Fun loving moments I spent at Indira. Indira provided me the best memories in the campus, classroom, and in real life with events too. Only because of this I created my own stand in this competitive world. I never felt like an outsider, foreigner student. Faculties and students were very cooperative and taught me good lessons when I was at Indira. I would like to thank all the faculties of Indira for understanding us and treating us like their own children."`,
     image: misbahImage,
   },
   {
     name: "Akanksha Jain - Central Convoy, Founder & CEO",
-    text: `"ICCS has opened me to my fullest potential making me eligible to avail the opportunities out there. Throughout my time here, I have been entrusted with various responsibilities and tasks that have molded my personality and leadership skills. The teachers at ICCS embody purposefulness and prioritize students' growth."`,
+    text: `"Indira has opened me to my fullest potential making me eligible to avail the opportunities out there. Throughout my time here, I have been entrusted with various responsibilities and tasks that have molded my personality and leadership skills. The teachers at Indira embody purposefulness and prioritize students' growth."`,
     image: akankshaImage,
   },
   {
     name: "Tanisha Barnwal - Northern Trust, Hedge Fund Analyst",
-    text: `"The flourishing 3-year journey of ICCS BBA has helped me improvise my skills, gain confidence, and focus on self-development. Right from numerous presentations, academic activities, college fests, cultural events, and industrial visits, I have gained immense learning, greater knowledge, and exciting experiences."`,
+    text: `"The flourishing 3-year journey of Indira BBA has helped me improvise my skills, gain confidence, and focus on self-development. Right from numerous presentations, academic activities, college fests, cultural events, and industrial visits, I have gained immense learning, greater knowledge, and exciting experiences."`,
     image: tanishaImage,
   },
   {
     name: "Salil Deshpande - Deutsche Bank, Senior Analyst",
-    text: `"ICCS has helped me develop a love for learning. It has given me a platform to build myself as well as my career. Every individual needs a platform to enrich their personality to face the world, and ICCS has given me that platform."`,
+    text: `"Indira has helped me develop a love for learning. It has given me a platform to build myself as well as my career. Every individual needs a platform to enrich their personality to face the world, and Indira has given me that platform."`,
     image: salilImage,
   },
   {
     name: "Krishna Prajapat - Anand Rathi Wealth Limited, Vice President",
-    text: `"ICCS provides career guidance and campus placements which help build an inspired career and make students competent in the world of high competition. ICCS provides numerous opportunities for placements and has highly qualified and experienced faculty members who are very supportive."`,
+    text: `"Indira provides career guidance and campus placements which help build an inspired career and make students competent in the world of high competition. Indira provides numerous opportunities for placements and has highly qualified and experienced faculty members who are very supportive."`,
     image: krishnaImage,
   },
   {
     name: "Gitesh Agarwal - Vennplay, CEO and Founder",
-    text: `"ICCS has a great and huge campus. The infrastructure is amazing, and there are different buildings for BBA, BBA IB, BBA CA, and B.Sc. Faculty members are the best for the course, and they have good knowledge about the subjects they teach. The teaching quality is the best, and they provide a wide perspective about the subjects."`,
+    text: `"Indira has a great and huge campus. The infrastructure is amazing, and there are different buildings for BBA, BBA IB, BBA CA, and B.Sc. Faculty members are the best for the course, and they have good knowledge about the subjects they teach. The teaching quality is the best, and they provide a wide perspective about the subjects."`,
     image: giteshImage,
   },
 ];

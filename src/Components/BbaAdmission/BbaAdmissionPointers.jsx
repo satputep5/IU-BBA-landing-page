@@ -53,7 +53,7 @@ function MarketingManagementPointers() {
           <FaChartLine size={40} className="text-[#2A9DA2]" /> {/* Updated Icon */}
           <div className="text-center mt-2">
             <h2 className="text-[#135683] text-lg md:text-3xl font-semibold">Highest CTC</h2>
-            <p className="mt-2 text-lg md:text-3xl font-semibold text-[#2A9DA2]">6 LPA</p>
+            <p className="mt-2 text-lg md:text-3xl font-semibold text-[#2A9DA2]">8 LPA</p>
           </div>
         </div>
       </div>

@@ -1,25 +1,23 @@
 import React, { useEffect } from "react";
-import gsap from "gsap"; // Import GSAP for animations
-
-import RightSideSection from "../RightSideSection"; // Import the new child component
-import bgImage from '../../assets/Images/blur-main.png'; // Adjust the path as needed
-
+import gsap from "gsap";
+import RightSideSection from "../RightSideSection";
+import bgImage from '../../assets/Images/blur-main.png';
+// import smallIcon from '../../assets/Images/30yrs-modified.png'; // Import the small PNG
 
 function BbaAdmission() {
   useEffect(() => {
-    // GSAP animation for floating effect on the stats rectangles
     gsap.to(".stat-box", {
-      y: "-10px", // Move up by 10px
-      repeat: -1, // Repeat forever
-      yoyo: true, // Alternate up and down
-      duration: 1, // Duration of 1 second for each cycle
-      ease: "power1.inOut", // Smooth easing
+      y: "-10px",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+      ease: "power1.inOut",
     });
   }, []);
 
   return (
     <div
-      className="px-8 md:px-16 relative text-balck flex flex-col md:flex-row items-center h-auto space-x-2"
+      className="px-8 md:px-16 relative text-black flex flex-col md:flex-row items-center h-auto space-x-2"
       style={{
         fontFamily: "Helvetica Neue Black, sans-serif",
         backgroundImage: `url(${bgImage})`,
@@ -27,8 +25,16 @@ function BbaAdmission() {
         backgroundPosition: 'center',
       }}
     >
+
+
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
+            {/* Small PNG Image */}
+            {/* <img
+        src={smallIcon}
+        alt="Small Icon"
+        className="absolute top-1/2 left-5/10  transform -translate-y-1/2 w-36 h-36"
+      /> */}
         <h1
           className="text-3xl md:text-4xl text-[#000000] font-semibold leading-tight mb-1 md:mb-6 mt-2"
           data-aos="fade-up"
@@ -37,12 +43,11 @@ function BbaAdmission() {
           at School of Business (Indira University)
         </h1>
 
-        {/* Form container below the text */}
         <div
           className="p-6 max-w-md w-full shadow-md mt-6"
           data-aos="fade-right"
           style={{
-            backgroundColor: "rgba(0, 0, 0, 0.4)", // Semi-transparent dark background for form container
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
           }}
         >
           <form className="space-y-4">
@@ -64,8 +69,6 @@ function BbaAdmission() {
                 required
               />
             </div>
-
-            {/* Course Dropdown */}
             <div>
               <select
                 id="course"
@@ -73,31 +76,16 @@ function BbaAdmission() {
                 required
               >
                 <option value="">Select Course</option>
-                <option value="marketing-management">
-                  Marketing Management
-                </option>
-                <option value="financial-management">
-                  Financial Management
-                </option>
-                <option value="human-resource-management">
-                  Human Resource Management
-                </option>
-                <option value="logistics-supply-chain-management">
-                  Logistics & Supply Chain Management
-                </option>
-                <option value="international-business">
-                  International Business
-                </option>
-                <option value="banking-financial-services">
-                  Banking & Financial Services
-                </option>
+                <option value="marketing-management">Marketing Management</option>
+                <option value="financial-management">Financial Management</option>
+                <option value="human-resource-management">Human Resource Management</option>
+                <option value="logistics-supply-chain-management">Logistics & Supply Chain Management</option>
+                <option value="international-business">International Business</option>
+                <option value="banking-financial-services">Banking & Financial Services</option>
                 <option value="digital-marketing">Digital Marketing</option>
-                <option value="innovation-entrepreneurship">
-                  Innovation & Entrepreneurship
-                </option>
+                <option value="innovation-entrepreneurship">Innovation & Entrepreneurship</option>
               </select>
             </div>
-
             <div>
               <button
                 type="submit"
@@ -108,10 +96,8 @@ function BbaAdmission() {
             </div>
           </form>
         </div>
-
       </div>
 
-      {/* Right side content now handled by the RightSideSection component */}
       <RightSideSection />
     </div>
   );
