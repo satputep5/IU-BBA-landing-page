@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import std1 from "../assets/Images/18.png";
-import std2 from "../assets/Images/18.png";
-import std3 from "../assets/Images/18.png";
-import std4 from "../assets/Images/18.png";
-import std5 from "../assets/Images/18.png";
+import std1 from "../assets/Images/p1.png";
+import std2 from "../assets/Images/p2.png";
+import std3 from "../assets/Images/p3.png";
+import std4 from "../assets/Images/p4.png";
+import std5 from "../assets/Images/p2.png";
 
 const students = [
   {
