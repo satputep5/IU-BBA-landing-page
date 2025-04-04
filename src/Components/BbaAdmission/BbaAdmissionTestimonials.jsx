@@ -9,65 +9,60 @@ import salilImage from "../../assets/Images/test-user/Salil_Deshpande.avif";
 import krishnaImage from "../../assets/Images/test-user/Krishna-prajapat.avif";
 import giteshImage from "../../assets/Images/test-user/Gitesh-Agarwal.avif";
 
-// Real testimonials
+// Updated Testimonials
 const testimonials = [
   {
-    name: "Ankit Jain - JP Morgan Chase, Associate",
-    text: `"Indira is fantastic college and provides you with an excellent faculty and extracurricular activities throughout your journey. The teaching-learning structure is designed with a mix balance of theory and practical learning, which gives you a strong platform to grow further."`,
+    name: "Ankit Jain - Associate, JP Morgan Chase",
+    text: `"Indira is a fantastic college that offers excellent faculty and a wide range of extracurricular activities throughout your academic journey. The teaching-learning structure is well-balanced, combining theoretical and practical learning, which builds a strong foundation for personal and professional growth."`,
     image: ankitImage,
   },
   {
-    name: "Misbah Afshari - DOT, CEO",
-    text: `"Fun loving moments I spent at Indira. Indira provided me the best memories in the campus, classroom, and in real life with events too. Only because of this I created my own stand in this competitive world. I never felt like an outsider, foreigner student. Faculties and students were very cooperative and taught me good lessons when I was at Indira. I would like to thank all the faculties of Indira for understanding us and treating us like their own children."`,
+    name: "Misbah Afshari - CEO, DOT",
+    text: `"I had countless memorable moments at Indira. The college gave me some of the best experiences, not only on campus but also through classroom sessions and real-world exposure. Indira helped me stand out in this competitive world. Even as a foreign student, I never felt like an outsider. The faculty and students were incredibly supportive and taught me valuable lessons. I sincerely thank all the faculty members for treating us like their own children."`,
     image: misbahImage,
   },
   {
-    name: "Akanksha Jain - Central Convoy, Founder & CEO",
-    text: `"Indira has opened me to my fullest potential making me eligible to avail the opportunities out there. Throughout my time here, I have been entrusted with various responsibilities and tasks that have molded my personality and leadership skills. The teachers at Indira embody purposefulness and prioritize students' growth."`,
+    name: "Akanksha Jain - Founder & CEO, Central Convoy",
+    text: `"Indira helped me realize my true potential and prepared me to seize new opportunities. During my time there, I was entrusted with various responsibilities that shaped my personality and enhanced my leadership skills. The teachers at Indira are dedicated and truly focus on the holistic development of students."`,
     image: akankshaImage,
   },
   {
-    name: "Tanisha Barnwal - Northern Trust, Hedge Fund Analyst",
-    text: `"The flourishing 3-year journey of Indira BBA has helped me improvise my skills, gain confidence, and focus on self-development. Right from numerous presentations, academic activities, college fests, cultural events, and industrial visits, I have gained immense learning, greater knowledge, and exciting experiences."`,
+    name: "Tanisha Barnwal - Hedge Fund Analyst, Northern Trust",
+    text: `"My enriching three-year journey at Indira BBA helped me improve my skills, gain confidence, and focus on self-development. Through presentations, academic activities, college fests, cultural events, and industrial visits, I gained both immense knowledge and unforgettable experiences."`,
     image: tanishaImage,
   },
   {
-    name: "Salil Deshpande - Deutsche Bank, Senior Analyst",
-    text: `"Indira has helped me develop a love for learning. It has given me a platform to build myself as well as my career. Every individual needs a platform to enrich their personality to face the world, and Indira has given me that platform."`,
+    name: "Salil Deshpande - Senior Analyst, Deutsche Bank",
+    text: `"Indira nurtured my passion for learning and gave me a platform to grow both personally and professionally. Everyone needs an opportunity to enhance their personality, and Indira provided that space for me."`,
     image: salilImage,
   },
   {
-    name: "Krishna Prajapat - Anand Rathi Wealth Limited, Vice President",
-    text: `"Indira provides career guidance and campus placements which help build an inspired career and make students competent in the world of high competition. Indira provides numerous opportunities for placements and has highly qualified and experienced faculty members who are very supportive."`,
+    name: "Krishna Prajapat - Vice President, Anand Rathi Wealth Limited",
+    text: `"Indira provides excellent career guidance and campus placement support, helping students build successful careers and stay ahead in the competitive job market. The college offers numerous placement opportunities, backed by highly qualified and experienced faculty members."`,
     image: krishnaImage,
   },
   {
-    name: "Gitesh Agarwal - Vennplay, CEO and Founder",
-    text: `"Indira has a great and huge campus. The infrastructure is amazing, and there are different buildings for BBA, BBA IB, BBA CA, and B.Sc. Faculty members are the best for the course, and they have good knowledge about the subjects they teach. The teaching quality is the best, and they provide a wide perspective about the subjects."`,
+    name: "Gitesh Agarwal - CEO & Founder, Vennplay",
+    text: `"Indira boasts a vast and beautiful campus with outstanding infrastructure. There are dedicated buildings for BBA, BBA IB, BBA CA, and B.Sc. programs. The faculty members are highly knowledgeable, and the quality of teaching is exceptional. They provide a well-rounded perspective on every subject."`,
     image: giteshImage,
   },
 ];
 
 const Testimonials = () => {
   const [activeDot, setActiveDot] = useState(0);
-  const [isHovered, setIsHovered] = useState(false); // Track hover state
-  const intervalRef = useRef(null); // To store the interval ID
+  const [isHovered, setIsHovered] = useState(false);
+  const intervalRef = useRef(null);
 
-  // Group testimonials into chunks of 1 for horizontal scroll (1 per set)
-  const groupedTestimonials = useMemo(() => {
-    return testimonials.map((testimonial) => [testimonial]); // Each testimonial as a separate group
-  }, []); // No need for testimonials in the dependency array
+  const groupedTestimonials = useMemo(() => testimonials, []);
 
-  // Function to start auto-sliding
   const startAutoSlide = () => {
     if (!isHovered && !intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setActiveDot((prevDot) => (prevDot + 1) % groupedTestimonials.length);
-      }, 6000); // Change every 6 seconds
+      }, 6000); 
     }
   };
 
-  // Function to clear the interval
   const stopAutoSlide = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
@@ -75,57 +70,49 @@ const Testimonials = () => {
     }
   };
 
-  // Auto slide effect, but paused on hover
   useEffect(() => {
     startAutoSlide();
+    return () => stopAutoSlide();
+  }, [groupedTestimonials.length]);
 
-    return () => {
-      stopAutoSlide(); // Cleanup interval on component unmount
-    };
-  }, [groupedTestimonials.length]); // Trigger only when length changes
-
-  // Handle mouse enter and leave events to control auto sliding
   useEffect(() => {
-    if (isHovered) {
-      stopAutoSlide(); // Stop auto slide when hovered
-    } else {
-      startAutoSlide(); // Start auto slide when hover ends
-    }
-  }, [isHovered]); // Dependency on hover state
+    if (isHovered) stopAutoSlide();
+    else startAutoSlide();
+  }, [isHovered]);
 
   return (
     <div
-      className=" w-auto py-2 md:py-4 flex flex-col justify-center items-center overflow-hidden"
-      onMouseEnter={() => setIsHovered(true)} // Stop auto slide on hover
-      onMouseLeave={() => setIsHovered(false)} // Resume auto slide when hover ends
+      className="w-auto py-2 md:py-4 flex flex-col justify-center items-center overflow-hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex flex-col md:flex-row space-x-8 w-full max-w-[1200px] overflow-x-hidden py-2 md:py-4 justify-center transition-all duration-500 ease-in-out px-8 ">
-        {groupedTestimonials[activeDot]?.map((testimonial, index) => (
+      <div className="flex flex-col md:flex-row space-x-8 w-full max-w-[1200px] overflow-x-hidden py-2 md:py-4 justify-center transition-all duration-500 ease-in-out px-8">
+        {groupedTestimonials[activeDot] && (
           <div
-            key={index}
             className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
             style={{
-              boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)", // Blue shadow (rgba for blue)
+              boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)",
             }}
           >
             <div className="flex-shrink-0 justify-center flex mb-1">
               <img
-                src={testimonial.image}
-                alt={testimonial.name}
+                src={groupedTestimonials[activeDot].image}
+                alt={groupedTestimonials[activeDot].name}
                 className="w-24 h-24 rounded-full"
               />
             </div>
             <div className="ml-6 flex flex-col justify-center">
-              <p className="text-sm md:text-lg text-black mb-4">{testimonial.text}</p>
+              <p className="text-sm md:text-lg text-black mb-4">
+                {groupedTestimonials[activeDot].text}
+              </p>
               <div className="mt-4 text-right text-sm sm:text-base text-gray-600">
-                <p>{testimonial.name}</p>
+                <p>{groupedTestimonials[activeDot].name}</p>
               </div>
             </div>
           </div>
-        ))}
+        )}
       </div>
 
-      {/* Navigation Dots - Placed Below Testimonials */}
       <div className="flex justify-center mt-4">
         {groupedTestimonials.map((_, index) => (
           <button

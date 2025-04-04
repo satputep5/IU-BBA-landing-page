@@ -1,7 +1,5 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import React, { useEffect, useState } from 'react';
+ 
 import logo1 from "../assets/Images/bba-logo/Wireframe - 1.avif";
 import logo2 from "../assets/Images/bba-logo/Wireframe - 2.avif";
 import logo3 from "../assets/Images/bba-logo/Wireframe - 3.avif";
@@ -34,96 +32,109 @@ import logo29 from "../assets/Images/bba-logo/Wireframe - 29.avif";
 import logo30 from "../assets/Images/bba-logo/Wireframe - 30.avif";
 import logo31 from "../assets/Images/bba-logo/Wireframe - 31.avif";
 import logo32 from "../assets/Images/bba-logo/Wireframe - 32.avif";
-
-
-const sponsorsData = [
-  {
-    title: "PARTICIPATING DELEGATES",
-    logos: [
-      logo1,
-      logo2,
-      logo3,
-      logo4,
-      logo5,
-      logo6,
-      logo7,
-      logo8,
-      logo9,
-      logo10,
-      logo11,
-      logo12,
-      logo13,
-      logo14,
-      logo15,
-      logo16,
-    ],
-  },
-  {
-    title: "PARTICIPATING DELEGATES",
-    logos: [
-      logo17,
-      logo18,
-      logo19,
-      logo20,
-      logo21,
-      logo22,
-      logo23,
-      logo24,
-      logo25,
-      logo26,
-      logo27,
-      logo28,
-      logo29,
-      logo30,
-      logo31,
-      logo32,
-    ],
-  },
-];
-
-
-const App = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
-
+ 
+const CompRecruiter = () => {
+  const [isVisible, setIsVisible] = useState(true);
+ 
+  const logos = [
+    logo1, logo2, logo3, logo4, logo5, logo6,
+    logo7, logo8, logo9, logo11, logo12,
+    logo13, logo14, logo15, logo16, logo17, 
+    logo19, logo20, logo21,  logo23, logo24,
+    logo25, logo26, logo27, logo28, logo29, 
+    logo31, logo32, logo10, logo22, logo18, logo30,
+  ];
+ 
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      setIsVisible(!document.hidden);
+    };
+ 
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+ 
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+ 
   return (
-    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins overflow-hidden">
-      {/* Heading above the slider */}
-      <div className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
-        Our Recruiters
+    <div className="logo-slider-section py-4 roboto-regular">
+      <div className="text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold">
+          <span >Top Recruiters</span>
+        </h2>
       </div>
-
-      <Slider {...settings} className="w-full">
-        {sponsorsData.map((slide, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="flex flex-row justify-center items-center w-full ">
-              <div
-                className="grid grid-cols-4 md:grid-cols-8 gap-4 justify-items-center w-full px-6 md:px-0"
-                style={{ gridTemplateRows: "repeat(2, auto)" }} // Enforcing only two rows
-              >
-                {slide.logos.map((logo, idx) => (
-                  <div key={idx} className="flex justify-center">
-                    <img
-                      src={logo}
-                      alt={`Logo ${idx + 1}`}
-                      className="rounded-none shadow-none w-auto h-auto object-contain" // Logos will scale dynamically without any background styling
-                    />
-                  </div>
-                ))}
-              </div>
+      <div className="logo-slider relative overflow-hidden w-full">
+        <div className={`logo-slider-track flex ${isVisible ? 'animate' : ''}`}>
+          {/* Map over the logos and display them */}
+          {logos.map((logo, index) => (
+            <div key={index} className="logo-slide flex-none mx-3  md:mx-5">
+              <img
+                src={logo}
+                alt={`Recruiter Logo ${index + 1}`}
+                className="h-16 md:h-24 max-w-[160px] object-contain"
+              />
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+ 
+          {/* Duplicate set for seamless loop */}
+          {logos.map((logo, index) => (
+            <div key={`duplicate-${index}`} className="logo-slide flex-none mx-3 sm:mx-4 md:mx-5">
+              <img
+                src={logo}
+                alt={`Recruiter Logo ${index + 1}`}
+                className="h-16 md:h-24 max-w-[160px] object-contain"
+              />
+            </div>
+          ))}
+        </div>
+ 
+        <div className="absolute left-0 top-0 h-full w-24  to-transparent z-10" />
+        <div className="absolute right-0 top-0 h-full w-24 to-transparent z-10" />
+      </div>
+ 
+      <style>{`
+        .logo-slider {
+          position: relative;
+          padding: 0 20px;
+        }
+ 
+        .logo-slider-track {
+          display: flex;
+          width: fit-content;
+        }
+ 
+        .logo-slider-track.animate {
+          animation: slide 40s linear infinite;
+        }
+ 
+        .logo-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+ 
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+ 
+        .logo-slider:hover .logo-slider-track {
+          animation-play-state: paused;
+        }
+ 
+        @media (max-width: 640px) {
+          .logo-slider-track.animate {
+            animation-duration: 30s;
+          }
+        }
+      `}</style>
     </div>
   );
 };
-
-export default App;
+ 
+export default CompRecruiter;

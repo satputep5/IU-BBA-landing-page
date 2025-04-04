@@ -9,14 +9,14 @@ import img4 from "../../assets/Images/bba-logo/Wireframe - 4.avif";
 import img5 from "../../assets/Images/bba-logo/Wireframe - 5.avif";
 import img6 from "../../assets/Images/bba-logo/Wireframe - 6.avif";
 import img7 from "../../assets/Images/bba-logo/Wireframe - 7.avif";
-import img8 from "../../assets/Images/bba-logo/Wireframe - 8.avif";
-import img9 from "../../assets/Images/bba-logo/Wireframe - 9.avif";
+import img8 from "../../assets/Images/bba-logo/Wireframe - 15.avif";
+import img9 from "../../assets/Images/bba-logo/Wireframe - 32.avif";
 import img10 from "../../assets/Images/bba-logo/Wireframe - 10.avif";
-import img11 from "../../assets/Images/bba-logo/Wireframe - 11.avif";
-import img12 from "../../assets/Images/bba-logo/Wireframe - 12.avif";
-import img13 from "../../assets/Images/bba-logo/Wireframe - 13.avif";
-import img14 from "../../assets/Images/bba-logo/Wireframe - 14.avif";
-import img15 from "../../assets/Images/bba-logo/Wireframe - 15.avif";
+import img11 from "../../assets/Images/bba-logo/Wireframe - 29.avif";
+import img12 from "../../assets/Images/bba-logo/Wireframe - 18.avif";
+import img13 from "../../assets/Images/bba-logo/Wireframe - 24.avif";
+import img14 from "../../assets/Images/bba-logo/Wireframe - 12.avif";
+import img15 from "../../assets/Images/bba-logo/Wireframe - 11.avif";
 
 // Import the placement image
 import placementImage from "../../assets/Images/bba-placment.avif";

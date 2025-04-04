@@ -16,6 +16,7 @@ import Brochure from "./Pages/Brochure";
 import BbaAdmission from "./Pages/BbaAdmission";
 import ApplyButtonRight from "./Components/ApplyButtonRight";
 import BbaExam from "./Pages/BbaExam";
+import IntegratedBbaMba from "./Pages/IntegratedBbaMba";
 
 // Importing the 404 Page
 import NotFoundPage from "./Components/NotFoundPage"; // Make sure this is the correct path to your 404 page
@@ -32,6 +33,8 @@ function App() {
             {/* Define routes for all the pages */}
             <Route path="/" element={<BbaAdmission />} />
             <Route path="/bba-exam" element={<BbaExam />} />
+            <Route path="/integrated-bba-mba" element={<IntegratedBbaMba />} />
+
             {/* <Route path="/marketing-management" element={<MarketingManagement />} />
             <Route path="/financial-management" element={<FinancialManagement />} />
             <Route path="/human-resource-management" element={<HumanResourceManagement />} />
