@@ -12,8 +12,8 @@ function MarketingManagementJoin() {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       ></div>
 
-      {/* Green overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#135683] via-[#208098] to-[#2A9DA2] opacity-70 z-10"></div>
+      {/* Green overlay with updated gradient */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#003C84] via-[#018697] to-[#018697] opacity-70 z-10"></div>
 
       {/* Text content */}
       <div className="relative z-20 px-8 md:px-16 py-4">

@@ -60,7 +60,7 @@ const CompRecruiter = () => {
   return (
     <div className="logo-slider-section py-4 roboto-regular">
       <div className="text-center mb-4">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold text-[#135883]">
           <span >Top Recruiters</span>
         </h2>
       </div>

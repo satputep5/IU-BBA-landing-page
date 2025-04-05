@@ -3,34 +3,28 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import std1 from "../assets/Images/p1.png";
-import std2 from "../assets/Images/p2.png";
-import std3 from "../assets/Images/p3.png";
-import std4 from "../assets/Images/p4.png";
-import std5 from "../assets/Images/p2.png";
+import std1 from "../assets/Images/std1.avif";
+import std2 from "../assets/Images/std2.avif";
+import std3 from "../assets/Images/std3.avif";
+import std4 from "../assets/Images/std4.avif";
+import std5 from "../assets/Images/std5.avif";
+import std6 from "../assets/Images/std6.avif";
+import std7 from "../assets/Images/std7.avif";
+import std8 from "../assets/Images/std8.avif";
+import std9 from "../assets/Images/std9.avif";
+import std10 from "../assets/Images/std10.avif";
 
 const students = [
-  {
-    name: "Aman Nishikant Sawarkar",
-    image: std1,
-  },
-  {
-    name: "Akash Raghunath Malpure",
-    image: std2,
-  },
-  {
-    name: "Harshada Navale",
-    image: std3,
-  },
-  {
-    name: "Harsh Navale",
-    image: std4,
-  },
-  {
-    name: "Pratim Navale",
-    image: std5,
-  },
-
+  { name: "Aman Nishikant Sawarkar", image: std1 },
+  { name: "Akash Raghunath Malpure", image: std2 },
+  { name: "Harshada Navale", image: std3 },
+  { name: "Harsh Navale", image: std4 },
+  { name: "Rajesh Kumar", image: std6 },
+  { name: "Sneha Patel", image: std7 },
+  { name: "Pratim Navale", image: std5 },
+  { name: "Vishal Deshmukh", image: std8 },
+  { name: "Anjali Sharma", image: std9 },
+  { name: "Rohan Gupta", image: std10 },
 ];
 
 function RightSideSection() {
@@ -77,9 +71,8 @@ function RightSideSection() {
 
   return (
     <div className="flex justify-center items-center w-full lg:w-1/2 min-h-[60vh] md:min-h-[80vh] relative my-4 overflow-hidden">
-
       {/* Slider Container */}
-      <div className="absolute z-30 w-full h-full flex justify-center items-center ">
+      <div className="absolute z-30 w-full h-full flex justify-center items-center">
         <Slider {...settings} className="w-full">
           {students.map((student, index) => (
             <div
@@ -88,14 +81,13 @@ function RightSideSection() {
               style={{ padding: "10px" }} // Adjusted padding for better responsiveness
             >
               {/* Profile Image Container */}
-              <div className="flex justify-center items-center w-full h-full  mb-4">
+              <div className="flex justify-center items-center w-full h-full mb-4">
                 <img
                   src={student.image}
                   alt={student.name}
-                  className="w-full md:w-full h-full md:h-[70vh] object-contain "
+                  className="w-full md:w-full h-full md:h-[70vh] object-contain"
                 />
               </div>
-
             </div>
           ))}
         </Slider>

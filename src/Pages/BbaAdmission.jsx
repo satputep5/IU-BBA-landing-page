@@ -8,6 +8,8 @@ import BbaAdmissionJoin from '../Components/BbaAdmission/BbaAdmissionJoin'
 import BbaAdmissionPlacement from '../Components/BbaAdmission/BbaAdmissionPlacement'
 import BbaAdmissionTestimonials from '../Components/BbaAdmission/BbaAdmissionTestimonials'
 import Recruiter from '../Pages/Recruiter'
+
+
 function BbaAdmission() {
   return (
     <div>
@@ -20,6 +22,7 @@ function BbaAdmission() {
         <BbaAdmissionJoin />
         <BbaAdmissionPlacement />
         <BbaAdmissionTestimonials />
+
     </div>
   )
 }

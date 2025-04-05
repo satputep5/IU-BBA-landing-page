@@ -19,7 +19,7 @@ function MarketingManagementPointers() {
           className="bg-[#F6FBFF] p-4 shadow-md flex flex-col items-center justify-center  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-[#E9F7FA]"
           data-aos="fade-up"
         >
-          <FaChalkboard size={30} className="text-[#135683]" />
+          <FaChalkboard size={30} className="text-[#2A9DA2]" />
           <h2 className="text-[#135683] text-sm md:text-base font-semibold mt-2">Program Format</h2>
           <p className="text-[#2A9DA2] text-sm md:text-base">Offline</p>
         </div>
@@ -29,7 +29,7 @@ function MarketingManagementPointers() {
           className="bg-[#F6FBFF] p-4 shadow-md flex flex-col items-center justify-center  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-[#E9F7FA]"
           data-aos="fade-up"
         >
-          <FaRegClock size={30} className="text-[#208098]" />
+          <FaRegClock size={30} className="text-[#2A9DA2]" />
           <h2 className="text-[#135683] text-sm md:text-base font-semibold mt-2">Duration</h2>
           <p className="text-[#2A9DA2] text-sm md:text-base">
             BBA - 3 yrs <br /> Hons. - 4 yrs

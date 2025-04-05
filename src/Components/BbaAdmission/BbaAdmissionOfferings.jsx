@@ -17,24 +17,24 @@ function BbaAdmissionOfferings() {
     elements.forEach((circle, index) => {
       const icon = icons[index];
 
-      // Default: No rotation
-      gsap.set(icon, { rotationY: 0 });
+      // Set initial state for the circle (hidden on the left)
+      gsap.set(circle, { opacity: 0, x: -50 });
 
       circle.parentElement.addEventListener('mouseenter', () => {
         gsap.to(circle, { opacity: 1, x: 0, duration: 0.3 });
-        gsap.to(icon, { rotationY: 360, duration: 0.5, ease: "power2.inOut" }); // Flip effect on hover
+        gsap.to(icon, { rotationY: 360, duration: 0.5, ease: "power2.inOut" });
       });
 
       circle.parentElement.addEventListener('mouseleave', () => {
         gsap.to(circle, { opacity: 0, x: -50, duration: 0.3 });
-        gsap.to(icon, { rotationY: 0, duration: 0.5, ease: "power2.inOut" }); // Back to default orientation
+        gsap.to(icon, { rotationY: 0, duration: 0.5, ease: "power2.inOut" });
       });
     });
   }, []);
 
   return (
     <div className="px-8 md:px-16 py-4 md:py-8 bg-[#f3f4f6] poppins-regular">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8 text-[#000000]" data-aos="fade-up">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8 text-[#135883]" data-aos="fade-up">
         Why Choose BBA at Indira University?
       </h2>
 

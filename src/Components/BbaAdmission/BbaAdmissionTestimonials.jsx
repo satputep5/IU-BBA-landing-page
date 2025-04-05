@@ -59,7 +59,7 @@ const Testimonials = () => {
     if (!isHovered && !intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setActiveDot((prevDot) => (prevDot + 1) % groupedTestimonials.length);
-      }, 6000); 
+      }, 3000); 
     }
   };
 
@@ -89,9 +89,10 @@ const Testimonials = () => {
       <div className="flex flex-col md:flex-row space-x-8 w-full max-w-[1200px] overflow-x-hidden py-2 md:py-4 justify-center transition-all duration-500 ease-in-out px-8">
         {groupedTestimonials[activeDot] && (
           <div
-            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border border-blue-100 hover:shadow-xl hover:border-2 hover:border-blue-600"
+            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full max-w-[800px] mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border"
             style={{
-              boxShadow: "0 2px 4px rgba(37, 99, 235, 0.4)",
+              boxShadow: "0 2px 4px rgba(0, 60, 132, 0.4)",
+              borderColor: "#003C84", // Primary color for border
             }}
           >
             <div className="flex-shrink-0 justify-center flex mb-1">
@@ -106,7 +107,7 @@ const Testimonials = () => {
                 {groupedTestimonials[activeDot].text}
               </p>
               <div className="mt-4 text-right text-sm sm:text-base text-gray-600">
-                <p>{groupedTestimonials[activeDot].name}</p>
+                <p style={{ color: "#003C84" }}>{groupedTestimonials[activeDot].name}</p>
               </div>
             </div>
           </div>
@@ -117,9 +118,11 @@ const Testimonials = () => {
         {groupedTestimonials.map((_, index) => (
           <button
             key={index}
-            className={`h-3 w-3 rounded-full mx-1 ${
-              activeDot === index ? "bg-blue-500" : "bg-gray-300"
-            } transition-all duration-300 ease-in-out`}
+            className={`h-3 w-3 rounded-full mx-1 transition-all duration-300 ease-in-out ${
+              activeDot === index
+                ? "bg-[#003C84]" // Active dot color (Primary)
+                : "bg-[#018697]" // Inactive dot color (Secondary)
+            }`}
             onClick={() => setActiveDot(index)}
           />
         ))}
@@ -131,7 +134,7 @@ const Testimonials = () => {
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center pt-4 text-[#135683]">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center pt-4" style={{ color: "#003C84" }}>
         What Our Alumni Say
       </h1>
       <Testimonials />

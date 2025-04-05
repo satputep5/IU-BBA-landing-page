@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
 import bgImage from '../../assets/Images/blur-main.png';
-// import smallIcon from '../../assets/Images/30yrs-modified.png'; // Import the small PNG
+// import smallIcon from '../../assets/Images/30.png'; // Import the small PNG
 
 function BbaAdmission() {
   useEffect(() => {
