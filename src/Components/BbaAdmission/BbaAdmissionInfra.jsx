@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa';
-import MyImage from '../../assets/images/infra.jpg';
+import MyImage from '../../../public/images/infra.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img from '../../assets/images/highlights.png';
