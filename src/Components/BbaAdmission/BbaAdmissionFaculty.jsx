@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import DrThomsonVarghese from "../../assets/images/thomson.webp";
-import DrSarikaSagar from "../../assets/images/sarika.webp";
-import YogeshBhusari from "../../assets/images/yogesh.webp";
-import VikrantSoman from "../../assets/images/vikrant.webp";
-import SachinHadpad from "../../assets/images/sachin.webp";
-import KomalDalnar from "../../assets/images/komal.webp";
-import DeepaShakti from "../../assets/images/deepa.webp";
-import SonaliShrotri from "../../assets/images/sonali.jpeg";
-import VijayalaxmiRao from "../../assets/images/vijaylaxmi.webp";
+import DrThomsonVarghese from "../../assets/Images/thomson.webp";
+import DrSarikaSagar from "../../assets/Images/sarika.webp";
+import YogeshBhusari from "../../assets/Images/yogesh.webp";
+import VikrantSoman from "../../assets/Images/vikrant.webp";
+import SachinHadpad from "../../assets/Images/sachin.webp";
+import KomalDalnar from "../../assets/Images/komal.webp";
+import DeepaShakti from "../../assets/Images/deepa.webp";
+import SonaliShrotri from "../../assets/Images/sonali.jpeg";
+import VijayalaxmiRao from "../../assets/Images/vijaylaxmi.webp";
 
 const facultyData = [
   { image: DrThomsonVarghese, name: "Dr. Thomson Varghese", description: "Associate Dean – School of Business (BBA)" },
