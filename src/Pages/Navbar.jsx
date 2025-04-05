@@ -69,7 +69,7 @@ function Navbar() {
           {/* Mobile layout */}
           <div className="md:hidden">
             {/* First Row: Logo and 30 Years Excellence */}
-            <div className="flex justify-between items-center mb-2">
+            <div className="flex justify-between items-center mb-1">
               <img
                 src={logo}
                 alt="Logo"
