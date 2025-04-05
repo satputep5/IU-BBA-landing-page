@@ -3,7 +3,7 @@ import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } f
 import MyImage from '../../../public/images/infra.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img from '../../assets/images/highlights.png';
+import img from '../../../public/images/highlights.png';
 
 function BbaStudying() {
   useEffect(() => {
