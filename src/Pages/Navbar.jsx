@@ -30,7 +30,7 @@ function Navbar() {
 
       {/* Navbar */}
       <nav className="bg-gray-900 shadow-lg w-full">
-        <div className="mx-auto px-4 md:px-16 py-2">
+        <div className="mx-auto px-8 md:px-16 py-2">
 
           {/* Large screens layout */}
           <div className="hidden md:flex items-center justify-between">
