@@ -84,7 +84,7 @@ function Navbar() {
 
             {/* Second Row: Centered Text */}
             <div
-              className="text-center text-white text-md md:text-3xl font-bold"
+              className="text-center text-white text-2xl md:text-3xl font-bold"
               style={pulseTextAnimation}
             >
               Indira University <br />
