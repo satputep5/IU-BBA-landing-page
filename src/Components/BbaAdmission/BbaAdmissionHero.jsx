@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
-import bgImage from '../../assets/Images/blur-main.png';
-// import smallIcon from '../../assets/Images/30.png'; // Import the small PNG
+import bgImage from '../../assets/Images/Landing Page _ IU_1jpg.jpg';
+// import smallIcon from '../../assets/Images/watermark.png'; // Import the small PNG
 
 function BbaAdmission() {
   useEffect(() => {
@@ -33,7 +33,7 @@ function BbaAdmission() {
             {/* <img
         src={smallIcon}
         alt="Small Icon"
-        className="absolute top-1/2 left-5/10  transform -translate-y-1/2 w-36 h-36"
+        className="absolute ml-12 top-1/2 left-3/10  transform -translate-y-1/2 w-96 h-96"
       /> */}
         <h1
           className="text-3xl md:text-4xl text-[#000000] font-semibold leading-tight mb-1 md:mb-6 mt-2"

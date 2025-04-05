@@ -45,7 +45,7 @@ function BbaAdmissionOverview() {
   return (
     <div className="flex flex-col md:flex-row-reverse justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular gap-x-8 overflow-hidden">
       {/* Left Part: Program Overview */}
-      <div className="flex-1" data-aos="fade-left">
+      <div className="flex-1" >
         {/* Small "BBA Admission" Text above heading */}
         <p className="text-sm md:text-lg text-[#2896A0] mb-2">
           Program Overview
