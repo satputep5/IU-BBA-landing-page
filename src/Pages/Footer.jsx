@@ -39,9 +39,10 @@ function Footer() {
               </div>
 
               <div className="flex items-center space-x-4">
-                <i className="fas fa-phone-alt text-2xl hover:text-green-500"></i>
-                <p>02114661593 / 7020512131</p>
-              </div>
+  <i className="fas fa-phone-alt text-2xl hover:text-green-500"></i>
+  <p>0211 466 1593 / 7020 512 131</p>
+</div>
+
 
               <div className="flex items-center space-x-4">
                 <i className="fas fa-envelope text-2xl hover:text-gray-500"></i>
