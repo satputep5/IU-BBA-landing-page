@@ -47,7 +47,7 @@ function Navbar() {
 
             {/* Centered Text with Animation */}
             <div
-              className="flex-grow text-center text-white text-md md:text-3xl font-bold"
+              className="flex-grow text-center text-white text-2xl md:text-3xl font-bold"
               style={pulseTextAnimation}
             >
               Indira University <br />
