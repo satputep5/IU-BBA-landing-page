@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DrThomsonVarghese from "../../assets/Images/thomson.webp";
 import DrSarikaSagar from "../../assets/Images/sarika.webp";
 import YogeshBhusari from "../../assets/Images/yogesh.webp";
-import VikrantSoman from "../../assets/Images/vikrant.webp";
+import VikrantSoman from "../../assets/Images/Vikrant.webp";
 import SachinHadpad from "../../assets/Images/sachin.webp";
 import KomalDalnar from "../../assets/Images/komal.webp";
 import DeepaShakti from "../../assets/Images/deepa.webp";
