@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
 import bgImage from '../../assets/Images/Landing Page _ IU_1jpg.jpg';
-// import smallIcon from '../../assets/Images/watermark.png'; // Import the small PNG
 
 function BbaAdmission() {
   useEffect(() => {
@@ -25,16 +24,8 @@ function BbaAdmission() {
         backgroundPosition: 'center',
       }}
     >
-
-
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2 justify-center">
-            {/* Small PNG Image */}
-            {/* <img
-        src={smallIcon}
-        alt="Small Icon"
-        className="absolute ml-12 top-1/2 left-3/10  transform -translate-y-1/2 w-96 h-96"
-      /> */}
         <h1
           className="text-3xl md:text-4xl text-[#000000] font-semibold leading-tight mb-1 md:mb-6 mt-2"
           data-aos="fade-up"
@@ -60,6 +51,17 @@ function BbaAdmission() {
                 required
               />
             </div>
+
+            <div>
+              <input
+                type="email"
+                id="email"
+                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#2A9DA2] focus:outline-none focus:ring-2 focus:ring-[#2A9DA2] backdrop-blur-md"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
             <div>
               <input
                 type="tel"
@@ -69,6 +71,7 @@ function BbaAdmission() {
                 required
               />
             </div>
+
             <div>
               <select
                 id="course"
@@ -86,6 +89,7 @@ function BbaAdmission() {
                 <option value="innovation-entrepreneurship">Innovation & Entrepreneurship</option>
               </select>
             </div>
+
             <div>
               <button
                 type="submit"

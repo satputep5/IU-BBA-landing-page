@@ -6,7 +6,9 @@ import BbaAdmissionOfferings from '../Components/BbaAdmission/BbaAdmissionOfferi
 import BbaAdmissionCourses from '../Components/BbaAdmission/BbaAdmissionCourses'
 import BbaAdmissionJoin from '../Components/BbaAdmission/BbaAdmissionJoin'
 import BbaAdmissionPlacement from '../Components/BbaAdmission/BbaAdmissionPlacement'
+import BbaAdmissionInfra from '../Components/BbaAdmission/BbaAdmissionInfra'
 import BbaAdmissionTestimonials from '../Components/BbaAdmission/BbaAdmissionTestimonials'
+import BbaAdmissionFaculty from '../Components/BbaAdmission/BbaAdmissionFaculty'
 import Recruiter from '../Pages/Recruiter'
 
 
@@ -20,9 +22,10 @@ function BbaAdmission() {
         <BbaAdmissionCourses />
         <BbaAdmissionOfferings />
         <BbaAdmissionJoin />
-        <BbaAdmissionPlacement />
+        <BbaAdmissionInfra />
+        <BbaAdmissionFaculty />
+        {/* <BbaAdmissionPlacement /> */}
         <BbaAdmissionTestimonials />
-
     </div>
   )
 }

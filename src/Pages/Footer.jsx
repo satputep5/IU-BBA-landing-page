@@ -56,12 +56,12 @@ function Footer() {
               <div className="flex items-center space-x-4">
                 <i className="fas fa-globe text-2xl hover:text-blue-500"></i>
                 <a
-                  href="https://indiraedu.com/"
+                  href="https://www.indirauniversity.edu.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-gray-800"
                 >
-                  www.indiraedu.com
+                  www.indirauniversity.edu.in
                 </a>
               </div>
             </div>
