@@ -73,7 +73,7 @@ function Navbar() {
               <img
                 src={logo}
                 alt="Logo"
-                className="h-auto max-w-20"
+                className="h-auto max-w-28"
               />
               <img
                 src={excellenceLogo}
