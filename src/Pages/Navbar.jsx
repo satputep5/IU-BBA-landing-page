@@ -73,12 +73,12 @@ function Navbar() {
               <img
                 src={logo}
                 alt="Logo"
-                className="h-auto max-w-28"
+                className="h-auto max-w-20"
               />
               <img
                 src={excellenceLogo}
                 alt="30 Years Excellence"
-                className="h-auto max-w-28"
+                className="h-auto max-w-20"
               />
             </div>
 
