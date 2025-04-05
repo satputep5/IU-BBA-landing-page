@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa';
-import MyImage from '../../../public/Images/infra.jpg';
+import MyImage from '../../assets/Images/infra.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img from '../../../public/Images/highlights.png';
+import img from '../../assets/Images/highlights.png';
 
 function BbaStudying() {
   useEffect(() => {
