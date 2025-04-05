@@ -1,47 +1,66 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import DrThomsonVarghese from "../../assets/images/thomson.webp";
+import DrSarikaSagar from "../../assets/images/sarika.webp";
+import YogeshBhusari from "../../assets/images/yogesh.webp";
+import VikrantSoman from "../../assets/images/vikrant.webp";
+import SachinHadpad from "../../assets/images/sachin.webp";
+import KomalDalnar from "../../assets/images/komal.webp";
+import DeepaShakti from "../../assets/images/deepa.webp";
+import SonaliShrotri from "../../assets/images/sonali.jpeg";
+import VijayalaxmiRao from "../../assets/images/vijaylaxmi.webp";
 
 const facultyData = [
-  { image: 'https://via.placeholder.com/300x200', name: 'Dr. John Doe', description: 'Expert in Business Strategy' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Prof. Jane Smith', description: 'Marketing Specialist' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Dr. Mike Brown', description: 'Finance Guru' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Prof. Lisa White', description: 'Economics Expert' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Dr. Emily Clark', description: 'Operations Management' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Mr. David Lee', description: 'HR Specialist' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Dr. Sarah Kim', description: 'Entrepreneurship Mentor' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Prof. James Wilson', description: 'International Business' },
-  { image: 'https://via.placeholder.com/300x200', name: 'Dr. Anna Taylor', description: 'Supply Chain Expert' },
+  { image: DrThomsonVarghese, name: "Dr. Thomson Varghese", description: "Associate Dean – School of Business (BBA)" },
+  { image: DrSarikaSagar, name: "Dr. Sarika Sagar", description: "Marketing Mgmt." },
+  { image: YogeshBhusari, name: "Mr. Yogesh Bhusari", description: "Financial Mgmt" },
+  { image: VikrantSoman, name: "Mr. Vikrant Soman", description: "Human Resource M" },
+  { image: SachinHadpad, name: "Mr. Sachin Hadpad", description: "Logistics & SCM" },
+  { image: KomalDalnar, name: "Ms. Komal Dalnar", description: "International Business" },
+  { image: DeepaShakti, name: "Dr. Deepa Shakti", description: "Innovation & Entrepreneurship" },
+  { image: SonaliShrotri, name: "Dr. Sonali Shrotri", description: "Banking & Financial Services" },
+  { image: VijayalaxmiRao, name: "Dr Vijayalaxmi G.N Rao", description: "Digital Marketing" },
 ];
 
 function BbaAdmissionFaculty() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide effect every 3 seconds
+  // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 3) % facultyData.length);
+      setCurrentIndex((prev) => (prev + 1) % Math.ceil(facultyData.length / 3));
     }, 3000);
-
-    return () => clearInterval(interval); // Cleanup
+    return () => clearInterval(interval);
   }, []);
 
   const handleDotClick = (index) => {
-    setCurrentSlide(index * 3);
+    setCurrentIndex(index); // Directly set the clicked index
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-6">BBA Admission Faculty</h2>
+    <div className="px-4 md:px-16 py-8 bg-[#002D6A]">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#f7f7f7] text-center mb-6">
+        Minds Behind School of Business
+      </h2>
 
-      <div className="flex justify-center space-x-4 mb-4">
-        {facultyData.slice(currentSlide, currentSlide + 3).map((faculty, index) => (
-          <div key={index} className="w-80 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-500 ease-in-out transform">
-            <img src={faculty.image} alt={faculty.name} className="w-full h-48 object-cover" />
-            <div className="p-4 text-center">
-              <h3 className="text-xl font-semibold text-gray-800">{faculty.name}</h3>
-              <p className="text-gray-600 mt-2">{faculty.description}</p>
+      <div className="flex flex-wrap justify-center gap-8 mb-4">
+        {facultyData
+          .slice(currentIndex * 3, currentIndex * 3 + 3)
+          .map((faculty, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-gradient-to-b from-[#135683] via-[#208098] to-[#2A9DA2] rounded-lg shadow-md overflow-hidden transition-transform duration-500 ease-in-out transform"
+            >
+              <img
+                src={faculty.image}
+                alt={faculty.name}
+                className="w-full h-96 object-cover object-top transition-opacity duration-500 ease-in-out opacity-100"
+              />
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-semibold text-gray-100">{faculty.name}</h3>
+                <p className="text-gray-200 mt-2">{faculty.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
 
       <div className="flex justify-center space-x-3 mt-4">
@@ -49,10 +68,10 @@ function BbaAdmissionFaculty() {
           <button
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-4 h-4 rounded-full transition duration-300 transform ${
-              currentSlide === index * 3
-                ? 'bg-green-500 scale-110' // Active Dot (Green)
-                : 'bg-gray-400 hover:bg-green-400' // Inactive Dot (Gray with hover effect)
+            className={`w-3 h-3 rounded-full transition duration-300 transform ${
+              currentIndex === index
+                ? "bg-[#2896A0] scale-110"
+                : "bg-[#787b7b] hover:bg-[#4f87ac]"
             }`}
           ></button>
         ))}
