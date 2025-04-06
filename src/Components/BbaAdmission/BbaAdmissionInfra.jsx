@@ -20,8 +20,9 @@ function BbaStudying() {
       <div className="w-full md:w-[70%] pr-0 md:pr-8" data-aos="fade-right">
         <h1 className="text-4xl font-semibold text-left mb-2">Invent. Integrate. Impact.</h1>
         <h1 className="text-2xl font-semibold text-[#2899A4]">Bachelor of Business Administration (BBA)</h1>
-        <p className="text-left text-md md:text-lg mb-4" data-aos="fade-up">
-          Indira College of Engineering & Management offers a comprehensive **Bachelor of Business Administration (BBA)** program designed to equip students with essential business and management skills. This program provides a strong foundation in business principles, leadership, and strategic thinking, preparing students for dynamic careers in the corporate world. The vibrant campus, coupled with expert faculty and industry exposure, ensures a transformative academic journey.
+        <p className="text-left text-md md:text-lg mb-4" data-aos="fade-up"> <span className='font-bold'>Looking for the best BBA college after 12th?</span> BBA at <span className='font-bold'>Indira University</span> offers the perfect launchpad for students from any stream who want to build a successful career in business and management. With a curriculum focused on leadership, strategy, and real-world business skills, this program is designed to make you industry-ready from day one.
+ <br />
+Our campus is equipped with modern computer labs, interactive classrooms, well-stocked libraries, and state-of-the-art laboratories to ensure hands-on learning. Comfortable hostel facilities, seamless transportation, a hygienic canteen, and dynamic sports infrastructure make student life enriching. With vibrant college events, fests, and strong industry exposure, your BBA journey at Indira will be both exciting and transformative.
         </p>
 
         {/* 2x3 Grid for Cards */}
