@@ -1,5 +1,8 @@
-import React, { useEffect } from "react";
-import styled from "styled-components";
+import React from "react";
+import MyImage from "../../assets/Images/Landingpage_IU.avif";
+import icon1 from "../../assets/Images/ranking.png";
+import icon2 from "../../assets/Images/badge.png";
+import icon3 from "../../assets/Images/top.png";
 import {
   FaStar,
   FaBuilding,
@@ -8,42 +11,30 @@ import {
   FaGraduationCap,
   FaChartLine,
 } from "react-icons/fa";
-import MyImage from "../../assets/Images/Landingpage_IU.avif";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import icon1 from "../../assets/Images/ranking.png";
-import icon2 from "../../assets/Images/badge.png";
-import icon3 from "../../assets/Images/top.png";
 
-// Styled Components
-const TextContent = styled.p`
-  font-size: 16px;
-
-  @media (min-width: 1025px) {
-    font-size: 24px;
-  }
-`;
-
-function BbaStudying() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
-
+function FinanceManagementStudying() {
   return (
-    <div className="flex flex-col md:flex-row px-8 md:px-16 py-6 poppins-regular bg-white text-[#002D6A]">
-      {/* 70% Left Side */}
-      <div className="w-full md:w-[70%] pr-0 md:pr-8" data-aos="fade-right">
-        <h1 className="text-4xl font-semibold text-left mb-2">
-          Invent. Integrate. Impact.
-        </h1>
-        <h1 className="text-2xl font-semibold text-[#2899A4] mb-2">
-          Bachelor of Business Administration (BBA)
-        </h1>
-        <p className="mb-4 text-lg">
+    <div className="flex flex-wrap px-4 md:px-8 lg:px-16 py-2 md:py-6 mb-4 ">
+      {/* Right Side (formerly Left Side) */}
+      <div className="w-full md:w-1/2 bg-white relative">
+        <img
+          src={MyImage}
+          alt="Finance Management"
+          className="w-full h-full object-cover rounded-t-xl pr-0 md:pr-10"
+        />
+      </div>
+
+      {/* Left Side (formerly Right Side) */}
+      <div className="w-full md:w-1/2 pl-0 md:pl-8 flex flex-col justify-center">
+      <h1 className="text-4xl font-semibold text-left mb-2">
+Invent. Integrate. Impact.
+</h1>
+
+<h1 className="text-2xl font-semibold text-[#2899A4]">
+Bachelor of Business Administration (BBA)
+</h1>
+
+        <p className="text-md md:text-xl text-[#002D6A]  my-4">
           Our campus is equipped with modern computer labs, interactive
           classrooms, well-stocked libraries, and state-of-the-art laboratories
           to ensure hands-on learning. Comfortable hostel facilities, seamless
@@ -132,6 +123,7 @@ function BbaStudying() {
           </div>
         </div>
 
+        {/* 3 Cards Below with Icons */}
         {/* New 3 Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           {/* Card 1 */}
@@ -185,21 +177,8 @@ function BbaStudying() {
           </div>
         </div>
       </div>
-
-{/* 30% Right Side with Image */}
-<div className="w-full md:w-[45%] mt-2 flex flex-col justify-center h-auto container">
-  <div className="flex-1 "> {/* Ensure it takes full height of the container */}
-    <img
-      src={MyImage}
-      alt="Indira College Campus"
-      className="w-full h-[90vh] object-cover rounded-lg shadow-lg border-4 border-[#002D6A]"
-    />
-  </div>
-</div>
-
-
     </div>
   );
 }
 
-export default BbaStudying;
+export default FinanceManagementStudying;
