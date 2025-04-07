@@ -14,8 +14,8 @@ import {
 
 function FinanceManagementStudying() {
   return (
-    <div className="flex flex-wrap px-4 md:px-8 lg:px-16 py-2 md:py-6 mb-4 ">
-      {/* Right Side (formerly Left Side) */}
+    <div className="flex flex-col-reverse md:flex-row px-4 md:px-8 lg:px-16 py-2 md:py-6 mb-4">
+      {/* Right Side (Image Section) */}
       <div className="w-full md:w-1/2 bg-white relative">
         <img
           src={MyImage}
@@ -24,17 +24,17 @@ function FinanceManagementStudying() {
         />
       </div>
 
-      {/* Left Side (formerly Right Side) */}
+      {/* Left Side (Text and Cards Section) */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
-        <h1 className="text-4xl font-semibold text-left mb-2">
+        <h1 className="text-3xl md:text-4xl font-semibold text-left mb-2">
           Invent. Integrate. Impact.
         </h1>
 
-        <h1 className="text-2xl font-semibold text-[#2899A4]">
+        <h1 className="text-xl md:text-2xl font-semibold text-[#2899A4]">
           Bachelor of Business Administration (BBA)
         </h1>
 
-        <p className="text-md md:text-xl text-[#002D6A]  my-4">
+        <p className="text-md md:text-xl text-[#002D6A] my-4">
           Our campus is equipped with modern computer labs, interactive
           classrooms, well-stocked libraries, and state-of-the-art laboratories
           to ensure hands-on learning. Comfortable hostel facilities, seamless
@@ -124,7 +124,6 @@ function FinanceManagementStudying() {
         </div>
 
         {/* 3 Cards Below with Icons */}
-        {/* New 3 Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           {/* Card 1 */}
           <div
