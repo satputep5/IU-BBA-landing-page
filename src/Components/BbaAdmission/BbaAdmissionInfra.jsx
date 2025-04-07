@@ -25,14 +25,14 @@ function FinanceManagementStudying() {
       </div>
 
       {/* Left Side (formerly Right Side) */}
-      <div className="w-full md:w-1/2 pl-0 md:pl-8 flex flex-col justify-center">
-      <h1 className="text-4xl font-semibold text-left mb-2">
-Invent. Integrate. Impact.
-</h1>
+      <div className="w-full md:w-1/2 flex flex-col justify-center">
+        <h1 className="text-4xl font-semibold text-left mb-2">
+          Invent. Integrate. Impact.
+        </h1>
 
-<h1 className="text-2xl font-semibold text-[#2899A4]">
-Bachelor of Business Administration (BBA)
-</h1>
+        <h1 className="text-2xl font-semibold text-[#2899A4]">
+          Bachelor of Business Administration (BBA)
+        </h1>
 
         <p className="text-md md:text-xl text-[#002D6A]  my-4">
           Our campus is equipped with modern computer labs, interactive
