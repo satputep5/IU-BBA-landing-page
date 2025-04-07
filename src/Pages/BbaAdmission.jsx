@@ -22,7 +22,7 @@ function BbaAdmission() {
         <BbaAdmissionCourses />
         <BbaAdmissionOfferings />
         <BbaAdmissionJoin />
-        <BbaAdmissionInfra />
+        {/* <BbaAdmissionInfra /> */}
         <BbaAdmissionFaculty />
         {/* <BbaAdmissionPlacement /> */}
         <BbaAdmissionTestimonials />
