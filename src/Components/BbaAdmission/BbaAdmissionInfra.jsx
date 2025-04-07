@@ -11,7 +11,10 @@ import {
 import MyImage from "../../assets/Images/Landingpage_IU.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img from "../../assets/Images/highlights.png";
+import icon1 from "../../assets/Images/ranking.png";
+import icon2 from "../../assets/Images/badge.png";
+import icon3 from "../../assets/Images/top.png";
+
 
 // Styled Components
 const TextContent = styled.p`
@@ -51,7 +54,7 @@ function BbaStudying() {
           exciting and transformative.
         </TextContent>
 
-        {/* 2x3 Grid for Cards */}
+        {/* 6 Cards Grid */}
         <div className="grid grid-cols-2 grid-rows-3 gap-4">
           {/* Card 1 */}
           <div
@@ -132,8 +135,41 @@ function BbaStudying() {
           </div>
         </div>
 
-        <div className="mt-6">
-          <img src={img} alt="BBA Highlights" className="w-full " />
+        {/* New 3 Cards Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+{/* Card 1 */}
+<div
+  className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+  data-aos="zoom-in"
+>
+  <img src={icon1} alt="Top B-Schools" className="w-16 h-16 mb-2" />
+  <p className="text-sm text-[#000000] text-center">
+    Indira is ranked amongst the <span className="text-[#002D6A] font-bold">top 2</span> B-schools in Pune, by the prestigious <span className="text-[#002D6A] font-bold">AIMA – IMJ.</span>
+  </p>
+</div>
+
+{/* Card 2 */}
+<div
+  className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+  data-aos="zoom-in"
+>
+  <img src={icon2} alt="NBA Accreditation" className="w-16 h-16 mb-2" />
+  <p className="text-sm text-[#000000] text-center">
+    Indira Institute of Management was the first management institute in Maharashtra to receive the accreditation from the <span className="text-[#002D6A] font-bold">NBA,</span> New Delhi.
+  </p>
+</div>
+
+{/* Card 3 */}
+<div
+  className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+  data-aos="zoom-in"
+>
+  <img src={icon3} alt="Top Educational Institute" className="w-16 h-16 mb-2" />
+  <p className="text-sm text-[#000000] text-center">
+    Business India has also ranked us amongst the <span className="text-[#002D6A] font-bold">top 3 educational institutes</span> in Pune for 2 consecutive years.
+  </p>
+</div>
+
         </div>
       </div>
 
