@@ -76,7 +76,7 @@ function BbaAdmissionFaculty() {
   return (
     <div className="relative w-full bg-[#002D6A] overflow-hidden">
       <div className="flex flex-col items-center py-8">
-        <h2 className="text-4xl font-semibold text-center text-[#f7f7f7] mb-4">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center text-[#f7f7f7] mb-4">
           Our Faculties
         </h2>
 
