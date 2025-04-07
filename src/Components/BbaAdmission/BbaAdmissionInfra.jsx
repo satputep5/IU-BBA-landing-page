@@ -8,13 +8,12 @@ import {
   FaGraduationCap,
   FaChartLine,
 } from "react-icons/fa";
-import MyImage from "../../assets/Images/Landingpage_IU.jpg";
+import MyImage from "../../assets/Images/Landingpage_IU.avif";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import icon1 from "../../assets/Images/ranking.png";
 import icon2 from "../../assets/Images/badge.png";
 import icon3 from "../../assets/Images/top.png";
-
 
 // Styled Components
 const TextContent = styled.p`
@@ -41,10 +40,10 @@ function BbaStudying() {
         <h1 className="text-4xl font-semibold text-left mb-2">
           Invent. Integrate. Impact.
         </h1>
-        <h1 className="text-2xl font-semibold text-[#2899A4]">
+        <h1 className="text-2xl font-semibold text-[#2899A4] mb-2">
           Bachelor of Business Administration (BBA)
         </h1>
-        <TextContent data-aos="fade-up">
+        <p className="mb-4 text-lg">
           Our campus is equipped with modern computer labs, interactive
           classrooms, well-stocked libraries, and state-of-the-art laboratories
           to ensure hands-on learning. Comfortable hostel facilities, seamless
@@ -52,7 +51,7 @@ function BbaStudying() {
           make student life enriching. With vibrant college events, fests, and
           strong industry exposure, your BBA journey at Indira will be both
           exciting and transformative.
-        </TextContent>
+        </p>
 
         {/* 6 Cards Grid */}
         <div className="grid grid-cols-2 grid-rows-3 gap-4">
@@ -103,7 +102,7 @@ function BbaStudying() {
             <span className="flex items-center space-x-2">
               <FaLaptop className="text-white text-4xl" />
               <span className="text-sm text-white text-left">
-               Top placement opportunities
+                Top placement opportunities
               </span>
             </span>
           </div>
@@ -115,9 +114,7 @@ function BbaStudying() {
           >
             <span className="flex items-center space-x-2">
               <FaGraduationCap className="text-white text-4xl" />
-              <span className="text-sm text-white text-left">
-                IT labs
-              </span>
+              <span className="text-sm text-white text-left">IT labs</span>
             </span>
           </div>
 
@@ -137,52 +134,70 @@ function BbaStudying() {
 
         {/* New 3 Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-{/* Card 1 */}
-<div
-  className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
-  data-aos="zoom-in"
->
-  <img src={icon1} alt="Top B-Schools" className="w-16 h-16 mb-2" />
-  <p className="text-sm text-[#000000] text-center">
-    Indira is ranked amongst the <span className="text-[#002D6A] font-bold">top 2</span> B-schools in Pune, by the prestigious <span className="text-[#002D6A] font-bold">AIMA – IMJ.</span>
-  </p>
-</div>
+          {/* Card 1 */}
+          <div
+            className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <img src={icon1} alt="Top B-Schools" className="w-16 h-16 mb-2" />
+            <p className="text-sm text-[#000000] text-center">
+              Indira is ranked amongst the{" "}
+              <span className="text-[#002D6A] font-bold">top 2</span> B-schools
+              in Pune, by the prestigious{" "}
+              <span className="text-[#002D6A] font-bold">AIMA – IMJ.</span>
+            </p>
+          </div>
 
-{/* Card 2 */}
-<div
-  className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
-  data-aos="zoom-in"
->
-  <img src={icon2} alt="NBA Accreditation" className="w-16 h-16 mb-2" />
-  <p className="text-sm text-[#000000] text-center">
-    Indira Institute of Management was the first management institute in Maharashtra to receive the accreditation from the <span className="text-[#002D6A] font-bold">NBA,</span> New Delhi.
-  </p>
-</div>
+          {/* Card 2 */}
+          <div
+            className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <img
+              src={icon2}
+              alt="NBA Accreditation"
+              className="w-16 h-16 mb-2"
+            />
+            <p className="text-sm text-[#000000] text-center">
+              Indira Institute of Management was the first management institute
+              in Maharashtra to receive the accreditation from the{" "}
+              <span className="text-[#002D6A] font-bold">NBA,</span> New Delhi.
+            </p>
+          </div>
 
-{/* Card 3 */}
-<div
-  className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
-  data-aos="zoom-in"
->
-  <img src={icon3} alt="Top Educational Institute" className="w-16 h-16 mb-2" />
-  <p className="text-sm text-[#000000] text-center">
-    Business India has also ranked us amongst the <span className="text-[#002D6A] font-bold">top 3 educational institutes</span> in Pune for 2 consecutive years.
-  </p>
-</div>
-
+          {/* Card 3 */}
+          <div
+            className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <img
+              src={icon3}
+              alt="Top Educational Institute"
+              className="w-16 h-16 mb-2"
+            />
+            <p className="text-sm text-[#000000] text-center">
+              Business India has also ranked us amongst the{" "}
+              <span className="text-[#002D6A] font-bold">
+                top 3 educational institutes
+              </span>{" "}
+              in Pune for 2 consecutive years.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* 30% Right Side with Image */}
-      <div className="w-full md:w-[45%] mt-2 md:mt-12 flex flex-col justify-center h-full">
-        <div className="flex-1">
-          <img
-            src={MyImage}
-            alt="Indira College Campus"
-            className="w-full h-full object-cover rounded-lg shadow-lg border-4 border-[#002D6A]"
-          />
-        </div>
-      </div>
+{/* 30% Right Side with Image */}
+<div className="w-full md:w-[45%] mt-2 flex flex-col justify-center h-auto container">
+  <div className="flex-1 "> {/* Ensure it takes full height of the container */}
+    <img
+      src={MyImage}
+      alt="Indira College Campus"
+      className="w-full h-[90vh] object-cover rounded-lg shadow-lg border-4 border-[#002D6A]"
+    />
+  </div>
+</div>
+
+
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Images/IU Logo Cobine Final.png";
+import logo from "../assets/Images/IU Logo Cobine Final.avif";
 
 function Footer() {
   useEffect(() => {

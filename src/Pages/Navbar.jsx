@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import images
-import logo from "../assets/Images/IU Logo Cobine Final.png";
+import logo from "../assets/Images/IU Logo Cobine Final.avif";
 
 function Navbar() {
   const pulseTextAnimation = {
