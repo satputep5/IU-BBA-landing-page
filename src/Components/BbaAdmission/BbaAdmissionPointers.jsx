@@ -3,7 +3,7 @@ import { FaChalkboard, FaRegClock, FaChartLine } from 'react-icons/fa';
 
 function MarketingManagementPointers() {
   return (
-    <div className="px-4 md:px-16 py-4 poppins-regular">
+    <div className="px-8 md:px-16 py-4 poppins-regular">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-5xl mx-auto">
         {/* Card 1: Program Format */}
         <div className="bg-[#F6FBFF] p-4 shadow-md flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-[#E9F7FA]">
