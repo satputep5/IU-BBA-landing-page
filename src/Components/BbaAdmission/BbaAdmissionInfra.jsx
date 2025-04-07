@@ -1,15 +1,22 @@
-import React, { useEffect } from 'react';
-import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa';
-import MyImage from '../../assets/Images/infra.jpg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import img from '../../assets/Images/highlights.png';
+import React, { useEffect } from "react";
+import {
+  FaStar,
+  FaBuilding,
+  FaUsers,
+  FaLaptop,
+  FaGraduationCap,
+  FaChartLine,
+} from "react-icons/fa";
+import MyImage from "../../assets/Images/infra.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import img from "../../assets/Images/highlights.png";
 
 function BbaStudying() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
     });
   }, []);
@@ -18,66 +25,120 @@ function BbaStudying() {
     <div className="flex flex-col md:flex-row px-8 md:px-16 py-6 poppins-regular bg-white text-[#002D6A]">
       {/* 70% Left Side */}
       <div className="w-full md:w-[70%] pr-0 md:pr-8" data-aos="fade-right">
-        <h1 className="text-4xl font-semibold text-left mb-2">Invent. Integrate. Impact.</h1>
-        <h1 className="text-2xl font-semibold text-[#2899A4]">Bachelor of Business Administration (BBA)</h1>
-        <p className="text-left text-md md:text-lg mb-4" data-aos="fade-up"> <span className='font-bold'>Looking for the best BBA college after 12th?</span> BBA at <span className='font-bold'>Indira University</span> offers the perfect launchpad for students from any stream who want to build a successful career in business and management. With a curriculum focused on leadership, strategy, and real-world business skills, this program is designed to make you industry-ready from day one.
- <br />
-Our campus is equipped with modern computer labs, interactive classrooms, well-stocked libraries, and state-of-the-art laboratories to ensure hands-on learning. Comfortable hostel facilities, seamless transportation, a hygienic canteen, and dynamic sports infrastructure make student life enriching. With vibrant college events, fests, and strong industry exposure, your BBA journey at Indira will be both exciting and transformative.
+        <h1 className="text-4xl font-semibold text-left mb-2">
+          Invent. Integrate. Impact.
+        </h1>
+        <h1 className="text-2xl font-semibold text-[#2899A4]">
+          Bachelor of Business Administration (BBA)
+        </h1>
+        <p
+          className="text-left text-md md:text-lg mb-4 text-sm/4"
+          data-aos="fade-up"
+        >
+          <span className="font-bold">
+            Looking for the best BBA college after 12th?
+          </span>{" "}
+          BBA at <span className="font-bold">Indira University</span> offers the
+          perfect launchpad for students who want to build a successful career
+          in business and management.
+          <br />
+          Our campus is equipped with modern computer labs, interactive
+          classrooms, well-stocked libraries, and state-of-the-art laboratories
+          to ensure hands-on learning. Comfortable hostel facilities, seamless
+          transportation, a hygienic canteen, and dynamic sports infrastructure
+          make student life enriching. With vibrant college events, fests, and
+          strong industry exposure, your BBA journey at Indira will be both
+          exciting and transformative.
         </p>
 
         {/* 2x3 Grid for Cards */}
         <div className="grid grid-cols-2 grid-rows-3 gap-4">
           {/* Card 1 */}
-          <div className="bg-[#2899A4] p-4 shadow-lg border-2 border-[#002D6A] flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex flex-col md:flex-row items-center">
-              <FaStar className="text-white mr-4 text-4xl" />
-              <span className="text-sm text-center text-white">2 Decades OF ACADEMIC EXCELLENCE</span>
+          <div
+            className="bg-[#2899A4] p-2 shadow-lg border-2 border-[#002D6A] flex items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <span className="flex items-center space-x-2">
+              <FaStar className="text-white text-4xl" />
+              <span className="text-sm text-white text-left">
+                Two decades of academic excellence
+              </span>
             </span>
           </div>
+
           {/* Card 2 */}
-          <div className="bg-[#2899A4] p-4 shadow-lg border-2 border-[#002D6A] flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex flex-col md:flex-row items-center">
-              <FaUsers className="text-white mr-4 text-4xl" />
-              <span className="text-sm text-center text-white">450+ LEADING RECRUITERS</span>
+          <div
+            className="bg-[#2899A4] p-2 shadow-lg border-2 border-[#002D6A] flex items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <span className="flex items-center space-x-2">
+              <FaUsers className="text-white text-4xl" />
+              <span className="text-sm text-white text-left">
+                450+ leading recruiters
+              </span>
             </span>
           </div>
+
           {/* Card 3 */}
-          <div className="bg-[#2899A4] p-4 shadow-lg border-2 border-[#002D6A] flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex flex-col md:flex-row items-center">
-              <FaBuilding className="text-white mr-4 text-4xl" />
-              <span className="text-sm text-center text-white">EXPOSURE TO INDUSTRIAL GUEST LECTURES</span>
+          <div
+            className="bg-[#2899A4] p-2 shadow-lg border-2 border-[#002D6A] flex items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <span className="flex items-center space-x-2">
+              <FaBuilding className="text-white text-4xl" />
+              <span className="text-sm text-white text-left">
+                Exposure to industrial guest lectures
+              </span>
             </span>
           </div>
+
           {/* Card 4 */}
-          <div className="bg-[#2899A4] p-4 shadow-lg border-2 border-[#002D6A] flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex flex-col md:flex-row items-center">
-              <FaLaptop className="text-white mr-4 text-4xl" />
-              <span className="text-sm text-center text-white">HIGHEST PACKAGE OFFERED</span>
+          <div
+            className="bg-[#2899A4] p-2 shadow-lg border-2 border-[#002D6A] flex items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <span className="flex items-center space-x-2">
+              <FaLaptop className="text-white text-4xl" />
+              <span className="text-sm text-white text-left">
+                Highest package offered
+              </span>
             </span>
           </div>
+
           {/* Card 5 */}
-          <div className="bg-[#2899A4] p-4 shadow-lg border-2 border-[#002D6A] flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex flex-col md:flex-row items-center">
-              <FaGraduationCap className="text-white mr-4 text-4xl" />
-              <span className="text-sm text-center text-white">IT and Apple Labs</span>
+          <div
+            className="bg-[#2899A4] p-2 shadow-lg border-2 border-[#002D6A] flex items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <span className="flex items-center space-x-2">
+              <FaGraduationCap className="text-white text-4xl" />
+              <span className="text-sm text-white text-left">
+                IT and Apple labs
+              </span>
             </span>
           </div>
+
           {/* Card 6 */}
-          <div className="bg-[#2899A4] p-4 shadow-lg border-2 border-[#002D6A] flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex flex-col md:flex-row items-center">
-              <FaChartLine className="text-white mr-4 text-4xl" />
-              <span className="text-sm text-center text-white">EXCEPTIONAL GROWTH OPPORTUNITIES</span>
+          <div
+            className="bg-[#2899A4] p-2 shadow-lg border-2 border-[#002D6A] flex items-center rounded-lg"
+            data-aos="zoom-in"
+          >
+            <span className="flex items-center space-x-2">
+              <FaChartLine className="text-white text-4xl" />
+              <span className="text-sm text-white text-left">
+                Exceptional growth opportunities
+              </span>
             </span>
           </div>
         </div>
 
         <div className="mt-6">
-          <img src={img} alt="BBA Highlights" className="w-full rounded-lg shadow-lg" />
+          <img src={img} alt="BBA Highlights" className="w-full " />
         </div>
       </div>
 
       {/* 30% Right Side with Image */}
-      <div className="w-full md:w-[45%] mt-12 flex flex-col justify-center h-full">
+      <div className="w-full md:w-[45%] mt-2 md:mt-12 flex flex-col justify-center h-full">
         <div className="flex-1">
           <img
             src={MyImage}

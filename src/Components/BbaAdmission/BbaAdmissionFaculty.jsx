@@ -37,7 +37,7 @@ function BbaAdmissionFaculty() {
   };
 
   return (
-    <div className="relative px-4 md:px-16 py-8 bg-[#002D6A] min-h-screen">
+    <div className="relative px-4 md:px-16 md:py-6 py-3  bg-[#002D6A] min-h-screen">
       {/* 🌊 Floating Books Image with Responsive Positioning */}
       <img
         src={FloatingBooks}
@@ -45,7 +45,7 @@ function BbaAdmissionFaculty() {
         className="absolute bottom-0 left-0 w-48 h-auto z-0 pointer-events-none floating lg:top-10 lg:left-10"
       />
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[#f7f7f7] text-center mb-8 z-10 relative">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#f7f7f7] text-center mb-6 md:mb-8 z-10 relative">
         Minds Behind School of Business
       </h2>
 
