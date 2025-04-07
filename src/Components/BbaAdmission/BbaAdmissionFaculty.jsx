@@ -8,7 +8,7 @@ import KomalDalnar from "../../assets/Images/komal.webp";
 import DeepaShakti from "../../assets/Images/deepa.webp";
 import SonaliShrotri from "../../assets/Images/sonali.jpeg";
 import VijayalaxmiRao from "../../assets/Images/vijaylaxmi.webp";
-import FloatingBooks from "../../assets/Images/pngwing.com.png";
+// import FloatingBooks from "../../assets/Images/pngwing.com.png";
 
 const facultyData = [
   { image: DrThomsonVarghese, name: "Dr. Thomson Varghese", description: "Associate Dean – School of Business (BBA)" },
@@ -39,11 +39,11 @@ function BbaAdmissionFaculty() {
   return (
     <div className="relative px-4 md:px-16 md:py-6 py-3  bg-[#002D6A] min-h-screen">
       {/* 🌊 Floating Books Image with Responsive Positioning */}
-      <img
+      {/* <img
         src={FloatingBooks}
         alt="Floating Books"
         className="absolute bottom-0 left-0 w-48 h-auto z-0 pointer-events-none floating lg:top-10 lg:left-10"
-      />
+      /> */}
 
       <h2 className="text-3xl md:text-4xl font-semibold text-[#f7f7f7] text-center mb-6 md:mb-8 z-10 relative">
         Minds Behind School of Business
@@ -85,7 +85,7 @@ function BbaAdmissionFaculty() {
       </div>
 
       {/* 🎯 CSS Animation for Floating Effect */}
-      <style>{`
+      {/* <style>{`
         @keyframes float {
           0% {
             transform: translateY(0);
@@ -101,7 +101,7 @@ function BbaAdmissionFaculty() {
         .floating {
           animation: float 3s infinite ease-in-out;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

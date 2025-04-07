@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styled from "styled-components";
 import {
   FaStar,
   FaBuilding,
@@ -11,6 +12,15 @@ import MyImage from "../../assets/Images/infra.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img from "../../assets/Images/highlights.png";
+
+// Styled Components
+const TextContent = styled.p`
+  font-size: 16px;
+
+  @media (min-width: 1025px) {
+    font-size: 24px;
+  }
+`;
 
 function BbaStudying() {
   useEffect(() => {
@@ -31,17 +41,7 @@ function BbaStudying() {
         <h1 className="text-2xl font-semibold text-[#2899A4]">
           Bachelor of Business Administration (BBA)
         </h1>
-        <p
-          className="text-left text-md md:text-lg mb-4 text-sm/4"
-          data-aos="fade-up"
-        >
-          <span className="font-bold">
-            Looking for the best BBA college after 12th?
-          </span>{" "}
-          BBA at <span className="font-bold">Indira University</span> offers the
-          perfect launchpad for students who want to build a successful career
-          in business and management.
-          <br />
+        <TextContent data-aos="fade-up">
           Our campus is equipped with modern computer labs, interactive
           classrooms, well-stocked libraries, and state-of-the-art laboratories
           to ensure hands-on learning. Comfortable hostel facilities, seamless
@@ -49,7 +49,7 @@ function BbaStudying() {
           make student life enriching. With vibrant college events, fests, and
           strong industry exposure, your BBA journey at Indira will be both
           exciting and transformative.
-        </p>
+        </TextContent>
 
         {/* 2x3 Grid for Cards */}
         <div className="grid grid-cols-2 grid-rows-3 gap-4">
@@ -100,7 +100,7 @@ function BbaStudying() {
             <span className="flex items-center space-x-2">
               <FaLaptop className="text-white text-4xl" />
               <span className="text-sm text-white text-left">
-                Highest package offered
+                Highest packages offered
               </span>
             </span>
           </div>
