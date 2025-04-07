@@ -18,7 +18,7 @@ function Footer() {
   return (
     <div className="font-baskerville-regualr flex flex-col">
       <div className="bg-gray-100 px-8 md:px-16 text-black py-6 rounded-tl-4xl rounded-tr-4xl flex-grow footer">
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mt-6">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-6">
           {/* Left Column */}
           <div className="flex flex-col items-start space-y-8">
             <Link to="/">
@@ -39,19 +39,8 @@ function Footer() {
               </div>
 
               <div className="flex items-center space-x-4">
-  <i className="fas fa-phone-alt text-2xl hover:text-green-500"></i>
-  <p>0211 466 1593 / +91 7020 512 131</p>
-</div>
-
-
-              <div className="flex items-center space-x-4">
-                <i className="fas fa-envelope text-2xl hover:text-gray-500"></i>
-                <a
-                  href="mailto:ibba.admissions@indiraiimp.edu.in"
-                  className="text-black hover:text-gray-800"
-                >
-                  ibba.admissions@indiraiimp.edu.in
-                </a>
+                <i className="fas fa-phone-alt text-2xl hover:text-green-500"></i>
+                <p>020 6675 9523 / +91 77589 22688</p>
               </div>
 
               <div className="flex items-center space-x-4">
@@ -116,13 +105,13 @@ function Footer() {
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* Important Links Column */}
           <div className="space-y-8">
             <h3 className="text-2xl font-bold text-[#023b5e]">Important Links</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <a
-                  href="https://indiraedu.com/"
+                  href="https://www.indirauniversity.edu.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-gray-600 hover:text-gray-400 text-lg"
@@ -130,23 +119,16 @@ function Footer() {
                   Home
                 </a>
                 <a
-                  href="https://indiraedu.com/index.php?/about-us"
+                  href="https://www.indirauniversity.edu.in/about-us"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-gray-600 hover:text-gray-400 text-lg"
                 >
                   About Us
                 </a>
+  
                 <a
-                  href="https://indiraedu.com/index.php?/institutes"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 hover:text-gray-400 text-lg"
-                >
-                  Institutes
-                </a>
-                <a
-                  href="https://indiraedu.com/index.php?/admissions"
+                  href="https://www.indirauniversity.edu.in/admissions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-gray-600 hover:text-gray-400 text-lg"
@@ -155,24 +137,16 @@ function Footer() {
                 </a>
               </div>
               <div className="space-y-4">
-                <a
-                  href="https://indiraedu.com/index.php?/contact-us"
+              <a
+                  href="https://www.indirauniversity.edu.in/school/schoollisting"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-gray-600 hover:text-gray-400 text-lg"
                 >
-                  Contact Us
+                  Our Schools
                 </a>
                 <a
-                  href="https://indiraedu.com/index.php?/accreditations-and-recognition"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 hover:text-gray-400 text-lg"
-                >
-                  Accreditations
-                </a>
-                <a
-                  href="https://indiraedu.com/index.php?/PrivacyPolicy"
+                  href="https://www.indirauniversity.edu.in/admissions#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-gray-600 hover:text-gray-400 text-lg"
@@ -180,21 +154,66 @@ function Footer() {
                   Privacy Policy
                 </a>
                 <a
-                  href="http://www.unipune.ac.in/"
+                  href="https://www.indirauniversity.edu.in/admissions#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-gray-600 hover:text-gray-400 text-lg"
                 >
-                  SPPU
+                  Terms of Services
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="bg-[#023b5e] py-2 px-8 md:px-16 text-white text-center text-sm mt-auto">
-        <p>© 2025. Indira University.</p>
+          {/* Schools Column */}
+{/* Schools Column */}
+<div className="space-y-8">
+  <h3 className="text-2xl font-bold text-[#023b5e]">Schools</h3>
+  <div className="space-y-4">
+    <a
+      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-business"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-600 hover:text-gray-400 text-lg"
+    >
+      School of Business
+    </a>
+    <a
+      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-commerce-and-economics"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-600 hover:text-gray-400 text-lg"
+    >
+      School of Commerce and Economics
+    </a>
+    <a
+      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-information-technology"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-600 hover:text-gray-400 text-lg"
+    >
+      School of Information Technology
+    </a>
+    <a
+      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-liberal-arts"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-600 hover:text-gray-400 text-lg"
+    >
+      School of Liberal Arts
+    </a>
+    <a
+      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-pharmacy"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-600 hover:text-gray-400 text-lg"
+    >
+      School of Pharmacy
+    </a>
+  </div>
+</div>
+
+        </div>
       </div>
     </div>
   );

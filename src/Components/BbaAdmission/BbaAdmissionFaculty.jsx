@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import DrThomsonVarghese from "../../assets/Images/thomson.webp";
 import DrSarikaSagar from "../../assets/Images/sarika.webp";
 import YogeshBhusari from "../../assets/Images/yogesh.webp";
@@ -10,90 +10,126 @@ import SonaliShrotri from "../../assets/Images/sonali.jpeg";
 import VijayalaxmiRao from "../../assets/Images/vijaylaxmi.webp";
 
 const facultyData = [
-  { image: DrThomsonVarghese, name: "Dr. Thomson Varghese", description: "Associate Dean – School of Business (BBA)" },
-  { image: DrSarikaSagar, name: "Dr. Sarika Sagar", description: "Marketing Mgmt." },
-  { image: YogeshBhusari, name: "Mr. Yogesh Bhusari", description: "Financial Mgmt" },
-  { image: VikrantSoman, name: "Mr. Vikrant Soman", description: "Human Resource M" },
-  { image: SachinHadpad, name: "Mr. Sachin Hadpad", description: "Logistics & SCM" },
-  { image: KomalDalnar, name: "Ms. Komal Dalnar", description: "International Business" },
-  { image: DeepaShakti, name: "Dr. Deepa Shakti", description: "Innovation & Entrepreneurship" },
-  { image: SonaliShrotri, name: "Dr. Sonali Shrotri", description: "Banking & Financial Services" },
-  { image: VijayalaxmiRao, name: "Dr Vijayalaxmi G.N Rao", description: "Digital Marketing" },
+  {
+    image: DrThomsonVarghese,
+    name: "Dr. Thomson Varghese",
+    description: "Associate Dean – School of Business (BBA)",
+  },
+  {
+    image: DrSarikaSagar,
+    name: "Dr. Sarika Sagar",
+    description: "Marketing Mgmt.",
+  },
+  {
+    image: YogeshBhusari,
+    name: "Mr. Yogesh Bhusari",
+    description: "Financial Mgmt",
+  },
+  {
+    image: VikrantSoman,
+    name: "Mr. Vikrant Soman",
+    description: "Human Resource M",
+  },
+  {
+    image: SachinHadpad,
+    name: "Mr. Sachin Hadpad",
+    description: "Logistics & SCM",
+  },
+  {
+    image: KomalDalnar,
+    name: "Ms. Komal Dalnar",
+    description: "International Business",
+  },
+  {
+    image: DeepaShakti,
+    name: "Dr. Deepa Shakti",
+    description: "Innovation & Entrepreneurship",
+  },
+  {
+    image: SonaliShrotri,
+    name: "Dr. Sonali Shrotri",
+    description: "Banking & Financial Services",
+  },
+  {
+    image: VijayalaxmiRao,
+    name: "Dr Vijayalaxmi G.N Rao",
+    description: "Digital Marketing",
+  },
 ];
 
-function BbaAdmissionFaculty() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+// Duplicate data for seamless loop
+const extendedFacultyData = [...facultyData, ...facultyData];
 
-  // Handle screen resize
+function BbaAdmissionFaculty() {
+  const [isVisible, setIsVisible] = useState(true);
+
   useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
+    const handleVisibilityChange = () => {
+      setIsVisible(!document.hidden);
     };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, []);
 
-  const itemsPerSlide = isLargeScreen ? 3 : 1;
-  const totalSlides = Math.ceil(facultyData.length / itemsPerSlide);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % totalSlides);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [totalSlides]);
-
-  const handleDotClick = (index) => {
-    setCurrentIndex(index);
-  };
-
-  // Get current slide items
-  const currentSlideItems = facultyData.slice(
-    currentIndex * itemsPerSlide,
-    currentIndex * itemsPerSlide + itemsPerSlide
-  );
-
   return (
-    <div className="relative px-8 md:px-16 md:py-6 py-3 bg-[#002D6A] ">
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#f7f7f7] text-center mb-6 md:mb-8 z-10 relative">
-        Minds Behind School of Business
-      </h2>
+    <div className="relative w-full bg-[#002D6A] overflow-hidden">
+      <div className="flex flex-col items-center py-8">
+        <h2 className="text-4xl font-semibold text-center text-[#f7f7f7] mb-4">
+          Our Faculties
+        </h2>
 
-      {/* Slider */}
-      <div className="flex justify-center items-center space-x-8">
-        {currentSlideItems.map((faculty, index) => (
+        <div className="overflow-hidden w-full">
           <div
-            key={index}
-            className="bg-gradient-to-b from-[#135683] via-[#208098] to-[#2A9DA2] rounded-lg shadow-md overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105 w-full max-w-sm"
+            className={`flex space-x-4 logo-slider-track ${
+              isVisible ? "animate-scroll" : ""
+            }`}
           >
-            <img
-              src={faculty.image}
-              alt={faculty.name}
-              className="w-full h-96 object-cover object-top transition-opacity duration-500 ease-in-out opacity-100"
-            />
-            <div className="p-4 text-center">
-              <h3 className="text-xl font-semibold text-gray-100">{faculty.name}</h3>
-              <p className="text-gray-200 mt-2">{faculty.description}</p>
-            </div>
+            {extendedFacultyData.map((faculty, index) => (
+              <div
+  key={index}
+  className="bg-gradient-to-b from-[#135683] via-[#208098] to-[#2A9DA2] rounded-md shadow-md overflow-hidden w-48 flex-shrink-0 flex flex-col items-center"
+>
+  <div className="relative w-full h-48">
+    <img
+      src={faculty.image}
+      alt={faculty.name}
+      className="w-full h-full object-contain object-top"
+    />
+  </div>
+
+  <div className="p-2 flex flex-col justify-center items-center space-y-0 text-center">
+    <h3 className="text-lg font-semibold text-gray-100">
+      {faculty.name}
+    </h3>
+    <p className="text-gray-200 text-sm">
+      {faculty.description}
+    </p>
+  </div>
+</div>
+
+            ))}
           </div>
-        ))}
+        </div>
       </div>
 
-      {/* Pagination Dots */}
-      <div className="flex justify-center space-x-3 mt-4 z-10 relative">
-        {Array.from({ length: totalSlides }).map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handleDotClick(index)}
-            className={`w-2 h-2 md:w-4 md:h-4 rounded-full transition duration-300 transform ${
-              currentIndex === index
-                ? "bg-[#2896A0] scale-110"
-                : "bg-[#787b7b] hover:bg-[#4f87ac]"
-            }`}
-          ></button>
-        ))}
-      </div>
+      {/* Infinite Scroll Animation */}
+      <style>
+        {`
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll {
+            display: flex;
+            animation: scroll 20s linear infinite; /* Smooth and infinite */
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused; /* Pause on hover */
+          }
+        `}
+      </style>
     </div>
   );
 }
