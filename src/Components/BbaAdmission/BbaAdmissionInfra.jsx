@@ -1,5 +1,5 @@
 import React from "react";
-import MyImage from "../../assets/Images/Landingpage_Iu1.jpg";
+import MyImage from "../../assets/Images/new-infra.png";
 import icon1 from "../../assets/Images/ranking.png";
 import icon2 from "../../assets/Images/badge.png";
 import icon3 from "../../assets/Images/top.png";

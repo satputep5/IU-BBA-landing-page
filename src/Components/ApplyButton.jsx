@@ -1,12 +1,12 @@
-import React from 'react';
-import * as Toastify from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import * as Toastify from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const { toast, ToastContainer } = Toastify;
 
 function ApplyButton() {
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     toast.info("Kindly fill the form.", {
       position: "top-center",
@@ -63,7 +63,6 @@ function ApplyButton() {
             padding: 10px 25px;
             border-radius: 25px;
             font-size: 18px;
-            text-transform: uppercase;
             cursor: pointer;
             font-weight: bold;
             position: relative;
@@ -84,7 +83,7 @@ function ApplyButton() {
         className="apply-button glow-animation shimmer-animation hover-effects border-glow-animation bounce-animation"
         onClick={handleClick}
       >
-        <span>Apply Now</span>
+        <span>Enquire Now</span>
       </button>
 
       {/* Toast Container for rendering the notifications */}
@@ -99,18 +98,18 @@ function ApplyButton() {
         draggable
         pauseOnHover
         style={{
-          position: 'fixed',
-          top: '20px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: 'auto',
-          display: 'inline-block',
-          padding: '10px',
-          textAlign: 'center',
+          position: "fixed",
+          top: "20px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "auto",
+          display: "inline-block",
+          padding: "10px",
+          textAlign: "center",
           zIndex: 9999,
-          whiteSpace: 'nowrap',
-          overflow: 'hidden',
-          textOverflow: 'ellipsis',
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
         }}
       />
     </div>
