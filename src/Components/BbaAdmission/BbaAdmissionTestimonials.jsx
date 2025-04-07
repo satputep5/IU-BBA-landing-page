@@ -86,10 +86,10 @@ const Testimonials = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex flex-col md:flex-row space-x-8 w-full max-w-4xl overflow-x-hidden py-2 md:py-4 justify-center transition-all duration-500 ease-in-out ">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl overflow-x-hidden py-2 md:py-4 transition-all duration-500 ease-in-out">
         {groupedTestimonials[activeDot] && (
           <div
-            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full   mx-4 flex-shrink-0 transition-all duration-300 ease-in-out border"
+            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full mx-auto flex-shrink-0 transition-all duration-300 ease-in-out border"
             style={{
               boxShadow: "0 2px 4px rgba(0, 60, 132, 0.4)",
               borderColor: "#003C84", // Primary color for border
@@ -113,7 +113,7 @@ const Testimonials = () => {
           </div>
         )}
       </div>
-
+  
       <div className="flex justify-center mt-4">
         {groupedTestimonials.map((_, index) => (
           <button
@@ -129,6 +129,7 @@ const Testimonials = () => {
       </div>
     </div>
   );
+  
 };
 
 function App() {
