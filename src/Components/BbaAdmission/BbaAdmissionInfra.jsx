@@ -8,7 +8,7 @@ import {
   FaGraduationCap,
   FaChartLine,
 } from "react-icons/fa";
-import MyImage from "../../assets/Images/infra.jpg";
+import MyImage from "../../assets/Images/Landingpage_IU.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img from "../../assets/Images/highlights.png";
@@ -61,7 +61,7 @@ function BbaStudying() {
             <span className="flex items-center space-x-2">
               <FaStar className="text-white text-4xl" />
               <span className="text-sm text-white text-left">
-                Two decades of academic excellence
+                30 Years of academic excellence
               </span>
             </span>
           </div>
@@ -100,7 +100,7 @@ function BbaStudying() {
             <span className="flex items-center space-x-2">
               <FaLaptop className="text-white text-4xl" />
               <span className="text-sm text-white text-left">
-                Highest packages offered
+               Top placement opportunities
               </span>
             </span>
           </div>
@@ -113,7 +113,7 @@ function BbaStudying() {
             <span className="flex items-center space-x-2">
               <FaGraduationCap className="text-white text-4xl" />
               <span className="text-sm text-white text-left">
-                IT and Apple labs
+                IT labs
               </span>
             </span>
           </div>
