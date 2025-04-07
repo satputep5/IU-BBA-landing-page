@@ -16,16 +16,16 @@ function FinanceManagementStudying() {
   return (
     <div className="flex flex-col-reverse md:flex-row px-4 md:px-8 lg:px-16 py-2 md:py-6 mb-4">
       {/* Right Side (Image Section) */}
-      <div className="w-full md:w-1/2 bg-white relative">
+      <div className="w-full md:w-1/2 bg-white relative ">
         <img
           src={MyImage}
           alt="Finance Management"
-          className="w-full h-full object-cover rounded-t-xl pr-0 md:pr-10"
+          className="w-full h-full object-cover rounded-xl pr-0 md:pr-10"
         />
       </div>
 
       {/* Left Side (Text and Cards Section) */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 flex flex-col justify-center mb-4">
         <h1 className="text-3xl md:text-4xl font-semibold text-left mb-2">
           Invent. Integrate. Impact.
         </h1>
