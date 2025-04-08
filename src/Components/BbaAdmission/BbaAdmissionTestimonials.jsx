@@ -89,7 +89,7 @@ const Testimonials = () => {
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl overflow-x-hidden py-2 md:py-4 transition-all duration-500 ease-in-out">
         {groupedTestimonials[activeDot] && (
           <div
-            className="bg-white p-6 rounded-lg flex flex-col sm:flex-row w-full mx-auto flex-shrink-0 transition-all duration-300 ease-in-out border"
+            className="bg-white p-2 md:p-6 rounded-lg flex flex-col sm:flex-row w-full mx-auto flex-shrink-0 transition-all duration-300 ease-in-out border"
             style={{
               boxShadow: "0 2px 4px rgba(0, 60, 132, 0.4)",
               borderColor: "#003C84", // Primary color for border
@@ -102,7 +102,7 @@ const Testimonials = () => {
                 className="w-24 h-24 rounded-full"
               />
             </div>
-            <div className="ml-6 flex flex-col justify-center">
+            <div className="ml-0 md:ml-6 flex flex-col justify-center">
               <p className="text-sm md:text-lg text-black mb-4">
                 {groupedTestimonials[activeDot].text}
               </p>

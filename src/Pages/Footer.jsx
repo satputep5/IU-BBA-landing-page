@@ -107,7 +107,9 @@ function Footer() {
 
           {/* Important Links Column */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold text-[#023b5e]">Important Links</h3>
+            <h3 className="text-2xl font-bold text-[#023b5e]">
+              Important Links
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <a
@@ -126,7 +128,7 @@ function Footer() {
                 >
                   About Us
                 </a>
-  
+
                 <a
                   href="https://www.indirauniversity.edu.in/admissions"
                   target="_blank"
@@ -137,7 +139,7 @@ function Footer() {
                 </a>
               </div>
               <div className="space-y-4">
-              <a
+                <a
                   href="https://www.indirauniversity.edu.in/school/schoollisting"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -166,53 +168,52 @@ function Footer() {
           </div>
 
           {/* Schools Column */}
-{/* Schools Column */}
-<div className="space-y-8">
-  <h3 className="text-2xl font-bold text-[#023b5e]">Schools</h3>
-  <div className="space-y-4">
-    <a
-      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-business"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-gray-600 hover:text-gray-400 text-lg"
-    >
-      School of Business
-    </a>
-    <a
-      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-commerce-and-economics"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-gray-600 hover:text-gray-400 text-lg"
-    >
-      School of Commerce and Economics
-    </a>
-    <a
-      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-information-technology"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-gray-600 hover:text-gray-400 text-lg"
-    >
-      School of Information Technology
-    </a>
-    <a
-      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-liberal-arts"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-gray-600 hover:text-gray-400 text-lg"
-    >
-      School of Liberal Arts
-    </a>
-    <a
-      href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-pharmacy"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-gray-600 hover:text-gray-400 text-lg"
-    >
-      School of Pharmacy
-    </a>
-  </div>
-</div>
-
+          {/* Schools Column */}
+          <div className="space-y-8">
+            <h3 className="text-2xl font-bold text-[#023b5e]">Schools</h3>
+            <div className="space-y-4">
+              <a
+                href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-business"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-600 hover:text-gray-400 text-lg"
+              >
+                School of Business
+              </a>
+              <a
+                href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-commerce-and-economics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-600 hover:text-gray-400 text-lg"
+              >
+                School of Commerce and Economics
+              </a>
+              <a
+                href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-information-technology"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-600 hover:text-gray-400 text-lg"
+              >
+                School of Information Technology
+              </a>
+              <a
+                href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-liberal-arts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-600 hover:text-gray-400 text-lg"
+              >
+                School of Liberal Arts
+              </a>
+              <a
+                href="https://www.indirauniversity.edu.in/school/schoollisting/school-of-pharmacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-600 hover:text-gray-400 text-lg"
+              >
+                School of Pharmacy
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
