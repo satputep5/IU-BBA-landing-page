@@ -14,7 +14,7 @@ import {
 
 function FinanceManagementStudying() {
   return (
-    <div className="flex flex-col-reverse md:flex-row px-4 md:px-8 lg:px-16 py-2 md:py-6 mb-4">
+    <div className="flex flex-col-reverse md:flex-row px-8 md:px-16 py-2 md:py-6 mb-4">
       {/* Right Side (Image Section) */}
       <div className="w-full md:w-1/2 bg-white relative ">
         <img
@@ -127,7 +127,7 @@ function FinanceManagementStudying() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           {/* Card 1 */}
           <div
-            className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+            className="bg-white p-2 md:p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
             data-aos="zoom-in"
           >
             <img src={icon1} alt="Top B-Schools" className="w-16 h-16 mb-2" />
@@ -141,7 +141,7 @@ function FinanceManagementStudying() {
 
           {/* Card 2 */}
           <div
-            className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+            className="bg-white p-2 md:p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
             data-aos="zoom-in"
           >
             <img
@@ -158,7 +158,7 @@ function FinanceManagementStudying() {
 
           {/* Card 3 */}
           <div
-            className="bg-white p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
+            className="bg-white p-2 md:p-4 shadow-lg border-4 border-[#002D6A] flex flex-col items-center rounded-lg"
             data-aos="zoom-in"
           >
             <img
