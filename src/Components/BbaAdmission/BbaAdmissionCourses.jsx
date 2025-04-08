@@ -11,6 +11,23 @@ import internationalBusinessImage from "../../assets/Images/infor-bus.avif";
 import bankingImage from "../../assets/Images/finance.avif";
 import digitalMarketingImage from "../../assets/Images/dm-modern.avif";
 import innovationImage from "../../assets/Images/ie.avif";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import NPFWidget from '../../Components/NPFWidget';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 function BbaAdmissionCourses() {
   const courses = [
@@ -78,6 +95,9 @@ function BbaAdmissionCourses() {
     });
   };
 
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
   return (
     <div className="px-8 md:px-16 py-2 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2
@@ -116,7 +136,8 @@ function BbaAdmissionCourses() {
 
               {/* Apply Now Button */}
               <button
-                onClick={handleApplyClick}
+                // onClick={handleApplyClick}
+                onClick={handleOpen}
                 className="mt-auto text-center bg-[#2563EB] text-white px-4 py-2 rounded-full font-semibold border-2 border-[#FBBF24] transform transition-all hover:bg-[#3B82F6] hover:scale-105 hover:border-[#FBBF24] hover:shadow-lg"
                 style={{
                   boxShadow: "0px 4px 15px rgba(37, 99, 235, 0.3)",
@@ -128,6 +149,17 @@ function BbaAdmissionCourses() {
           </div>
         ))}
       </div>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+        < NPFWidget />
+        </Box>
+      </Modal>
 
       {/* Toast Container */}
       <ToastContainer

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import RightSideSection from "../RightSideSection";
 import bgImage from '../../assets/Images/Landing Page _ IU_1jpg.jpg';
+import NPFWidget from '../../Components/NPFWidget';
 
 function BbaAdmission() {
   useEffect(() => {
@@ -41,7 +42,7 @@ function BbaAdmission() {
             backgroundColor: "rgba(0, 0, 0, 0.4)",
           }}
         >
-          <form className="space-y-4">
+          {/* <form className="space-y-4">
             <div>
               <input
                 type="text"
@@ -98,7 +99,9 @@ function BbaAdmission() {
                 Submit
               </button>
             </div>
-          </form>
+          </form> */}
+
+<NPFWidget />
         </div>
       </div>
 

@@ -1,6 +1,23 @@
 import React from "react";
 import * as Toastify from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import NPFWidget from '../Components/NPFWidget';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 const { toast, ToastContainer } = Toastify;
 
@@ -17,6 +34,10 @@ function ApplyButton() {
       draggable: true,
     });
   };
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
@@ -81,10 +102,22 @@ function ApplyButton() {
       {/* Button with click handler */}
       <button
         className="apply-button glow-animation shimmer-animation hover-effects border-glow-animation bounce-animation"
-        onClick={handleClick}
+        // onClick={handleClic}
+       onClick={handleOpen}
       >
         <span>Enquire Now</span>
       </button>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+        < NPFWidget />
+        </Box>
+      </Modal>
 
       {/* Toast Container for rendering the notifications */}
       <ToastContainer
