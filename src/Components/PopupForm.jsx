@@ -28,8 +28,12 @@ function PopupForm() {
       }}
     >
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full relative">
-        <h2 className="text-xl font-semibold mb-4">Welcome to Indira University</h2>
-        <p className="mb-4">We are glad you're here! Take a moment to fill out the form below.</p>
+        <h2 className="text-xl font-semibold mb-4">
+          Welcome to Indira University
+        </h2>
+        <p className="mb-4">
+          We are glad you're here! Take a moment to fill out the form below.
+        </p>
         {/* Form Content */}
         <form className="space-y-4">
           <div>
@@ -53,12 +57,22 @@ function PopupForm() {
               <option value="">Select Course</option>
               <option value="marketing-management">Marketing Management</option>
               <option value="financial-management">Financial Management</option>
-              <option value="human-resource-management">Human Resource Management</option>
-              <option value="logistics-supply-chain-management">Logistics & Supply Chain Management</option>
-              <option value="international-business">International Business</option>
-              <option value="banking-financial-services">Banking & Financial Services</option>
+              <option value="human-resource-management">
+                Human Resource Management
+              </option>
+              <option value="logistics-supply-chain-management">
+                Logistics & Supply Chain Management
+              </option>
+              <option value="international-business">
+                International Business
+              </option>
+              <option value="banking-financial-services">
+                Banking & Financial Services
+              </option>
               <option value="digital-marketing">Digital Marketing</option>
-              <option value="innovation-entrepreneurship">Innovation & Entrepreneurship</option>
+              <option value="innovation-entrepreneurship">
+                Innovation & Entrepreneurship
+              </option>
             </select>
           </div>
           <button
