@@ -1,14 +1,12 @@
 import React, { useState, useRef } from "react";
 import brochureImage from "../assets/Images/3d-brochure.png";
-import brochurePDF from "../assets/pdf/IU School of Business Brochure_V5_11-4-2025.pdf";  // Import the PDF file here
+import brochurePDF from "../assets/pdf/IU School of Business Brochure_V5_11-4-2025.pdf";
 import { FaRegCommentDots, FaTimes } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Brochure = () => {
   const [isBrochureVisible, setIsBrochureVisible] = useState(true);
-
-  // Use useRef to handle rate-limiting for the toast notification
   const canTriggerToastRef = useRef(true);
 
   const handleScrollToTop = () => {
@@ -21,10 +19,9 @@ const Brochure = () => {
   };
 
   const handleBrochureClick = () => {
-    // Only apply rate-limiting to the toast notification
     if (!canTriggerToastRef.current) return;
 
-    handleScrollToTop();  // This will run every time the user clicks, no rate-limiting
+    handleScrollToTop();
     toast.info("Kindly fill the form.", {
       position: "top-center",
       autoClose: 3000,
@@ -37,48 +34,40 @@ const Brochure = () => {
       bodyClassName: "custom-toast-body",
     });
 
-    // Disable triggering the toast and reset it after 3 seconds
     canTriggerToastRef.current = false;
     setTimeout(() => {
       canTriggerToastRef.current = true;
     }, 3000);
 
-    // Check session storage if the PDF has been downloaded already
     if (!sessionStorage.getItem("pdfDownloaded")) {
-      // Trigger PDF download
       const link = document.createElement("a");
-      link.href = brochurePDF; // Path to the PDF file
-      link.download = "brochure.pdf"; // File name for the downloaded PDF
-      link.click(); // Programmatically click the link to trigger download
-
-      // Mark the PDF as downloaded in sessionStorage
+      link.href = brochurePDF;
+      link.download = "brochure.pdf";
+      link.click();
       sessionStorage.setItem("pdfDownloaded", "true");
-    } 
+    }
   };
 
   return (
     <>
       <div className="fixed bottom-4 left-2 right-1 z-50 flex justify-between items-center">
-        {/* Chat Bubble on the Left */}
         <div className="relative">
           <div
             className="bg-[#007bff] p-3 rounded-full shadow-lg cursor-pointer animate-bounce"
-            onClick={handleScrollToTop} // Scroll-to-top works without any rate-limiting
+            onClick={handleScrollToTop}
           >
             <FaRegCommentDots size={24} className="text-white" />
           </div>
         </div>
 
-        {/* Brochure Image on the Right */}
         {isBrochureVisible && (
           <div className="relative">
             <img
               src={brochureImage}
               alt="Brochure"
               className="w-16 h-16 md:w-20 md:h-20 object-contain cursor-pointer"
-              onClick={handleBrochureClick} // Rate-limited click for the toast notification and PDF download
+              onClick={handleBrochureClick}
             />
-            {/* Close Button */}
             <button
               onClick={handleCloseBrochure}
               className="absolute top-0 right-0 bg-red-500 text-white rounded-full p-1 hover:bg-red-700"
@@ -89,7 +78,6 @@ const Brochure = () => {
         )}
       </div>
 
-      {/* Toast Notification */}
       <ToastContainer
         position="top-center"
         autoClose={3000}
@@ -102,20 +90,19 @@ const Brochure = () => {
         theme="colored"
       />
 
-      {/* Embedded CSS */}
       <style>{`
         .custom-toast {
-          background: rgba(0, 0, 0, 0); /* Fully transparent background */
+          background: rgba(0, 0, 0, 0);
           color: white;
           border-radius: 15px;
           padding: 15px 20px;
           font-size: 16px;
           font-weight: bold;
-          backdrop-filter: blur(10px); /* Apply blur effect */
-          -webkit-backdrop-filter: blur(10px); /* For Safari */
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           transition: transform 0.3s ease-in-out;
-          border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for visibility */
+          border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .custom-toast-body {
