@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import brochureImage from "../assets/Images/3d-brochure.png";
-import brochurePDF from "../assets/pdf/IU School of Business Brochure_V5_11-4-2025.pdf";
+import brochurePDF from "../assets/pdf/IU - BBA Folded Brochure 2025.pdf";
 import { FaRegCommentDots, FaTimes } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
